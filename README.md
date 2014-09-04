@@ -1,5 +1,5 @@
 
-# React If
+# React If ![npm badge](http://img.shields.io/npm/v/react-if.svg)
 
 Render React components conditionally.
 
