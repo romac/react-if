@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React If demo</title>
+    <script src="lib/react.js"></script>
+    <script src="lib/JSXTransformer.js"></script>
+    <script src="../index.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/jsx">
+      /** @jsx React.DOM */
+
+      var If   = ReactIf;
+      var Then = If.Then;
+      var Else = If.Else;
+
+      var Beer = React.createClass({
+
+        getDefaultProps: function() {
+          return {
+            drinkingAge: 16 // Yay, Switzerland!
+          };
+        },
+
+        render: function() {
+          return (
+            <div id="some-id">
+              <If condition={ this.props.age >= this.props.drinkingAge }>
+                <Then><span>Have a beer, {this.props.name}!</span></Then>
+                <Else><span>Sorry {this.props.name}, you are not old enough.</span></Else>
+              </If>
+            </div>
+          );
+        }
+
+      });
+
+      React.renderComponent(
+        <Beer age={23} name="Romac" />,
+        document.getElementById('example')
+      );
+    </script>
+  </body>
+</html>
+
