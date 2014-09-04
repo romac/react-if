@@ -1,0 +1,27 @@
+{
+  "name": "react-if",
+  "version": "1.0.0",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">=0.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/romac/react-if.git"
+  },
+  "keywords": [
+    "facebook",
+    "react",
+    "if",
+    "conditional"
+  ],
+  "author": "Romain Ruetschi <romain.ruetschi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/romac/react-if/issues"
+  },
+  "homepage": "https://github.com/romac/react-if"
+}
