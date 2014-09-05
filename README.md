@@ -40,6 +40,10 @@ render: function() {
 }
 ```
 
+## Caveats
+
+With this approach to conditional elements, children of either branch will always be evaluated no matter what. This can be an issue eg. if you're testing an object for nullity, and then try to access one of its property inside of the `Then` branch. See this [StackOverflow discussion](http://stackoverflow.com/questions/25224793/reactjs-creating-a-if-component-a-good-idea) as well as [issue #1](https://github.com/romac/react-if/issues/1) for more informations.
+
 ## Install
 
 ### NPM:
