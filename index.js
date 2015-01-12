@@ -21,7 +21,7 @@
   var Else = React.createClass({
     displayName: 'Else',
     propTypes: {
-      children: React.PropTypes.component
+      children: React.PropTypes.element || React.PropTypes.component
     },
     render: function() {
       return this.props.children;
