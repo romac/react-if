@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
 
-(function(window, React) {
+(function(root, React) {
 
   'use strict';
 
@@ -77,10 +77,10 @@
   If.Else = Else;
 
   if (typeof module === 'undefined') {
-    window.ReactIf = If;
+    root.ReactIf = If;
   } else {
     module.exports = If;
   }
 
-})(window, typeof require === 'function' ? require('react') : window.React);
+})(this, typeof require === 'function' ? require('react') : this.React);
 
