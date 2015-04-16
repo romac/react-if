@@ -100,7 +100,7 @@ var Beer = React.createClass({
 
 If `condition` evaluates to `true`, renders the `<Then />` block will be rendered, otherwise renders the `<Else />` block.
 
-This component must contain any number of `<Then />` or `<Else />` blocks. Only the first block of the right type (either `Then` or `Else`, depending on the condition) will be rendered.
+This component can contain any number of `<Then />` or `<Else />` blocks, but only the first block of the right type (either `Then` or `Else`, depending on the condition) will be rendered.
 
 ### &lt;Then /&gt;
 Must contain only a single child, which it renders as-is. Should not be used outside of an `<If />` block.
