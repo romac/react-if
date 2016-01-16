@@ -32,14 +32,10 @@ render: function() {
             <Header />
             <If condition={ this.props.age >= this.props.drinkingAge }>
                 <Then><span class="ok">Have a beer, {this.props.name}!</span></Then>
-                <Else name={this.props.name}>
-                    {
-                        function () {
-                            return (
-                                <span class="not-ok">Sorry {this.props.name}, you are not old enough.</span>
-                            )
-                        }.bind(this)
-                    }
+                <Else {...this.props} >
+                  {() => {
+                    return <span>Sorry, {this.props.name}, you are not old enough.</span>
+                  }}
                 </Else>
             </If>
             </Footer>
@@ -85,14 +81,10 @@ var Beer = React.createClass({
             <div>
                 <If condition={ this.props.age >= this.props.drinkingAge }>
                     <Then>Have a beer, {this.props.name}!</Then>
-                    <Else name={this.props.name}>
-                        {
-                            function () {
-                                return (
-                                    <span class="not-ok">Sorry {this.props.name}, you are not old enough.</span>
-                                )
-                            }.bind(this)
-                        }
+                    <Else {...this.props} >
+                      {() => {
+                        return <span>Sorry, {this.props.name}, you are not old enough.</span>
+                      }}
                     </Else>
                 </If>
             </div>

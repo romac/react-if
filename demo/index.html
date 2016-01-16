@@ -28,17 +28,11 @@
             <div id="some-id">
               <If condition={ this.props.age >= this.props.drinkingAge }>
                 <Then><span>Have a beer, {this.props.name}!</span></Then>
-                <Else
-                  name={this.props.name}
-                >{
-                  function () {
-                    return (
-                      <span>
-                        Sorry, {this.props.name}, you are not old enough.
-                      </span>
-                    )
-                  }.bind(this)
-                }</Else>
+                <Else {...this.props} >
+                  {() => {
+                    return <span>Sorry, {this.props.name}, you are not old enough.</span>
+                  }}
+                </Else>
               </If>
             </div>
           );
