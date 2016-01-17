@@ -32,17 +32,17 @@ render: function() {
             <Header />
             <If condition={ this.props.age >= this.props.drinkingAge }>
                 <Then><span class="ok">Have a beer, {this.props.name}!</span></Then>
-                <Else><span class="not-ok">Sorry {this.props.name}, you are not old enough.</span></Else>
+                <Else>
+                  {() => {
+                    return <span>Sorry, {this.props.name}, you are not old enough.</span>
+                  }}
+                </Else>
             </If>
             </Footer>
         </div>
     );
 }
 ```
-
-## Caveats
-
-With this approach to conditional elements, children of either branch will always be evaluated no matter what. This can be an issue eg. if you're testing an object for nullity, and then try to access one of its property inside of the `Then` branch. See this [StackOverflow discussion](http://stackoverflow.com/questions/25224793/reactjs-creating-a-if-component-a-good-idea) as well as [issue #1](https://github.com/romac/react-if/issues/1) for more informations.
 
 ## Install
 
@@ -81,7 +81,11 @@ var Beer = React.createClass({
             <div>
                 <If condition={ this.props.age >= this.props.drinkingAge }>
                     <Then>Have a beer, {this.props.name}!</Then>
-                    <Else>Sorry {this.props.name}, you are not old enough.</Else>
+                    <Else>
+                      {() => {
+                        return <span>Sorry, {this.props.name}, you are not old enough.</span>
+                      }}
+                    </Else>
                 </If>
             </div>
         );

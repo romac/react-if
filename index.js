@@ -7,10 +7,19 @@
   var Then = React.createClass({
     displayName: 'Then',
     propTypes: {
-      children: React.PropTypes.element || React.PropTypes.component
+      children: React.PropTypes.oneOfType([
+        React.PropTypes.func,
+        React.PropTypes.string,
+        React.PropTypes.number,
+        React.PropTypes.object
+      ])
     },
     render: function() {
-      return this.props.children;
+      if (typeof this.props.children === 'function') {
+        return this.props.children();
+      } else {
+        return this.props.children;
+      }
     }
   });
 
@@ -21,10 +30,19 @@
   var Else = React.createClass({
     displayName: 'Else',
     propTypes: {
-      children: React.PropTypes.element || React.PropTypes.component
+      children:  React.PropTypes.oneOfType([
+        React.PropTypes.func,
+        React.PropTypes.string,
+        React.PropTypes.number,
+        React.PropTypes.object
+      ])
     },
     render: function() {
-      return this.props.children;
+      if (typeof this.props.children === 'function') {
+        return this.props.children();
+      } else {
+        return this.props.children;
+      }
     }
   });
 
