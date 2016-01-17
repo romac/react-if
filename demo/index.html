@@ -28,7 +28,7 @@
             <div id="some-id">
               <If condition={ this.props.age >= this.props.drinkingAge }>
                 <Then><span>Have a beer, {this.props.name}!</span></Then>
-                <Else {...this.props} >
+                <Else>
                   {() => {
                     return <span>Sorry, {this.props.name}, you are not old enough.</span>
                   }}
