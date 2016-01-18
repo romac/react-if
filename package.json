@@ -1,6 +1,6 @@
 {
   "name": "react-if",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "dependencies": {},
   "peerDependencies": {
     "react": ">=0.13.0"

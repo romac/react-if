@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 2.0.2 (2015-01-17)
+
+- Fix isInstance method for React >= 0.14
+
 ## 2.0.0 (2015-01-17)
 
 - Rewritten in ES2015.
