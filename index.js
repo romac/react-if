@@ -4,6 +4,12 @@
 
   'use strict';
 
+  function _isArray(arr) {
+    return Object.prototype.toString.call(arr) === '[object Array]';
+  }
+
+  var isArray = (Array.isArray != null) ? Array.isArray.bind(Array) : _isArray;
+
   var Then = React.createClass({
     displayName: 'Then',
     propTypes: {
@@ -18,7 +24,7 @@
       if (typeof this.props.children === 'function') {
         return this.props.children();
       } else {
-        return this.props.children;
+        return this.props.children || null;
       }
     }
   });
@@ -41,7 +47,7 @@
       if (typeof this.props.children === 'function') {
         return this.props.children();
       } else {
-        return this.props.children;
+        return this.props.children || null;
       }
     }
   });
@@ -51,17 +57,21 @@
   };
 
   var PropTypes = React.PropTypes;
+  var IfOrElse  = PropTypes.oneOfType([
+    PropTypes.instanceOf(Then),
+    PropTypes.instanceOf(Else)
+  ]);
 
   var If = React.createClass({
-
     displayName: 'If',
 
     propTypes: {
       condition: PropTypes.bool.isRequired,
-      children: PropTypes.arrayOf(PropTypes.oneOfType([
-        PropTypes.instanceOf(Then),
-        PropTypes.instanceOf(Else)
-      ])).isRequired
+      children:
+        PropTypes.oneOfType([
+          PropTypes.arrayOf(IfOrElse),
+          IfOrElse
+        ]).isRequired
     },
 
     render: function() {
@@ -80,7 +90,13 @@
     },
 
     renderChildOfType: function(Type) {
-      var childs = this.props.children.filter(Type.isInstance);
+      if (this.props.children == null) {
+        return null;
+      }
+
+      var childs = this.props.children;
+      childs     = isArray(childs) ? childs : [childs];
+      childs     = childs.filter(Type.isInstance);
 
       if (childs.length > 0) {
         return childs[0];
