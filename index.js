@@ -24,7 +24,7 @@
   });
 
   Then.isInstance = function(obj) {
-    return obj instanceof Then;
+    return obj.type === Then;
   };
 
   var Else = React.createClass({
@@ -47,7 +47,7 @@
   });
 
   Else.isInstance = function(obj) {
-    return obj instanceof Else;
+    return obj.type === Else;
   };
 
   var PropTypes = React.PropTypes;
@@ -59,6 +59,7 @@
     propTypes: {
       condition: PropTypes.bool.isRequired,
       children: PropTypes.arrayOf(PropTypes.oneOfType([
+        PropTypes.object,
         PropTypes.instanceOf(Then),
         PropTypes.instanceOf(Else)
       ])).isRequired
