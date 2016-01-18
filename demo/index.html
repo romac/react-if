@@ -2,28 +2,25 @@
 <html>
   <head>
     <title>React If demo</title>
-    <script src="lib/react.js"></script>
-    <script src="lib/JSXTransformer.js"></script>
+    <script src="https://fb.me/react-0.14.6.js"></script>
+    <script src="https://fb.me/react-dom-0.14.6.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
     <script src="../lib/ReactIf.js"></script>
   </head>
   <body>
     <div id="example"></div>
-    <script type="text/jsx">
-      /** @jsx React.DOM */
+    <script type="text/babel">
+      const { If, Then, Else } = ReactIf;
 
-      var If   = ReactIf.If;
-      var Then = If.Then;
-      var Else = If.Else;
+      const Beer = React.createClass({
 
-      var Beer = React.createClass({
-
-        getDefaultProps: function() {
+        getDefaultProps() {
           return {
             drinkingAge: 16 // Yay, Switzerland!
           };
         },
 
-        render: function() {
+        render() {
           return (
             <div id="some-id">
               <If condition={ this.props.age >= this.props.drinkingAge }>
@@ -40,7 +37,7 @@
 
       });
 
-      React.renderComponent(
+      ReactDOM.render(
         <Beer age={23} name="Romac" />,
         document.getElementById('example')
       );

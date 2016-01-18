@@ -25,7 +25,7 @@ const makeBranch = (name) => {
 
   });
 
-  Branch.isInstance = (obj) => obj instanceof Branch;
+  Branch.isInstance = (obj) => obj.type === Branch;
 
   return Branch;
 }
@@ -35,6 +35,7 @@ export const Else = makeBranch('Else');
 
 const PropTypes = React.PropTypes;
 const IfOrElse  = PropTypes.oneOfType([
+  PropTypes.object,
   PropTypes.instanceOf(Then),
   PropTypes.instanceOf(Else)
 ]);
