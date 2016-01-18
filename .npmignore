@@ -1,2 +1,4 @@
 bower.json
-bower_components
+bower_components/
+src/
+demo/

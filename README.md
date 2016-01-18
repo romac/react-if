@@ -3,10 +3,10 @@
 
 Render React components conditionally.
 
-This component helps you turn this
+This component turns this
 
-```javascript
-render: function() {
+```jsx
+render() {
     return (
         <div>
             <Header />
@@ -16,7 +16,7 @@ render: function() {
     );
 },
 
-renderBody: function() {
+renderBody() {
  return (this.props.age >= this.props.drinkingAge)
     ? <span class="ok">Have a beer, {this.props.name}!</span>
     : <span class="not-ok">Sorry {this.props.name } you are not old enough.</span>;
@@ -25,8 +25,8 @@ renderBody: function() {
 
 into this
 
-```javascript
-render: function() {
+```jsx
+render() {
     return (
         <div>
             <Header />
@@ -55,39 +55,40 @@ render: function() {
 
 ## Example
 
-```javascript
-// Browserify:
-var If = require('react-if');
-var Then = If.Then;
-var Else = If.Else;
+```jsx
+import { If, Then, Else } from 'react-if';
 
-// Otherwise
-var If = ReactIf;
-var Then = If.Then;
-var Else = Else.Then;
+class Beer extends React.Component {
 
-var Beer = React.createClass({
-    
-    getDefaultProps: function() {
-        return {
-            drinkingAge: 16 // Yay, Switzerland!
-        };
-    },
-    
-    render: function() {
+    render() {
         return (
             <div>
-                <If condition={ this.props.age >= this.props.drinkingAge }>
+                <If condition={ this.props.age >= 16 }>
                     <Then>Have a beer, {this.props.name}!</Then>
-                    <Else>{() =>
+                    <Else>{() => // will only be evaluated if the condition fails.
                        <span>Sorry, {this.props.name}, you are not old enough.</span>
                     }</Else>
                 </If>
             </div>
         );
     }
-        
+
 });
+```
+
+```jsx
+// ES2015
+import { If, Then, Else } from 'react-if';
+
+// CommonJS:
+var If   = require('react-if');
+var Then = If.Then;
+var Else = If.Else;
+
+// Global
+var If   = ReactIf.If;
+var Then = If.Then;
+var Else = Else.Then;
 ```
 
 ## API
@@ -98,7 +99,7 @@ var Beer = React.createClass({
 | ------------- | ------- |
 | `condition`   | Boolean |
 
-If `condition` evaluates to `true`, renders the `<Then />` block will be rendered, otherwise renders the `<Else />` block.
+If `condition` evaluates to `true`, renders the `<Then />` block will be rendered, otherwise renders the `<Else />` block. Either block may be omitted.
 
 This component can contain any number of `<Then />` or `<Else />` blocks, but only the first block of the right type (either `Then` or `Else`, depending on the condition) will be rendered.
 
@@ -111,3 +112,4 @@ Must only contain a single child, which it renders as-is. Should not be used out
 ## License
 
 **React If** is released under the [MIT license](http://romac.mit-license.org).
+
