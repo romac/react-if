@@ -81,9 +81,7 @@ class Beer extends React.Component {
 import { If, Then, Else } from 'react-if';
 
 // CommonJS:
-var If   = require('react-if');
-var Then = If.Then;
-var Else = If.Else;
+const { If, Then, Else } = require('react-if');
 
 // Global
 var If   = ReactIf.If;
