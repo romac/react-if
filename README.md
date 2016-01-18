@@ -1,5 +1,5 @@
 
-# React If ![npm badge](http://img.shields.io/npm/v/react-if.svg)
+# React If [![npm badge](http://img.shields.io/npm/v/react-if.svg)](https://www.npmjs.com/package/react-if)
 
 Render React components conditionally.
 
@@ -11,7 +11,7 @@ render() {
         <div>
             <Header />
             {this.renderBody()}
-            </Footer>
+            <Footer />
         </div>
     );
 },
@@ -36,7 +36,7 @@ render() {
                   <span>Sorry, {this.props.name}, you are not old enough.</span>
                 }</Else>
             </If>
-            </Footer>
+            <Footer />
         </div>
     );
 }
