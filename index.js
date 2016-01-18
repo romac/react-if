@@ -83,11 +83,7 @@
       var childs = this.props.children.filter(Type.isInstance);
 
       if (childs.length > 0) {
-        if (childs[0]._store.props.children) {
-          return childs[0];
-        } else {
-          return null;
-        }
+        return childs[0];
       }
 
       return null;
