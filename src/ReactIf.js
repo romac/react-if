@@ -1,4 +1,6 @@
 
+import React from 'react';
+
 const _isArray = (arg) => Object.prototype.toString.call(arg) === '[object Array]';
 const isArray  = Array.isArray || _isArray;
 

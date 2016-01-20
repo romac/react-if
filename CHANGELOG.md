@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 2.0.5 (2015-01-20)
+
+- Add missing import statement.
+
 ## 2.0.2 (2015-01-17)
 
 - Fix isInstance method for React >= 0.14
