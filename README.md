@@ -56,6 +56,7 @@ render() {
 ## Example
 
 ```jsx
+import React from 'react';
 import { If, Then, Else } from 'react-if';
 
 class Beer extends React.Component {
