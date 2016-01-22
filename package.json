@@ -14,7 +14,8 @@
   "main": "lib/ReactIf.js",
   "scripts": {
     "build": "babel src --out-dir lib",
-    "watch": "babel -w src --out-dir lib"
+    "watch": "babel -w src --out-dir lib",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
