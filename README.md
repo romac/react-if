@@ -87,7 +87,7 @@ const { If, Then, Else } = require('react-if');
 // Global
 var If   = ReactIf.If;
 var Then = If.Then;
-var Else = Else.Then;
+var Else = If.Else;
 ```
 
 ## API
