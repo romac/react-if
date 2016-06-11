@@ -146,5 +146,18 @@ describe("react-if", function(){
 				expect(wrapper.html()).to.equal(null);
 			});
 		});
+
+		context("where the child of else is a function", function(){
+			it("should render the component returned by the function", function(){
+				const wrapper = mount(
+					<If condition={false}>
+						<Else>
+							{ () => <div>Else</div> }
+						</Else>
+					</If>
+				);
+				expect(wrapper.containsMatchingElement(<div>Else</div>)).to.equal(true);
+			});
+		});
 	});
 });
