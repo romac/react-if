@@ -2,10 +2,10 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 
-import jsdom from 'jsdom'
-const doc = jsdom.jsdom('<!doctype html><html><body></body></html>')
-global.document = doc
-global.window = doc.defaultView
+import jsdom from 'jsdom';
+const doc = jsdom.jsdom('<!doctype html><html><body></body></html>');
+global.document = doc;
+global.window = doc.defaultView;
 
 import { If, Then, Else } from '../src/ReactIf';
 
@@ -147,4 +147,4 @@ describe("react-if", function(){
 			});
 		});
 	});
-})
+});
