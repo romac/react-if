@@ -50,7 +50,7 @@ export const If = React.createClass({
       PropTypes.oneOfType([
         PropTypes.arrayOf(IfOrElse),
         IfOrElse
-      ]).isRequired
+      ])
   },
 
   render() {
