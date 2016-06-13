@@ -1,86 +1,60 @@
-
 import React from 'react';
 
 const _isArray = (arg) => Object.prototype.toString.call(arg) === '[object Array]';
 const isArray  = Array.isArray || _isArray;
 
-const makeBranch = (name) => {
-  const Branch = React.createClass({
-    displayName: name,
+const { PropTypes } = React;
 
-    propTypes: {
-      children: React.PropTypes.oneOfType([
-        React.PropTypes.func,
-        React.PropTypes.string,
-        React.PropTypes.number,
-        React.PropTypes.object
-      ])
-    },
-
-    render() {
-      if (typeof this.props.children === 'function') {
-        return this.props.children();
-      } else {
-        return this.props.children || null;
-      }
-    }
-
-  });
-
-  Branch.isInstance = (obj) => obj.type === Branch;
-
-  return Branch;
+function render(props){
+  if (typeof props.children === 'function') {
+    return props.children();
+  } else {
+    return props.children || null;
+  }
 }
 
-export const Then = makeBranch('Then');
-export const Else = makeBranch('Else');
+export function Then(props){
+  return render(props);
+}
 
-const PropTypes = React.PropTypes;
-const IfOrElse  = PropTypes.oneOfType([
+export function Else(props){
+  return render(props);
+}
+
+Then.propTypes = Else.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.object
+  ])
+};
+
+export function If(props){  
+  let { children } = props;
+
+  if (!children) return null;
+
+  children = isArray(children) ? children : [children];
+  return children.find(c => c.type !== Else ^ !props.condition) || null;
+}
+
+const IfOrElse = PropTypes.oneOfType([
   PropTypes.object,
   PropTypes.instanceOf(Then),
   PropTypes.instanceOf(Else)
 ]);
 
-export const If = React.createClass({
-
-  propTypes: {
-    condition: PropTypes.bool.isRequired,
-    children:
-      PropTypes.oneOfType([
-        PropTypes.arrayOf(IfOrElse),
-        IfOrElse
-      ])
-  },
-
-  render() {
-    if (this.props.condition) {
-      return this.renderChildOfType(Then);
-    }
-
-    return this.renderChildOfType(Else);
-  },
-
-  renderChildOfType(Type) {
-    if (this.props.children == null) {
-      return null;
-    }
-
-    var childs = this.props.children;
-    childs     = isArray(childs) ? childs : [childs];
-    childs     = Type === Else ? childs.filter(Type.isInstance) : childs.filter((c) => c.type !== Else);
-
-    if (childs.length > 0) {
-      return childs[0];
-    }
-
-    return null;
-  }
-
-});
+If.propTypes = {
+  condition: PropTypes.bool.isRequired,
+  children:
+    PropTypes.oneOfType([
+      PropTypes.arrayOf(IfOrElse),
+      IfOrElse
+    ])
+};
 
 If.Then = Then;
 If.Else = Else;
 
 export default If;
-
