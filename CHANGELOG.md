@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 2.2.0-dev (?)
+
+- Rewrite with functional components. (@timjacobi)
+
 ## 2.1.0 (2016-06-13)
 
 - Render any child component apart from `Else` if condition is true. (@timjacobi)
