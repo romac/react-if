@@ -69,6 +69,17 @@ describe("react-if", function(){
 				expect(wrapper.containsMatchingElement(<div>Else</div>)).to.equal(false);
 			});
 		});
+		
+		context("content without <Then /> or <Else />", function(){
+			it("should render the child", function(){
+				const wrapper = mount(
+					<If condition={true}>
+						<div>Content</div>
+					</If>
+				);
+				expect(wrapper.containsMatchingElement(<div>Content</div>)).to.equal(true);
+			});
+		});
 
 		context("without blocks", function(){
 			it("should render nothing", function(){
@@ -136,6 +147,17 @@ describe("react-if", function(){
 				);
 				expect(wrapper.containsMatchingElement(<div>Then</div>)).to.equal(false);
 				expect(wrapper.containsMatchingElement(<div>Else</div>)).to.equal(true);
+			});
+		});
+		
+		context("content without <Then /> or <Else />", function(){
+			it("should not render the child", function(){
+				const wrapper = mount(
+					<If condition={false}>
+						<div>Content</div>
+					</If>
+				);
+				expect(wrapper.containsMatchingElement(<div>Content</div>)).to.equal(false);
 			});
 		});
 

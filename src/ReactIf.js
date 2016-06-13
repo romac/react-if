@@ -68,7 +68,7 @@ export const If = React.createClass({
 
     var childs = this.props.children;
     childs     = isArray(childs) ? childs : [childs];
-    childs     = childs.filter(Type.isInstance);
+    childs     = Type === Else ? childs.filter(Type.isInstance) : childs.filter((c) => c.type !== Else);
 
     if (childs.length > 0) {
       return childs[0];
