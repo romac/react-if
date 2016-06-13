@@ -1,23 +1,19 @@
-import React from 'react';
 
-const _isArray = (arg) => Object.prototype.toString.call(arg) === '[object Array]';
-const isArray  = Array.isArray || _isArray;
+import React, { PropTypes } from 'react';
 
-const { PropTypes } = React;
-
-function render(props){
+function render(props) {
   if (typeof props.children === 'function') {
     return props.children();
-  } else {
-    return props.children || null;
   }
+
+  return props.children || null;
 }
 
-export function Then(props){
+export function Then(props) {
   return render(props);
 }
 
-export function Else(props){
+export function Else(props) {
   return render(props);
 }
 
@@ -30,13 +26,14 @@ Then.propTypes = Else.propTypes = {
   ])
 };
 
-export function If(props){  
-  let { children } = props;
+export function If(props) {
+  const { children } = props;
 
-  if (!children) return null;
+  if (children == null) {
+    return null;
+  }
 
-  children = isArray(children) ? children : [children];
-  return children.find(c => c.type !== Else ^ !props.condition) || null;
+  return [].concat(children).find(c => c.type !== Else ^ !props.condition) || null;
 }
 
 const IfOrElse = PropTypes.oneOfType([
@@ -47,14 +44,14 @@ const IfOrElse = PropTypes.oneOfType([
 
 If.propTypes = {
   condition: PropTypes.bool.isRequired,
-  children:
-    PropTypes.oneOfType([
-      PropTypes.arrayOf(IfOrElse),
-      IfOrElse
-    ])
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(IfOrElse),
+    IfOrElse
+  ])
 };
 
 If.Then = Then;
 If.Else = Else;
 
 export default If;
+
