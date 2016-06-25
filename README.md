@@ -5,7 +5,7 @@ Render React components conditionally.
 
 This component turns this
 
-```jsx
+```javascript
 render() {
     return (
         <div>
@@ -25,7 +25,7 @@ renderBody() {
 
 into this
 
-```jsx
+```javascript
 render() {
     return (
         <div>
@@ -55,7 +55,7 @@ render() {
 
 ## Example
 
-```jsx
+```javascript
 import React from 'react';
 import { If, Then, Else } from 'react-if';
 
@@ -77,7 +77,7 @@ class Beer extends React.Component {
 });
 ```
 
-```jsx
+```javascript
 // ES2015
 import { If, Then, Else } from 'react-if';
 
