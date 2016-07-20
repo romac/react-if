@@ -5,8 +5,8 @@ function render(props) {
   if (typeof props.children === 'function') {
     return props.children();
   }
-
-  return props.children || null;
+  
+  return React.createElement('div', null, props.children) || null;
 }
 
 export function Then(props) {
