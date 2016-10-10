@@ -21,7 +21,6 @@
   "scripts": {
     "build": "babel src --out-dir lib",
     "watch": "babel -w src --out-dir lib",
-    "prepublish": "npm run build && npm run test",
     "test": "mocha --compilers js:babel-register"
   },
   "repository": {
