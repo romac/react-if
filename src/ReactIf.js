@@ -36,7 +36,7 @@ export function If(props) {
   return [].concat(children).find(c => c.type !== Else ^ !props.condition) || null;
 }
 
-const IfOrElse = PropTypes.oneOfType([
+const ThenOrElse = PropTypes.oneOfType([
   PropTypes.object,
   PropTypes.instanceOf(Then),
   PropTypes.instanceOf(Else)
@@ -45,8 +45,8 @@ const IfOrElse = PropTypes.oneOfType([
 If.propTypes = {
   condition: PropTypes.bool.isRequired,
   children: PropTypes.oneOfType([
-    PropTypes.arrayOf(IfOrElse),
-    IfOrElse
+    PropTypes.arrayOf(ThenOrElse),
+    ThenOrElse
   ])
 };
 
