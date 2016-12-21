@@ -1,11 +1,18 @@
 
-# React If [![npm badge](http://img.shields.io/npm/v/react-if.svg)](https://www.npmjs.com/package/react-if)
+# React If
+
+[![npm badge](http://img.shields.io/npm/v/react-if.svg)](https://www.npmjs.com/package/react-if)
+[![Build Status](https://travis-ci.org/romac/react-if.svg?branch=master&style=flat)](https://travis-ci.org/romac/react-if)
+[![Issues](http://img.shields.io/github/issues/romac/react-if.svg?style=flat)](https://github.com/romac/react-if/issues)
+![Status](https://img.shields.io/badge/status-inactive-lightgray.svg?style=flat)
+![License](https://img.shields.io/badge/license-mit-brightgreen.svg?style=flat)
+[![Contact](https://img.shields.io/badge/contact-@__romac-blue.svg?style=flat)](https://twitter.com/_romac)
 
 Render React components conditionally.
 
 This component turns this
 
-```jsx
+```javascript
 render() {
     return (
         <div>
@@ -25,7 +32,7 @@ renderBody() {
 
 into this
 
-```jsx
+```javascript
 render() {
     return (
         <div>
@@ -55,7 +62,7 @@ render() {
 
 ## Example
 
-```jsx
+```javascript
 import React from 'react';
 import { If, Then, Else } from 'react-if';
 
@@ -77,7 +84,7 @@ class Beer extends React.Component {
 });
 ```
 
-```jsx
+```javascript
 // ES2015
 import { If, Then, Else } from 'react-if';
 
