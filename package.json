@@ -1,9 +1,9 @@
 {
   "name": "react-if",
   "version": "2.2.0-dev",
-  "dependencies": {},
   "peerDependencies": {
-    "react": ">=0.14.0"
+    "prop-types": ">=15.5.10",
+    "react": ">=15.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.4.0",
@@ -14,9 +14,10 @@
     "enzyme": "^2.3.0",
     "jsdom": "^9.9.1",
     "mocha": "^2.5.3",
-    "react-addons-test-utils": "^15.1.0",
-    "react-dom": "^15.1.0",
-    "react": ">=0.14.0"
+    "prop-types": ">=15.5.10",
+    "react": ">=15.5.0",
+    "react-dom": ">=15.5.0",
+    "react-test-renderer": "^15.6.1"
   },
   "main": "lib/ReactIf.js",
   "scripts": {
