@@ -1,6 +1,6 @@
 {
   "name": "react-if",
-  "version": "2.2.0-dev",
+  "version": "2.2.0",
   "authors": [
     "Romain Ruetschi <romain.ruetschi@gmail.com>"
   ],
@@ -23,7 +23,8 @@
     "*.md"
   ],
   "dependencies": {
-    "react": ">=0.14.0"
+    "prop-types": ">=15.5.10",
+    "react": ">=15.5.0"
   },
   "repository": {
     "type": "git",
