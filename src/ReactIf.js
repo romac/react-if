@@ -7,6 +7,11 @@ function render(props) {
     return props.children();
   }
 
+  if (Array.isArray(props.children) 
+      || (props.children && props.children.type == undefined)) {
+    return React.createElement(span, null, props.children);
+  }
+
   return props.children || null;
 }
 
