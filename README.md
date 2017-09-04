@@ -25,8 +25,8 @@ render() {
 
 renderBody() {
  return (this.props.age >= this.props.drinkingAge)
-    ? <span class="ok">Have a beer, {this.props.name}!</span>
-    : <span class="not-ok">Sorry {this.props.name } you are not old enough.</span>;
+    ? <span className="ok">Have a beer, {this.props.name}!</span>
+    : <span className="not-ok">Sorry {this.props.name } you are not old enough.</span>;
 }
 ```
 
@@ -38,9 +38,9 @@ render() {
         <div>
             <Header />
             <If condition={ this.props.age >= this.props.drinkingAge }>
-                <Then><span class="ok">Have a beer, {this.props.name}!</span></Then>
+                <Then><span className="ok">Have a beer, {this.props.name}!</span></Then>
                 <Else>{() =>
-                  <span>Sorry, {this.props.name}, you are not old enough.</span>
+                  <span className="not-ok">Sorry, {this.props.name}, you are not old enough.</span>
                 }</Else>
             </If>
             <Footer />
@@ -72,9 +72,9 @@ class Beer extends React.Component {
         return (
             <div>
                 <If condition={ this.props.age >= 16 }>
-                    <Then>Have a beer, {this.props.name}!</Then>
+                    <Then><span className="ok">Have a beer, {this.props.name}!</span></Then>
                     <Else>{() => // will only be evaluated if the condition fails.
-                       <span>Sorry, {this.props.name}, you are not old enough.</span>
+                       <span className="not-ok">Sorry, {this.props.name}, you are not old enough.</span>
                     }</Else>
                 </If>
             </div>
