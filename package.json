@@ -41,5 +41,6 @@
     "url": "https://github.com/romac/react-if/issues"
   },
   "homepage": "https://github.com/romac/react-if",
-  "description": "🌗 Render React components conditionally"
+  "description": "🌗 Render React components conditionally",
+  "types": "types.d.ts"
 }
