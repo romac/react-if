@@ -25,7 +25,7 @@ Then.propTypes = Else.propTypes = {
   ])
 };
 
-const If = ({ children, condition }) => {
+export const If = ({ children, condition }) => {
   if (children == null)
     return null;
 
