@@ -1,5 +1,3 @@
-
-import React from 'react';
 import PropTypes from 'prop-types';
 
 const render = ({ children }) => {
@@ -27,11 +25,11 @@ Then.propTypes = Else.propTypes = {
   ])
 };
 
-const If = ({ children }) => {
+const If = ({ children, condition }) => {
   if (children == null)
     return null;
 
-  return [].concat(children).find(c => c.type !== Else ^ !props.condition) || null;
+  return [].concat(children).find(c => c.type !== Else ^ !condition) || null;
 }
 
 const ThenOrElse = PropTypes.oneOfType([
@@ -52,4 +50,3 @@ If.Then = Then;
 If.Else = Else;
 
 export default If;
-
