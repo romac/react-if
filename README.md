@@ -84,6 +84,31 @@ class Beer extends React.Component {
 });
 ```
 
+## Shorthands: When and Unless
+
+```javascript
+import React from 'react';
+import { When, Unless } from 'react-if';
+
+const someCondition = false
+
+const Example = () => (
+    <div>
+        <When condition={ someCondition }>
+            This will only be displayed, if the condition is TRUE
+        </When>
+    </div>
+)
+
+const AnotherExample = () => {
+    <div>
+        <Unless condition={ someCondition }>
+            This will only be displayed, if the condition is FALSE
+        </Unless>
+    </div>
+}
+```
+
 ```javascript
 // ES2015
 import { If, Then, Else } from 'react-if';
@@ -114,6 +139,12 @@ Must contain only a single child, which it renders as-is. Should not be used out
 
 ### &lt;Else /&gt;
 Must only contain a single child, which it renders as-is. Should not be used outside of an `<If />` block.
+
+### &lt;When /&lt;
+A shorthand for `<If condition={...}><Then>...</Then></If>`
+
+### &lt;Unless /&lt;
+A shorthand for `<If condition={...}><Unless>...</Unless></If>`
 
 ## License
 

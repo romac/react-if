@@ -1,6 +1,8 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
+
+import When from './When'
+import Unless from './Unless'
 
 function render(props) {
   if (typeof props.children === 'function') {
@@ -53,6 +55,8 @@ If.propTypes = {
 
 If.Then = Then;
 If.Else = Else;
+If.When = When;
+If.Unless = Unless;
 
 export default If;
 
