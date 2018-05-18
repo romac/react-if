@@ -19,12 +19,7 @@ export function Else(props) {
 }
 
 Then.propTypes = Else.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.string,
-    PropTypes.number,
-    PropTypes.object
-  ])
+  children: PropTypes.node
 };
 
 export function If(props) {
