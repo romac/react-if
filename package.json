@@ -10,20 +10,21 @@
     "babel-plugin-transform-es2015-modules-umd": "^6.4.3",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
-    "chai": "^3.5.0",
-    "enzyme": "^2.3.0",
-    "jsdom": "^9.9.1",
-    "mocha": "^2.5.3",
+    "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jsdom": "^11.10.0",
+    "mocha": "^5.1.1",
     "prop-types": ">=15.5.10",
     "react": ">=15.5.0",
     "react-dom": ">=15.5.0",
-    "react-test-renderer": "^15.6.1"
+    "react-test-renderer": "^16.3.2"
   },
   "main": "lib/ReactIf.js",
   "scripts": {
     "build": "babel src --out-dir lib",
     "watch": "babel -w src --out-dir lib",
-    "test": "mocha --compilers js:babel-register"
+    "test": "mocha --require babel-core/register"
   },
   "repository": {
     "type": "git",
