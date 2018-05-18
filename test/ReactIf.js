@@ -1,13 +1,32 @@
 import React from 'react';
 import { expect } from 'chai';
-import { mount } from 'enzyme';
-
-import jsdom from 'jsdom';
-const doc = jsdom.jsdom('<!doctype html><html><body></body></html>');
-global.document = doc;
-global.window = doc.defaultView;
-
+import { configure, mount } from 'enzyme';
+import { JSDOM } from 'jsdom';
+import Adapter from 'enzyme-adapter-react-16';
 import { If, Then, Else } from '../src/ReactIf';
+
+function setUpDomEnvironment() {
+	const dom = new JSDOM('<!doctype html><html><body></body></html>', {url: 'http://localhost/'});
+	const { window } = dom;
+
+	global.window = window;
+	global.document = window.document;
+	global.navigator = {
+			userAgent: 'node.js',
+	};
+	copyProps(window, global);
+}
+
+function copyProps(src, target) {
+	const props = Object.getOwnPropertyNames(src)
+			.filter(prop => typeof target[prop] === 'undefined')
+			.map(prop => Object.getOwnPropertyDescriptor(src, prop));
+	Object.defineProperties(target, props);
+}
+
+setUpDomEnvironment();
+
+configure({ adapter: new Adapter() });
 
 describe("react-if", function(){
 	context("<If /> element with true condition", function(){
