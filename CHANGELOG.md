@@ -1,7 +1,21 @@
 
 # Changelog
 
-## 2.2.0-dev (?)
+## 3.0.0
+
+- Added When and Unless shorthands (@meszaros-lajos-gyorgy)
+- Changed propType for Then and Else to node (@meszaros-lajos-gyorgy)
+- Fixed up test and updated some dependencies (@meszaros-lajos-gyorgy)
+
+## 2.2.2
+
+- Add TypeScript typings. (@TeffenEllis)
+
+## 2.2.1
+
+- Update to React 15.5 (@romac)
+
+## 2.2.0
 
 - Rewrite with functional components. (@timjacobi)
 
