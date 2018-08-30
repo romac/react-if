@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import When from './When'
-import Unless from './Unless'
-
 function render(props) {
   if (typeof props.children === 'function') {
     return props.children();
@@ -21,23 +18,24 @@ export function Else(props) {
 }
 
 Then.propTypes = Else.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.oneOfType([
+     PropTypes.func,
+     PropTypes.node
+   ])
 };
 
-export function If(props) {
-  const { children } = props;
-
+export function If({ condition, children }) {
   if (children == null) {
     return null;
   }
 
-  return [].concat(children).find(c => c.type !== Else ^ !props.condition) || null;
+  return [].concat(children).find(c => c.type !== Else ^ !condition) || null;
 }
 
 const ThenOrElse = PropTypes.oneOfType([
-  PropTypes.object,
   PropTypes.instanceOf(Then),
-  PropTypes.instanceOf(Else)
+  PropTypes.instanceOf(Else),
+  PropTypes.node
 ]);
 
 If.propTypes = {
@@ -47,6 +45,38 @@ If.propTypes = {
     ThenOrElse
   ])
 };
+
+export function Unless({ condition, children }) {
+  return !condition && children ? render(children) : null
+}
+
+Unless.propTypes = {
+  condition: PropTypes.bool.isRequired,
+  children: PropTypes.oneOfType([
+     PropTypes.func,
+     PropTypes.node
+   ])
+}
+
+Unless.defaultProps = {
+  children: null
+}
+
+export function When({ condition, children }) {
+  return condition && children ? render(children) : null
+}
+
+When.propTypes = {
+  condition: PropTypes.bool.isRequired,
+  children: PropTypes.oneOfType([
+     PropTypes.func,
+     PropTypes.node
+   ])
+}
+
+When.defaultProps = {
+  children: null
+}
 
 If.Then = Then;
 If.Else = Else;
