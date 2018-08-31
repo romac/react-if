@@ -3,8 +3,14 @@ sudo: false
 
 language: node_js
 
+cache:
+  yarn: true
+  directories:
+    - "node_modules"
+
 node_js:
   - "node"
+  - "lts/*"
 
 install:
   - npm install
