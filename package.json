@@ -6,10 +6,12 @@
     "react": ">=15.5.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.4.0",
-    "babel-plugin-transform-es2015-modules-umd": "^6.4.3",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-modules-umd": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
     "chai": "^4.1.2",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -24,7 +26,7 @@
   "scripts": {
     "build": "babel src --out-dir lib",
     "watch": "babel -w src --out-dir lib",
-    "test": "mocha --require babel-core/register"
+    "test": "mocha --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -43,5 +45,6 @@
   },
   "homepage": "https://github.com/romac/react-if",
   "description": "🌗 Render React components conditionally",
-  "types": "types.d.ts"
+  "types": "types.d.ts",
+  "dependencies": {}
 }
