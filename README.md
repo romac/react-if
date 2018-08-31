@@ -10,85 +10,71 @@
 
 Render React components conditionally.
 
-This component turns this
+## What does this component do
+
+Take a look at the following presentational component, which contains a commonly used pattern for conditional rendering:
 
 ```javascript
-render() {
-    return (
-        <div>
-            <Header />
-            {this.renderBody()}
-            <Footer />
-        </div>
-    );
-},
-
-renderBody() {
- return (this.props.age >= this.props.drinkingAge)
-    ? <span className="ok">Have a beer, {this.props.name}!</span>
-    : <span className="not-ok">Sorry {this.props.name } you are not old enough.</span>;
-}
+const Bar = ({ name, age, drinkingAge }) => (
+    <div>
+        <Header />
+        {
+            age >= drinkingAge
+                ? <span className="ok">Have a beer, {name}!</span>
+                : <span className="not-ok">Sorry, {name}, you are not old enough.</span>
+        }
+        <Footer />
+    </div>
+)
 ```
 
-into this
+With `React-If` you can rewrite this into a more readable, expressive format:
 
 ```javascript
-render() {
-    return (
-        <div>
-            <Header />
-            <If condition={ this.props.age >= this.props.drinkingAge }>
-                <Then><span className="ok">Have a beer, {this.props.name}!</span></Then>
-                <Else>{() =>
-                  <span className="not-ok">Sorry, {this.props.name}, you are not old enough.</span>
-                }</Else>
-            </If>
-            <Footer />
-        </div>
-    );
-}
+const Bar = ({ name, age, drinkingAge }) => (
+    <div>
+        <Header />
+        <If condition={ age >= drinkingAge }>
+            <Then><span className="ok">Have a beer, {name}!</span></Then>
+            <Else><span className="not-ok">Sorry, {name}, you are not old enough.</span></Else>
+        </If>
+        <Footer />
+    </div>
+)
 ```
 
-## Install
+## Installing and usage
 
 ### NPM:
 
-    npm install react-if
+`npm install react-if`
 
 ### Bower:
 
-    bower install react-if
-
-
-## Example
+`bower install react-if`
 
 ```javascript
-import React from 'react';
-import { If, Then, Else } from 'react-if';
+// ES2015
+import { If, Then, Else, When, Unless } from 'react-if'
 
-class Beer extends React.Component {
+// CommonJS:
+const { If, Then, Else, When, Unless } = require('react-if')
 
-    render() {
-        return (
-            <div>
-                <If condition={ this.props.age >= 16 }>
-                    <Then><span className="ok">Have a beer, {this.props.name}!</span></Then>
-                    <Else>{() => // will only be evaluated if the condition fails.
-                       <span className="not-ok">Sorry, {this.props.name}, you are not old enough.</span>
-                    }</Else>
-                </If>
-            </div>
-        );
-    }
-
-});
+// Global
+var If   = ReactIf.If
+var Then = If.Then
+var Else = If.Else
+var When = If.When
+var Unless = If.Unless
 ```
+
+## Examples
 
 ## Shorthands: When and Unless
 
 ```javascript
-import React from 'react';
-import { When, Unless } from 'react-if';
+import React from 'react'
+import { When, Unless } from 'react-if'
 
 const someCondition = false
 
@@ -100,33 +86,20 @@ const Example = () => (
     </div>
 )
 
-const AnotherExample = () => {
+const AnotherExample = () => (
     <div>
         <Unless condition={ someCondition }>
             This will only be displayed, if the condition is FALSE
         </Unless>
     </div>
-}
-```
-
-```javascript
-// ES2015
-import { If, Then, Else } from 'react-if';
-
-// CommonJS:
-const { If, Then, Else } = require('react-if');
-
-// Global
-var If   = ReactIf.If;
-var Then = If.Then;
-var Else = If.Else;
+)
 ```
 
 ## API
 
 ### &lt;If /&gt;
 
-| Property        | Type  |
+| Property      | Type    |
 | ------------- | ------- |
 | `condition`   | Boolean |
 
@@ -135,18 +108,21 @@ If `condition` evaluates to `true`, renders the `<Then />` block will be rendere
 This component can contain any number of `<Then />` or `<Else />` blocks, but only the first block of the right type (either `Then` or `Else`, depending on the condition) will be rendered.
 
 ### &lt;Then /&gt;
-Must contain only a single child, which it renders as-is. Should not be used outside of an `<If />` block.
+
+Can contain any number of elements inside, which it renders as-is. It can also contain a function. Should not be used outside of an `<If />` block. It will only be displayed, if parent `If` block's condition is true.
 
 ### &lt;Else /&gt;
-Must only contain a single child, which it renders as-is. Should not be used outside of an `<If />` block.
 
-### &lt;When /&lt;
-A shorthand for `<If condition={...}><Then>...</Then></If>`
+Can contain any number of elements inside, which it renders as-is. It can also contain a function. Should not be used outside of an `<If />` block. It will only be displayed, if parent `If` block's condition is false.
 
-### &lt;Unless /&lt;
-A shorthand for `<If condition={...}><Unless>...</Unless></If>`
+### &lt;When /&gt;
+
+A shorthand for `<If condition={...}><Then>...</Then></If>`. The same rules apply to the child elements as with using the `Then` block.
+
+### &lt;Unless /&gt;
+
+A shorthand for `<If condition={...}><Else>...</Else></If>`. The same rules apply to the child elements as with using the `Else` block.
 
 ## License
 
 **React If** is released under the [MIT license](http://romac.mit-license.org).
-
