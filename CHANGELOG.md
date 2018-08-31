@@ -1,7 +1,12 @@
 
 # Changelog
 
-## 3.0.0
+## 3.1.0 (2018-08-31)
+
+- Updated babel to v7 (@meszaros-lajos-gyorgy)
+- Fixed typos in the readme and cleaned up examples (@meszaros-lajos-gyorgy)
+
+## 3.0.0 (2018-08-30)
 
 - Added When and Unless shorthands (@meszaros-lajos-gyorgy)
 - Changed propType for Then and Else to node (@meszaros-lajos-gyorgy)
