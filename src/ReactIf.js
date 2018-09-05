@@ -46,7 +46,7 @@ If.propTypes = {
 };
 
 export function Unless({ condition, children }) {
-  return !condition && children ? render(children) : null
+  return !condition && children ? render({ condition, children }) : null
 }
 
 Unless.propTypes = {
@@ -62,7 +62,7 @@ Unless.defaultProps = {
 }
 
 export function When({ condition, children }) {
-  return condition && children ? render(children) : null
+  return condition && children ? render({ condition, children }) : null
 }
 
 When.propTypes = {
