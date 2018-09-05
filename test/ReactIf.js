@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import { configure, mount } from 'enzyme';
 import { JSDOM } from 'jsdom';
 import Adapter from 'enzyme-adapter-react-16';
-import { If, Then, Else } from '../src/ReactIf';
+import { If, Then, Else, When, Unless } from '../src/ReactIf';
 
 function setUpDomEnvironment() {
 	const dom = new JSDOM('<!doctype html><html><body></body></html>', {url: 'http://localhost/'});
@@ -201,4 +201,55 @@ describe("react-if", function(){
 			});
 		});
 	});
+
+	context("<When /> element", function(){
+		it("should render the child element of <When />", function(){
+			const wrapper = mount(
+				<When condition={true}>
+					<div>When</div>
+				</When>
+			);
+			expect(wrapper.containsMatchingElement(<div>When</div>)).to.equal(true);
+		});
+
+		it("should not render the child element of <When />", function(){
+			const wrapper = mount(
+				<When condition={false}>
+					<div>When</div>
+				</When>
+			);
+			expect(wrapper.containsMatchingElement(<div>When</div>)).to.equal(false);
+		});
+		
+		it("should render nothing", function(){
+			const wrapper = mount(<When condition={true}></When>);
+			expect(wrapper.html()).to.equal(null);
+		});
+	});
+
+	context("<Unless /> element", function(){
+		it("should not render the child element of <Unless />", function(){
+			const wrapper = mount(
+				<Unless condition={true}>
+					<div>Unless</div>
+				</Unless>
+			);
+			expect(wrapper.containsMatchingElement(<div>Unless</div>)).to.equal(false);
+		});
+
+		it("should render the child element of <Unless />", function(){
+			const wrapper = mount(
+				<Unless condition={false}>
+					<div>Unless</div>
+				</Unless>
+			);
+			expect(wrapper.containsMatchingElement(<div>Unless</div>)).to.equal(true);
+		});
+		
+		it("should render nothing", function(){
+			const wrapper = mount(<Unless condition={true}></Unless>);
+			expect(wrapper.html()).to.equal(null);
+		});
+	});
+
 });
