@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 3.1.1 (2018-09-07)
+
+- Fixed a bug of `<When/>` and `<Unless/>` components that was not allowing to show any children even if the condition was true. (@ejbp)
+
 ## 3.1.0 (2018-08-31)
 
 - Updated babel to v7 (@meszaros-lajos-gyorgy)
