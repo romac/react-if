@@ -15,4 +15,10 @@ declare module 'react-if'{
 
   /** Must only contain a single child, which it renders as-is. Should not be used outside of an <If /> block. */
   export class Else extends React.Component {}
+
+  /** A shorthand for <If condition={...}><Then>...</Then></If>. The same rules apply to the child elements as with using the Then block. */
+  export class When extends React.Component<IfOptions, any>{}
+
+  /** A shorthand for <If condition={...}><Else>...</Else></If>. The same rules apply to the child elements as with using the Else block. */
+  export class Unless extends React.Component<IfOptions, any>{}
 }
