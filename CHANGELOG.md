@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 3.1.2 (2018-09-25)
+
+- Add missing TypeScript declarations for When and Unless. (@martijnthe)
+
 ## 3.1.1 (2018-09-07)
 
 - Fixed a bug of `<When/>` and `<Unless/>` components that was not allowing to show any children even if the condition was true. (@ejbp)
