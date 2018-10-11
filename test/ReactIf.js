@@ -110,7 +110,7 @@ describe("react-if", function(){
 	});
 
 	context("<If /> element with false condition", function(){
-		it("should not render the child element of  <Then />", function(){
+		it("should not render the child element of <Then />", function(){
 			const wrapper = mount(
 				<If condition={false}>
 					<Then>
@@ -188,7 +188,7 @@ describe("react-if", function(){
 			});
 		});
 
-		context("where the child of else is a function", function(){
+		context("where a child is a function", function(){
 			it("should render the component returned by the function", function(){
 				const wrapper = mount(
 					<If condition={false}>
@@ -198,6 +198,25 @@ describe("react-if", function(){
 					</If>
 				);
 				expect(wrapper.containsMatchingElement(<div>Else</div>)).to.equal(true);
+			});
+
+			it("should not evaluate the body of the function if not needed", function() {
+				var called = false;
+
+				const wrapper = mount(
+					<If condition={false}>
+						<Then>{() => {
+							called = true;
+							<div>Bad</div>
+						}}</Then>
+						<Else>
+							<div>Ok</div>
+						</Else>
+					</If>
+				);
+				expect(wrapper.containsMatchingElement(<div>Ok</div>)).to.equal(true);
+				expect(wrapper.containsMatchingElement(<div>Bad</div>)).to.equal(false);
+				expect(called).to.equal(false);
 			});
 		});
 	});
