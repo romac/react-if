@@ -43,6 +43,33 @@ const Bar = ({ name, age, drinkingAge }) => (
 )
 ```
 
+## Caveats
+
+It is important to note that, because JavaScript is an eagearly evaluated language, children of both the `Then` and `Else` component will be evaluated regardless of the value of the condition. Should that be an issue for performance reasons, one can wrap said children in a [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), to delay evaluation of the children, as in the following example:
+
+
+```javascript
+const renderData = (data) => {
+  val computed = /* expensive computation */
+  return <span>Here is the result: {computed}</span>;
+};
+
+const Foo = ({ data }) => (
+    <div>
+        <If condition={false}>
+            <Then>{() =>
+              renderData(data)
+            }</Then>
+            <Else>
+              Nothing to see here
+            </Else>
+        </If>
+    </div>
+)
+```
+
+By doing so, `renderData` will not be called in the above example.
+
 ## Installing and usage
 
 ### NPM:
