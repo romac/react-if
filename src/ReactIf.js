@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import React from 'react';
 
 function render(props) {
   if (typeof props.children === 'function') {
@@ -28,7 +29,7 @@ export function If({ condition, children }) {
     return null;
   }
 
-  return [].concat(children).find(c => c.type !== Else ^ !condition) || null;
+  return [].concat(children).find(c => c.type !== <Else />.type ^ !condition) || null;
 }
 
 const ThenOrElse = PropTypes.oneOfType([
