@@ -28,7 +28,7 @@ export function If({ condition, children }) {
     return null;
   }
 
-  return [].concat(children).find(c => c.type !== Else ^ !condition) || null;
+  return [].concat(children).find(c => c.type !== <Else />.type ^ !condition) || null;
 }
 
 const ThenOrElse = PropTypes.oneOfType([
