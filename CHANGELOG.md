@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 3.1.3 (2018-10-26)
+
+- Fix compatibility issue with `react-hot-loader`. (@Ako520)
+
 ## 3.1.2 (2018-09-25)
 
 - Add missing TypeScript declarations for When and Unless. (@martijnthe)
