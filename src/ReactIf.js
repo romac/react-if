@@ -3,10 +3,18 @@ import React from 'react';
 
 function render(props) {
   if (typeof props.children === 'function') {
-    return props.children();
+    return (
+      <React.Fragment>
+        {props.children()}
+      </React.Fragment>
+    );
   }
 
-  return props.children || null;
+  return (
+    <React.Fragment>
+      {props.children || null}
+    </React.Fragment>
+  );
 }
 
 export function Then(props) {
@@ -19,9 +27,9 @@ export function Else(props) {
 
 Then.propTypes = Else.propTypes = {
   children: PropTypes.oneOfType([
-     PropTypes.func,
-     PropTypes.node
-   ])
+    PropTypes.func,
+    PropTypes.node
+  ])
 };
 
 export function If({ condition, children }) {
@@ -29,7 +37,11 @@ export function If({ condition, children }) {
     return null;
   }
 
-  return [].concat(children).find(c => c.type !== <Else />.type ^ !condition) || null;
+  return (
+    <React.Fragment>
+      {[].concat(children).find(c => c.type !== <Else />.type ^ !condition) || null;}
+    </React.Fragment>
+  );
 }
 
 const ThenOrElse = PropTypes.oneOfType([
@@ -53,9 +65,9 @@ export function Unless({ condition, children }) {
 Unless.propTypes = {
   condition: PropTypes.bool.isRequired,
   children: PropTypes.oneOfType([
-     PropTypes.func,
-     PropTypes.node
-   ])
+    PropTypes.func,
+    PropTypes.node
+  ])
 }
 
 Unless.defaultProps = {
@@ -69,9 +81,9 @@ export function When({ condition, children }) {
 When.propTypes = {
   condition: PropTypes.bool.isRequired,
   children: PropTypes.oneOfType([
-     PropTypes.func,
-     PropTypes.node
-   ])
+    PropTypes.func,
+    PropTypes.node
+  ])
 }
 
 When.defaultProps = {
