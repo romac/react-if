@@ -1,20 +1,12 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import PropTypes from "prop-types";
+import React from "react";
 
 function render(props) {
-  if (typeof props.children === 'function') {
-    return (
-      <React.Fragment>
-        {props.children()}
-      </React.Fragment>
-    );
+  if (typeof props.children === "function") {
+    return <React.Fragment>{props.children()}</React.Fragment>;
   }
 
-  return (
-    <React.Fragment>
-      {props.children || null}
-    </React.Fragment>
-  );
+  return <React.Fragment>{props.children || null}</React.Fragment>;
 }
 
 export function Then(props) {
@@ -26,10 +18,7 @@ export function Else(props) {
 }
 
 Then.propTypes = Else.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.node
-  ])
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node])
 };
 
 export function If({ condition, children }) {
@@ -39,7 +28,8 @@ export function If({ condition, children }) {
 
   return (
     <React.Fragment>
-      {[].concat(children).find(c => c.type !== <Else />.type ^ !condition) || null;}
+      {[].concat(children).find(c => (c.type !== <Else />.type) ^ !condition) ||
+        null}
     </React.Fragment>
   );
 }
@@ -52,43 +42,34 @@ const ThenOrElse = PropTypes.oneOfType([
 
 If.propTypes = {
   condition: PropTypes.bool.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(ThenOrElse),
-    ThenOrElse
-  ])
+  children: PropTypes.oneOfType([PropTypes.arrayOf(ThenOrElse), ThenOrElse])
 };
 
 export function Unless({ condition, children }) {
-  return !condition && children ? render({ condition, children }) : null
+  return !condition && children ? render({ condition, children }) : null;
 }
 
 Unless.propTypes = {
   condition: PropTypes.bool.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.node
-  ])
-}
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node])
+};
 
 Unless.defaultProps = {
   children: null
-}
+};
 
 export function When({ condition, children }) {
-  return condition && children ? render({ condition, children }) : null
+  return condition && children ? render({ condition, children }) : null;
 }
 
 When.propTypes = {
   condition: PropTypes.bool.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.node
-  ])
-}
+  children: PropTypes.oneOfType([PropTypes.func, PropTypes.node])
+};
 
 When.defaultProps = {
   children: null
-}
+};
 
 If.Then = Then;
 If.Else = Else;
@@ -96,4 +77,3 @@ If.When = When;
 If.Unless = Unless;
 
 export default If;
-
