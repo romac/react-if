@@ -1,6 +1,11 @@
 
 # Changelog
 
+## 3.2.0 (2019-04-23)
+
+- Remove lock files
+- Render in a fragment (@davidrevoledo)
+
 ## 3.1.3 (2018-10-26)
 
 - Fix compatibility issue with `react-hot-loader`. (@Ako520)
