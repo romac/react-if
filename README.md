@@ -43,9 +43,9 @@ const Bar = ({ name, age, drinkingAge }) => (
 )
 ```
 
-## Delaying evaluation of children
+## Delaying evaluation of children / condition
 
-It is important to note that, because JavaScript is an eagearly evaluated language, children of both the `Then` and `Else` component will be evaluated regardless of the value of the condition. Should that be an issue for performance reasons, one can wrap said children in a [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), to delay evaluation of the children, as in the following example:
+It is important to note that, because JavaScript is an eagearly evaluated language, children of both the `Then` and `Else` component and condition will be evaluated regardless of the value of the condition. Should that be an issue for performance reasons, one can wrap said children / condition in a [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), to delay evaluation of the children / condition, as in the following example:
 
 
 ```javascript
@@ -64,11 +64,27 @@ const Foo = ({ data }) => (
               Nothing to see here
             </Else>
         </If>
+        <If condition={!this.props.bears}>
+          <Then>
+            No bears
+          </Then>
+
+          <Else>
+            <If condition={() => this.props.bears.length}>
+              Empty bears array
+            </If>
+            <Else>
+              // Display bears
+            </Else>
+          </Else>
+        </If>
     </div>
 )
 ```
 
-By doing so, `renderData` will not be called in the above example.
+By doing so, `renderData` will not be called in the 1st example.
+
+And `this.props.bears.length` will not be called in the 2nd example.
 
 ## Installing and usage
 
