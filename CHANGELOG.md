@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 3.3.0 (2019-04-23)
+
+- Add lazy condition evalutation (@cyrilchapon)
+
 ## 3.2.0 (2019-04-23)
 
 - Remove lock files
