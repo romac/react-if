@@ -98,10 +98,10 @@ And `this.props.bears.length` will not be called in the 2nd example.
 
 ```javascript
 // ES2015
-import { If, Then, Else, When, Unless } from 'react-if'
+import { If, Then, Else, When, Unless, Switch, Case, Default } from 'react-if'
 
 // CommonJS:
-const { If, Then, Else, When, Unless } = require('react-if')
+const { If, Then, Else, When, Unless, Switch, Case, Default } = require('react-if')
 
 // Global
 var If   = ReactIf.If
@@ -109,9 +109,37 @@ var Then = If.Then
 var Else = If.Else
 var When = If.When
 var Unless = If.Unless
+var Switch = If.Switch
+var Case = If.Case
+var Default = If.Default
 ```
 
 ## Examples
+
+## Swich/Case/Default
+
+```javascript
+import React from 'react'
+import { Switch, Case, Default } from 'react-if'
+
+const myNumber = 3
+
+const Example = () => (
+    <div>
+        <Switch>
+          <Case condition={ myNumber === 9 }>
+            This will be displayed if condition is matched
+          </Case>
+          <Case condition={ myNumber > 1 }>
+            This will be displayed if condition is matched
+          </Case>
+          <Default>
+            This will be displayed if no Case have matching condition
+          </Default>
+        </Switch>
+    </div>
+)
+```
 
 ## Shorthands: When and Unless
 
@@ -157,6 +185,22 @@ Can contain any number of elements inside, which it renders as-is. It can also c
 ### &lt;Else /&gt;
 
 Can contain any number of elements inside, which it renders as-is. It can also contain a function. Should not be used outside of an `<If />` block. It will only be displayed, if parent `If` block's condition is false.
+
+### &lt;Switch /&gt;
+
+A container for `<Case condition={...}/>` and `<Default />` blocks. It will render **the first matching** `Case`, or **the first encountered** `Default` (, or null).
+
+### &lt;Case /&gt;
+
+| Property      | Type    |
+| ------------- | ------- |
+| `condition`   | Boolean |
+
+If the `Case` is the first one to have its `condition` evaluates to `true` inside the parent `<Switch />` it will be the only rendered.
+
+### &lt;Default /&gt;
+
+If no `Case` have its `condition` evaluates to `true` inside the parent `<Switch />`, the first `Default` will be the only one rendered.
 
 ### &lt;When /&gt;
 
