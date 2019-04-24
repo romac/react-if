@@ -166,5 +166,8 @@ If.Then = Then;
 If.Else = Else;
 If.When = When;
 If.Unless = Unless;
+If.Switch = Switch;
+If.Case = Case;
+If.Default = Default;
 
 export default If;
