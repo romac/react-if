@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 3.4.0 (2019-04-24)
+
+- Add Switch/Case/Default statement (@cyrilchapon)
+
 ## 3.3.0 (2019-04-23)
 
 - Add lazy condition evalutation (@cyrilchapon)
