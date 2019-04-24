@@ -9,6 +9,15 @@ function render(props) {
   return <React.Fragment>{props.children || null}</React.Fragment>;
 }
 
+function getConditionResult(condition) {
+  const conditionResult = !!((typeof condition === 'function')
+    ? condition()
+    : condition
+  )
+
+  return conditionResult
+}
+
 export function Then(props) {
   return render(props);
 }
@@ -26,9 +35,7 @@ export function If({ condition, children }) {
     return null;
   }
 
-  const conditionResult = (typeof condition === 'function')
-    ? condition()
-    : condition
+  const conditionResult = getConditionResult(condition)
 
   return (
     <React.Fragment>
@@ -50,9 +57,7 @@ If.propTypes = {
 };
 
 export function Unless({ condition, children }) {
-  const conditionResult = (typeof condition === 'function')
-    ? condition()
-    : condition
+  const conditionResult = !!getConditionResult(condition)
 
   return !conditionResult && children ? render({ condition, children }) : null;
 }
@@ -67,9 +72,7 @@ Unless.defaultProps = {
 };
 
 export function When({ condition, children }) {
-  const conditionResult = (typeof condition === 'function')
-    ? !!condition()
-    : condition
+  const conditionResult = getConditionResult(condition)
 
   return conditionResult && children ? render({ condition, children }) : null;
 }
