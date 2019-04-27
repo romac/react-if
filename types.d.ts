@@ -1,6 +1,6 @@
 declare module 'react-if'{
   interface IfOptions{
-    condition: boolean
+    condition: (() => boolean) | boolean;
   }
 
   /**
