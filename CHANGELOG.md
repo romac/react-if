@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 3.4.1 (2019-05-03)
+
+- TypeScript types fix: Allow functions that return booleans instead of just booleans, as per prop-types. (@eropple)
+
 ## 3.4.0 (2019-04-24)
 
 - Add Switch/Case/Default statement (@cyrilchapon)
