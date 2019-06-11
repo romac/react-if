@@ -39,7 +39,7 @@ export function If({ condition, children }) {
 
   return (
     <React.Fragment>
-      {[].concat(children).find(c => (c.type !== <Else />.type) ^ !conditionResult) ||
+      {[].concat(children).find(c => (c.type !== Else) ^ !conditionResult) ||
         null}
     </React.Fragment>
   );
