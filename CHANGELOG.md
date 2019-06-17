@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 3.4.3 (2019-06-17)
+
+- Consistent type determination. (@Mamoru1234)
+
 ## 3.4.2 (2019-06-17)
 
 - Type definition for Switch, Case and Default. (@melyourhero)
