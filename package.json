@@ -1,6 +1,6 @@
 {
   "name": "react-if",
-  "version": "3.4.1",
+  "version": "3.4.2",
   "peerDependencies": {
     "prop-types": ">=15.5.10",
     "react": ">=15.5.0"
