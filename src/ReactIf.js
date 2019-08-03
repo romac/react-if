@@ -1,21 +1,24 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-function render(props) {
-  if (typeof props.children === "function") {
-    return <React.Fragment>{props.children()}</React.Fragment>;
+function render({ children, data }) {
+  if (typeof children === "function") {
+    return <React.Fragment>{children(data)}</React.Fragment>;
   }
 
-  return <React.Fragment>{props.children || null}</React.Fragment>;
+  return <React.Fragment>{children || null}</React.Fragment>;
 }
 
-function getConditionResult(condition) {
-  const conditionResult = !!((typeof condition === 'function')
+async function getConditionResult(condition) {
+  return (typeof condition === 'function')
+    ? condition()
+    : await condition
+}
+
+function getConditionResultSync(condition) {
+  return (typeof condition === 'function')
     ? condition()
     : condition
-  )
-
-  return conditionResult
 }
 
 export function Then(props) {
@@ -30,34 +33,58 @@ Then.propTypes = Else.propTypes = {
   children: PropTypes.oneOfType([PropTypes.func, PropTypes.node])
 };
 
-export function If({ condition, children }) {
-  if (children == null) {
-    return null;
-  }
-
-  const conditionResult = getConditionResult(condition)
-
-  return (
-    <React.Fragment>
-      {[].concat(children).find(c => (c.type !== Else) ^ !conditionResult) ||
-        null}
-    </React.Fragment>
-  );
-}
-
 const ThenOrElse = PropTypes.oneOfType([
   PropTypes.instanceOf(Then),
   PropTypes.instanceOf(Else),
   PropTypes.node
 ]);
 
+export class If extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      conditionResult: false
+    }
+  }
+
+  async componentDidMount() {
+    try{
+      const conditionResult = await getConditionResult(this.props.condition);
+      this.setState({ conditionResult });
+    } catch (e){
+      console.warn('react-if: the async condition was rejected', e);
+    }
+  }
+
+  render() {
+    const conditionResult = this.state.conditionResult;
+    const children = this.props.children;
+
+    if(!children){
+      return null;
+    }
+
+    const validChildrens = [].concat(children).find(c => (c.type !== Else) ^ !conditionResult) || null
+
+    return React.Children.map(validChildrens, child => {
+      if((child.type === Then) && conditionResult){
+        return React.cloneElement(child, {
+          data: conditionResult
+        })
+      }
+      return validChildrens      
+    })
+  }
+
+}
+
 If.propTypes = {
-  condition: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]).isRequired,
+  condition: PropTypes.oneOfType([PropTypes.func, PropTypes.bool, PropTypes.instanceOf(Promise)]).isRequired,
   children: PropTypes.oneOfType([PropTypes.arrayOf(ThenOrElse), ThenOrElse])
-};
+}
 
 export function Unless({ condition, children }) {
-  const conditionResult = !!getConditionResult(condition)
+  const conditionResult = !!getConditionResultSync(condition)
 
   return !conditionResult && children ? render({ condition, children }) : null;
 }
@@ -72,7 +99,7 @@ Unless.defaultProps = {
 };
 
 export function When({ condition, children }) {
-  const conditionResult = getConditionResult(condition)
+  const conditionResult = !!getConditionResultSync(condition)
 
   return conditionResult && children ? render({ condition, children }) : null;
 }
@@ -132,7 +159,7 @@ export function Switch({ children }) {
     ) {
       const condition = child.props.condition
 
-      const conditionResult = getConditionResult(condition)
+      const conditionResult = !!getConditionResultSync(condition)
 
       if (conditionResult) {
         matchingCase = child

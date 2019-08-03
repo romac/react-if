@@ -8,10 +8,13 @@
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-async-to-generator": "^7.0.0",
     "@babel/plugin-transform-modules-umd": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.5.5",
     "chai": "^4.1.2",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -23,7 +26,11 @@
     "react-test-renderer": "^16.3.2"
   },
   "main": "lib/ReactIf.js",
-  "files": ["lib/ReactIf.js", "types.d.ts", "CONTRIBUTORS.md"],
+  "files": [
+    "lib/ReactIf.js",
+    "types.d.ts",
+    "CONTRIBUTORS.md"
+  ],
   "scripts": {
     "build": "babel src --out-dir lib",
     "watch": "babel -w src --out-dir lib",
