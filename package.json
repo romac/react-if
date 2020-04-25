@@ -5,6 +5,11 @@
     "prop-types": ">=15.5.10",
     "react": ">=15.5.0"
   },
+  "peerDependenciesMeta": {
+    "prop-types": {
+      "optional": true
+    }
+  },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
