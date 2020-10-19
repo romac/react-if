@@ -1,51 +1,106 @@
 {
   "name": "react-if",
   "version": "3.4.3",
-  "peerDependencies": {
-    "prop-types": ">=15.5.10",
-    "react": ">=15.5.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-transform-modules-umd": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "chai": "^4.1.2",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "jsdom": "^11.10.0",
-    "mocha": "^5.1.1",
-    "prop-types": ">=15.5.10",
-    "react": ">=15.5.0",
-    "react-dom": ">=15.5.0",
-    "react-test-renderer": "^16.3.2"
-  },
-  "main": "lib/ReactIf.js",
-  "files": ["lib/ReactIf.js", "types.d.ts", "CONTRIBUTORS.md"],
-  "scripts": {
-    "build": "babel src --out-dir lib",
-    "watch": "babel -w src --out-dir lib",
-    "test": "mocha --require @babel/register"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/romac/react-if.git"
-  },
-  "keywords": [
-    "react",
-    "react-component",
-    "if",
-    "conditional"
-  ],
+  "description": "🌗 Render React components conditionally",
   "author": "Romain Ruetschi <romain.ruetschi@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/romac/react-if/issues"
-  },
+  "main": "dist/index.js",
+  "module": "dist/react-if.esm.js",
+  "typings": "dist/index.d.ts",
   "homepage": "https://github.com/romac/react-if",
-  "description": "🌗 Render React components conditionally",
-  "types": "types.d.ts",
-  "dependencies": {}
+  "files": [
+    "dist",
+    "CONTRIBUTORS.md"
+  ],
+  "scripts": {
+    "prepublishOnly": "yarn build",
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint --fix",
+    "format": "prettier --write {src,tests}/**/*.ts",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "update": "yarn upgrade-interactive --latest",
+    "docs": "typedoc",
+    "sversion": "standard-version",
+    "commit": "git-cz",
+    "cz": "git-cz"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@favware/eslint-config-react-app": "^1.1.4",
+    "@favware/ts-config": "^3.0.4",
+    "@size-limit/preset-small-lib": "^4.6.0",
+    "@types/enzyme": "^3.10.7",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/node": "^14.11.10",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "jest-enzyme": "^7.1.2",
+    "prettier": "^2.1.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "size-limit": "^4.6.0",
+    "standard-version": "^9.0.0",
+    "tsdx": "^0.14.1",
+    "typedoc": "^0.19.2",
+    "typedoc-plugin-nojekyll": "^1.0.1",
+    "typescript": "^4.0.3"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "size-limit": [
+    {
+      "path": "dist/react-if.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/react-if.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "resolutions": {
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "acorn": "^6.4.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint": "^7.11.0",
+    "kind-of": "^6.0.3",
+    "lodash": "^4.17.20",
+    "minimist": "^1.2.5"
+  }
 }

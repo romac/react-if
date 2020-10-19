@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`If Component - with NODE_ENV === production GIVEN content w/o <Then /> nor <Else /> THEN renders empty block in production 1`] = `
+<Fragment>
+  <span
+    key=".0"
+  >
+    Not Then nor Else
+  </span>
+</Fragment>
+`;
+
+exports[`If component - with NODE_ENV === test GIVEN If w/ <Else /> before <Then /> THEN renders <Then /> block 1`] = `
+<Fragment>
+  <Component
+    key=".1"
+  >
+    <span>
+      Then
+    </span>
+  </Component>
+</Fragment>
+`;
+
+exports[`If component - with NODE_ENV === test GIVEN If w/ <Then /> & <Else /> & falsy condition THEN renders children of <Else /> 1`] = `
+<Fragment>
+  <Component
+    key=".1"
+  >
+    <span>
+      Else
+    </span>
+  </Component>
+</Fragment>
+`;
+
+exports[`If component - with NODE_ENV === test GIVEN If w/ <Then /> & <Else /> & truthy condition THEN renders children of <Then /> 1`] = `
+<Fragment>
+  <Component
+    key=".0"
+  >
+    <span>
+      Then
+    </span>
+  </Component>
+</Fragment>
+`;
+
+exports[`If component - with NODE_ENV === test GIVEN If w/ <Then /> & truthy condition THEN renders children 1`] = `
+<Fragment>
+  <Component
+    key=".0"
+  >
+    <span>
+      Then
+    </span>
+  </Component>
+</Fragment>
+`;
+
+exports[`If component - with NODE_ENV === test GIVEN If w/ multiple <Then /> blocks THEN renders only first <Then /> block 1`] = `
+<Fragment>
+  <Component
+    key=".0"
+  >
+    <span>
+      Then1
+    </span>
+  </Component>
+</Fragment>
+`;
+
+exports[`If component - with NODE_ENV === test GIVEN w/o children THEN renders null 1`] = `""`;
