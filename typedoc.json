@@ -1,0 +1,14 @@
+{
+	"out": "./docs/",
+	"readme": "./README.md",
+	"name": "react-if",
+	"exclude": [
+		"**/node_modules/**",
+		"tests/**",
+		"src/index.tsx"
+	],
+	"mode": "file",
+	"excludeExternals": true,
+	"excludeNotExported": true,
+	"tsconfig": "./tsconfig.json"
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "@favware/ts-config",
+  "compilerOptions": {
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Node",
+    "jsx": "react",
+    "rootDir": "./src"
+  },
+  "include": ["src"]
+}
