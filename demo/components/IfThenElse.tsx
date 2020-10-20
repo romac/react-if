@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Else, If, Then } from '../../src';
+import { Else, If, Then } from '../../dist';
 
 interface IfThenElseProps {
   age: number;
