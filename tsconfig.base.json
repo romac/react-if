@@ -4,8 +4,6 @@
     "module": "ESNext",
     "lib": ["ESNext", "DOM"],
     "moduleResolution": "Node",
-    "jsx": "react",
-    "rootDir": "./src"
-  },
-  "include": ["src"]
+    "jsx": "react"
+  }
 }
