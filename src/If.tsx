@@ -15,12 +15,11 @@ export const If: FC<ComponentWithConditionProps> = ({ condition, children }) => 
     return null;
   }
 
-  if (
+  handleError(
+    'The <If> component should contain <Then /> and <Else /> components as its children',
     (!Array.isArray(children) && !((children as ReactElement).type === Else || (children as ReactElement).type === Then)) ||
-    !(React.Children.toArray(children) as ReactElement[]).every(child => child.type === Else || child.type === Then)
-  ) {
-    handleError('The <If> component should contain <Then /> and <Else /> components as its children');
-  }
+      !(React.Children.toArray(children) as ReactElement[]).every(child => child.type === Else || child.type === Then)
+  );
 
   const conditionResult = getConditionResult(condition);
 
