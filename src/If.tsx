@@ -1,6 +1,6 @@
 import React, { FC, Fragment, ReactElement } from 'react';
 import { Else } from './Else';
-import { handleError } from './errorHandler';
+import { invariant } from './invariant';
 import { getConditionResult } from './getConditionResults';
 import { Then } from './Then';
 import { ComponentWithConditionProps } from './types';
@@ -15,10 +15,10 @@ export const If: FC<ComponentWithConditionProps> = ({ condition, children }) => 
     return null;
   }
 
-  handleError(
-    'The <If> component should contain <Then /> and <Else /> components as its children',
+  invariant(
     (!Array.isArray(children) && !((children as ReactElement).type === Else || (children as ReactElement).type === Then)) ||
-      !(React.Children.toArray(children) as ReactElement[]).every(child => child.type === Else || child.type === Then)
+      !(React.Children.toArray(children) as ReactElement[]).every(child => child.type === Else || child.type === Then),
+    'The <If> component should contain <Then /> and <Else /> components as its children'
   );
 
   const conditionResult = getConditionResult(condition);
