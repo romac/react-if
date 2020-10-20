@@ -1,8 +1,12 @@
 /**
- * Handles errors by throwing errors, only when `NODE_ENV` is not `'production'`
+ * Handles errors by throwing them to the console.
+ * __DEV__ is replaced by tsdx using {@link https://www.npmjs.com/package/babel-plugin-dev-expression babel-plugin-dev-expressions}
+ * which will ensure this entire throw is not present in production
  */
 export const handleError = (errorMessage: string, errorCondition: boolean) => {
-  if (process.env.NODE_ENV !== 'production' && errorCondition) {
-    throw new Error(errorMessage);
+  if (__DEV__) {
+    if (errorCondition) {
+      throw new Error(errorMessage);
+    }
   }
 };
