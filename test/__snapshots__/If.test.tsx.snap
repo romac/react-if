@@ -48,6 +48,12 @@ exports[`Falsy condition With child as function GIVEN <Else /> THEN renders chil
 </span>
 `;
 
+exports[`Falsy condition With child as function GIVEN <Else /> THEN renders children returned by function 2`] = `
+<span>
+  Else
+</span>
+`;
+
 exports[`Falsy condition With child as function GIVEN body that should not evaluate THEN should not render 1`] = `
 <div>
   Ok

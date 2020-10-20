@@ -295,12 +295,47 @@ describe('Falsy condition', () => {
       expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(true);
     });
 
+    test('GIVEN <Else /> THEN renders children returned by function', () => {
+      const wrapped = mount(
+        <If condition={() => false}>
+          <Else>{() => <span>Else</span>}</Else>
+        </If>
+      );
+
+      expect(wrapped).toMatchSnapshot();
+      expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(true);
+    });
+
     test('GIVEN body that should not evaluate THEN should not render', () => {
       // @ts-expect-error called should just be declared
       let called = false;
 
       const wrapped = mount(
         <If condition={false}>
+          <Then>
+            {() => {
+              // eslint-disable-next-line @typescript-eslint/no-unused-vars
+              called = true;
+              <div>Bad</div>;
+            }}
+          </Then>
+          <Else>
+            <div>Ok</div>
+          </Else>
+        </If>
+      );
+
+      expect(wrapped).toMatchSnapshot();
+      expect(wrapped.containsMatchingElement(<div>Ok</div>)).toBe(true);
+      expect(wrapped.containsMatchingElement(<div>Bad</div>)).toBe(false);
+    });
+
+    test('GIVEN body that should not evaluate THEN should not render', () => {
+      // @ts-expect-error called should just be declared
+      let called = false;
+
+      const wrapped = mount(
+        <If condition={() => false}>
           <Then>
             {() => {
               // eslint-disable-next-line @typescript-eslint/no-unused-vars
