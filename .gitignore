@@ -1,6 +1,35 @@
-*.log
+# Ignore a blackhole and the folder for development
+node_modules/
+.vs/
+.idea/
+*.iml
+coverage/
+
+# Environment variables
 .DS_Store
-node_modules
-.cache
-dist
-coverage
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore output folders
+dist/
+.cache/
+
+# Ignore JavaScript files
+**/*.js
+**/*.mjs
+**/*.js.map
+**/*.d.ts
+!src/Augments.d.ts
+!test/Augments.d.ts
+**/*.tsbuildinfo
+!jest.config.js
+!.eslintrc.js
+
+# Ignore heapsnapshot and log files
+*.heapsnapshot
+*.log
+
+# Ignore package locks
+package-lock.json
