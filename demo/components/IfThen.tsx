@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { If, Then } from '../../src';
+import { If, Then } from '../../dist';
 
 interface IfThenProps {
   prefersFanta: boolean;
