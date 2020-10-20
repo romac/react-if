@@ -1,28 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`If Component - with NODE_ENV === production GIVEN content w/o <Then /> nor <Else /> THEN renders empty block in production 1`] = `
-<Fragment>
-  <span
-    key=".0"
-  >
-    Not Then nor Else
-  </span>
-</Fragment>
-`;
+exports[`Falsy condition With NODE_ENV === production GIVEN content w/o <Then /> nor <Else /> THEN renders empty block in production 1`] = `<Fragment />`;
 
-exports[`If component - with NODE_ENV === test GIVEN If w/ <Else /> before <Then /> THEN renders <Then /> block 1`] = `
-<Fragment>
-  <Component
-    key=".1"
-  >
-    <span>
-      Then
-    </span>
-  </Component>
-</Fragment>
-`;
-
-exports[`If component - with NODE_ENV === test GIVEN If w/ <Then /> & <Else /> & falsy condition THEN renders children of <Else /> 1`] = `
+exports[`Falsy condition With NODE_ENV === test GIVEN <Then /> & <Else /> THEN renders children of <Else /> 1`] = `
 <Fragment>
   <Component
     key=".1"
@@ -34,7 +14,69 @@ exports[`If component - with NODE_ENV === test GIVEN If w/ <Then /> & <Else /> &
 </Fragment>
 `;
 
-exports[`If component - with NODE_ENV === test GIVEN If w/ <Then /> & <Else /> & truthy condition THEN renders children of <Then /> 1`] = `
+exports[`Falsy condition With NODE_ENV === test GIVEN <Then /> THEN renders null 1`] = `<Fragment />`;
+
+exports[`Falsy condition With NODE_ENV === test GIVEN multiple <Else /> THEN renders only first <Else /> block 1`] = `
+<Fragment>
+  <Component
+    key=".0"
+  >
+    <span>
+      Else1
+    </span>
+  </Component>
+</Fragment>
+`;
+
+exports[`Falsy condition With NODE_ENV === test GIVEN multiple <Else /> before <Then /> THEN renders <Else /> block 1`] = `
+<Fragment>
+  <Component
+    key=".0"
+  >
+    <span>
+      Else
+    </span>
+  </Component>
+</Fragment>
+`;
+
+exports[`Falsy condition With NODE_ENV === test GIVEN w/o children THEN renders null 1`] = `""`;
+
+exports[`Falsy condition With child as function GIVEN <Else /> THEN renders children returned by function 1`] = `
+<span>
+  Else
+</span>
+`;
+
+exports[`Falsy condition With child as function GIVEN body that should not evaluate THEN should not render 1`] = `
+<div>
+  Ok
+</div>
+`;
+
+exports[`Truthy cases With NODE_ENV === production GIVEN content w/o <Then /> nor <Else /> THEN renders empty block in production 1`] = `
+<Fragment>
+  <span
+    key=".0"
+  >
+    Not Then nor Else
+  </span>
+</Fragment>
+`;
+
+exports[`Truthy cases With NODE_ENV === test GIVEN <Else /> before <Then /> THEN renders <Then /> block 1`] = `
+<Fragment>
+  <Component
+    key=".1"
+  >
+    <span>
+      Then
+    </span>
+  </Component>
+</Fragment>
+`;
+
+exports[`Truthy cases With NODE_ENV === test GIVEN <Then /> & <Else /> THEN renders children of <Then /> 1`] = `
 <Fragment>
   <Component
     key=".0"
@@ -46,7 +88,7 @@ exports[`If component - with NODE_ENV === test GIVEN If w/ <Then /> & <Else /> &
 </Fragment>
 `;
 
-exports[`If component - with NODE_ENV === test GIVEN If w/ <Then /> & truthy condition THEN renders children 1`] = `
+exports[`Truthy cases With NODE_ENV === test GIVEN <Then /> THEN renders children 1`] = `
 <Fragment>
   <Component
     key=".0"
@@ -58,7 +100,7 @@ exports[`If component - with NODE_ENV === test GIVEN If w/ <Then /> & truthy con
 </Fragment>
 `;
 
-exports[`If component - with NODE_ENV === test GIVEN If w/ multiple <Then /> blocks THEN renders only first <Then /> block 1`] = `
+exports[`Truthy cases With NODE_ENV === test GIVEN multiple <Then /> blocks THEN renders only first <Then /> block 1`] = `
 <Fragment>
   <Component
     key=".0"
@@ -70,4 +112,52 @@ exports[`If component - with NODE_ENV === test GIVEN If w/ multiple <Then /> blo
 </Fragment>
 `;
 
-exports[`If component - with NODE_ENV === test GIVEN w/o children THEN renders null 1`] = `""`;
+exports[`Truthy cases With NODE_ENV === test GIVEN w/o children THEN renders null 1`] = `""`;
+
+exports[`Truthy cases With condition as a function GIVEN <Else /> before <Then /> THEN renders <Then /> block 1`] = `
+<Fragment>
+  <Component
+    key=".1"
+  >
+    <span>
+      Then
+    </span>
+  </Component>
+</Fragment>
+`;
+
+exports[`Truthy cases With condition as a function GIVEN <Then /> & <Else /> THEN does not render children of <Else /> 1`] = `
+<Fragment>
+  <Component
+    key=".0"
+  >
+    <span>
+      Then
+    </span>
+  </Component>
+</Fragment>
+`;
+
+exports[`Truthy cases With condition as a function GIVEN <Then /> THEN renders children of <Then /> 1`] = `
+<Fragment>
+  <Component
+    key=".0"
+  >
+    <span>
+      Then
+    </span>
+  </Component>
+</Fragment>
+`;
+
+exports[`Truthy cases With condition as a function GIVEN multiple <Then /> blocks THEN renders only first <Then /> block 1`] = `
+<Fragment>
+  <Component
+    key=".0"
+  >
+    <span>
+      Then1
+    </span>
+  </Component>
+</Fragment>
+`;
