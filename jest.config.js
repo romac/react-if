@@ -6,5 +6,6 @@ module.exports = {
       tsConfig: '<rootDir>/test/tsconfig.json'
     },
     __DEV__: true
-  }
+  },
+  coveragePathIgnorePatterns: ['<rootDir>/src/Augments.d.ts']
 };

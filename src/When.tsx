@@ -17,7 +17,7 @@ import { ComponentWithConditionProps } from './types';
 export const When: FC<ComponentWithConditionProps> = ({ condition, children }) => {
   const conditionResult = Boolean(getConditionResult(condition));
 
-  return !conditionResult && children ? render({ children }) : null;
+  return conditionResult && children ? render({ children }) : null;
 };
 
 When.defaultProps = {
