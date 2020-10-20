@@ -9,17 +9,15 @@
   "typings": "dist/index.d.ts",
   "homepage": "https://github.com/romac/react-if",
   "files": [
-    "dist",
-    "CONTRIBUTORS.md"
+    "dist"
   ],
   "scripts": {
     "prepublishOnly": "yarn build",
-    "start": "tsdx watch",
-    "build": "tsdx build",
+    "start": "tsdx watch --tsconfig ./src/tsconfig.json",
+    "build": "tsdx build --tsconfig ./src/tsconfig.json",
     "test": "tsdx test",
-    "lint": "tsdx lint --fix",
+    "lint": "tsdx lint src test demo --fix",
     "format": "prettier --write {src,tests}/**/*.ts",
-    "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "update": "yarn upgrade-interactive --latest",
@@ -68,6 +66,7 @@
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "tsdx lint"
     }
   },
