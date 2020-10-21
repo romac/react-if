@@ -5,6 +5,7 @@
 [![Issues](http://img.shields.io/github/issues/romac/react-if.svg?style=flat)](https://github.com/romac/react-if/issues)
 [![License](https://img.shields.io/github/license/romac/react-if)](https://github.com/romac/react-if/blob/master/LICENSE.md)
 [![Contact](https://img.shields.io/badge/contact-@__romac-blue.svg?style=flat)](https://twitter.com/_romac)
+[![Contact](https://img.shields.io/badge/contact-@favna__-blue.svg?style=flat)](https://twitter.com/fanva_)
 
 Render React components conditionally.
 
@@ -12,7 +13,7 @@ Render React components conditionally.
 
 Take a look at the following presentational component, which contains a commonly used pattern for conditional rendering:
 
-```typescript
+```jsx
 const Bar = ({ name, age, drinkingAge }) => (
   <div>
     <Header />
@@ -28,7 +29,7 @@ const Bar = ({ name, age, drinkingAge }) => (
 
 With `React-If` you can rewrite this into a more readable, expressive format:
 
-```typescript
+```jsx
 const Bar = ({ name, age, drinkingAge }) => (
   <div>
     <Header />
@@ -49,7 +50,7 @@ const Bar = ({ name, age, drinkingAge }) => (
 
 It is important to note that, because JavaScript is an eagerly evaluated language, children of both the `Then` and `Else` component and condition will be evaluated regardless of the value of the condition. Should that be an issue for performance reasons, one can wrap said children / condition in a [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), to delay evaluation of the children / condition, as in the following example:
 
-```typescript
+```jsx
 const renderData = (data) => {
   val computed = /* expensive computation */
   return <span>Here is the result: {computed}</span>;
@@ -65,13 +66,13 @@ const Foo = ({ data }) => (
               Nothing to see here
             </Else>
         </If>
-        <If condition={!this.props.bears}>
+        <If condition={!props.bears}>
           <Then>
             No bears
           </Then>
 
           <Else>
-            <If condition={() => this.props.bears.length}>
+            <If condition={() => props.bears.length}>
               Empty bears array
             </If>
             <Else>
@@ -85,15 +86,16 @@ const Foo = ({ data }) => (
 
 By doing so, `renderData` will not be called in the 1st example.
 
-And `this.props.bears.length` will not be called in the 2nd example.
+And `props.bears.length` will not be called in the 2nd example.
 
 ## Installing and usage
 
 ### NPM:
 
 `npm install react-if`
+Or with yarn: `yarn add react-if`
 
-```typescript
+```jsx
 // ES2015
 import { If, Then, Else, When, Unless, Switch, Case, Default } from 'react-if';
 
@@ -105,7 +107,7 @@ const { If, Then, Else, When, Unless, Switch, Case, Default } = require('react-i
 
 ## Swich/Case/Default
 
-```typescript
+```jsx
 import React from 'react';
 import { Switch, Case, Default } from 'react-if';
 
@@ -124,7 +126,7 @@ const Example = () => (
 
 ## Shorthands: When and Unless
 
-```typescript
+```jsx
 import React from 'react';
 import { When, Unless } from 'react-if';
 
