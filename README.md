@@ -147,6 +147,8 @@ const AnotherExample = () => (
 
 ## API
 
+***Note: For a fully auto-generated API, see [the github pages website](https://romac.github.io/react-if)***
+
 ### &lt;If /&gt;
 
 | Property    | Type    |
