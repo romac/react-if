@@ -1,8 +1,9 @@
 # React If
 
 [![npm badge](http://img.shields.io/npm/v/react-if.svg)](https://www.npmjs.com/package/react-if)
+[![Continuous Integration](https://github.com/romac/react-if/workflows/Continuous%20Integration/badge.svg)](https://github.com/romac/react-if/actions)
 [![Issues](http://img.shields.io/github/issues/romac/react-if.svg?style=flat)](https://github.com/romac/react-if/issues)
-![License](https://img.shields.io/github/license/romac/react-if)
+[![License](https://img.shields.io/github/license/romac/react-if)](https://github.com/romac/react-if/blob/master/LICENSE.md)
 [![Contact](https://img.shields.io/badge/contact-@__romac-blue.svg?style=flat)](https://twitter.com/_romac)
 
 Render React components conditionally.
