@@ -1,8 +1,8 @@
 {
-  "name": "example",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "react-if-demo",
+  "version": "0.0.0",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
