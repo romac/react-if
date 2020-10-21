@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Then /> component GIVEN children THEN directly renders children 1`] = `
+<Fragment>
+  <span>
+    Then
+  </span>
+</Fragment>
+`;
+
+exports[`<Then /> component GIVEN no children THEN renders null 1`] = `<Fragment />`;
