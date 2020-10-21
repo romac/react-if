@@ -19,7 +19,7 @@ export const Switch: FC = ({ children }) => {
 
   React.Children.forEach(children, child => {
     // not a valid react child, don't add it
-    /* istanbul ignore next */
+    /* istanbul ignore next - This is only a safe fail for people writing bad code */
     if (!React.isValidElement(child)) {
       return;
     }
