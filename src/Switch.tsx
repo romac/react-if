@@ -7,6 +7,7 @@ import { getConditionResult } from './getConditionResults';
  * It will render the first matching `<Case />`, or the first encountered `<Default />` (or `null`).
  *
  * This component can contain any number of `<Case />` and one `<Default />` blocks
+ * @param __namedParameters Children to pass into the `<Switch />` component
  */
 export const Switch: FC = ({ children }) => {
   // -- Inspired by react-router --

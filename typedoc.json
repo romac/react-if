@@ -2,9 +2,11 @@
   "out": "./docs/",
   "readme": "./README.md",
   "name": "react-if",
-  "exclude": ["**/node_modules/**", "tests/**", "src/index.tsx"],
+  "inputFiles": "src",
+  "exclude": ["**/node_modules/**", "test/**", "src/index.tsx"],
   "mode": "file",
   "excludeExternals": true,
   "excludeNotExported": true,
-  "tsconfig": "./tsconfig.json"
+  "stripInternal": true,
+  "tsconfig": "./tsconfig.base.json"
 }

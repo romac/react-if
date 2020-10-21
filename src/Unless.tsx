@@ -5,7 +5,7 @@ import { ComponentWithConditionProps } from './types';
 
 /** A shorthand for
  *
- * ```
+ * ```jsx
  * <If condition={...}>
  *     <Else>
  *         { ... }
@@ -13,7 +13,10 @@ import { ComponentWithConditionProps } from './types';
  * </If>
  * ```
  *
- * The same rules apply to the child elements as with using the `<Else />` block. */
+ * The same rules apply to the child elements as with using the `<Else />` block.
+ *
+ * @param __namedParameters The props to pass down to the `<IF />` component, see {@link ComponentWithConditionProps}
+ */
 export const Unless: FC<ComponentWithConditionProps> = ({ condition, children }) => {
   const conditionResult = Boolean(getConditionResult(condition));
 
