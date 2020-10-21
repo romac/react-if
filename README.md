@@ -1,11 +1,12 @@
 # React If
 
-[![npm badge](http://img.shields.io/npm/v/react-if.svg)](https://www.npmjs.com/package/react-if)
+[![npm](https://img.shields.io/npm/v/react-if?logo=npm)](https://www.npmjs.com/package/react-if)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-if?label=bundle%20size&logo=webpack)](https://bundlephobia.com/result?p=react-if)
 [![Continuous Integration](https://github.com/romac/react-if/workflows/Continuous%20Integration/badge.svg)](https://github.com/romac/react-if/actions)
-[![Issues](http://img.shields.io/github/issues/romac/react-if.svg?style=flat)](https://github.com/romac/react-if/issues)
-[![License](https://img.shields.io/github/license/romac/react-if)](https://github.com/romac/react-if/blob/master/LICENSE.md)
-[![Contact](https://img.shields.io/badge/contact-@__romac-blue.svg?style=flat)](https://twitter.com/_romac)
-[![Contact](https://img.shields.io/badge/contact-@favna__-blue.svg?style=flat)](https://twitter.com/fanva_)
+[![Issues](http://img.shields.io/github/issues/romac/react-if.svg?style=flat&logo=github&logoColor=959DA5&labelColor=2D3339)](https://github.com/romac/react-if/issues)
+[![License](https://img.shields.io/github/license/romac/react-if?logo=github&logoColor=959DA5&labelColor=2D3339)](https://github.com/romac/react-if/blob/master/LICENSE.md)
+[![Contact](https://img.shields.io/badge/contact-@__romac-blue.svg?style=flat&logo=twitter)](https://twitter.com/_romac)
+[![Contact](https://img.shields.io/badge/contact-@favna__-blue.svg?style=flat&logo=twitter)](https://twitter.com/fanva_)
 
 Render React components conditionally.
 
