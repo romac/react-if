@@ -27,7 +27,7 @@ jobs:
       - name: Build documentation
         run: yarn docs
       - name: Publish Docs
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: |
           echo -e "\n# Initialize some useful variables"
           REPO="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
