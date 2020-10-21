@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.1](https://github.com/romac/react-if/compare/v4.0.0...v4.0.1) (2020-10-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* **readme:** As part of the rewrite, the global exports are gone.
+Please use CommonJS or ESM style imports as specified in the README.
+
+### Bug Fixes
+
+* **readme:** update shields ([d975fd4](https://github.com/romac/react-if/commit/d975fd44b737caff913725905abe316a02097236))
+
 ## [4.0.0](https://github.com/romac/react-if/compare/v3.4.3...v4.0.0) (2020-10-21)
 
 
