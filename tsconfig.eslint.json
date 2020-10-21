@@ -1,8 +1,8 @@
 {
-    "extends": "./tsconfig.base.json",
-    "compilerOptions": {
-        "checkJs": true,
-        "allowJs": true
-    },
-    "include": ["src", "test", "demo", "./.eslintrc.js", "./jest.config.js", "./tsdx.config.js"],
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true
+  },
+  "include": ["src", "test", "demo", "./.eslintrc.js", "./jest.config.js", "./tsdx.config.js"]
 }

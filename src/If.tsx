@@ -1,7 +1,7 @@
 import React, { FC, Fragment, ReactElement } from 'react';
 import { Else } from './Else';
-import { invariant } from './invariant';
 import { getConditionResult } from './getConditionResults';
+import { invariant } from './invariant';
 import { Then } from './Then';
 import { ComponentWithConditionProps } from './types';
 
