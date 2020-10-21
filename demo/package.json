@@ -4,7 +4,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "prestart": "yarn --cwd ../ build",
     "start": "parcel index.html",
+    "prebuild": "yarn --cwd ../ build",
     "build": "parcel build index.html"
   },
   "alias": {
