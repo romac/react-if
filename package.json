@@ -29,12 +29,13 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@favware/eslint-config-react-app": "^1.1.4",
+    "@favware/eslint-config": "^6.0.1",
+    "@favware/eslint-config-react-app": "^2.0.1",
     "@favware/ts-config": "^3.0.4",
     "@size-limit/preset-small-lib": "^4.6.2",
     "@types/enzyme": "^3.10.7",
     "@types/enzyme-adapter-react-16": "^1.0.6",
-    "@types/node": "^14.14.2",
+    "@types/node": "^14.14.3",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
@@ -45,7 +46,11 @@
     "enzyme-to-json": "^3.6.1",
     "eslint": "^7.12.0",
     "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.3.0",
     "jest-enzyme": "^7.1.2",
     "prettier": "^2.1.2",
@@ -62,7 +67,7 @@
     "node": ">=10"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": "^16.x || ^17.x"
   },
   "husky": {
     "hooks": {
