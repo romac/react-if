@@ -1025,15 +1025,15 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@favware/eslint-config-react-app@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@favware/eslint-config-react-app/-/eslint-config-react-app-2.0.1.tgz#eb35e646be90825eecf85ece0876b9c02f23194b"
-  integrity sha512-Ue9Lja73Mbs+shF3N6ZafTHmnuM1QsxIW5TYvRQqEN2SAWKVUuuYOkTju8lh7XYAADD6FIF7G5kK+fINj89CPw==
+"@favware/eslint-config-react-app@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@favware/eslint-config-react-app/-/eslint-config-react-app-2.0.2.tgz#36812db7bf23f59ad26d9ef9f35313d9a530fc39"
+  integrity sha512-TdB5uzu1P7cZ4hohP+gthXo7ixBiAtpHD+ZWvzzE5jSxMM0Jv/6tye6tZVLvXxBI0Lii19yKT+cv+CIiZD/AwQ==
 
-"@favware/eslint-config@^6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@favware/eslint-config/-/eslint-config-6.0.1.tgz#6ae9303d97d0c7d3ff31f2011ec136609125245b"
-  integrity sha512-wgO1OVYg0sUGlYZke4Wth7rWEPDwR5pbl7np4xgQS9k9PoXHXDzPQQM/V0CSZV5cEYlNt9B1hD86TgRcfNXLuw==
+"@favware/eslint-config@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@favware/eslint-config/-/eslint-config-6.0.2.tgz#b4800be71b3526b6a3fe4489363c931c7a5b51ca"
+  integrity sha512-uskF051z8e1gyZq6g2Hnr2sCpni419K6wabi+4zRgYCrHldxLFGLMgQnK1ZKDOwXFSJAZ4AUbqUUvEZIHd0SxA==
 
 "@favware/ts-config@^3.0.4":
   version "3.0.4"

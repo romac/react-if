@@ -29,8 +29,8 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@favware/eslint-config": "^6.0.1",
-    "@favware/eslint-config-react-app": "^2.0.1",
+    "@favware/eslint-config": "^6.0.2",
+    "@favware/eslint-config-react-app": "^2.0.2",
     "@favware/ts-config": "^3.0.4",
     "@size-limit/preset-small-lib": "^4.6.2",
     "@types/enzyme": "^3.10.7",
