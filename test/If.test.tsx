@@ -69,16 +69,6 @@ describe('<If /> component', () => {
         expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(false);
       });
 
-      test('GIVEN content w/o <Then /> nor <Else /> THEN errors in test & development', () => {
-        expect(() =>
-          shallow(
-            <If condition={true}>
-              <span>Not Then nor Else</span>
-            </If>
-          )
-        ).toThrowError('The <If> component should contain <Then /> and <Else /> components as its children');
-      });
-
       test('GIVEN w/o children THEN renders null', () => {
         const wrapped = shallow(<If condition={true} />);
 
@@ -242,15 +232,6 @@ describe('<If /> component', () => {
         expect(wrapped).toMatchSnapshot();
         expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(true);
         expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(false);
-      });
-      test('GIVEN w/o <Then /> nor <Else /> THEN throws error', () => {
-        expect(() =>
-          shallow(
-            <If condition={false}>
-              <span>Content</span>
-            </If>
-          )
-        ).toThrowError('The <If> component should contain <Then /> and <Else /> components as its children');
       });
 
       test('GIVEN w/o children THEN renders null', () => {

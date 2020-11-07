@@ -1,7 +1,7 @@
 import React, { FC, Fragment, ReactElement } from 'react';
 import { Else } from './Else';
 import { getConditionResult } from './getConditionResults';
-import { invariant } from './invariant';
+import { tinyWarning } from './tinyWarning';
 import { Then } from './Then';
 import { ComponentWithConditionProps } from './types';
 
@@ -18,7 +18,7 @@ export const If: FC<ComponentWithConditionProps> = ({ condition, children }) => 
     return null;
   }
 
-  invariant(
+  tinyWarning(
     (!Array.isArray(children) && !((children as ReactElement).type === Else || (children as ReactElement).type === Then)) ||
       !(React.Children.toArray(children) as ReactElement[]).every(child => child.type === Else || child.type === Then),
     'The <If> component should contain <Then /> and <Else /> components as its children'

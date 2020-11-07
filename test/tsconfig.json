@@ -3,6 +3,6 @@
   "compilerOptions": {
     "rootDir": "."
   },
-  "include": ["."],
+  "include": [".", "../src/Augments.d.ts"],
   "references": [{ "path": "../src" }]
 }
