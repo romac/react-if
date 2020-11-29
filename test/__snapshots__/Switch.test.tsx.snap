@@ -7,53 +7,53 @@ exports[`<Switch /> component Renders children <Case /> GIVEN child as function 
 `;
 
 exports[`<Switch /> component Renders children <Case /> GIVEN condition as function THEN resolves for first <Case /> 1`] = `
-<Component
+<Case
   condition={[Function]}
 >
   <span>
     Case1
   </span>
-</Component>
+</Case>
 `;
 
 exports[`<Switch /> component Renders children <Case /> GIVEN multiple cases w/ falsy condition then function as truthy condition THEN renders children of second <Case /> 1`] = `
-<Component
+<Case
   condition={[Function]}
 >
   <span>
     Case2
   </span>
-</Component>
+</Case>
 `;
 
 exports[`<Switch /> component Renders children <Case /> GIVEN multiple cases w/ falsy condition then truthy condition THEN renders children of second <Case /> 1`] = `
-<Component
+<Case
   condition={true}
 >
   <span>
     Case2
   </span>
-</Component>
+</Case>
 `;
 
 exports[`<Switch /> component Renders children <Case /> GIVEN multiple cases w/ truthy condition THEN renders children of first <Case /> 1`] = `
-<Component
+<Case
   condition={true}
 >
   <span>
     Case1
   </span>
-</Component>
+</Case>
 `;
 
 exports[`<Switch /> component Renders nothing in some cases GIVEN invalid React children THEN does not render those 1`] = `
-<Component
+<Case
   condition={true}
 >
   <span>
     Case2
   </span>
-</Component>
+</Case>
 `;
 
 exports[`<Switch /> component Renders nothing in some cases GIVEN multiple cases w/ all falsy condition THEN renders nothing 1`] = `""`;
@@ -67,27 +67,27 @@ exports[`<Switch /> component Renders the child element of <Default /> GIVEN chi
 `;
 
 exports[`<Switch /> component Renders the child element of <Default /> GIVEN falsy <Case /> and <Default /> THEN renders children of <Default /> 1`] = `
-<Component>
+<Default>
   <span>
     Default
   </span>
-</Component>
+</Default>
 `;
 
 exports[`<Switch /> component Renders the child element of <Default /> GIVEN simple <Default /> THEN renders children of <Default /> 1`] = `
-<Component>
+<Default>
   <span>
     Default
   </span>
-</Component>
+</Default>
 `;
 
 exports[`<Switch /> component Renders the child element of <Default /> GIVEN truthy <Case /> and <Default /> THEN renders children of <Case /> 1`] = `
-<Component
+<Case
   condition={true}
 >
   <span>
     Case
   </span>
-</Component>
+</Case>
 `;

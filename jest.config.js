@@ -7,5 +7,5 @@ module.exports = {
     },
     __DEV__: true
   },
-  coveragePathIgnorePatterns: ['<rootDir>/src/Augments.d.ts']
+  coveragePathIgnorePatterns: ['<rootDir>/src/Augments.d.ts', '<rootDir>/src/tinyWarning.ts']
 };

@@ -4,13 +4,13 @@ exports[`<If /> component Falsy condition With NODE_ENV === production GIVEN con
 
 exports[`<If /> component Falsy condition With NODE_ENV === test GIVEN <Then /> & <Else /> THEN renders children of <Else /> 1`] = `
 <Fragment>
-  <Component
+  <Else
     key=".1"
   >
     <span>
       Else
     </span>
-  </Component>
+  </Else>
 </Fragment>
 `;
 
@@ -18,25 +18,25 @@ exports[`<If /> component Falsy condition With NODE_ENV === test GIVEN <Then /> 
 
 exports[`<If /> component Falsy condition With NODE_ENV === test GIVEN multiple <Else /> THEN renders only first <Else /> block 1`] = `
 <Fragment>
-  <Component
+  <Else
     key=".0"
   >
     <span>
       Else1
     </span>
-  </Component>
+  </Else>
 </Fragment>
 `;
 
 exports[`<If /> component Falsy condition With NODE_ENV === test GIVEN multiple <Else /> before <Then /> THEN renders <Else /> block 1`] = `
 <Fragment>
-  <Component
+  <Else
     key=".0"
   >
     <span>
       Else
     </span>
-  </Component>
+  </Else>
 </Fragment>
 `;
 
@@ -78,49 +78,49 @@ exports[`<If /> component Truthy cases With NODE_ENV === production GIVEN conten
 
 exports[`<If /> component Truthy cases With NODE_ENV === test GIVEN <Else /> before <Then /> THEN renders <Then /> block 1`] = `
 <Fragment>
-  <Component
+  <Then
     key=".1"
   >
     <span>
       Then
     </span>
-  </Component>
+  </Then>
 </Fragment>
 `;
 
 exports[`<If /> component Truthy cases With NODE_ENV === test GIVEN <Then /> & <Else /> THEN renders children of <Then /> 1`] = `
 <Fragment>
-  <Component
+  <Then
     key=".0"
   >
     <span>
       Then
     </span>
-  </Component>
+  </Then>
 </Fragment>
 `;
 
 exports[`<If /> component Truthy cases With NODE_ENV === test GIVEN <Then /> THEN renders children 1`] = `
 <Fragment>
-  <Component
+  <Then
     key=".0"
   >
     <span>
       Then
     </span>
-  </Component>
+  </Then>
 </Fragment>
 `;
 
 exports[`<If /> component Truthy cases With NODE_ENV === test GIVEN multiple <Then /> blocks THEN renders only first <Then /> block 1`] = `
 <Fragment>
-  <Component
+  <Then
     key=".0"
   >
     <span>
       Then1
     </span>
-  </Component>
+  </Then>
 </Fragment>
 `;
 
@@ -128,48 +128,48 @@ exports[`<If /> component Truthy cases With NODE_ENV === test GIVEN w/o children
 
 exports[`<If /> component Truthy cases With condition as a function GIVEN <Else /> before <Then /> THEN renders <Then /> block 1`] = `
 <Fragment>
-  <Component
+  <Then
     key=".1"
   >
     <span>
       Then
     </span>
-  </Component>
+  </Then>
 </Fragment>
 `;
 
 exports[`<If /> component Truthy cases With condition as a function GIVEN <Then /> & <Else /> THEN does not render children of <Else /> 1`] = `
 <Fragment>
-  <Component
+  <Then
     key=".0"
   >
     <span>
       Then
     </span>
-  </Component>
+  </Then>
 </Fragment>
 `;
 
 exports[`<If /> component Truthy cases With condition as a function GIVEN <Then /> THEN renders children of <Then /> 1`] = `
 <Fragment>
-  <Component
+  <Then
     key=".0"
   >
     <span>
       Then
     </span>
-  </Component>
+  </Then>
 </Fragment>
 `;
 
 exports[`<If /> component Truthy cases With condition as a function GIVEN multiple <Then /> blocks THEN renders only first <Then /> block 1`] = `
 <Fragment>
-  <Component
+  <Then
     key=".0"
   >
     <span>
       Then1
     </span>
-  </Component>
+  </Then>
 </Fragment>
 `;
