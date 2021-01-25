@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for react-if">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -47,12 +48,7 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<ul class="tsd-breadcrumb">
-				<li>
-					<a href="globals.html">Globals</a>
-				</li>
-			</ul>
-			<h1>react-if</h1>
+			<h1>Project react-if</h1>
 		</div>
 	</div>
 </header>
@@ -75,67 +71,66 @@
 					<h2>What does this component do</h2>
 				</a>
 				<p>Take a look at the following presentational component, which contains a commonly used pattern for conditional rendering:</p>
-				<pre><code class="language-jsx"><span class="hljs-keyword">const</span> Bar = <span class="hljs-function">(<span class="hljs-params">{ name, age, drinkingAge }</span>) =&gt;</span> (
-  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
-    {age &gt;= drinkingAge ? (
-      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;ok&quot;</span>&gt;</span>Have a beer, {name}!<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    ) : (
-      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;not-ok&quot;</span>&gt;</span>Sorry, {name}, you are not old enough.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    )}
-    <span class="hljs-tag">&lt;<span class="hljs-name">Footer</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-);</code></pre>
+				<pre><code class="language-jsx"><span style="color: #000000">const Bar = ({ name, age, drinkingAge }) =&gt; (</span>
+<span style="color: #000000">  &lt;div&gt;</span>
+<span style="color: #000000">    &lt;Header /&gt;</span>
+<span style="color: #000000">    {age &gt;= drinkingAge ? &lt;span className=&quot;ok&quot;&gt;Have a beer, {name}!&lt;/span&gt; : &lt;span className=&quot;not-ok&quot;&gt;Sorry, {name}, you are not old enough.&lt;/span&gt;}</span>
+<span style="color: #000000">    &lt;Footer /&gt;</span>
+<span style="color: #000000">  &lt;/div&gt;</span>
+<span style="color: #000000">);</span>
+</code></pre>
 				<p>With <code>React-If</code> you can rewrite this into a more readable, expressive format:</p>
-				<pre><code class="language-jsx"><span class="hljs-keyword">const</span> Bar = <span class="hljs-function">(<span class="hljs-params">{ name, age, drinkingAge }</span>) =&gt;</span> (
-  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">If</span> <span class="hljs-attr">condition</span>=<span class="hljs-string">{age</span> &gt;</span>= drinkingAge}&gt;
-      <span class="hljs-tag">&lt;<span class="hljs-name">Then</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;ok&quot;</span>&gt;</span>Have a beer, {name}!<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Then</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">Else</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;not-ok&quot;</span>&gt;</span>Sorry, {name}, you are not old enough.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">Else</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">If</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">Footer</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-);</code></pre>
+				<pre><code class="language-jsx"><span style="color: #000000">const Bar = ({ name, age, drinkingAge }) =&gt; (</span>
+<span style="color: #000000">  &lt;div&gt;</span>
+<span style="color: #000000">    &lt;Header /&gt;</span>
+<span style="color: #000000">    &lt;If condition={age &gt;= drinkingAge}&gt;</span>
+<span style="color: #000000">      &lt;Then&gt;</span>
+<span style="color: #000000">        &lt;span className=&quot;ok&quot;&gt;Have a beer, {name}!&lt;/span&gt;</span>
+<span style="color: #000000">      &lt;/Then&gt;</span>
+<span style="color: #000000">      &lt;Else&gt;</span>
+<span style="color: #000000">        &lt;span className=&quot;not-ok&quot;&gt;Sorry, {name}, you are not old enough.&lt;/span&gt;</span>
+<span style="color: #000000">      &lt;/Else&gt;</span>
+<span style="color: #000000">    &lt;/If&gt;</span>
+<span style="color: #000000">    &lt;Footer /&gt;</span>
+<span style="color: #000000">  &lt;/div&gt;</span>
+<span style="color: #000000">);</span>
+</code></pre>
 				<a href="#delaying-evaluation-of-children--condition" id="delaying-evaluation-of-children--condition" style="color: inherit; text-decoration: none;">
 					<h2>Delaying evaluation of children / condition</h2>
 				</a>
 				<p>It is important to note that, because JavaScript is an eagerly evaluated language, children of both the <code>Then</code> and <code>Else</code> component and condition will be evaluated regardless of the value of the condition. Should that be an issue for performance reasons, one can wrap said children / condition in a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">arrow function</a>, to delay evaluation of the children / condition, as in the following example:</p>
-				<pre><code class="language-jsx"><span class="hljs-keyword">const</span> renderData = <span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> {
-  val computed = <span class="hljs-comment">/* expensive computation */</span>
-  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Here is the result: {computed}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>;
-};
+				<pre><code class="language-jsx"><span style="color: #000000">const renderData = (data) =&gt; {</span>
+<span style="color: #000000">  val computed = /* expensive computation */</span>
+<span style="color: #000000">  return &lt;span&gt;Here is the result: {computed}&lt;/span&gt;;</span>
+<span style="color: #000000">};</span>
 
-<span class="hljs-keyword">const</span> Foo = <span class="hljs-function">(<span class="hljs-params">{ data }</span>) =&gt;</span> (
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">If</span> <span class="hljs-attr">condition</span>=<span class="hljs-string">{false}</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Then</span>&gt;</span>{() =&gt;
-              renderData(data)
-            }<span class="hljs-tag">&lt;/<span class="hljs-name">Then</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Else</span>&gt;</span>
-              Nothing to see here
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Else</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">If</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">If</span> <span class="hljs-attr">condition</span>=<span class="hljs-string">{!props.bears}</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">Then</span>&gt;</span>
-            No bears
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Then</span>&gt;</span>
+<span style="color: #000000">const Foo = ({ data }) =&gt; (</span>
+<span style="color: #000000">    &lt;div&gt;</span>
+<span style="color: #000000">        &lt;If condition={false}&gt;</span>
+<span style="color: #000000">            &lt;Then&gt;{() =&gt;</span>
+<span style="color: #000000">              renderData(data)</span>
+<span style="color: #000000">            }&lt;/Then&gt;</span>
+<span style="color: #000000">            &lt;Else&gt;</span>
+<span style="color: #000000">              Nothing to see here</span>
+<span style="color: #000000">            &lt;/Else&gt;</span>
+<span style="color: #000000">        &lt;/If&gt;</span>
+<span style="color: #000000">        &lt;If condition={!props.bears}&gt;</span>
+<span style="color: #000000">          &lt;Then&gt;</span>
+<span style="color: #000000">            No bears</span>
+<span style="color: #000000">          &lt;/Then&gt;</span>
 
-          <span class="hljs-tag">&lt;<span class="hljs-name">Else</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">If</span> <span class="hljs-attr">condition</span>=<span class="hljs-string">{()</span> =&gt;</span> props.bears.length}&gt;
-              Empty bears array
-            <span class="hljs-tag">&lt;/<span class="hljs-name">If</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">Else</span>&gt;</span>
-              // Display bears
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Else</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">Else</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">If</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-)</code></pre>
+<span style="color: #000000">          &lt;Else&gt;</span>
+<span style="color: #000000">            &lt;If condition={() =&gt; props.bears.length}&gt;</span>
+<span style="color: #000000">              Empty bears array</span>
+<span style="color: #000000">            &lt;/If&gt;</span>
+<span style="color: #000000">            &lt;Else&gt;</span>
+<span style="color: #000000">              // Display bears</span>
+<span style="color: #000000">            &lt;/Else&gt;</span>
+<span style="color: #000000">          &lt;/Else&gt;</span>
+<span style="color: #000000">        &lt;/If&gt;</span>
+<span style="color: #000000">    &lt;/div&gt;</span>
+<span style="color: #000000">)</span>
+</code></pre>
 				<p>By doing so, <code>renderData</code> will not be called in the 1st example.</p>
 				<p>And <code>props.bears.length</code> will not be called in the 2nd example.</p>
 				<a href="#installing-and-usage" id="installing-and-usage" style="color: inherit; text-decoration: none;">
@@ -146,50 +141,53 @@
 				</a>
 				<p><code>npm install react-if</code>
 				Or with yarn: <code>yarn add react-if</code></p>
-				<pre><code class="language-jsx"><span class="hljs-comment">// ES2015</span>
-<span class="hljs-keyword">import</span> { If, Then, Else, When, Unless, Switch, Case, Default } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react-if&#x27;</span>;
+				<pre><code class="language-jsx"><span style="color: #000000">// ES2015</span>
+<span style="color: #000000">import { If, Then, Else, When, Unless, Switch, Case, Default } from &#039;react-if&#039;;</span>
 
-<span class="hljs-comment">// CommonJS:</span>
-<span class="hljs-keyword">const</span> { If, Then, Else, When, Unless, Switch, Case, Default } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;react-if&#x27;</span>);</code></pre>
+<span style="color: #000000">// CommonJS:</span>
+<span style="color: #000000">const { If, Then, Else, When, Unless, Switch, Case, Default } = require(&#039;react-if&#039;);</span>
+</code></pre>
 				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
 					<h2>Examples</h2>
 				</a>
 				<a href="#swichcasedefault" id="swichcasedefault" style="color: inherit; text-decoration: none;">
 					<h2>Swich/Case/Default</h2>
 				</a>
-				<pre><code class="language-jsx"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
-<span class="hljs-keyword">import</span> { Switch, Case, Default } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react-if&#x27;</span>;
+				<pre><code class="language-jsx"><span style="color: #000000">import React from &#039;react&#039;;</span>
+<span style="color: #000000">import { Switch, Case, Default } from &#039;react-if&#039;;</span>
 
-<span class="hljs-keyword">const</span> myNumber = <span class="hljs-number">3</span>;
+<span style="color: #000000">const myNumber = 3;</span>
 
-<span class="hljs-keyword">const</span> Example = <span class="hljs-function">() =&gt;</span> (
-  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">Switch</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">Case</span> <span class="hljs-attr">condition</span>=<span class="hljs-string">{myNumber</span> === <span class="hljs-string">9}</span>&gt;</span>This will be displayed if condition is matched<span class="hljs-tag">&lt;/<span class="hljs-name">Case</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">Case</span> <span class="hljs-attr">condition</span>=<span class="hljs-string">{myNumber</span> &gt;</span> 1}&gt;This will be displayed if condition is matched<span class="hljs-tag">&lt;/<span class="hljs-name">Case</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">Default</span>&gt;</span>This will be displayed if no Case have matching condition<span class="hljs-tag">&lt;/<span class="hljs-name">Default</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">Switch</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-);</code></pre>
+<span style="color: #000000">const Example = () =&gt; (</span>
+<span style="color: #000000">  &lt;div&gt;</span>
+<span style="color: #000000">    &lt;Switch&gt;</span>
+<span style="color: #000000">      &lt;Case condition={myNumber === 9}&gt;This will be displayed if condition is matched&lt;/Case&gt;</span>
+<span style="color: #000000">      &lt;Case condition={myNumber &gt; 1}&gt;This will be displayed if condition is matched&lt;/Case&gt;</span>
+<span style="color: #000000">      &lt;Default&gt;This will be displayed if no Case have matching condition&lt;/Default&gt;</span>
+<span style="color: #000000">    &lt;/Switch&gt;</span>
+<span style="color: #000000">  &lt;/div&gt;</span>
+<span style="color: #000000">);</span>
+</code></pre>
 				<a href="#shorthands-when-and-unless" id="shorthands-when-and-unless" style="color: inherit; text-decoration: none;">
 					<h2>Shorthands: When and Unless</h2>
 				</a>
-				<pre><code class="language-jsx"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
-<span class="hljs-keyword">import</span> { When, Unless } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react-if&#x27;</span>;
+				<pre><code class="language-jsx"><span style="color: #000000">import React from &#039;react&#039;;</span>
+<span style="color: #000000">import { When, Unless } from &#039;react-if&#039;;</span>
 
-<span class="hljs-keyword">const</span> someCondition = <span class="hljs-literal">false</span>;
+<span style="color: #000000">const someCondition = false;</span>
 
-<span class="hljs-keyword">const</span> Example = <span class="hljs-function">() =&gt;</span> (
-  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">When</span> <span class="hljs-attr">condition</span>=<span class="hljs-string">{someCondition}</span>&gt;</span>This will only be displayed, if the condition is TRUE<span class="hljs-tag">&lt;/<span class="hljs-name">When</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-);
+<span style="color: #000000">const Example = () =&gt; (</span>
+<span style="color: #000000">  &lt;div&gt;</span>
+<span style="color: #000000">    &lt;When condition={someCondition}&gt;This will only be displayed, if the condition is TRUE&lt;/When&gt;</span>
+<span style="color: #000000">  &lt;/div&gt;</span>
+<span style="color: #000000">);</span>
 
-<span class="hljs-keyword">const</span> AnotherExample = <span class="hljs-function">() =&gt;</span> (
-  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">Unless</span> <span class="hljs-attr">condition</span>=<span class="hljs-string">{someCondition}</span>&gt;</span>This will only be displayed, if the condition is FALSE<span class="hljs-tag">&lt;/<span class="hljs-name">Unless</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-);</code></pre>
+<span style="color: #000000">const AnotherExample = () =&gt; (</span>
+<span style="color: #000000">  &lt;div&gt;</span>
+<span style="color: #000000">    &lt;Unless condition={someCondition}&gt;This will only be displayed, if the condition is FALSE&lt;/Unless&gt;</span>
+<span style="color: #000000">  &lt;/div&gt;</span>
+<span style="color: #000000">);</span>
+</code></pre>
 				<a href="#api" id="api" style="color: inherit; text-decoration: none;">
 					<h2>API</h2>
 				</a>
@@ -297,8 +295,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
@@ -308,40 +306,31 @@
 						<a href="interfaces/componentwithconditionprops.html" class="tsd-kind-icon">Component<wbr>With<wbr>Condition<wbr>Props</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#booleanlike" class="tsd-kind-icon">Boolean<wbr>Like</a>
+						<a href="modules.html#booleanlike" class="tsd-kind-icon">Boolean<wbr>Like</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#case" class="tsd-kind-icon">Case</a>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#case" class="tsd-kind-icon">Case</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#default" class="tsd-kind-icon">Default</a>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#default" class="tsd-kind-icon">Default</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#else" class="tsd-kind-icon">Else</a>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#else" class="tsd-kind-icon">Else</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#if" class="tsd-kind-icon">If</a>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#if" class="tsd-kind-icon">If</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#switch" class="tsd-kind-icon">Switch</a>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#switch" class="tsd-kind-icon">Switch</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#then" class="tsd-kind-icon">Then</a>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#then" class="tsd-kind-icon">Then</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#unless" class="tsd-kind-icon">Unless</a>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#unless" class="tsd-kind-icon">Unless</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#when" class="tsd-kind-icon">When</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#getconditionresult" class="tsd-kind-icon">get<wbr>Condition<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#render" class="tsd-kind-icon">render</a>
-					</li>
-					<li class=" tsd-kind-function">
-						<a href="globals.html#tinywarning" class="tsd-kind-icon">tiny<wbr>Warning</a>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#when" class="tsd-kind-icon">When</a>
 					</li>
 				</ul>
 			</nav>
@@ -352,6 +341,9 @@
 	<div class="container">
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
 		</div>
 	</div>
 </footer>
