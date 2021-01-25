@@ -18,7 +18,7 @@ export const Switch: FC = ({ children }) => {
   let matchingCase: ReactElement | undefined = undefined;
   let defaultCase: ReactElement | undefined = undefined;
 
-  React.Children.forEach(children, child => {
+  React.Children.forEach(children, (child) => {
     // not a valid react child, don't add it
     /* istanbul ignore next - This is only a safe fail for people writing bad code */
     if (!React.isValidElement(child)) {
@@ -26,7 +26,7 @@ export const Switch: FC = ({ children }) => {
     }
 
     if (!matchingCase && child.type === Case) {
-      const condition = child.props.condition;
+      const { condition } = child.props;
 
       const conditionResult = getConditionResult(condition);
 

@@ -23,10 +23,9 @@ docs/
 **/*.js.map
 **/*.d.ts
 !src/Augments.d.ts
-!test/Augments.d.ts
 **/*.tsbuildinfo
 !jest.config.js
-!.eslintrc.js
+!.prettierrc.js
 
 # Ignore heapsnapshot and log files
 *.heapsnapshot

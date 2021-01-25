@@ -1,5 +1,5 @@
 {
-  "extends": "@favware/ts-config",
+  "extends": "@sapphire/ts-config",
   "compilerOptions": {
     "module": "ESNext",
     "lib": ["ESNext", "DOM"],

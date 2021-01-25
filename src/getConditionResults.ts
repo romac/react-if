@@ -1,4 +1,4 @@
-import { BooleanLike } from './types';
+import type { BooleanLike } from './types';
 
 /**
  * Resolves a condition that is {@link BooleanLike} or returns {@link BooleanLike} from a function

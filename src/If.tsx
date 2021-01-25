@@ -3,7 +3,7 @@ import { Else } from './Else';
 import { getConditionResult } from './getConditionResults';
 import { tinyWarning } from './tinyWarning';
 import { Then } from './Then';
-import { ComponentWithConditionProps } from './types';
+import type { ComponentWithConditionProps } from './types';
 
 /**
  * If condition evaluates to true, renders the `<Then />` block will be rendered,
@@ -20,13 +20,11 @@ export const If: FC<ComponentWithConditionProps> = ({ condition, children }) => 
 
   tinyWarning(
     (!Array.isArray(children) && !((children as ReactElement).type === Else || (children as ReactElement).type === Then)) ||
-      !(React.Children.toArray(children) as ReactElement[]).every(child => child.type === Else || child.type === Then),
+      !(React.Children.toArray(children) as ReactElement[]).every((child) => child.type === Else || child.type === Then),
     'The <If> component should contain <Then /> and <Else /> components as its children'
   );
 
   const conditionResult = getConditionResult(condition);
 
-  return (
-    <Fragment>{(React.Children.toArray(children) as ReactElement[]).find(c => (c.type !== Else) !== !conditionResult) || null}</Fragment>
-  );
+  return <Fragment>{(React.Children.toArray(children) as ReactElement[]).find((c) => (c.type !== Else) !== !conditionResult) || null}</Fragment>;
 };

@@ -1,7 +1,7 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 import { getConditionResult } from './getConditionResults';
 import { render } from './render';
-import { ComponentWithConditionProps } from './types';
+import type { ComponentWithConditionProps } from './types';
 
 /** A shorthand for
  *
