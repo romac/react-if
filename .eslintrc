@@ -1,5 +1,5 @@
 {
-  "extends": ["@sapphire", "plugin:import/typescript"],
+  "extends": ["plugin:import/typescript", "@sapphire"],
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module",
