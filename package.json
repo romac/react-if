@@ -24,9 +24,8 @@
     "sversion": "standard-version",
     "commit": "git-cz",
     "cz": "git-cz",
-    "prepublishOnly": "yarn build && pinst --disable",
-    "postinstall": "husky install .github/husky",
-    "postpublish": "pinst --enable"
+    "prepublishOnly": "yarn build",
+    "prepare": "husky install .github/husky"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.0.1",
@@ -57,7 +56,6 @@
     "husky": "^5.1.1",
     "jest-enzyme": "^7.1.2",
     "lint-staged": "^10.5.4",
-    "pinst": "^2.1.6",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
     "react": "^16.14.0",
