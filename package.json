@@ -30,9 +30,9 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
-    "@sapphire/eslint-config": "^3.0.3",
-    "@sapphire/prettier-config": "^1.0.9",
-    "@sapphire/ts-config": "^2.1.1",
+    "@sapphire/eslint-config": "^3.1.1",
+    "@sapphire/prettier-config": "^1.1.0",
+    "@sapphire/ts-config": "^2.2.0",
     "@size-limit/preset-small-lib": "^4.10.2",
     "@types/enzyme": "^3.10.8",
     "@types/enzyme-adapter-react-16": "^1.0.6",
@@ -63,7 +63,7 @@
     "size-limit": "^4.10.2",
     "standard-version": "^9.2.0",
     "tsdx": "^0.14.1",
-    "typedoc": "^0.20.35",
+    "typedoc": "^0.20.36",
     "typedoc-plugin-nojekyll": "^1.0.1",
     "typescript": "^4.2.4"
   },
