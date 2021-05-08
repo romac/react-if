@@ -38,17 +38,19 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
-      - name: Use Node.js 15
+      - name: Use Node.js v16
         uses: actions/setup-node@v2
         with:
-          node-version: 15
+          node-version: 16
       - name: Restore CI Cache
-        uses: actions/cache@v1
+        uses: actions/cache@v2.1.5
+        id: cache-restore
         with:
           path: node_modules
-          key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
-      - name: Install Dependencies
-        run: yarn --ignore-scripts --frozen-lockfile
+          key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
+      - name: Install Dependencies if Cache Miss
+        if: ${{ !steps.cache-restore.outputs.cache-hit }}
+        run: yarn --frozen-lockfile
       - name: Run ESLint
         run: yarn lint --fix=false
 
@@ -60,16 +62,18 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
-      - name: Use Node.js 15
+      - name: Use Node.js v16
         uses: actions/setup-node@v2
         with:
-          node-version: 15
+          node-version: 16
       - name: Restore CI Cache
-        uses: actions/cache@v1
+        uses: actions/cache@v2.1.5
+        id: cache-restore
         with:
           path: node_modules
-          key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
-      - name: Install Dependencies
+          key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
+      - name: Install Dependencies if Cache Miss
+        if: ${{ !steps.cache-restore.outputs.cache-hit }}
         run: yarn --frozen-lockfile
       - name: Run tests
         run: yarn test --ci --coverage --maxWorkers=2
@@ -82,16 +86,18 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
-      - name: Use Node.js 15
+      - name: Use Node.js v16
         uses: actions/setup-node@v2
         with:
-          node-version: 15
+          node-version: 16
       - name: Restore CI Cache
-        uses: actions/cache@v1
+        uses: actions/cache@v2.1.5
+        id: cache-restore
         with:
           path: node_modules
-          key: ${{ runner.os }}-15-${{ hashFiles('**/yarn.lock') }}
-      - name: Install Dependencies
-        run: yarn --ignore-scripts --frozen-lockfile
+          key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
+      - name: Install Dependencies if Cache Miss
+        if: ${{ !steps.cache-restore.outputs.cache-hit }}
+        run: yarn --frozen-lockfile
       - name: Build Code
         run: yarn build
