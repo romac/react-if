@@ -1,8 +1,17 @@
 {
+  "cleanOutputDir": true,
+  "entryPoints": ["src/index.tsx"],
+  "excludeExternals": false,
+  "hideGenerator": true,
+  "lightHighlightTheme": "github-light",
+  "darkHighlightTheme": "github-dark",
+  "markedOptions": {
+    "gfm": true,
+    "mangle": false,
+    "smartypants": true
+  },
+  "name": "react-if",
   "out": "./docs/",
   "readme": "./README.md",
-  "name": "react-if",
-  "entryPoints": ["src/index.tsx"],
-  "excludeExternals": true,
   "tsconfig": "./src/tsconfig.json"
 }
