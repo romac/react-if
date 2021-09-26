@@ -177,7 +177,7 @@ const Example = () => {
 
 **_Note: For a fully auto-generated API, see [the github pages website](https://romac.github.io/react-if)_**
 
-### <If />;
+### &lt;If /&gt;
 
 | Property    | Type            | Default |
 | ----------- | --------------- | ------- |
@@ -203,19 +203,19 @@ The parameters of this render function are:
 
 If the `keepAlive` prop evaluates to `false`, each rerender of the `<If />` component will automatically ignore the previous Promise if it was still pending.
 
-### <Then />;
+### &lt;Then /&gt;
 
 Can contain any number of elements inside, which it renders as-is. It can also contain a function. Should not be used outside of an `<If />` block. It will only be displayed, if parent `If` block's condition is true.
 
-### <Else />;
+### &lt;Else /&gt;
 
 Can contain any number of elements inside, which it renders as-is. It can also contain a function. Should not be used outside of an `<If />` block. It will only be displayed, if parent `If` block's condition is false.
 
-### <Switch />;
+### &lt;Switch /&gt;
 
 A container for `<Case condition={...}/>` and `<Default />` blocks. It will render **the first matching** `Case`, or **the first encountered** `Default` (, or null).
 
-### <Case />;
+### &lt;Case /&gt;
 
 | Property    | Type    |
 | ----------- | ------- |
@@ -223,15 +223,15 @@ A container for `<Case condition={...}/>` and `<Default />` blocks. It will rend
 
 If the `Case` is the first one to have its `condition` evaluates to `true` inside the parent `<Switch />` it will be the only rendered.
 
-### <Default />;
+### &lt;Default /&gt;
 
 If no `Case` have its `condition` evaluates to `true` inside the parent `<Switch />`, the first `Default` will be the only one rendered.
 
-### <When />;
+### &lt;When /&gt;
 
 A shorthand for `<If condition={...}><Then>...</Then></If>`. The same rules apply to the child elements as with using the `Then` block.
 
-### <Unless />;
+### &lt;Unless /&gt;
 
 A shorthand for `<If condition={...}><Else>...</Else></If>`. The same rules apply to the child elements as with using the `Else` block.
 
