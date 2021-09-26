@@ -66,6 +66,12 @@ exports[`<If /> component Falsy condition With child as function GIVEN body that
 </div>
 `;
 
+exports[`<If /> component Falsy condition With condition as a promise GIVEN rejected promise THEN renders <ELSE /> block 1`] = `
+<span>
+  Else
+</span>
+`;
+
 exports[`<If /> component Truthy cases With NODE_ENV === production GIVEN content w/o <Then /> nor <Else /> THEN renders empty block in production 1`] = `
 <Fragment>
   <span
@@ -172,4 +178,16 @@ exports[`<If /> component Truthy cases With condition as a function GIVEN multip
     </span>
   </Then>
 </Fragment>
+`;
+
+exports[`<If /> component Truthy cases With condition as a promise GIVEN pending promise THEN renders <Fallback /> block 1`] = `
+<span>
+  Fallback
+</span>
+`;
+
+exports[`<If /> component Truthy cases With condition as a promise GIVEN resolved promise THEN renders <THEN /> block 1`] = `
+<span>
+  Then
+</span>
 `;

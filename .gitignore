@@ -15,7 +15,7 @@ coverage/
 # Ignore output folders
 dist/
 docs/
-.cache/
+.parcel-cache/
 
 # Ignore JavaScript files
 **/*.js
@@ -26,6 +26,7 @@ docs/
 **/*.tsbuildinfo
 !jest.config.js
 !.prettierrc.js
+!demo/tailwind.config.js
 
 # Ignore heapsnapshot and log files
 *.heapsnapshot

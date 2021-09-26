@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: large;
+}
+
+.inline-spinner {
+  display: inline-block;
+  height: 0.66em;
+  width: 0.66em;
+  background: #0000;
+  border-radius: 50%;
+  border: 0.125em solid cyan;
+  border-right-color: #0000;
+  animation: rotate 0.66s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes stretch-w {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

@@ -1,6 +1,7 @@
 export * from './Case';
 export * from './Default';
 export * from './Else';
+export * from './Fallback';
 export * from './If';
 export * from './Switch';
 export * from './Then';
