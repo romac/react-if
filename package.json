@@ -1,6 +1,6 @@
 {
   "name": "react-if",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "🌗 Render React components conditionally",
   "author": "Romain Ruetschi <romain.ruetschi@gmail.com>",
   "license": "MIT",

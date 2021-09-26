@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.1.1](https://github.com/romac/react-if/compare/v4.1.0...v4.1.1) (2021-09-26)
+
+### Bug Fixes
+
+- **readme:** fixed headers for usage ([188f859](https://github.com/romac/react-if/commit/188f8595072a9d966503dd9577a966752c5aa250))
+
 ## [4.1.0](https://github.com/romac/react-if/compare/v4.0.1...v4.1.0) (2021-09-26)
 
 ### Features
