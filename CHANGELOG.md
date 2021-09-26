@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.1.0](https://github.com/romac/react-if/compare/v4.0.1...v4.1.0) (2021-09-26)
+
+### Features
+
+- add `Fallback` component ([d949f89](https://github.com/romac/react-if/commit/d949f89ae4e50af23a1560118a222ad576c4af41))
+- add `IfAsync` component (will be used automatically when passing a `Promise` to the `condition` of `<If condition={...}>`) ([c6ff69c](https://github.com/romac/react-if/commit/c6ff69c2a7ab732dcafa473e9449d9ce2bba150e))
+- add promise support to `<If />` component (fixes [#53](https://github.com/romac/react-if/issues/53)) ([#111](https://github.com/romac/react-if/issues/111)) ([18bb83b](https://github.com/romac/react-if/commit/18bb83bf1c2effb7db5c2d8b98dc15ca19ba64b5))
+- update soft minimum NodeJS requirement to v14 - only applies when `engines` is checked ([f1ede6f](https://github.com/romac/react-if/commit/f1ede6fb9cc898ef22a00be7be1791fc53d90730))
+
+### Bug Fixes
+
+- **if:** properly throw warnings in dev mode ([bd80bbc](https://github.com/romac/react-if/commit/bd80bbc035ab8d9aec7345d5333d6e1caefd6d3d))
+
 ### [4.0.1](https://github.com/romac/react-if/compare/v4.0.0...v4.0.1) (2020-10-21)
 
 ### ⚠ BREAKING CHANGES
