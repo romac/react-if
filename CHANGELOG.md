@@ -4,27 +4,25 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [4.0.1](https://github.com/romac/react-if/compare/v4.0.0...v4.0.1) (2020-10-21)
 
-
 ### ⚠ BREAKING CHANGES
 
-* **readme:** As part of the rewrite, the global exports are gone.
-Please use CommonJS or ESM style imports as specified in the README.
+- **readme:** As part of the rewrite, the global exports are gone.
+  Please use CommonJS or ESM style imports as specified in the README.
 
 ### Bug Fixes
 
-* **readme:** update shields ([d975fd4](https://github.com/romac/react-if/commit/d975fd44b737caff913725905abe316a02097236))
+- **readme:** update shields ([d975fd4](https://github.com/romac/react-if/commit/d975fd44b737caff913725905abe316a02097236))
 
 ## [4.0.0](https://github.com/romac/react-if/compare/v3.4.3...v4.0.0) (2020-10-21)
 
-
 ### ⚠ BREAKING CHANGES
 
-* As part of the rewrite, the global exports are gone. Please use CommonJS or ESM
-style imports as specified in the README.
+- As part of the rewrite, the global exports are gone. Please use CommonJS or ESM
+  style imports as specified in the README.
 
 ### Features
 
-* rewrite entire lib from scratch ([9f93221](https://github.com/romac/react-if/commit/9f93221999e23bc39db98575aa72e245935ccb6d)), closes [#55](https://github.com/romac/react-if/issues/55) [#57](https://github.com/romac/react-if/issues/57)
+- rewrite entire lib from scratch ([9f93221](https://github.com/romac/react-if/commit/9f93221999e23bc39db98575aa72e245935ccb6d)), closes [#55](https://github.com/romac/react-if/issues/55) [#57](https://github.com/romac/react-if/issues/57)
 
 ## 3.4.3 (2019-06-17)
 

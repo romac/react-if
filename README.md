@@ -102,7 +102,7 @@ const { If, Then, Else, When, Unless, Switch, Case, Default } = require('react-i
 
 ## Examples
 
-## Swich/Case/Default
+## Switch/Case/Default
 
 ```jsx
 import React from 'react';
@@ -142,33 +142,80 @@ const AnotherExample = () => (
 );
 ```
 
+## Asynchronous condition
+
+```jsx
+import React from 'react';
+import { If, Fallback, Then, Else } from 'react-if';
+
+const Example = () => {
+  const fetchData = () => {
+    // Return promise
+  };
+
+  return (
+    <div>
+      <If condition={fetchData()}>
+        <Fallback>Loading data ...</Fallback>
+        <Then>
+          {(data) => (
+            <span>Here is your data: {data}</span>
+          )}
+        </Then>
+        <Else>
+          {(error) => (
+            <span>Failed to load data because "{error}"</span>
+          )}
+        </Else>
+      </If>
+    </div>
+  );
+});
+```
+
 ## API
 
 **_Note: For a fully auto-generated API, see [the github pages website](https://romac.github.io/react-if)_**
 
-### &lt;If /&gt;
+### <If />;
 
-| Property    | Type    |
-| ----------- | ------- |
-| `condition` | Boolean |
+| Property    | Type            | Default |
+| ----------- | --------------- | ------- |
+| `condition` | Boolean/Promise |         |
+| `keepAlive` | Boolean         | false   |
 
 If `condition` evaluates to `true`, renders the `<Then />` block will be rendered, otherwise renders the `<Else />` block. Either block may be omitted.
 
 This component can contain any number of `<Then />` or `<Else />` blocks, but only the first block of the right type (either `Then` or `Else`, depending on the condition) will be rendered.
 
-### &lt;Then /&gt;
+When passing a Promise to `condition`, renders the `Fallback` block while the Promise is pending, the `<Then />` block once Promise is resolved, and the `<Else />` block when Promise is rejected.
+The return value of the `Promise` can be retrieved within the `<Then />` and `<Else />` blocks; a render function must be child of these blocks.
+
+```jsx
+<Then>{(returnValue, promiseHistory, cancellablePromise) => <span>{returnValue}</span>}</Then>
+```
+
+The parameters of this render function are:
+
+- `returnValue`: The return value of the `Promise` (for the `<Then />` block) or the error (for the `<Else />` block);
+- `promiseHistory`: an Array of all the Promises that were ever passed to `<If />`. It contains cancellablePromise Objects, that have a promise, as well as a `cancel` method used to cancel the promise;
+- `cancellablePromise`: the cancellablePromise Object containing the promise that caused the rendering of this `<Then />|<Else />` block;
+
+If the `keepAlive` prop evaluates to `false`, each rerender of the `<If />` component will automatically ignore the previous Promise if it was still pending.
+
+### <Then />;
 
 Can contain any number of elements inside, which it renders as-is. It can also contain a function. Should not be used outside of an `<If />` block. It will only be displayed, if parent `If` block's condition is true.
 
-### &lt;Else /&gt;
+### <Else />;
 
 Can contain any number of elements inside, which it renders as-is. It can also contain a function. Should not be used outside of an `<If />` block. It will only be displayed, if parent `If` block's condition is false.
 
-### &lt;Switch /&gt;
+### <Switch />;
 
 A container for `<Case condition={...}/>` and `<Default />` blocks. It will render **the first matching** `Case`, or **the first encountered** `Default` (, or null).
 
-### &lt;Case /&gt;
+### <Case />;
 
 | Property    | Type    |
 | ----------- | ------- |
@@ -176,15 +223,15 @@ A container for `<Case condition={...}/>` and `<Default />` blocks. It will rend
 
 If the `Case` is the first one to have its `condition` evaluates to `true` inside the parent `<Switch />` it will be the only rendered.
 
-### &lt;Default /&gt;
+### <Default />;
 
 If no `Case` have its `condition` evaluates to `true` inside the parent `<Switch />`, the first `Default` will be the only one rendered.
 
-### &lt;When /&gt;
+### <When />;
 
 A shorthand for `<If condition={...}><Then>...</Then></If>`. The same rules apply to the child elements as with using the `Then` block.
 
-### &lt;Unless /&gt;
+### <Unless />;
 
 A shorthand for `<If condition={...}><Else>...</Else></If>`. The same rules apply to the child elements as with using the `Else` block.
 
@@ -223,6 +270,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/artcoding-git"><img src="https://avatars0.githubusercontent.com/u/20770507?v=4?s=100" width="100px;" alt=""/><br /><sub><b>artcoding-git</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=artcoding-git" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Ako520"><img src="https://avatars3.githubusercontent.com/u/22900569?v=4?s=100" width="100px;" alt=""/><br /><sub><b>王天博</b></sub></a><br /><a href="https://github.com/romac/react-if/issues?q=author%3AAko520" title="Bug reports">🐛</a> <a href="https://github.com/romac/react-if/commits?author=Ako520" title="Code">💻</a></td>
     <td align="center"><a href="https://arcath.net/"><img src="https://avatars1.githubusercontent.com/u/19609?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adam Laycock</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=Arcath" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/theo-js"><img src="https://avatars.githubusercontent.com/u/58733465?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Theo B.</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=theo-js" title="Code">💻</a></td>
   </tr>
 </table>
 

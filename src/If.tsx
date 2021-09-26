@@ -1,9 +1,12 @@
 import React, { FC, Fragment, ReactElement } from 'react';
 import { Else } from './Else';
+import { Fallback } from './Fallback';
 import { getConditionResult } from './getConditionResults';
-import { tinyWarning } from './tinyWarning';
+import { IfAsync } from './IfAsync';
+import { isThenable } from './isThenable';
 import { Then } from './Then';
-import type { ComponentWithConditionProps } from './types';
+import { tinyWarning } from './tinyWarning';
+import type { ComponentWithConditionPropsAsyncSupport, ExtendablePromise } from './types';
 
 /**
  * If condition evaluates to true, renders the `<Then />` block will be rendered,
@@ -13,16 +16,24 @@ import type { ComponentWithConditionProps } from './types';
  * but only the first block of the right type (either Then or Else, depending on the condition) will be rendered.
  * @param __namedParameters The props to pass down to the `<IF />` component, see {@link ComponentWithConditionProps}
  */
-export const If: FC<ComponentWithConditionProps> = ({ condition, children }) => {
+export const If: FC<ComponentWithConditionPropsAsyncSupport> = ({ condition, keepAlive = false, children }) => {
   if (!children) {
     return null;
   }
 
   tinyWarning(
     (!Array.isArray(children) && !((children as ReactElement).type === Else || (children as ReactElement).type === Then)) ||
-      !(React.Children.toArray(children) as ReactElement[]).every((child) => child.type === Else || child.type === Then),
-    'The <If> component should contain <Then /> and <Else /> components as its children'
+      !(React.Children.toArray(children) as ReactElement[]).every((child) => child.type === Else || child.type === Then || child.type === Fallback),
+    'The <If> component should contain <Then /> <Else /> or <Fallback /> components as its children'
   );
+
+  if (isThenable(condition)) {
+    return (
+      <IfAsync promise={condition as ExtendablePromise<any>} keepAlive={keepAlive}>
+        {children}
+      </IfAsync>
+    );
+  }
 
   const conditionResult = getConditionResult(condition);
 

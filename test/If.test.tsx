@@ -1,6 +1,15 @@
-import { mount, shallow } from 'enzyme';
+import { mount, ReactWrapper, shallow } from 'enzyme';
 import React from 'react';
-import { Else, If, Then } from '../src';
+import { act } from 'react-dom/test-utils';
+import { Else, Fallback, If, Then } from '../src';
+import type { ExtendablePromise } from '../src/types';
+
+const waitForComponentToPaint = async (wrapped: ReactWrapper) => {
+  await act(async () => {
+    await new Promise((resolve) => setTimeout(resolve, 0));
+    wrapped.update();
+  });
+};
 
 describe('<If /> component', () => {
   describe('Truthy cases', () => {
@@ -163,6 +172,83 @@ describe('<If /> component', () => {
         expect(wrapped).toMatchSnapshot();
         expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(true);
         expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(false);
+      });
+    });
+
+    describe('With condition as a promise', () => {
+      test('GIVEN pending promise THEN renders <Fallback /> block', () => {
+        // eslint-disable-next-line @typescript-eslint/no-empty-function
+        const pendingPromise = new Promise(() => {});
+        const wrapped: ReactWrapper = mount(
+          <If condition={pendingPromise}>
+            <Fallback>
+              <span>Fallback</span>
+            </Fallback>
+            <Then>
+              <span>Then</span>
+            </Then>
+            <Else>
+              <span>Else</span>
+            </Else>
+          </If>
+        );
+
+        expect(wrapped).toMatchSnapshot();
+        expect(wrapped.containsMatchingElement(<span>Fallback</span>)).toBe(true);
+        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(false);
+        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(false);
+      });
+
+      test('GIVEN resolved promise THEN renders <THEN /> block', async () => {
+        const wrapped: ReactWrapper = mount(
+          <If condition={Promise.resolve()}>
+            <Fallback>
+              <span>Fallback</span>
+            </Fallback>
+            <Then>
+              <span>Then</span>
+            </Then>
+            <Else>
+              <span>Else</span>
+            </Else>
+          </If>
+        );
+        await waitForComponentToPaint(wrapped);
+
+        expect(wrapped).toMatchSnapshot();
+        expect(wrapped.containsMatchingElement(<span>Fallback</span>)).toBe(false);
+        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(true);
+        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(false);
+      });
+
+      test('GIVEN resolved promise THEN can retrieve return value inside THEN block', async () => {
+        const returnValue = 'RETURN_VALUE';
+        const wrapped: ReactWrapper = mount(
+          <If condition={Promise.resolve(returnValue)}>
+            <Then>{(something: any) => <span>{something}</span>}</Then>
+          </If>
+        );
+        await waitForComponentToPaint(wrapped);
+
+        expect(wrapped.containsMatchingElement(<span>{returnValue}</span>)).toBe(true);
+      });
+
+      test('GIVEN promise with extra properties THEN should forward these properties to function param inside <Then />', async () => {
+        const extendedPromise: ExtendablePromise<void> = Promise.resolve();
+        extendedPromise.testValue = 1;
+        const wrapped: ReactWrapper = mount(
+          <If condition={extendedPromise}>
+            <Then>
+              {(data: any, history: any, promise: any) => {
+                data;
+                history; // 'skip declared but value never read' error
+                return <span>{promise.testValue}</span>;
+              }}
+            </Then>
+          </If>
+        );
+        await waitForComponentToPaint(wrapped);
+        expect(wrapped.containsMatchingElement(<span>{extendedPromise.testValue}</span>));
       });
     });
   });
@@ -334,6 +420,66 @@ describe('<If /> component', () => {
         expect(wrapped).toMatchSnapshot();
         expect(wrapped.containsMatchingElement(<div>Ok</div>)).toBe(true);
         expect(wrapped.containsMatchingElement(<div>Bad</div>)).toBe(false);
+      });
+    });
+
+    describe('With condition as a promise', () => {
+      test('GIVEN rejected promise THEN renders <ELSE /> block', async () => {
+        const wrapped: ReactWrapper = mount(
+          // eslint-disable-next-line prefer-promise-reject-errors
+          <If condition={Promise.reject()}>
+            <Fallback>
+              <span>Fallback</span>
+            </Fallback>
+            <Then>
+              <span>Then</span>
+            </Then>
+            <Else>
+              <span>Else</span>
+            </Else>
+          </If>
+        );
+
+        expect(wrapped.containsMatchingElement(<span>Fallback</span>)).toBe(true);
+        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(false);
+        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(false);
+
+        await waitForComponentToPaint(wrapped);
+
+        expect(wrapped).toMatchSnapshot();
+        expect(wrapped.containsMatchingElement(<span>Fallback</span>)).toBe(false);
+        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(false);
+        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(true);
+      });
+
+      test('GIVEN rejected promise THEN can retrieve error inside ELSE block', async () => {
+        const caughtError = 'CAUGHT_ERROR';
+        const wrapped: ReactWrapper = mount(
+          <If condition={Promise.reject(caughtError)}>
+            <Else>{(something: any) => <span>{something}</span>}</Else>
+          </If>
+        );
+        await waitForComponentToPaint(wrapped);
+        expect(wrapped.containsMatchingElement(<span>{caughtError}</span>)).toBe(true);
+      });
+
+      test('GIVEN promise with extra properties THEN should forward these properties to function param inside <Else />', async () => {
+        // eslint-disable-next-line prefer-promise-reject-errors
+        const extendedPromise: ExtendablePromise<void> = Promise.reject();
+        extendedPromise.testValue = 'TEST_VALUE';
+        const wrapped: ReactWrapper = mount(
+          <If condition={extendedPromise}>
+            <Else>
+              {(data: any, history: any, promise: any) => {
+                data;
+                history; // 'skip declared but value never read' error
+                return <span>{promise.testValue}</span>;
+              }}
+            </Else>
+          </If>
+        );
+        await waitForComponentToPaint(wrapped);
+        expect(wrapped.containsMatchingElement(<span>{extendedPromise.testValue}</span>));
       });
     });
   });
