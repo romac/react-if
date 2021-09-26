@@ -1,365 +1,201 @@
-<!doctype html>
-<html class="default no-js">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>react-if</title>
-	<meta name="description" content="Documentation for react-if">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<script async src="assets/js/search.js" id="search-script"></script>
-</head>
-<body>
-<header>
-	<div class="tsd-page-toolbar">
-		<div class="container">
-			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
-					<div class="field">
-						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
-						<input id="tsd-search-field" type="text" />
-					</div>
-					<ul class="results">
-						<li class="state loading">Preparing search index...</li>
-						<li class="state failure">The search index is not available</li>
-					</ul>
-					<a href="index.html" class="title">react-if</a>
-				</div>
-				<div class="table-cell" id="tsd-widgets">
-					<div id="tsd-filter">
-						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
-						<div class="tsd-filter-group">
-							<div class="tsd-select" id="tsd-filter-visibility">
-								<span class="tsd-select-label">All</span>
-								<ul class="tsd-select-list">
-									<li data-value="public">Public</li>
-									<li data-value="protected">Public/Protected</li>
-									<li data-value="private" class="selected">All</li>
-								</ul>
-							</div>
-							<input type="checkbox" id="tsd-filter-inherited" checked />
-							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-						</div>
-					</div>
-					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tsd-page-title">
-		<div class="container">
-			<h1>react-if</h1>
-		</div>
-	</div>
-</header>
-<div class="container container-main">
-	<div class="row">
-		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<a href="#react-if" id="react-if" style="color: inherit; text-decoration: none;">
-					<h1>React If</h1>
-				</a>
-				<p><a href="https://www.npmjs.com/package/react-if"><img src="https://img.shields.io/npm/v/react-if?logo=npm" alt="npm"></a>
-					<a href="https://bundlephobia.com/result?p=react-if"><img src="https://img.shields.io/bundlephobia/minzip/react-if?label=bundle%20size&logo=webpack" alt="npm bundle size"></a>
-					<a href="https://github.com/romac/react-if/actions"><img src="https://github.com/romac/react-if/workflows/Continuous%20Integration/badge.svg" alt="Continuous Integration"></a>
-					<a href="https://github.com/romac/react-if/issues"><img src="http://img.shields.io/github/issues/romac/react-if.svg?style=flat&logo=github&logoColor=959DA5&labelColor=2D3339" alt="Issues"></a>
-					<a href="https://github.com/romac/react-if/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/romac/react-if?logo=github&logoColor=959DA5&labelColor=2D3339" alt="License"></a>
-					<a href="https://twitter.com/_romac"><img src="https://img.shields.io/badge/contact-@__romac-blue.svg?style=flat&logo=twitter" alt="Contact"></a>
-				<a href="https://twitter.com/fanva_"><img src="https://img.shields.io/badge/contact-@favna__-blue.svg?style=flat&logo=twitter" alt="Contact"></a></p>
-				<p>Render React components conditionally.</p>
-				<a href="#what-does-this-component-do" id="what-does-this-component-do" style="color: inherit; text-decoration: none;">
-					<h2>What does this component do</h2>
-				</a>
-				<p>Take a look at the following presentational component, which contains a commonly used pattern for conditional rendering:</p>
-				<pre><code class="language-jsx"><span style="color: #000000">const Bar = ({ name, age, drinkingAge }) =&gt; (</span>
-<span style="color: #000000">  &lt;div&gt;</span>
-<span style="color: #000000">    &lt;Header /&gt;</span>
-<span style="color: #000000">    {age &gt;= drinkingAge ? &lt;span className=&quot;ok&quot;&gt;Have a beer, {name}!&lt;/span&gt; : &lt;span className=&quot;not-ok&quot;&gt;Sorry, {name}, you are not old enough.&lt;/span&gt;}</span>
-<span style="color: #000000">    &lt;Footer /&gt;</span>
-<span style="color: #000000">  &lt;/div&gt;</span>
-<span style="color: #000000">);</span>
+<!DOCTYPE html><html class="default no-js"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>react-if</title><meta name="description" content="Documentation for react-if"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">react-if</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>react-if</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#react-if" id="react-if" style="color: inherit; text-decoration: none;">
+  <h1>React If</h1>
+</a>
+<p><a href="https://www.npmjs.com/package/react-if"><img src="https://img.shields.io/npm/v/react-if?logo=npm" alt="npm"></a>
+<a href="https://bundlephobia.com/result?p=react-if"><img src="https://img.shields.io/bundlephobia/minzip/react-if?label=bundle%20size&logo=webpack" alt="npm bundle size"></a>
+<a href="https://github.com/romac/react-if/actions"><img src="https://github.com/romac/react-if/workflows/Continuous%20Integration/badge.svg" alt="Continuous Integration"></a>
+<a href="https://github.com/romac/react-if/issues"><img src="http://img.shields.io/github/issues/romac/react-if.svg?style=flat&logo=github&logoColor=959DA5&labelColor=2D3339" alt="Issues"></a>
+<a href="https://github.com/romac/react-if/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/romac/react-if?logo=github&logoColor=959DA5&labelColor=2D3339" alt="License"></a>
+<a href="https://twitter.com/_romac"><img src="https://img.shields.io/badge/contact-@__romac-blue.svg?style=flat&logo=twitter" alt="Contact"></a>
+<a href="https://twitter.com/fanva_"><img src="https://img.shields.io/badge/contact-@favna__-blue.svg?style=flat&logo=twitter" alt="Contact"></a></p>
+<p>Render React components conditionally.</p>
+
+<a href="#what-does-this-component-do" id="what-does-this-component-do" style="color: inherit; text-decoration: none;">
+  <h2>What does this component do</h2>
+</a>
+<p>Take a look at the following presentational component, which contains a commonly used pattern for conditional rendering:</p>
+<pre><code class="language-jsx"><span class="hl-3">const</span><span class="hl-0"> </span><span class="hl-4">Bar</span><span class="hl-0"> </span><span class="hl-3">=</span><span class="hl-0"> ({ </span><span class="hl-5">name</span><span class="hl-0">, </span><span class="hl-5">age</span><span class="hl-0">, </span><span class="hl-5">drinkingAge</span><span class="hl-0"> }) </span><span class="hl-3">=&gt;</span><span class="hl-0"> (</span><br/><span class="hl-0">  &lt;</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">    &lt;</span><span class="hl-1">Header</span><span class="hl-0"> /&gt;</span><br/><span class="hl-0">    {age </span><span class="hl-3">&gt;=</span><span class="hl-0"> drinkingAge </span><span class="hl-3">?</span><span class="hl-0"> &lt;</span><span class="hl-1">span</span><span class="hl-0"> </span><span class="hl-2">className</span><span class="hl-3">=</span><span class="hl-6">&quot;ok&quot;</span><span class="hl-0">&gt;Have a beer, {name}!&lt;/</span><span class="hl-1">span</span><span class="hl-0">&gt; </span><span class="hl-3">:</span><span class="hl-0"> &lt;</span><span class="hl-1">span</span><span class="hl-0"> </span><span class="hl-2">className</span><span class="hl-3">=</span><span class="hl-6">&quot;not-ok&quot;</span><span class="hl-0">&gt;Sorry, {name}, you are not old enough.&lt;/</span><span class="hl-1">span</span><span class="hl-0">&gt;}</span><br/><span class="hl-0">    &lt;</span><span class="hl-1">Footer</span><span class="hl-0"> /&gt;</span><br/><span class="hl-0">  &lt;/</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">);</span>
 </code></pre>
-				<p>With <code>React-If</code> you can rewrite this into a more readable, expressive format:</p>
-				<pre><code class="language-jsx"><span style="color: #000000">const Bar = ({ name, age, drinkingAge }) =&gt; (</span>
-<span style="color: #000000">  &lt;div&gt;</span>
-<span style="color: #000000">    &lt;Header /&gt;</span>
-<span style="color: #000000">    &lt;If condition={age &gt;= drinkingAge}&gt;</span>
-<span style="color: #000000">      &lt;Then&gt;</span>
-<span style="color: #000000">        &lt;span className=&quot;ok&quot;&gt;Have a beer, {name}!&lt;/span&gt;</span>
-<span style="color: #000000">      &lt;/Then&gt;</span>
-<span style="color: #000000">      &lt;Else&gt;</span>
-<span style="color: #000000">        &lt;span className=&quot;not-ok&quot;&gt;Sorry, {name}, you are not old enough.&lt;/span&gt;</span>
-<span style="color: #000000">      &lt;/Else&gt;</span>
-<span style="color: #000000">    &lt;/If&gt;</span>
-<span style="color: #000000">    &lt;Footer /&gt;</span>
-<span style="color: #000000">  &lt;/div&gt;</span>
-<span style="color: #000000">);</span>
+<p>With <code>React-If</code> you can rewrite this into a more readable, expressive format:</p>
+<pre><code class="language-jsx"><span class="hl-3">const</span><span class="hl-0"> </span><span class="hl-4">Bar</span><span class="hl-0"> </span><span class="hl-3">=</span><span class="hl-0"> ({ </span><span class="hl-5">name</span><span class="hl-0">, </span><span class="hl-5">age</span><span class="hl-0">, </span><span class="hl-5">drinkingAge</span><span class="hl-0"> }) </span><span class="hl-3">=&gt;</span><span class="hl-0"> (</span><br/><span class="hl-0">  &lt;</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">    &lt;</span><span class="hl-1">Header</span><span class="hl-0"> /&gt;</span><br/><span class="hl-0">    &lt;</span><span class="hl-1">If</span><span class="hl-0"> </span><span class="hl-2">condition</span><span class="hl-3">=</span><span class="hl-0">{age </span><span class="hl-3">&gt;=</span><span class="hl-0"> drinkingAge}&gt;</span><br/><span class="hl-0">      &lt;</span><span class="hl-1">Then</span><span class="hl-0">&gt;</span><br/><span class="hl-0">        &lt;</span><span class="hl-1">span</span><span class="hl-0"> </span><span class="hl-2">className</span><span class="hl-3">=</span><span class="hl-6">&quot;ok&quot;</span><span class="hl-0">&gt;Have a beer, {name}!&lt;/</span><span class="hl-1">span</span><span class="hl-0">&gt;</span><br/><span class="hl-0">      &lt;/</span><span class="hl-1">Then</span><span class="hl-0">&gt;</span><br/><span class="hl-0">      &lt;</span><span class="hl-1">Else</span><span class="hl-0">&gt;</span><br/><span class="hl-0">        &lt;</span><span class="hl-1">span</span><span class="hl-0"> </span><span class="hl-2">className</span><span class="hl-3">=</span><span class="hl-6">&quot;not-ok&quot;</span><span class="hl-0">&gt;Sorry, {name}, you are not old enough.&lt;/</span><span class="hl-1">span</span><span class="hl-0">&gt;</span><br/><span class="hl-0">      &lt;/</span><span class="hl-1">Else</span><span class="hl-0">&gt;</span><br/><span class="hl-0">    &lt;/</span><span class="hl-1">If</span><span class="hl-0">&gt;</span><br/><span class="hl-0">    &lt;</span><span class="hl-1">Footer</span><span class="hl-0"> /&gt;</span><br/><span class="hl-0">  &lt;/</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">);</span>
 </code></pre>
-				<a href="#delaying-evaluation-of-children--condition" id="delaying-evaluation-of-children--condition" style="color: inherit; text-decoration: none;">
-					<h2>Delaying evaluation of children / condition</h2>
-				</a>
-				<p>It is important to note that, because JavaScript is an eagerly evaluated language, children of both the <code>Then</code> and <code>Else</code> component and condition will be evaluated regardless of the value of the condition. Should that be an issue for performance reasons, one can wrap said children / condition in a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">arrow function</a>, to delay evaluation of the children / condition, as in the following example:</p>
-				<pre><code class="language-jsx"><span style="color: #000000">const renderData = (data) =&gt; {</span>
-<span style="color: #000000">  val computed = /* expensive computation */</span>
-<span style="color: #000000">  return &lt;span&gt;Here is the result: {computed}&lt;/span&gt;;</span>
-<span style="color: #000000">};</span>
 
-<span style="color: #000000">const Foo = ({ data }) =&gt; (</span>
-<span style="color: #000000">    &lt;div&gt;</span>
-<span style="color: #000000">        &lt;If condition={false}&gt;</span>
-<span style="color: #000000">            &lt;Then&gt;{() =&gt;</span>
-<span style="color: #000000">              renderData(data)</span>
-<span style="color: #000000">            }&lt;/Then&gt;</span>
-<span style="color: #000000">            &lt;Else&gt;</span>
-<span style="color: #000000">              Nothing to see here</span>
-<span style="color: #000000">            &lt;/Else&gt;</span>
-<span style="color: #000000">        &lt;/If&gt;</span>
-<span style="color: #000000">        &lt;If condition={!props.bears}&gt;</span>
-<span style="color: #000000">          &lt;Then&gt;</span>
-<span style="color: #000000">            No bears</span>
-<span style="color: #000000">          &lt;/Then&gt;</span>
-
-<span style="color: #000000">          &lt;Else&gt;</span>
-<span style="color: #000000">            &lt;If condition={() =&gt; props.bears.length}&gt;</span>
-<span style="color: #000000">              Empty bears array</span>
-<span style="color: #000000">            &lt;/If&gt;</span>
-<span style="color: #000000">            &lt;Else&gt;</span>
-<span style="color: #000000">              // Display bears</span>
-<span style="color: #000000">            &lt;/Else&gt;</span>
-<span style="color: #000000">          &lt;/Else&gt;</span>
-<span style="color: #000000">        &lt;/If&gt;</span>
-<span style="color: #000000">    &lt;/div&gt;</span>
-<span style="color: #000000">)</span>
+<a href="#delaying-evaluation-of-children--condition" id="delaying-evaluation-of-children--condition" style="color: inherit; text-decoration: none;">
+  <h2>Delaying evaluation of children / condition</h2>
+</a>
+<p>It is important to note that, because JavaScript is an eagerly evaluated language, children of both the <code>Then</code> and <code>Else</code> component and condition will be evaluated regardless of the value of the condition. Should that be an issue for performance reasons, one can wrap said children / condition in a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">arrow function</a>, to delay evaluation of the children / condition, as in the following example:</p>
+<pre><code class="language-jsx"><span class="hl-3">const</span><span class="hl-0"> </span><span class="hl-4">renderData</span><span class="hl-0"> </span><span class="hl-3">=</span><span class="hl-0"> (</span><span class="hl-5">data</span><span class="hl-0">) </span><span class="hl-3">=&gt;</span><span class="hl-0"> {</span><br/><span class="hl-0">  val computed </span><span class="hl-3">=</span><span class="hl-0"> </span><span class="hl-7">/* expensive computation */</span><br/><span class="hl-0">  </span><span class="hl-3">return</span><span class="hl-0"> &lt;</span><span class="hl-1">span</span><span class="hl-0">&gt;Here is the result: {computed}&lt;/</span><span class="hl-1">span</span><span class="hl-0">&gt;;</span><br/><span class="hl-0">};</span><br/><br/><span class="hl-3">const</span><span class="hl-0"> </span><span class="hl-4">Foo</span><span class="hl-0"> </span><span class="hl-3">=</span><span class="hl-0"> ({ </span><span class="hl-5">data</span><span class="hl-0"> }) </span><span class="hl-3">=&gt;</span><span class="hl-0"> (</span><br/><span class="hl-0">    &lt;</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">        &lt;</span><span class="hl-1">If</span><span class="hl-0"> </span><span class="hl-2">condition</span><span class="hl-3">=</span><span class="hl-0">{</span><span class="hl-2">false</span><span class="hl-0">}&gt;</span><br/><span class="hl-0">            &lt;</span><span class="hl-1">Then</span><span class="hl-0">&gt;{() </span><span class="hl-3">=&gt;</span><br/><span class="hl-0">              </span><span class="hl-4">renderData</span><span class="hl-0">(data)</span><br/><span class="hl-0">            }&lt;/</span><span class="hl-1">Then</span><span class="hl-0">&gt;</span><br/><span class="hl-0">            &lt;</span><span class="hl-1">Else</span><span class="hl-0">&gt;</span><br/><span class="hl-0">              Nothing to see here</span><br/><span class="hl-0">            &lt;/</span><span class="hl-1">Else</span><span class="hl-0">&gt;</span><br/><span class="hl-0">        &lt;/</span><span class="hl-1">If</span><span class="hl-0">&gt;</span><br/><span class="hl-0">        &lt;</span><span class="hl-1">If</span><span class="hl-0"> </span><span class="hl-2">condition</span><span class="hl-3">=</span><span class="hl-0">{</span><span class="hl-3">!</span><span class="hl-0">props.bears}&gt;</span><br/><span class="hl-0">          &lt;</span><span class="hl-1">Then</span><span class="hl-0">&gt;</span><br/><span class="hl-0">            No bears</span><br/><span class="hl-0">          &lt;/</span><span class="hl-1">Then</span><span class="hl-0">&gt;</span><br/><br/><span class="hl-0">          &lt;</span><span class="hl-1">Else</span><span class="hl-0">&gt;</span><br/><span class="hl-0">            &lt;</span><span class="hl-1">If</span><span class="hl-0"> </span><span class="hl-2">condition</span><span class="hl-3">=</span><span class="hl-0">{() </span><span class="hl-3">=&gt;</span><span class="hl-0"> props.bears.</span><span class="hl-2">length</span><span class="hl-0">}&gt;</span><br/><span class="hl-0">              Empty bears array</span><br/><span class="hl-0">            &lt;/</span><span class="hl-1">If</span><span class="hl-0">&gt;</span><br/><span class="hl-0">            &lt;</span><span class="hl-1">Else</span><span class="hl-0">&gt;</span><br/><span class="hl-0">              // Display bears</span><br/><span class="hl-0">            &lt;/</span><span class="hl-1">Else</span><span class="hl-0">&gt;</span><br/><span class="hl-0">          &lt;/</span><span class="hl-1">Else</span><span class="hl-0">&gt;</span><br/><span class="hl-0">        &lt;/</span><span class="hl-1">If</span><span class="hl-0">&gt;</span><br/><span class="hl-0">    &lt;/</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">)</span>
 </code></pre>
-				<p>By doing so, <code>renderData</code> will not be called in the 1st example.</p>
-				<p>And <code>props.bears.length</code> will not be called in the 2nd example.</p>
-				<a href="#installing-and-usage" id="installing-and-usage" style="color: inherit; text-decoration: none;">
-					<h2>Installing and usage</h2>
-				</a>
-				<a href="#npm" id="npm" style="color: inherit; text-decoration: none;">
-					<h3>NPM:</h3>
-				</a>
-				<p><code>npm install react-if</code>
-				Or with yarn: <code>yarn add react-if</code></p>
-				<pre><code class="language-jsx"><span style="color: #000000">// ES2015</span>
-<span style="color: #000000">import { If, Then, Else, When, Unless, Switch, Case, Default } from &#039;react-if&#039;;</span>
+<p>By doing so, <code>renderData</code> will not be called in the 1st example.</p>
+<p>And <code>props.bears.length</code> will not be called in the 2nd example.</p>
 
-<span style="color: #000000">// CommonJS:</span>
-<span style="color: #000000">const { If, Then, Else, When, Unless, Switch, Case, Default } = require(&#039;react-if&#039;);</span>
+<a href="#installing-and-usage" id="installing-and-usage" style="color: inherit; text-decoration: none;">
+  <h2>Installing and usage</h2>
+</a>
+
+<a href="#npm" id="npm" style="color: inherit; text-decoration: none;">
+  <h3>NPM:</h3>
+</a>
+<p><code>npm install react-if</code>
+Or with yarn: <code>yarn add react-if</code></p>
+<pre><code class="language-jsx"><span class="hl-7">// ES2015</span><br/><span class="hl-3">import</span><span class="hl-0"> { If, Then, Else, When, Unless, Switch, Case, Default } </span><span class="hl-3">from</span><span class="hl-0"> </span><span class="hl-6">&#39;react-if&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-7">// CommonJS:</span><br/><span class="hl-3">const</span><span class="hl-0"> { </span><span class="hl-2">If</span><span class="hl-0">, </span><span class="hl-2">Then</span><span class="hl-0">, </span><span class="hl-2">Else</span><span class="hl-0">, </span><span class="hl-2">When</span><span class="hl-0">, </span><span class="hl-2">Unless</span><span class="hl-0">, </span><span class="hl-2">Switch</span><span class="hl-0">, </span><span class="hl-2">Case</span><span class="hl-0">, </span><span class="hl-2">Default</span><span class="hl-0"> } </span><span class="hl-3">=</span><span class="hl-0"> </span><span class="hl-2">require</span><span class="hl-0">(</span><span class="hl-6">&#39;react-if&#39;</span><span class="hl-0">);</span>
 </code></pre>
-				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
-					<h2>Examples</h2>
-				</a>
-				<a href="#swichcasedefault" id="swichcasedefault" style="color: inherit; text-decoration: none;">
-					<h2>Swich/Case/Default</h2>
-				</a>
-				<pre><code class="language-jsx"><span style="color: #000000">import React from &#039;react&#039;;</span>
-<span style="color: #000000">import { Switch, Case, Default } from &#039;react-if&#039;;</span>
 
-<span style="color: #000000">const myNumber = 3;</span>
+<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+  <h2>Examples</h2>
+</a>
 
-<span style="color: #000000">const Example = () =&gt; (</span>
-<span style="color: #000000">  &lt;div&gt;</span>
-<span style="color: #000000">    &lt;Switch&gt;</span>
-<span style="color: #000000">      &lt;Case condition={myNumber === 9}&gt;This will be displayed if condition is matched&lt;/Case&gt;</span>
-<span style="color: #000000">      &lt;Case condition={myNumber &gt; 1}&gt;This will be displayed if condition is matched&lt;/Case&gt;</span>
-<span style="color: #000000">      &lt;Default&gt;This will be displayed if no Case have matching condition&lt;/Default&gt;</span>
-<span style="color: #000000">    &lt;/Switch&gt;</span>
-<span style="color: #000000">  &lt;/div&gt;</span>
-<span style="color: #000000">);</span>
+<a href="#switchcasedefault" id="switchcasedefault" style="color: inherit; text-decoration: none;">
+  <h2>Switch/Case/Default</h2>
+</a>
+<pre><code class="language-jsx"><span class="hl-3">import</span><span class="hl-0"> React </span><span class="hl-3">from</span><span class="hl-0"> </span><span class="hl-6">&#39;react&#39;</span><span class="hl-0">;</span><br/><span class="hl-3">import</span><span class="hl-0"> { Switch, Case, Default } </span><span class="hl-3">from</span><span class="hl-0"> </span><span class="hl-6">&#39;react-if&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-3">const</span><span class="hl-0"> </span><span class="hl-2">myNumber</span><span class="hl-0"> </span><span class="hl-3">=</span><span class="hl-0"> </span><span class="hl-2">3</span><span class="hl-0">;</span><br/><br/><span class="hl-3">const</span><span class="hl-0"> </span><span class="hl-4">Example</span><span class="hl-0"> </span><span class="hl-3">=</span><span class="hl-0"> () </span><span class="hl-3">=&gt;</span><span class="hl-0"> (</span><br/><span class="hl-0">  &lt;</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">    &lt;</span><span class="hl-1">Switch</span><span class="hl-0">&gt;</span><br/><span class="hl-0">      &lt;</span><span class="hl-1">Case</span><span class="hl-0"> </span><span class="hl-2">condition</span><span class="hl-3">=</span><span class="hl-0">{myNumber </span><span class="hl-3">===</span><span class="hl-0"> </span><span class="hl-2">9</span><span class="hl-0">}&gt;This will be displayed if condition is matched&lt;/</span><span class="hl-1">Case</span><span class="hl-0">&gt;</span><br/><span class="hl-0">      &lt;</span><span class="hl-1">Case</span><span class="hl-0"> </span><span class="hl-2">condition</span><span class="hl-3">=</span><span class="hl-0">{myNumber </span><span class="hl-3">&gt;</span><span class="hl-0"> </span><span class="hl-2">1</span><span class="hl-0">}&gt;This will be displayed if condition is matched&lt;/</span><span class="hl-1">Case</span><span class="hl-0">&gt;</span><br/><span class="hl-0">      &lt;</span><span class="hl-1">Default</span><span class="hl-0">&gt;This will be displayed if no Case have matching condition&lt;/</span><span class="hl-1">Default</span><span class="hl-0">&gt;</span><br/><span class="hl-0">    &lt;/</span><span class="hl-1">Switch</span><span class="hl-0">&gt;</span><br/><span class="hl-0">  &lt;/</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">);</span>
 </code></pre>
-				<a href="#shorthands-when-and-unless" id="shorthands-when-and-unless" style="color: inherit; text-decoration: none;">
-					<h2>Shorthands: When and Unless</h2>
-				</a>
-				<pre><code class="language-jsx"><span style="color: #000000">import React from &#039;react&#039;;</span>
-<span style="color: #000000">import { When, Unless } from &#039;react-if&#039;;</span>
 
-<span style="color: #000000">const someCondition = false;</span>
-
-<span style="color: #000000">const Example = () =&gt; (</span>
-<span style="color: #000000">  &lt;div&gt;</span>
-<span style="color: #000000">    &lt;When condition={someCondition}&gt;This will only be displayed, if the condition is TRUE&lt;/When&gt;</span>
-<span style="color: #000000">  &lt;/div&gt;</span>
-<span style="color: #000000">);</span>
-
-<span style="color: #000000">const AnotherExample = () =&gt; (</span>
-<span style="color: #000000">  &lt;div&gt;</span>
-<span style="color: #000000">    &lt;Unless condition={someCondition}&gt;This will only be displayed, if the condition is FALSE&lt;/Unless&gt;</span>
-<span style="color: #000000">  &lt;/div&gt;</span>
-<span style="color: #000000">);</span>
+<a href="#shorthands-when-and-unless" id="shorthands-when-and-unless" style="color: inherit; text-decoration: none;">
+  <h2>Shorthands: When and Unless</h2>
+</a>
+<pre><code class="language-jsx"><span class="hl-3">import</span><span class="hl-0"> React </span><span class="hl-3">from</span><span class="hl-0"> </span><span class="hl-6">&#39;react&#39;</span><span class="hl-0">;</span><br/><span class="hl-3">import</span><span class="hl-0"> { When, Unless } </span><span class="hl-3">from</span><span class="hl-0"> </span><span class="hl-6">&#39;react-if&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-3">const</span><span class="hl-0"> </span><span class="hl-2">someCondition</span><span class="hl-0"> </span><span class="hl-3">=</span><span class="hl-0"> </span><span class="hl-2">false</span><span class="hl-0">;</span><br/><br/><span class="hl-3">const</span><span class="hl-0"> </span><span class="hl-4">Example</span><span class="hl-0"> </span><span class="hl-3">=</span><span class="hl-0"> () </span><span class="hl-3">=&gt;</span><span class="hl-0"> (</span><br/><span class="hl-0">  &lt;</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">    &lt;</span><span class="hl-1">When</span><span class="hl-0"> </span><span class="hl-2">condition</span><span class="hl-3">=</span><span class="hl-0">{someCondition}&gt;This will only be displayed, if the condition is TRUE&lt;/</span><span class="hl-1">When</span><span class="hl-0">&gt;</span><br/><span class="hl-0">  &lt;/</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">);</span><br/><br/><span class="hl-3">const</span><span class="hl-0"> </span><span class="hl-4">AnotherExample</span><span class="hl-0"> </span><span class="hl-3">=</span><span class="hl-0"> () </span><span class="hl-3">=&gt;</span><span class="hl-0"> (</span><br/><span class="hl-0">  &lt;</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">    &lt;</span><span class="hl-1">Unless</span><span class="hl-0"> </span><span class="hl-2">condition</span><span class="hl-3">=</span><span class="hl-0">{someCondition}&gt;This will only be displayed, if the condition is FALSE&lt;/</span><span class="hl-1">Unless</span><span class="hl-0">&gt;</span><br/><span class="hl-0">  &lt;/</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">);</span>
 </code></pre>
-				<a href="#api" id="api" style="color: inherit; text-decoration: none;">
-					<h2>API</h2>
-				</a>
-				<p><strong><em>Note: For a fully auto-generated API, see <a href="https://romac.github.io/react-if">the github pages website</a></em></strong></p>
-				<a href="#ltif-gt" id="ltif-gt" style="color: inherit; text-decoration: none;">
-					<h3>&lt;If /&gt;</h3>
-				</a>
-				<table>
-					<thead>
-						<tr>
-							<th>Property</th>
-							<th>Type</th>
-						</tr>
-					</thead>
-					<tbody><tr>
-							<td><code>condition</code></td>
-							<td>Boolean</td>
-						</tr>
-				</tbody></table>
-				<p>If <code>condition</code> evaluates to <code>true</code>, renders the <code>&lt;Then /&gt;</code> block will be rendered, otherwise renders the <code>&lt;Else /&gt;</code> block. Either block may be omitted.</p>
-				<p>This component can contain any number of <code>&lt;Then /&gt;</code> or <code>&lt;Else /&gt;</code> blocks, but only the first block of the right type (either <code>Then</code> or <code>Else</code>, depending on the condition) will be rendered.</p>
-				<a href="#ltthen-gt" id="ltthen-gt" style="color: inherit; text-decoration: none;">
-					<h3>&lt;Then /&gt;</h3>
-				</a>
-				<p>Can contain any number of elements inside, which it renders as-is. It can also contain a function. Should not be used outside of an <code>&lt;If /&gt;</code> block. It will only be displayed, if parent <code>If</code> block&#39;s condition is true.</p>
-				<a href="#ltelse-gt" id="ltelse-gt" style="color: inherit; text-decoration: none;">
-					<h3>&lt;Else /&gt;</h3>
-				</a>
-				<p>Can contain any number of elements inside, which it renders as-is. It can also contain a function. Should not be used outside of an <code>&lt;If /&gt;</code> block. It will only be displayed, if parent <code>If</code> block&#39;s condition is false.</p>
-				<a href="#ltswitch-gt" id="ltswitch-gt" style="color: inherit; text-decoration: none;">
-					<h3>&lt;Switch /&gt;</h3>
-				</a>
-				<p>A container for <code>&lt;Case condition={...}/&gt;</code> and <code>&lt;Default /&gt;</code> blocks. It will render <strong>the first matching</strong> <code>Case</code>, or <strong>the first encountered</strong> <code>Default</code> (, or null).</p>
-				<a href="#ltcase-gt" id="ltcase-gt" style="color: inherit; text-decoration: none;">
-					<h3>&lt;Case /&gt;</h3>
-				</a>
-				<table>
-					<thead>
-						<tr>
-							<th>Property</th>
-							<th>Type</th>
-						</tr>
-					</thead>
-					<tbody><tr>
-							<td><code>condition</code></td>
-							<td>Boolean</td>
-						</tr>
-				</tbody></table>
-				<p>If the <code>Case</code> is the first one to have its <code>condition</code> evaluates to <code>true</code> inside the parent <code>&lt;Switch /&gt;</code> it will be the only rendered.</p>
-				<a href="#ltdefault-gt" id="ltdefault-gt" style="color: inherit; text-decoration: none;">
-					<h3>&lt;Default /&gt;</h3>
-				</a>
-				<p>If no <code>Case</code> have its <code>condition</code> evaluates to <code>true</code> inside the parent <code>&lt;Switch /&gt;</code>, the first <code>Default</code> will be the only one rendered.</p>
-				<a href="#ltwhen-gt" id="ltwhen-gt" style="color: inherit; text-decoration: none;">
-					<h3>&lt;When /&gt;</h3>
-				</a>
-				<p>A shorthand for <code>&lt;If condition={...}&gt;&lt;Then&gt;...&lt;/Then&gt;&lt;/If&gt;</code>. The same rules apply to the child elements as with using the <code>Then</code> block.</p>
-				<a href="#ltunless-gt" id="ltunless-gt" style="color: inherit; text-decoration: none;">
-					<h3>&lt;Unless /&gt;</h3>
-				</a>
-				<p>A shorthand for <code>&lt;If condition={...}&gt;&lt;Else&gt;...&lt;/Else&gt;&lt;/If&gt;</code>. The same rules apply to the child elements as with using the <code>Else</code> block.</p>
-				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
-					<h2>License</h2>
-				</a>
-				<p><strong>React If</strong> is released under the <a href="http://romac.mit-license.org">MIT license</a>.</p>
-				<a href="#contributors-✨" id="contributors-✨" style="color: inherit; text-decoration: none;">
-					<h2>Contributors ✨</h2>
-				</a>
-				<p>Thanks goes to these wonderful people (<a href="https://allcontributors.org/docs/en/emoji-key">emoji key</a>):</p>
-				<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-				<!-- prettier-ignore-start -->
-				<!-- markdownlint-disable -->
-				<table>
-					<tr>
-						<td align="center"><a href="https://romac.me/"><img src="https://avatars2.githubusercontent.com/u/106849?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Romain Ruetschi</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=romac" title="Code">💻</a> <a href="https://github.com/romac/react-if/commits?author=romac" title="Documentation">📖</a> <a href="#example-romac" title="Examples">💡</a> <a href="#ideas-romac" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-romac" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-romac" title="Maintenance">🚧</a> <a href="#projectManagement-romac" title="Project Management">📆</a> <a href="https://github.com/romac/react-if/pulls?q=is%3Apr+reviewed-by%3Aromac" title="Reviewed Pull Requests">👀</a> <a href="#question-romac" title="Answering Questions">💬</a> <a href="https://github.com/romac/react-if/commits?author=romac" title="Tests">⚠️</a></td>
-						<td align="center"><a href="https://favware.tech/"><img src="https://avatars3.githubusercontent.com/u/4019718?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jeroen Claassens</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=Favna" title="Code">💻</a> <a href="https://github.com/romac/react-if/commits?author=Favna" title="Documentation">📖</a> <a href="#example-Favna" title="Examples">💡</a> <a href="#infra-Favna" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-Favna" title="Maintenance">🚧</a> <a href="#projectManagement-Favna" title="Project Management">📆</a> <a href="https://github.com/romac/react-if/pulls?q=is%3Apr+reviewed-by%3AFavna" title="Reviewed Pull Requests">👀</a> <a href="#question-Favna" title="Answering Questions">💬</a> <a href="https://github.com/romac/react-if/commits?author=Favna" title="Tests">⚠️</a></td>
-						<td align="center"><a href="https://github.com/cyrilchapon"><img src="https://avatars1.githubusercontent.com/u/10728426?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Cyril CHAPON</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=cyrilchapon" title="Code">💻</a> <a href="https://github.com/romac/react-if/commits?author=cyrilchapon" title="Documentation">📖</a> <a href="https://github.com/romac/react-if/commits?author=cyrilchapon" title="Tests">⚠️</a></td>
-						<td align="center"><a href="http://twitter.com/tim_jacobi"><img src="https://avatars2.githubusercontent.com/u/2023165?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tim Jacobi</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=timjacobi" title="Code">💻</a> <a href="https://github.com/romac/react-if/commits?author=timjacobi" title="Documentation">📖</a> <a href="https://github.com/romac/react-if/commits?author=timjacobi" title="Tests">⚠️</a></td>
-						<td align="center"><a href="https://github.com/meszaros-lajos-gyorgy"><img src="https://avatars3.githubusercontent.com/u/2386064?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lajos György Mészáros</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=meszaros-lajos-gyorgy" title="Code">💻</a> <a href="https://github.com/romac/react-if/commits?author=meszaros-lajos-gyorgy" title="Documentation">📖</a></td>
-						<td align="center"><a href="https://github.com/Rleahy22"><img src="https://avatars2.githubusercontent.com/u/3144003?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ryan Leahy</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=Rleahy22" title="Code">💻</a> <a href="https://github.com/romac/react-if/commits?author=Rleahy22" title="Documentation">📖</a></td>
-						<td align="center"><a href="https://github.com/pronebird"><img src="https://avatars2.githubusercontent.com/u/704044?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andrej Mihajlov</b></sub></a><br /><a href="#platform-pronebird" title="Packaging/porting to new platform">📦</a> <a href="https://github.com/romac/react-if/commits?author=pronebird" title="Code">💻</a></td>
-					</tr>
-					<tr>
-						<td align="center"><a href="https://github.com/ejbp"><img src="https://avatars0.githubusercontent.com/u/2060105?v=4?s=100" width="100px;" alt=""/><br /><sub><b>While True</b></sub></a><br /><a href="https://github.com/romac/react-if/issues?q=author%3Aejbp" title="Bug reports">🐛</a> <a href="https://github.com/romac/react-if/commits?author=ejbp" title="Code">💻</a></td>
-						<td align="center"><a href="https://nirri.us/"><img src="https://avatars3.githubusercontent.com/u/592134?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Teffen Ellis</b></sub></a><br /><a href="#projectManagement-TeffenEllis" title="Project Management">📆</a> <a href="https://github.com/romac/react-if/commits?author=TeffenEllis" title="Code">💻</a></td>
-						<td align="center"><a href="https://github.com/Mamoru1234"><img src="https://avatars2.githubusercontent.com/u/11805198?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alexei Gontar</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=Mamoru1234" title="Code">💻</a></td>
-						<td align="center"><a href="https://github.com/melyourhero"><img src="https://avatars3.githubusercontent.com/u/11873817?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dmitry Melnik</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=melyourhero" title="Code">💻</a></td>
-						<td align="center"><a href="https://github.com/eropple"><img src="https://avatars2.githubusercontent.com/u/109262?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ed Ropple</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=eropple" title="Code">💻</a></td>
-						<td align="center"><a href="https://github.com/gradosevic"><img src="https://avatars2.githubusercontent.com/u/10562516?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Goran Radosevic</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=gradosevic" title="Documentation">📖</a></td>
-						<td align="center"><a href="https://haroen.me/"><img src="https://avatars3.githubusercontent.com/u/6270048?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Haroen Viaene</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=Haroenv" title="Documentation">📖</a></td>
-					</tr>
-					<tr>
-						<td align="center"><a href="http://www.martijnthe.nl/"><img src="https://avatars3.githubusercontent.com/u/193881?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Martijn Thé</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=martijnthe" title="Code">💻</a></td>
-						<td align="center"><a href="https://github.com/artcoding-git"><img src="https://avatars0.githubusercontent.com/u/20770507?v=4?s=100" width="100px;" alt=""/><br /><sub><b>artcoding-git</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=artcoding-git" title="Documentation">📖</a></td>
-						<td align="center"><a href="https://github.com/Ako520"><img src="https://avatars3.githubusercontent.com/u/22900569?v=4?s=100" width="100px;" alt=""/><br /><sub><b>王天博</b></sub></a><br /><a href="https://github.com/romac/react-if/issues?q=author%3AAko520" title="Bug reports">🐛</a> <a href="https://github.com/romac/react-if/commits?author=Ako520" title="Code">💻</a></td>
-						<td align="center"><a href="https://arcath.net/"><img src="https://avatars1.githubusercontent.com/u/19609?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adam Laycock</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=Arcath" title="Code">💻</a></td>
-					</tr>
-				</table>
-				<!-- markdownlint-restore -->
-				<!-- prettier-ignore-end -->
-				<!-- ALL-CONTRIBUTORS-LIST:END -->
-				<p>This project follows the <a href="https://github.com/all-contributors/all-contributors">all-contributors</a> specification. Contributions of any kind welcome!</p>
-			</div>
-		</div>
-		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
-			<nav class="tsd-navigation primary">
-				<ul>
-					<li class=" ">
-						<a href="modules.html">Exports</a>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="modules/case.html">Case</a>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="modules/default.html">Default</a>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="modules/unless.html">Unless</a>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="modules/when.html">When</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="tsd-navigation secondary menu-sticky">
-				<ul class="before-current">
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/componentwithconditionprops.html" class="tsd-kind-icon">Component<wbr>With<wbr>Condition<wbr>Props</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="modules.html#booleanlike" class="tsd-kind-icon">Boolean<wbr>Like</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#case" class="tsd-kind-icon">Case</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#default" class="tsd-kind-icon">Default</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#else" class="tsd-kind-icon">Else</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#if" class="tsd-kind-icon">If</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#switch" class="tsd-kind-icon">Switch</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#then" class="tsd-kind-icon">Then</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#unless" class="tsd-kind-icon">Unless</a>
-					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#when" class="tsd-kind-icon">When</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div>
-<footer class="with-border-bottom">
-	<div class="container">
-		<h2>Legend</h2>
-		<div class="tsd-legend-group">
-		</div>
-	</div>
-</footer>
-<div class="container tsd-generator">
-	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
-</div>
-<div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-</body>
-</html>
+
+<a href="#asynchronous-condition" id="asynchronous-condition" style="color: inherit; text-decoration: none;">
+  <h2>Asynchronous condition</h2>
+</a>
+<pre><code class="language-jsx"><span class="hl-3">import</span><span class="hl-0"> React </span><span class="hl-3">from</span><span class="hl-0"> </span><span class="hl-6">&#39;react&#39;</span><span class="hl-0">;</span><br/><span class="hl-3">import</span><span class="hl-0"> { If, Fallback, Then, Else } </span><span class="hl-3">from</span><span class="hl-0"> </span><span class="hl-6">&#39;react-if&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-3">const</span><span class="hl-0"> </span><span class="hl-4">Example</span><span class="hl-0"> </span><span class="hl-3">=</span><span class="hl-0"> () </span><span class="hl-3">=&gt;</span><span class="hl-0"> {</span><br/><span class="hl-0">  </span><span class="hl-3">const</span><span class="hl-0"> </span><span class="hl-4">fetchData</span><span class="hl-0"> </span><span class="hl-3">=</span><span class="hl-0"> () </span><span class="hl-3">=&gt;</span><span class="hl-0"> {</span><br/><span class="hl-0">    </span><span class="hl-7">// Return promise</span><br/><span class="hl-0">  };</span><br/><br/><span class="hl-0">  </span><span class="hl-3">return</span><span class="hl-0"> (</span><br/><span class="hl-0">    &lt;</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">      &lt;</span><span class="hl-1">If</span><span class="hl-0"> </span><span class="hl-2">condition</span><span class="hl-3">=</span><span class="hl-0">{</span><span class="hl-4">fetchData</span><span class="hl-0">()}&gt;</span><br/><span class="hl-0">        &lt;</span><span class="hl-1">Fallback</span><span class="hl-0">&gt;Loading data ...&lt;/</span><span class="hl-1">Fallback</span><span class="hl-0">&gt;</span><br/><span class="hl-0">        &lt;</span><span class="hl-1">Then</span><span class="hl-0">&gt;</span><br/><span class="hl-0">          {(</span><span class="hl-5">data</span><span class="hl-0">) </span><span class="hl-3">=&gt;</span><span class="hl-0"> (</span><br/><span class="hl-0">            &lt;</span><span class="hl-1">span</span><span class="hl-0">&gt;Here is your data: {data}&lt;/</span><span class="hl-1">span</span><span class="hl-0">&gt;</span><br/><span class="hl-0">          )}</span><br/><span class="hl-0">        &lt;/</span><span class="hl-1">Then</span><span class="hl-0">&gt;</span><br/><span class="hl-0">        &lt;</span><span class="hl-1">Else</span><span class="hl-0">&gt;</span><br/><span class="hl-0">          {(</span><span class="hl-5">error</span><span class="hl-0">) </span><span class="hl-3">=&gt;</span><span class="hl-0"> (</span><br/><span class="hl-0">            &lt;</span><span class="hl-1">span</span><span class="hl-0">&gt;Failed to load data because &quot;{error}&quot;&lt;/</span><span class="hl-1">span</span><span class="hl-0">&gt;</span><br/><span class="hl-0">          )}</span><br/><span class="hl-0">        &lt;/</span><span class="hl-1">Else</span><span class="hl-0">&gt;</span><br/><span class="hl-0">      &lt;/</span><span class="hl-1">If</span><span class="hl-0">&gt;</span><br/><span class="hl-0">    &lt;/</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-0">  );</span><br/><span class="hl-0">});</span>
+</code></pre>
+
+<a href="#api" id="api" style="color: inherit; text-decoration: none;">
+  <h2>API</h2>
+</a>
+<p><strong><em>Note: For a fully auto-generated API, see <a href="https://romac.github.io/react-if">the github pages website</a></em></strong></p>
+
+<a href="#" id="" style="color: inherit; text-decoration: none;">
+  <h3><If />;</h3>
+</a>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>condition</code></td>
+<td>Boolean/Promise</td>
+<td></td>
+</tr>
+<tr>
+<td><code>keepAlive</code></td>
+<td>Boolean</td>
+<td>false</td>
+</tr>
+</tbody></table>
+<p>If <code>condition</code> evaluates to <code>true</code>, renders the <code>&lt;Then /&gt;</code> block will be rendered, otherwise renders the <code>&lt;Else /&gt;</code> block. Either block may be omitted.</p>
+<p>This component can contain any number of <code>&lt;Then /&gt;</code> or <code>&lt;Else /&gt;</code> blocks, but only the first block of the right type (either <code>Then</code> or <code>Else</code>, depending on the condition) will be rendered.</p>
+<p>When passing a Promise to <code>condition</code>, renders the <code>Fallback</code> block while the Promise is pending, the <code>&lt;Then /&gt;</code> block once Promise is resolved, and the <code>&lt;Else /&gt;</code> block when Promise is rejected.
+The return value of the <code>Promise</code> can be retrieved within the <code>&lt;Then /&gt;</code> and <code>&lt;Else /&gt;</code> blocks; a render function must be child of these blocks.</p>
+<pre><code class="language-jsx"><span class="hl-0">&lt;</span><span class="hl-1">Then</span><span class="hl-0">&gt;{(</span><span class="hl-5">returnValue</span><span class="hl-0">, </span><span class="hl-5">promiseHistory</span><span class="hl-0">, </span><span class="hl-5">cancellablePromise</span><span class="hl-0">) </span><span class="hl-3">=&gt;</span><span class="hl-0"> &lt;</span><span class="hl-1">span</span><span class="hl-0">&gt;{returnValue}&lt;/</span><span class="hl-1">span</span><span class="hl-0">&gt;}&lt;/</span><span class="hl-1">Then</span><span class="hl-0">&gt;</span>
+</code></pre>
+<p>The parameters of this render function are:</p>
+<ul>
+<li><code>returnValue</code>: The return value of the <code>Promise</code> (for the <code>&lt;Then /&gt;</code> block) or the error (for the <code>&lt;Else /&gt;</code> block);</li>
+<li><code>promiseHistory</code>: an Array of all the Promises that were ever passed to <code>&lt;If /&gt;</code>. It contains cancellablePromise Objects, that have a promise, as well as a <code>cancel</code> method used to cancel the promise;</li>
+<li><code>cancellablePromise</code>: the cancellablePromise Object containing the promise that caused the rendering of this <code>&lt;Then /&gt;|&lt;Else /&gt;</code> block;</li>
+</ul>
+<p>If the <code>keepAlive</code> prop evaluates to <code>false</code>, each rerender of the <code>&lt;If /&gt;</code> component will automatically ignore the previous Promise if it was still pending.</p>
+
+<a href="#-1" id="-1" style="color: inherit; text-decoration: none;">
+  <h3><Then />;</h3>
+</a>
+<p>Can contain any number of elements inside, which it renders as-is. It can also contain a function. Should not be used outside of an <code>&lt;If /&gt;</code> block. It will only be displayed, if parent <code>If</code> block’s condition is true.</p>
+
+<a href="#-2" id="-2" style="color: inherit; text-decoration: none;">
+  <h3><Else />;</h3>
+</a>
+<p>Can contain any number of elements inside, which it renders as-is. It can also contain a function. Should not be used outside of an <code>&lt;If /&gt;</code> block. It will only be displayed, if parent <code>If</code> block’s condition is false.</p>
+
+<a href="#-3" id="-3" style="color: inherit; text-decoration: none;">
+  <h3><Switch />;</h3>
+</a>
+<p>A container for <code>&lt;Case condition={...}/&gt;</code> and <code>&lt;Default /&gt;</code> blocks. It will render <strong>the first matching</strong> <code>Case</code>, or <strong>the first encountered</strong> <code>Default</code> (, or null).</p>
+
+<a href="#-4" id="-4" style="color: inherit; text-decoration: none;">
+  <h3><Case />;</h3>
+</a>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>condition</code></td>
+<td>Boolean</td>
+</tr>
+</tbody></table>
+<p>If the <code>Case</code> is the first one to have its <code>condition</code> evaluates to <code>true</code> inside the parent <code>&lt;Switch /&gt;</code> it will be the only rendered.</p>
+
+<a href="#-5" id="-5" style="color: inherit; text-decoration: none;">
+  <h3><Default />;</h3>
+</a>
+<p>If no <code>Case</code> have its <code>condition</code> evaluates to <code>true</code> inside the parent <code>&lt;Switch /&gt;</code>, the first <code>Default</code> will be the only one rendered.</p>
+
+<a href="#-6" id="-6" style="color: inherit; text-decoration: none;">
+  <h3><When />;</h3>
+</a>
+<p>A shorthand for <code>&lt;If condition={...}&gt;&lt;Then&gt;...&lt;/Then&gt;&lt;/If&gt;</code>. The same rules apply to the child elements as with using the <code>Then</code> block.</p>
+
+<a href="#-7" id="-7" style="color: inherit; text-decoration: none;">
+  <h3><Unless />;</h3>
+</a>
+<p>A shorthand for <code>&lt;If condition={...}&gt;&lt;Else&gt;...&lt;/Else&gt;&lt;/If&gt;</code>. The same rules apply to the child elements as with using the <code>Else</code> block.</p>
+
+<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+  <h2>License</h2>
+</a>
+<p><strong>React If</strong> is released under the <a href="http://romac.mit-license.org">MIT license</a>.</p>
+
+<a href="#contributors-✨" id="contributors-✨" style="color: inherit; text-decoration: none;">
+  <h2>Contributors ✨</h2>
+</a>
+<p>Thanks goes to these wonderful people (<a href="https://allcontributors.org/docs/en/emoji-key">emoji key</a>):</p>
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://romac.me/"><img src="https://avatars2.githubusercontent.com/u/106849?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Romain Ruetschi</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=romac" title="Code">💻</a> <a href="https://github.com/romac/react-if/commits?author=romac" title="Documentation">📖</a> <a href="#example-romac" title="Examples">💡</a> <a href="#ideas-romac" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-romac" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-romac" title="Maintenance">🚧</a> <a href="#projectManagement-romac" title="Project Management">📆</a> <a href="https://github.com/romac/react-if/pulls?q=is%3Apr+reviewed-by%3Aromac" title="Reviewed Pull Requests">👀</a> <a href="#question-romac" title="Answering Questions">💬</a> <a href="https://github.com/romac/react-if/commits?author=romac" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://favware.tech/"><img src="https://avatars3.githubusercontent.com/u/4019718?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jeroen Claassens</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=Favna" title="Code">💻</a> <a href="https://github.com/romac/react-if/commits?author=Favna" title="Documentation">📖</a> <a href="#example-Favna" title="Examples">💡</a> <a href="#infra-Favna" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-Favna" title="Maintenance">🚧</a> <a href="#projectManagement-Favna" title="Project Management">📆</a> <a href="https://github.com/romac/react-if/pulls?q=is%3Apr+reviewed-by%3AFavna" title="Reviewed Pull Requests">👀</a> <a href="#question-Favna" title="Answering Questions">💬</a> <a href="https://github.com/romac/react-if/commits?author=Favna" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/cyrilchapon"><img src="https://avatars1.githubusercontent.com/u/10728426?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Cyril CHAPON</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=cyrilchapon" title="Code">💻</a> <a href="https://github.com/romac/react-if/commits?author=cyrilchapon" title="Documentation">📖</a> <a href="https://github.com/romac/react-if/commits?author=cyrilchapon" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://twitter.com/tim_jacobi"><img src="https://avatars2.githubusercontent.com/u/2023165?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tim Jacobi</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=timjacobi" title="Code">💻</a> <a href="https://github.com/romac/react-if/commits?author=timjacobi" title="Documentation">📖</a> <a href="https://github.com/romac/react-if/commits?author=timjacobi" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://github.com/meszaros-lajos-gyorgy"><img src="https://avatars3.githubusercontent.com/u/2386064?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lajos György Mészáros</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=meszaros-lajos-gyorgy" title="Code">💻</a> <a href="https://github.com/romac/react-if/commits?author=meszaros-lajos-gyorgy" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Rleahy22"><img src="https://avatars2.githubusercontent.com/u/3144003?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ryan Leahy</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=Rleahy22" title="Code">💻</a> <a href="https://github.com/romac/react-if/commits?author=Rleahy22" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/pronebird"><img src="https://avatars2.githubusercontent.com/u/704044?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andrej Mihajlov</b></sub></a><br /><a href="#platform-pronebird" title="Packaging/porting to new platform">📦</a> <a href="https://github.com/romac/react-if/commits?author=pronebird" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/ejbp"><img src="https://avatars0.githubusercontent.com/u/2060105?v=4?s=100" width="100px;" alt=""/><br /><sub><b>While True</b></sub></a><br /><a href="https://github.com/romac/react-if/issues?q=author%3Aejbp" title="Bug reports">🐛</a> <a href="https://github.com/romac/react-if/commits?author=ejbp" title="Code">💻</a></td>
+    <td align="center"><a href="https://nirri.us/"><img src="https://avatars3.githubusercontent.com/u/592134?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Teffen Ellis</b></sub></a><br /><a href="#projectManagement-TeffenEllis" title="Project Management">📆</a> <a href="https://github.com/romac/react-if/commits?author=TeffenEllis" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Mamoru1234"><img src="https://avatars2.githubusercontent.com/u/11805198?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alexei Gontar</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=Mamoru1234" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/melyourhero"><img src="https://avatars3.githubusercontent.com/u/11873817?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dmitry Melnik</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=melyourhero" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/eropple"><img src="https://avatars2.githubusercontent.com/u/109262?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ed Ropple</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=eropple" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/gradosevic"><img src="https://avatars2.githubusercontent.com/u/10562516?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Goran Radosevic</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=gradosevic" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://haroen.me/"><img src="https://avatars3.githubusercontent.com/u/6270048?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Haroen Viaene</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=Haroenv" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="http://www.martijnthe.nl/"><img src="https://avatars3.githubusercontent.com/u/193881?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Martijn Thé</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=martijnthe" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/artcoding-git"><img src="https://avatars0.githubusercontent.com/u/20770507?v=4?s=100" width="100px;" alt=""/><br /><sub><b>artcoding-git</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=artcoding-git" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Ako520"><img src="https://avatars3.githubusercontent.com/u/22900569?v=4?s=100" width="100px;" alt=""/><br /><sub><b>王天博</b></sub></a><br /><a href="https://github.com/romac/react-if/issues?q=author%3AAko520" title="Bug reports">🐛</a> <a href="https://github.com/romac/react-if/commits?author=Ako520" title="Code">💻</a></td>
+    <td align="center"><a href="https://arcath.net/"><img src="https://avatars1.githubusercontent.com/u/19609?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adam Laycock</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=Arcath" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/theo-js"><img src="https://avatars.githubusercontent.com/u/58733465?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Theo B.</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=theo-js" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+<p>This project follows the <a href="https://github.com/all-contributors/all-contributors">all-contributors</a> specification. Contributions of any kind welcome!</p>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li><li class=" tsd-kind-namespace"><a href="modules/Case.html">Case</a></li><li class=" tsd-kind-namespace"><a href="modules/Default.html">Default</a></li><li class=" tsd-kind-namespace"><a href="modules/Unless.html">Unless</a></li><li class=" tsd-kind-namespace"><a href="modules/When.html">When</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-interface"><a href="interfaces/AsyncSupportProps.html" class="tsd-kind-icon">Async<wbr/>Support<wbr/>Props</a></li><li class="tsd-kind-interface"><a href="interfaces/CancellablePromise.html" class="tsd-kind-icon">Cancellable<wbr/>Promise</a></li><li class="tsd-kind-interface"><a href="interfaces/ComponentWithConditionProps.html" class="tsd-kind-icon">Component<wbr/>With<wbr/>Condition<wbr/>Props</a></li><li class="tsd-kind-interface"><a href="interfaces/ComponentWithConditionPropsAsyncSupport.html" class="tsd-kind-icon">Component<wbr/>With<wbr/>Condition<wbr/>Props<wbr/>Async<wbr/>Support</a></li><li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/ExtendablePromise.html" class="tsd-kind-icon">Extendable<wbr/>Promise</a></li><li class="tsd-kind-type-alias"><a href="modules.html#BooleanLike" class="tsd-kind-icon">Boolean<wbr/>Like</a></li><li class="tsd-kind-variable"><a href="modules.html#Case" class="tsd-kind-icon">Case</a></li><li class="tsd-kind-variable"><a href="modules.html#Default" class="tsd-kind-icon">Default</a></li><li class="tsd-kind-variable"><a href="modules.html#Else" class="tsd-kind-icon">Else</a></li><li class="tsd-kind-variable"><a href="modules.html#Fallback" class="tsd-kind-icon">Fallback</a></li><li class="tsd-kind-variable"><a href="modules.html#If" class="tsd-kind-icon">If</a></li><li class="tsd-kind-variable"><a href="modules.html#Switch" class="tsd-kind-icon">Switch</a></li><li class="tsd-kind-variable"><a href="modules.html#Then" class="tsd-kind-icon">Then</a></li><li class="tsd-kind-variable"><a href="modules.html#Unless" class="tsd-kind-icon">Unless</a></li><li class="tsd-kind-variable"><a href="modules.html#When" class="tsd-kind-icon">When</a></li></ul></nav></div></div></div><footer class=""><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li><li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="overlay"></div><script src="assets/main.js"></script></body></html>
