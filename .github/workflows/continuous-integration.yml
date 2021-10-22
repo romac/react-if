@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 16
       - name: Restore CI Cache
-        uses: actions/cache@1a9e2138d905efd099035b49d8b7a3888c653ca8 # renovate: tag=v2.1.5
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # renovate: tag=v2.1.6
         id: cache-restore
         with:
           path: node_modules
@@ -42,7 +42,7 @@ jobs:
         with:
           node-version: 16
       - name: Restore CI Cache
-        uses: actions/cache@1a9e2138d905efd099035b49d8b7a3888c653ca8 # renovate: tag=v2.1.5
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # renovate: tag=v2.1.6
         id: cache-restore
         with:
           path: node_modules
@@ -66,7 +66,7 @@ jobs:
         with:
           node-version: 16
       - name: Restore CI Cache
-        uses: actions/cache@1a9e2138d905efd099035b49d8b7a3888c653ca8 # renovate: tag=v2.1.5
+        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # renovate: tag=v2.1.6
         id: cache-restore
         with:
           path: node_modules
