@@ -5,6 +5,10 @@ node_modules/
 *.iml
 coverage/
 
+# Yarn files
+.yarn/install-state.gz
+.yarn/build-state.yml
+
 # Environment variables
 .DS_Store
 .env.local
@@ -16,17 +20,6 @@ coverage/
 dist/
 docs/
 .parcel-cache/
-
-# Ignore JavaScript files
-**/*.js
-**/*.mjs
-**/*.js.map
-**/*.d.ts
-!src/Augments.d.ts
-**/*.tsbuildinfo
-!jest.config.js
-!.prettierrc.js
-!demo/tailwind.config.js
 
 # Ignore heapsnapshot and log files
 *.heapsnapshot
