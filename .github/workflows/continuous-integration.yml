@@ -12,15 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v2
+        uses: actions/checkout@1e204e9a9253d643386038d443f96446fa156a97 # renovate: tag=v2
       - name: Add problem matcher
         run: echo "::add-matcher::.github/problemMatchers/eslint.json"
       - name: Use Node.js v16
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@270253e841af726300e85d718a5f606959b2903c # renovate: tag=v2
         with:
           node-version: 16
       - name: Restore CI Cache
-        uses: actions/cache@v2.1.5
+        uses: actions/cache@1a9e2138d905efd099035b49d8b7a3888c653ca8 # renovate: tag=v2.1.5
         id: cache-restore
         with:
           path: node_modules
@@ -36,13 +36,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v2
+        uses: actions/checkout@1e204e9a9253d643386038d443f96446fa156a97 # renovate: tag=v2
       - name: Use Node.js v16
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@270253e841af726300e85d718a5f606959b2903c # renovate: tag=v2
         with:
           node-version: 16
       - name: Restore CI Cache
-        uses: actions/cache@v2.1.5
+        uses: actions/cache@1a9e2138d905efd099035b49d8b7a3888c653ca8 # renovate: tag=v2.1.5
         id: cache-restore
         with:
           path: node_modules
@@ -58,15 +58,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Project
-        uses: actions/checkout@v2
+        uses: actions/checkout@1e204e9a9253d643386038d443f96446fa156a97 # renovate: tag=v2
       - name: Add problem matcher
         run: echo "::add-matcher::.github/problemMatchers/tsc.json"
       - name: Use Node.js v16
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@270253e841af726300e85d718a5f606959b2903c # renovate: tag=v2
         with:
           node-version: 16
       - name: Restore CI Cache
-        uses: actions/cache@v2.1.5
+        uses: actions/cache@1a9e2138d905efd099035b49d8b7a3888c653ca8 # renovate: tag=v2.1.5
         id: cache-restore
         with:
           path: node_modules
