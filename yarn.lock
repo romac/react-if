@@ -5585,10 +5585,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^1.14.7":
-  version: 1.14.7
-  resolution: "daisyui@npm:1.14.7"
-  checksum: 6b09b00e1dfb5adb5347e3b3dd08a017a3eca5a274042699432a1618725e24f12c3a6863e9524b4095deb318c5e26ede49407898487dfa87c1d1a14a3dea64bc
+"daisyui@npm:^1.16.0":
+  version: 1.16.0
+  resolution: "daisyui@npm:1.16.0"
+  checksum: 88f31010c669ebdc4b0951bfdb1f877b12017a58f673709eca6fc2bdeda2ef65a82a6df834454f7a169bf82c71f5d3a2189da41964eb5ef671ecdecd185ef841
   languageName: node
   linkType: hard
 
@@ -6587,9 +6587,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.0.1, eslint@npm:^8.0.1":
-  version: 8.0.1
-  resolution: "eslint@npm:8.0.1"
+"eslint@npm:8.1.0, eslint@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "eslint@npm:8.1.0"
   dependencies:
     "@eslint/eslintrc": ^1.0.3
     "@humanwhocodes/config-array": ^0.6.0
@@ -6631,7 +6631,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 072dde3e188c1274fa92eaf72d233d77b9c6e87ed859dce071b49c243546959ff7aefdb4759abf09841b650ef9d9f013abaae720b0bd64e0e07700ccefaf1208
+  checksum: e0b0c4bddd8673f376730b5bc72876fd0298e0ed9e52fa0707e48854ab0cea6a6a1945dbe2a059db1c867aafba7979b9d770060696e3f0ffc9d4b635ca4bce49
   languageName: node
   linkType: hard
 
@@ -10017,17 +10017,18 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^11.2.3":
-  version: 11.2.3
-  resolution: "lint-staged@npm:11.2.3"
+"lint-staged@npm:^11.2.4":
+  version: 11.2.4
+  resolution: "lint-staged@npm:11.2.4"
   dependencies:
     cli-truncate: 2.1.0
     colorette: ^1.4.0
     commander: ^8.2.0
-    cosmiconfig: ^7.0.1
     debug: ^4.3.2
     enquirer: ^2.3.6
     execa: ^5.1.1
+    js-yaml: ^4.1.0
+    lilconfig: ^2.0.3
     listr2: ^3.12.2
     micromatch: ^4.0.4
     normalize-path: ^3.0.0
@@ -10037,7 +10038,7 @@ fsevents@^1.2.7:
     supports-color: 8.1.1
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: cf3a1612a8cb3790030fb1eaf98071b97be0c71e9ee87f2f65741321974178e9b15b480dac695bb126d2cd8751dd7d72071b13d7ea0e1a97a735d88bd3cc8bb7
+  checksum: 9c1478d1903029a1db15b81c3f4d56a99b28774871961d18ea38dff1d7648bbca2eaa55c53c5c71732add89994bb07d3b91ce127495a7e586f519dfdb8a45938
   languageName: node
   linkType: hard
 
@@ -12848,7 +12849,7 @@ fsevents@^1.2.7:
   resolution: "react-if-demo@workspace:demo"
   dependencies:
     autoprefixer: ^10.3.7
-    daisyui: ^1.14.7
+    daisyui: ^1.16.0
     parcel: ^2.0.0
     postcss: ^8.3.11
     tailwindcss: ^2.2.17
@@ -12876,7 +12877,7 @@ fsevents@^1.2.7:
     enzyme: ^3.11.0
     enzyme-adapter-react-16: ^1.15.6
     enzyme-to-json: ^3.6.2
-    eslint: ^8.0.1
+    eslint: ^8.1.0
     eslint-config-prettier: ^8.3.0
     eslint-config-react-app: ^6.0.0
     eslint-plugin-import: ^2.25.2
@@ -12886,7 +12887,7 @@ fsevents@^1.2.7:
     eslint-plugin-react-hooks: ^4.2.0
     husky: ^7.0.4
     jest-enzyme: ^7.1.2
-    lint-staged: ^11.2.3
+    lint-staged: ^11.2.4
     prettier: ^2.4.1
     pretty-quick: ^3.1.1
     react: ^16.14.0
