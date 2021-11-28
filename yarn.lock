@@ -3045,10 +3045,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.11.9":
-  version: 16.11.9
-  resolution: "@types/node@npm:16.11.9"
-  checksum: baec2e6471ee58fd1e9874e6f47ab95a918a0f46b42424392e4c13e3e07f078f8b72b6b48073b0b14f710ed66c5f1b2e497df43f28151000f11f5f299382cfe2
+"@types/node@npm:^16.11.10":
+  version: 16.11.10
+  resolution: "@types/node@npm:16.11.10"
+  checksum: 9c79419c5c3d92d5825bffa30f3668533f598d8b63a73ea7fc24e47f162bdbed92b0f8e4f4261cc3314b39cee050e303366d2aa154abc95c63a572a110b8c160
   languageName: node
   linkType: hard
 
@@ -10134,6 +10134,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"lilconfig@npm:2.0.4":
+  version: 2.0.4
+  resolution: "lilconfig@npm:2.0.4"
+  checksum: 02ae530aa49218d782eb79e92c600ea5220828987f85aa3403fa512cadc7efe38c0ac7d0cd2edf600ad3fae1f6c1752f5b4bb78c0d9950435b044d53d507c9e1
+  languageName: node
+  linkType: hard
+
 "lilconfig@npm:^2.0.3":
   version: 2.0.3
   resolution: "lilconfig@npm:2.0.3"
@@ -10148,26 +10155,27 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^12.0.3":
-  version: 12.0.3
-  resolution: "lint-staged@npm:12.0.3"
+"lint-staged@npm:^12.1.2":
+  version: 12.1.2
+  resolution: "lint-staged@npm:12.1.2"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
     commander: ^8.3.0
-    cosmiconfig: ^7.0.1
     debug: ^4.3.2
     enquirer: ^2.3.6
     execa: ^5.1.1
+    lilconfig: 2.0.4
     listr2: ^3.13.3
     micromatch: ^4.0.4
     normalize-path: ^3.0.0
     object-inspect: ^1.11.0
     string-argv: ^0.3.1
     supports-color: ^9.0.2
+    yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 08a20d9c93bab3e26baf6f92a9f39d114636eba4f3cf6b6c3893cac8db612963563a9ba6cd477f4fd5af265e04976b049e70647ff8732e7469a5d989840f9148
+  checksum: ec84ce4f74d0d8fe314bd0b62fb5e0be64af692d1876f68c457116faef61b4b3b79d72df7819c248bfbb20c46e88fbe994128e7351e84bec7048263e00199925
   languageName: node
   linkType: hard
 
@@ -12585,7 +12593,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.6, postcss@npm:^8.2.1, postcss@npm:^8.3.0, postcss@npm:^8.3.11, postcss@npm:^8.3.6":
+"postcss@npm:^8.1.6, postcss@npm:^8.2.1, postcss@npm:^8.3.0, postcss@npm:^8.3.6":
   version: 8.3.11
   resolution: "postcss@npm:8.3.11"
   dependencies:
@@ -12593,6 +12601,17 @@ fsevents@^1.2.7:
     picocolors: ^1.0.0
     source-map-js: ^0.6.2
   checksum: 1a230553d74c66aa9585c90781ed8ea75f19cefea405d2117b67fbeb24b5b5e0e17be2e0c5a07db31dd085643a13394127ab2222e940771b70498331bf20f35e
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.4":
+  version: 8.4.4
+  resolution: "postcss@npm:8.4.4"
+  dependencies:
+    nanoid: ^3.1.30
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.1
+  checksum: 6cf3fe0ecdf5a0d2aeb5e8404938c7eab968704e2e29dc5421e90b4014eb1975c1c0ad828425f2428807ef6e3fcfadd71f988ab55cb06c28ac2866f22403255b
   languageName: node
   linkType: hard
 
@@ -12981,7 +13000,7 @@ fsevents@^1.2.7:
     autoprefixer: ^10.4.0
     daisyui: ^1.16.2
     parcel: ^2.0.1
-    postcss: ^8.3.11
+    postcss: ^8.4.4
     tailwindcss: ^2.2.19
     typescript: ^4.5.2
   languageName: unknown
@@ -12998,7 +13017,7 @@ fsevents@^1.2.7:
     "@sapphire/ts-config": ^3.1.6
     "@types/enzyme": ^3.10.10
     "@types/enzyme-adapter-react-16": ^1.0.6
-    "@types/node": ^16.11.9
+    "@types/node": ^16.11.10
     "@types/react": ^16.14.16
     "@types/react-dom": ^16.9.14
     "@typescript-eslint/eslint-plugin": ^5.4.0
@@ -13017,14 +13036,14 @@ fsevents@^1.2.7:
     eslint-plugin-react-hooks: ^4.2.0
     husky: ^7.0.4
     jest-enzyme: ^7.1.2
-    lint-staged: ^12.0.3
-    prettier: ^2.4.1
+    lint-staged: ^12.1.2
+    prettier: ^2.5.0
     pretty-quick: ^3.1.2
     react: ^16.14.0
     react-dom: ^16.14.0
     standard-version: ^9.3.2
     tsdx: ^0.14.1
-    typedoc: ^0.22.9
+    typedoc: ^0.22.10
     typescript: ^4.5.2
   peerDependencies:
     react: ^16.x || ^17.x
@@ -14116,6 +14135,13 @@ resolve@^2.0.0-next.3:
   version: 0.6.2
   resolution: "source-map-js@npm:0.6.2"
   checksum: 9c8151a29e00fd8d3ba87709fdf9a9ce48313d653f4a29a39b4ae53d346ac79e005de624796ff42eff55cbaf26d2e87f4466001ca87831d400d818c5cf146a0e
+  languageName: node
+  linkType: hard
+
+"source-map-js@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "source-map-js@npm:1.0.1"
+  checksum: 22606113d62bbd468712b0cb0c46e9a8629de7eb081049c62a04d977a211abafd7d61455617f8b78daba0b6c0c7e7c88f8c6b5aaeacffac0a6676ecf5caac5ce
   languageName: node
   linkType: hard
 
@@ -15278,9 +15304,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"typedoc@npm:^0.22.9":
-  version: 0.22.9
-  resolution: "typedoc@npm:0.22.9"
+"typedoc@npm:^0.22.10":
+  version: 0.22.10
+  resolution: "typedoc@npm:0.22.10"
   dependencies:
     glob: ^7.2.0
     lunr: ^2.3.9
@@ -15288,10 +15314,10 @@ resolve@^2.0.0-next.3:
     minimatch: ^3.0.4
     shiki: ^0.9.12
   peerDependencies:
-    typescript: 4.0.x || 4.1.x || 4.2.x || 4.3.x || 4.4.x
+    typescript: 4.0.x || 4.1.x || 4.2.x || 4.3.x || 4.4.x || 4.5.x
   bin:
     typedoc: bin/typedoc
-  checksum: a9728074a357fd48fdcbd661ced298f37e2f5b366e5eb921cf06767eabf87fada30ffe791059272e2336cb1d02f1034116a72ca6f159df811906eb82e03071e3
+  checksum: 404932ae8e62d1507209d50b635d9d5cefead344e7e84e2d21fc84741fb739e011dcffcf335d6d4e2a31fe45910757b27f11678f6ae5b89514d2f291fe41884e
   languageName: node
   linkType: hard
 
@@ -15327,7 +15353,7 @@ typescript@^4.4.3:
 
 "typescript@patch:typescript@^3.7.3#~builtin<compat/typescript>":
   version: 3.9.10
-  resolution: "typescript@patch:typescript@npm%3A3.9.10#~builtin<compat/typescript>::version=3.9.10&hash=ddd1e8"
+  resolution: "typescript@patch:typescript@npm%3A3.9.10#~builtin<compat/typescript>::version=3.9.10&hash=493e53"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
@@ -15337,7 +15363,7 @@ typescript@^4.4.3:
 
 "typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
   version: 4.4.4
-  resolution: "typescript@patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=ddd1e8"
+  resolution: "typescript@patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=493e53"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
@@ -15347,11 +15373,11 @@ typescript@^4.4.3:
 
 "typescript@patch:typescript@^4.5.2#~builtin<compat/typescript>":
   version: 4.5.2
-  resolution: "typescript@patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=ddd1e8"
+  resolution: "typescript@patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=493e53"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 24a439e062a05e3285a4f0e8a40644116ecdca89f3e908bed01e5a01b9aee747e3bcf0e85fe9e017e5ebf0c0863437c39479f2616f55a244c2d82d37022cdc4f
+  checksum: 53838d56aba6fcc947d63aa0771e5d966b1b648fddafed6e221d7f38c71219c4e036ece8cfe9e35ed80cf5a35ff4eb958934c993f99c3233773ec4f9ccd53f69
   languageName: node
   linkType: hard
 
