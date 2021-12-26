@@ -5576,10 +5576,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^1.19.0":
-  version: 1.19.0
-  resolution: "daisyui@npm:1.19.0"
-  checksum: f9a853aab28ec495f9b4fcedc29d1903933648ca5b7cbd2823baee9c38466e53eda99a9f77c77e8b04245820e313959c8a2dd7680bdc1654297af00adc43d02a
+"daisyui@npm:^1.20.0":
+  version: 1.20.0
+  resolution: "daisyui@npm:1.20.0"
+  checksum: c38e729214c4e27ad812782cbd3525e08538bfa2a71f8fb4db4d994855f2bd801d0bd388c52280c7cb972f009a379888d3444da1d1fd486d6b8d3d924dcc19ee
   languageName: node
   linkType: hard
 
@@ -12717,7 +12717,7 @@ __metadata:
   resolution: "react-if-demo@workspace:demo"
   dependencies:
     autoprefixer: ^10.4.0
-    daisyui: ^1.19.0
+    daisyui: ^1.20.0
     parcel: ^2.0.1
     postcss: ^8.4.5
     tailwindcss: ^3.0.7
