@@ -31,7 +31,7 @@
     "prepare": "husky install .github/husky"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.1",
+    "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
     "@sapphire/eslint-config": "^4.0.8",
     "@sapphire/prettier-config": "^1.2.7",
