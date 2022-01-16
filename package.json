@@ -33,9 +33,9 @@
   "devDependencies": {
     "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
-    "@sapphire/eslint-config": "^4.0.8",
-    "@sapphire/prettier-config": "^1.2.7",
-    "@sapphire/ts-config": "^3.1.6",
+    "@sapphire/eslint-config": "^4.0.9",
+    "@sapphire/prettier-config": "^1.2.8",
+    "@sapphire/ts-config": "^3.1.7",
     "@types/enzyme": "^3.10.11",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/node": "^16.11.19",
