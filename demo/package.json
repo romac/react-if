@@ -11,10 +11,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
-    "daisyui": "^1.22.0",
-    "parcel": "^2.1.1",
+    "daisyui": "^1.23.0",
+    "parcel": "^2.2.0",
     "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.12",
+    "tailwindcss": "^3.0.15",
     "typescript": "^4.5.4"
   }
 }
