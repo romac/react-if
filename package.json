@@ -103,5 +103,5 @@
     "react-dom": "^16.14.0",
     "react": "^16.14.0"
   },
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.2.0"
 }
