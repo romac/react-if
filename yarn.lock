@@ -1513,9 +1513,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/eslintrc@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@eslint/eslintrc@npm:1.1.0"
+"@eslint/eslintrc@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@eslint/eslintrc@npm:1.2.0"
   dependencies:
     ajv: ^6.12.4
     debug: ^4.3.2
@@ -1526,7 +1526,7 @@ __metadata:
     js-yaml: ^4.1.0
     minimatch: ^3.0.4
     strip-json-comments: ^3.1.1
-  checksum: 784aa2157e2808b52bbbaf1d1cfca9a6ba0b2faaa3696eb7a1229d4b357400fbd8a6aa09a16e7ae0868ea075d3a8f365cf5928b6d05a1df47f40a1167423a4fa
+  checksum: a5e51dcf02627363567094456d7880b46b6a14a285d7a057f083ca903bdd862483bb6314cbc9fb6fa2d2c4537d50e0d28bd5e39650840241ae4796faaec65d2e
   languageName: node
   linkType: hard
 
@@ -3038,7 +3038,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.12.0":
+"@typescript-eslint/eslint-plugin@npm:^5.12.1":
   version: 5.12.1
   resolution: "@typescript-eslint/eslint-plugin@npm:5.12.1"
   dependencies:
@@ -3061,7 +3061,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.12.0":
+"@typescript-eslint/parser@npm:^5.12.1":
   version: 5.12.1
   resolution: "@typescript-eslint/parser@npm:5.12.1"
   dependencies:
@@ -5199,16 +5199,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "daisyui@npm:2.1.0"
+"daisyui@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "daisyui@npm:2.2.2"
   dependencies:
     color: ^4.2
     tailwindcss: ^3.0
   peerDependencies:
     autoprefixer: ^10.0.2
     postcss: ^8.0.9
-  checksum: 61a157dbf1e3ff3d910d1e8262913eadef13e94af0eb8fdc985b0de7a968aba9c90fda027e5480ee54195af6a626b80231e79ced4db34880a49f30477595ce9e
+  checksum: 6e67d4a7b75f3030745b48ffaae92d66c6ee8a878f1da9079f0ad2ac74dd1418413cc7424022d9b46b64003b88971d25cf0c0116aedeac0a3b5b0f93cac724a7
   languageName: node
   linkType: hard
 
@@ -6114,11 +6114,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.9.0":
-  version: 8.9.0
-  resolution: "eslint@npm:8.9.0"
+"eslint@npm:^8.10.0":
+  version: 8.10.0
+  resolution: "eslint@npm:8.10.0"
   dependencies:
-    "@eslint/eslintrc": ^1.1.0
+    "@eslint/eslintrc": ^1.2.0
     "@humanwhocodes/config-array": ^0.9.2
     ajv: ^6.10.0
     chalk: ^4.0.0
@@ -6155,7 +6155,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 8efecdb9752ee6cb4d2787a14e00cbeab29562ed95dd71c6f3f8ac410426a067d5aa659416d2290e46ca44bc5607e6a6e6c62f814694d8639f80666f522022a7
+  checksum: 8b31ab3de5b48b6828bf13c09c9e62ee0045fa0afa017efaa73eedcf4dc33bc204ee4c467d4677e37967d1645f73816ddef4271422e691fded352040f8f83093
   languageName: node
   linkType: hard
 
@@ -9857,7 +9857,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.2.0":
+"nanoid@npm:^3.2.0, nanoid@npm:^3.3.1":
   version: 3.3.1
   resolution: "nanoid@npm:3.3.1"
   bin:
@@ -11065,6 +11065,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss@npm:^8.4.7":
+  version: 8.4.7
+  resolution: "postcss@npm:8.4.7"
+  dependencies:
+    nanoid: ^3.3.1
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: a515ed36622edbee1d3ba153298d3b62ae9826dfa6de19204c2a6f975c8d3ad36808423b5119a9d82b78efd486de3ce35a1faf882a36ac8aa09492be4fbb7fe1
+  languageName: node
+  linkType: hard
+
 "posthtml-parser@npm:^0.10.0, posthtml-parser@npm:^0.10.1":
   version: 0.10.2
   resolution: "posthtml-parser@npm:0.10.2"
@@ -11345,9 +11356,9 @@ __metadata:
   resolution: "react-if-demo@workspace:demo"
   dependencies:
     autoprefixer: ^10.4.2
-    daisyui: ^2.1.0
+    daisyui: ^2.2.2
     parcel: ^2.3.2
-    postcss: ^8.4.6
+    postcss: ^8.4.7
     tailwindcss: ^3.0.23
     typescript: ^4.5.5
   languageName: unknown
@@ -11367,13 +11378,13 @@ __metadata:
     "@types/node": ^17.0.8
     "@types/react": ^16.14.16
     "@types/react-dom": ^16.9.14
-    "@typescript-eslint/eslint-plugin": ^5.12.0
-    "@typescript-eslint/parser": ^5.12.0
+    "@typescript-eslint/eslint-plugin": ^5.12.1
+    "@typescript-eslint/parser": ^5.12.1
     cz-conventional-changelog: ^3.3.0
     enzyme: ^3.11.0
     enzyme-adapter-react-16: ^1.15.6
     enzyme-to-json: ^3.6.2
-    eslint: ^8.9.0
+    eslint: ^8.10.0
     eslint-config-prettier: ^8.4.0
     eslint-config-react-app: ^7.0.0
     eslint-plugin-import: ^2.25.4
