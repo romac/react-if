@@ -2687,37 +2687,37 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/eslint-config@npm:^4.2.2":
-  version: 4.2.2
-  resolution: "@sapphire/eslint-config@npm:4.2.2"
+"@sapphire/eslint-config@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "@sapphire/eslint-config@npm:4.3.0"
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^5.12.1
-    "@typescript-eslint/parser": ^5.12.1
+    "@typescript-eslint/eslint-plugin": ^5.13.0
+    "@typescript-eslint/parser": ^5.13.0
     eslint: ^8.10.0
-    eslint-config-prettier: ^8.4.0
+    eslint-config-prettier: ^8.5.0
     eslint-plugin-prettier: ^4.0.0
     prettier: ^2.5.1
-    typescript: ^4.5.5
-  checksum: 0382c2ef262f4e634362763cc721b77ba960b0e5fcb1b0468e6842c5acbad6c78c1522ad88ccff1a6c421bdf3fd2d5b824700a7f48a3875de83e98c3ce800b6e
+    typescript: ^4.6.2
+  checksum: 704960049d1640287596b52598bb15dc73fb94b1be4f83070f026d773cac93281b0c125efd846665335cce687246f173639bbc80a0581d4d55c7deaf69794ec8
   languageName: node
   linkType: hard
 
-"@sapphire/prettier-config@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "@sapphire/prettier-config@npm:1.3.0"
+"@sapphire/prettier-config@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@sapphire/prettier-config@npm:1.4.0"
   dependencies:
     prettier: ^2.5.1
-  checksum: fd620bea745d732733fc73cec365be8c059f2ca725cc17a90ad690fb7a75807b87764de8ac222d308f7d0d3b2c2a6d06c45295c590577d52c29d333389df7c88
+  checksum: 4d8e1ac5435562a75f2a247e2fd0156139d56693d42bd30315ab3e8e34a31410557ffdf993b2769b678542b8878cc1e591c2e5cccb96d747fd08c04797d73796
   languageName: node
   linkType: hard
 
-"@sapphire/ts-config@npm:^3.3.1":
-  version: 3.3.1
-  resolution: "@sapphire/ts-config@npm:3.3.1"
+"@sapphire/ts-config@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "@sapphire/ts-config@npm:3.3.2"
   dependencies:
     tslib: ^2.3.1
-    typescript: ^4.5.5
-  checksum: c63c208dcd528a30a3799ca992553e029dc541580479ea6e7aca4bd0ef46ad103de1fe47fed9e6254a4fb348b769bf0a019d28e6cce05792eb51b69666811e78
+    typescript: ^4.6.2
+  checksum: c826552b627204035714bae75fc68ccf4c1bdd07b87933df093de48d7c82a794474d18756ad2e3022d0eec894973dfc246419ef34f1288105e3f193085bf19ce
   languageName: node
   linkType: hard
 
@@ -11400,9 +11400,9 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.2.1
     "@commitlint/config-conventional": ^16.2.1
-    "@sapphire/eslint-config": ^4.2.2
-    "@sapphire/prettier-config": ^1.3.0
-    "@sapphire/ts-config": ^3.3.1
+    "@sapphire/eslint-config": ^4.3.0
+    "@sapphire/prettier-config": ^1.4.0
+    "@sapphire/ts-config": ^3.3.2
     "@types/enzyme": ^3.10.11
     "@types/enzyme-adapter-react-16": ^1.0.6
     "@types/node": ^17.0.8
@@ -13537,7 +13537,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.4.3, typescript@npm:^4.5.5":
+"typescript@npm:^4.4.3":
   version: 4.5.5
   resolution: "typescript@npm:4.5.5"
   bin:
@@ -13567,7 +13567,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.5.5#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
   version: 4.5.5
   resolution: "typescript@patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"
   bin:
