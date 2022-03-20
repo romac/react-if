@@ -2706,18 +2706,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/eslint-config@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "@sapphire/eslint-config@npm:4.3.0"
+"@sapphire/eslint-config@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "@sapphire/eslint-config@npm:4.3.1"
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^5.13.0
-    "@typescript-eslint/parser": ^5.13.0
-    eslint: ^8.10.0
+    "@typescript-eslint/eslint-plugin": ^5.14.0
+    "@typescript-eslint/parser": ^5.14.0
+    eslint: ^8.11.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-prettier: ^4.0.0
     prettier: ^2.5.1
     typescript: ^4.6.2
-  checksum: 704960049d1640287596b52598bb15dc73fb94b1be4f83070f026d773cac93281b0c125efd846665335cce687246f173639bbc80a0581d4d55c7deaf69794ec8
+  checksum: a0b50c0e0523c3d7f448507ee3e5a62771af5611d995dcdeea3afee390d6f58e7e643a4446ff2172dc64d8c1232e20ea5ab8fedfd6a21edff41f3f54596c7d03
   languageName: node
   linkType: hard
 
@@ -11467,7 +11467,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.2.3
     "@commitlint/config-conventional": ^16.2.1
-    "@sapphire/eslint-config": ^4.3.0
+    "@sapphire/eslint-config": ^4.3.1
     "@sapphire/prettier-config": ^1.4.0
     "@sapphire/ts-config": ^3.3.2
     "@types/enzyme": ^3.10.11
