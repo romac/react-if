@@ -2800,37 +2800,37 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/eslint-config@npm:^4.3.2":
-  version: 4.3.2
-  resolution: "@sapphire/eslint-config@npm:4.3.2"
+"@sapphire/eslint-config@npm:^4.3.3":
+  version: 4.3.3
+  resolution: "@sapphire/eslint-config@npm:4.3.3"
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^5.15.0
-    "@typescript-eslint/parser": ^5.15.0
-    eslint: ^8.11.0
+    "@typescript-eslint/eslint-plugin": ^5.17.0
+    "@typescript-eslint/parser": ^5.17.0
+    eslint: ^8.12.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-prettier: ^4.0.0
-    prettier: ^2.6.0
-    typescript: ^4.6.2
-  checksum: 068602377d19b77d7b44af68b303de294c868f761e63b8f0d5f6fafbd50110a93f7b78c817f69f0218e80d81437518bc63c1b3574465632f0900f3d4af116df0
+    prettier: ^2.6.1
+    typescript: ^4.6.3
+  checksum: 500fcf075d45911da6898e659ba63389f6d393e77590548e2825bb9df44974975275093c812c120c554924a832cd2d9571bc3de5820e1c6340ec19eb33ee21b1
   languageName: node
   linkType: hard
 
-"@sapphire/prettier-config@npm:^1.4.1":
-  version: 1.4.1
-  resolution: "@sapphire/prettier-config@npm:1.4.1"
+"@sapphire/prettier-config@npm:^1.4.2":
+  version: 1.4.2
+  resolution: "@sapphire/prettier-config@npm:1.4.2"
   dependencies:
-    prettier: ^2.6.0
-  checksum: 62f6aede80568e5ff482d6edc9052a29089f6a88f9e905dec18a3ed412ca449a113450ba2a722d3598739673dda848da5e35430a9b38d93bddfdb46221ab61c7
+    prettier: ^2.6.1
+  checksum: 02b1d42ef8558b723fb6ead1e9af1a87c795133b9a0ba43a3c79f519f475421ec5ea28182ae4b01b0865f085d211fd5bd39a143c5b85d42878891939d837f1b6
   languageName: node
   linkType: hard
 
-"@sapphire/ts-config@npm:^3.3.3":
-  version: 3.3.3
-  resolution: "@sapphire/ts-config@npm:3.3.3"
+"@sapphire/ts-config@npm:^3.3.4":
+  version: 3.3.4
+  resolution: "@sapphire/ts-config@npm:3.3.4"
   dependencies:
     tslib: ^2.3.1
-    typescript: ^4.6.2
-  checksum: e4a5ed72791629b225b815537ddc040981559cceca87c01559359a5cb58e836182a838b44d7c0988de7b0dc32b8d1fc27390ad0062f8fbf865417baf666170a1
+    typescript: ^4.6.3
+  checksum: c26dee331e17dd1762caa499ca6f1d1ee22fe781a5486575ead625c399678fbf3b33cf963a4f48aad04df5d515a4b3d2f80a03272d2413894d96f799d5f5ca87
   languageName: node
   linkType: hard
 
@@ -10909,15 +10909,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "prettier@npm:2.6.0"
-  bin:
-    prettier: bin-prettier.js
-  checksum: 3e527ad62279676778a8404d18174d7ca2365ada4caba6eebbcdd9907d1187afd3bc6ade5b4e5f5d4549bb9fb71e45ca8930d71500017635524f8fc05bc52e93
-  languageName: node
-  linkType: hard
-
 "prettier@npm:^2.6.1":
   version: 2.6.1
   resolution: "prettier@npm:2.6.1"
@@ -11152,9 +11143,9 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.2.3
     "@commitlint/config-conventional": ^16.2.1
-    "@sapphire/eslint-config": ^4.3.2
-    "@sapphire/prettier-config": ^1.4.1
-    "@sapphire/ts-config": ^3.3.3
+    "@sapphire/eslint-config": ^4.3.3
+    "@sapphire/prettier-config": ^1.4.2
+    "@sapphire/ts-config": ^3.3.4
     "@types/enzyme": ^3.10.11
     "@types/enzyme-adapter-react-16": ^1.0.6
     "@types/node": ^17.0.8
@@ -13294,16 +13285,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.6.2":
-  version: 4.6.2
-  resolution: "typescript@npm:4.6.2"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 8a44ed7e6f6c4cb1ebe8cf236ecda2fb119d84dcf0fbd77e707b2dfea1bbcfc4e366493a143513ce7f57203c75da9d4e20af6fe46de89749366351046be7577c
-  languageName: node
-  linkType: hard
-
 "typescript@npm:^4.6.3":
   version: 4.6.3
   resolution: "typescript@npm:4.6.3"
@@ -13331,16 +13312,6 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 858c61fa63f7274ca4aaaffeced854d550bf416cff6e558c4884041b3311fb662f476f167cf5c9f8680c607239797e26a2ee0bcc6467fbc05bfcb218e1c6c671
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@^4.6.2#~builtin<compat/typescript>":
-  version: 4.6.2
-  resolution: "typescript@patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=bda367"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 40b493a71747fb89fa70df104e2c4a5e284b43750af5bea024090a5261cefa387f7a9372411b13030f7bf5555cee4275443d08805642ae5c74ef76740854a4c7
   languageName: node
   linkType: hard
 
