@@ -1,177 +1,151 @@
-import { mount, ReactWrapper, shallow } from 'enzyme';
+import { render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
-import { act } from 'react-dom/test-utils';
 import { Else, Fallback, If, Then } from '../src';
 import type { ExtendablePromise } from '../src/types';
-
-const waitForComponentToPaint = async (wrapped: ReactWrapper) => {
-  await act(async () => {
-    await new Promise((resolve) => setTimeout(resolve, 0));
-    wrapped.update();
-  });
-};
 
 describe('<If /> component', () => {
   describe('Truthy cases', () => {
     describe('With NODE_ENV === test', () => {
       test('GIVEN <Then /> THEN renders children', () => {
-        const wrapped = shallow(
+        render(
           <If condition={true}>
             <Then>
-              <span>Then</span>
+              <span data-testid="thenChild">Then</span>
             </Then>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(true);
+        expect(screen.queryByTestId('thenChild')).toContainHTML('<span data-testid="thenChild">Then</span>');
       });
 
       test('GIVEN <Then /> & <Else /> THEN renders children of <Then />', () => {
-        const wrapped = shallow(
+        render(
           <If condition={true}>
             <Then>
-              <span>Then</span>
+              <span data-testid="thenChild">Then</span>
             </Then>
             <Else>
-              <span>Else</span>
+              <span data-testid="elseChild">Else</span>
             </Else>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(true);
-        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(false);
+        expect(screen.queryByTestId('thenChild')).toContainHTML('<span data-testid="thenChild">Then</span>');
+        expect(screen.queryByTestId('elseChild')).toBeNull();
       });
 
       test('GIVEN multiple <Then /> blocks THEN renders only first <Then /> block', () => {
-        const wrapped = shallow(
+        render(
           <If condition={true}>
             <Then>
-              <span>Then1</span>
+              <span data-testid="thenChild1">Then1</span>
             </Then>
             <Then>
-              <span>Then2</span>
+              <span data-testid="thenChild2">Then2</span>
             </Then>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Then1</span>)).toBe(true);
-        expect(wrapped.containsMatchingElement(<span>Then2</span>)).toBe(false);
+        expect(screen.queryByTestId('thenChild1')).toContainHTML('<span data-testid="thenChild1">Then1</span>');
+        expect(screen.queryByTestId('thenChild2')).toBeNull();
       });
 
       test('GIVEN <Else /> before <Then /> THEN renders <Then /> block', () => {
-        const wrapped = shallow(
+        render(
           <If condition={true}>
             <Else>
-              <span>Else</span>
+              <span data-testid="elseChild">Else</span>
             </Else>
             <Then>
-              <span>Then</span>
+              <span data-testid="thenChild">Then</span>
             </Then>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(true);
-        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(false);
-      });
-
-      test('GIVEN w/o children THEN renders null', () => {
-        const wrapped = shallow(<If condition={true} />);
-
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.html()).toBeNull();
+        expect(screen.queryByTestId('thenChild')).toContainHTML('<span data-testid="thenChild">Then</span>');
+        expect(screen.queryByTestId('elseChild')).toBeNull();
       });
     });
 
     describe('With NODE_ENV === production', () => {
       beforeEach(() => {
-        // @ts-expect-error __DEV__ is exposed by Jest
-        global.__DEV__ = false;
+        __DEV__ = false;
       });
 
       afterAll(() => {
-        // @ts-expect-error __DEV__ is exposed by Jest
-        global.__DEV__ = true;
+        __DEV__ = true;
       });
 
       test('GIVEN content w/o <Then /> nor <Else /> THEN renders empty block in production', () => {
-        const wrapped = shallow(
+        render(
           <If condition={true}>
-            <span>Not Then nor Else</span>
+            <span data-testid="child">Not Then nor Else</span>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Not Then nor Else</span>)).toBe(true);
+        expect(screen.queryByTestId('child')).toContainHTML('<span data-testid="child">Not Then nor Else</span>');
       });
     });
 
     describe('With condition as a function', () => {
       test('GIVEN <Then /> THEN renders children of <Then />', () => {
-        const wrapped = shallow(
+        render(
           <If condition={() => true}>
             <Then>
-              <span>Then</span>
+              <span data-testid="thenChild">Then</span>
             </Then>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(true);
+        expect(screen.queryByTestId('thenChild')).toContainHTML('<span data-testid="thenChild">Then</span>');
       });
 
       test('GIVEN <Then /> & <Else /> THEN does not render children of <Else />', () => {
-        const wrapped = shallow(
+        render(
           <If condition={() => true}>
             <Then>
-              <span>Then</span>
+              <span data-testid="thenChild">Then</span>
             </Then>
             <Else>
-              <span>Else</span>
+              <span data-testid="elseChild">Else</span>
             </Else>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(true);
-        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(false);
+        expect(screen.queryByTestId('thenChild')).toContainHTML('<span data-testid="thenChild">Then</span>');
+        expect(screen.queryByTestId('elseChild')).toBeNull();
       });
 
       test('GIVEN multiple <Then /> blocks THEN renders only first <Then /> block', () => {
-        const wrapped = shallow(
+        render(
           <If condition={() => true}>
             <Then>
-              <span>Then1</span>
+              <span data-testid="thenChild">Then</span>
             </Then>
             <Then>
-              <span>Then2</span>
+              <span data-testid="elseChild">Else</span>
             </Then>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Then1</span>)).toBe(true);
-        expect(wrapped.containsMatchingElement(<span>Then2</span>)).toBe(false);
+        expect(screen.queryByTestId('thenChild')).toContainHTML('<span data-testid="thenChild">Then</span>');
+        expect(screen.queryByTestId('elseChild')).toBeNull();
       });
 
       test('GIVEN <Else /> before <Then /> THEN renders <Then /> block', () => {
-        const wrapped = shallow(
+        render(
           <If condition={() => true}>
             <Else>
-              <span>Else</span>
+              <span data-testid="elseChild">Else</span>
             </Else>
             <Then>
-              <span>Then</span>
+              <span data-testid="thenChild">Then</span>
             </Then>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(true);
-        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(false);
+        expect(screen.queryByTestId('thenChild')).toContainHTML('<span data-testid="thenChild">Then</span>');
+        expect(screen.queryByTestId('elseChild')).toBeNull();
       });
     });
 
@@ -179,76 +153,81 @@ describe('<If /> component', () => {
       test('GIVEN pending promise THEN renders <Fallback /> block', () => {
         // eslint-disable-next-line @typescript-eslint/no-empty-function
         const pendingPromise = new Promise(() => {});
-        const wrapped: ReactWrapper = mount(
+
+        render(
           <If condition={pendingPromise}>
             <Fallback>
-              <span>Fallback</span>
+              <span data-testid="fallbackChild">Fallback</span>
             </Fallback>
             <Then>
-              <span>Then</span>
+              <span data-testid="thenChild">Then</span>
             </Then>
             <Else>
-              <span>Else</span>
+              <span data-testid="elseChild">Else</span>
             </Else>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Fallback</span>)).toBe(true);
-        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(false);
-        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(false);
+        expect(screen.queryByTestId('fallbackChild')).toContainHTML('<span data-testid="fallbackChild">Fallback</span>');
+        expect(screen.queryByTestId('thenChild')).toBeNull();
+        expect(screen.queryByTestId('elseChild')).toBeNull();
       });
 
       test('GIVEN resolved promise THEN renders <THEN /> block', async () => {
-        const wrapped: ReactWrapper = mount(
+        render(
           <If condition={Promise.resolve()}>
             <Fallback>
-              <span>Fallback</span>
+              <span data-testid="fallbackChild">Fallback</span>
             </Fallback>
             <Then>
-              <span>Then</span>
+              <span data-testid="thenChild">Then</span>
             </Then>
             <Else>
-              <span>Else</span>
+              <span data-testid="elseChild">Else</span>
             </Else>
           </If>
         );
-        await waitForComponentToPaint(wrapped);
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Fallback</span>)).toBe(false);
-        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(true);
-        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(false);
+        await waitFor(() => screen.getByTestId('thenChild'));
+
+        expect(screen.queryByTestId('fallbackChild')).toBeNull();
+        expect(screen.queryByTestId('thenChild')).toContainHTML('<span data-testid="thenChild">Then</span>');
+        expect(screen.queryByTestId('elseChild')).toBeNull();
       });
 
       test('GIVEN resolved promise THEN can retrieve return value inside THEN block', async () => {
         const returnValue = 'RETURN_VALUE';
-        const wrapped: ReactWrapper = mount(
+
+        render(
           <If condition={Promise.resolve(returnValue)}>
-            <Then>{(something: any) => <span>{something}</span>}</Then>
+            <Then>{(something: any) => <span data-testid="thenChild">{something}</span>}</Then>
           </If>
         );
-        await waitForComponentToPaint(wrapped);
 
-        expect(wrapped.containsMatchingElement(<span>{returnValue}</span>)).toBe(true);
+        await waitFor(() => screen.getByTestId('thenChild'));
+
+        expect(screen.queryByTestId('thenChild')).toContainHTML(`<span data-testid="thenChild">${returnValue}</span>`);
       });
 
       test('GIVEN promise with extra properties THEN should forward these properties to function param inside <Then />', async () => {
         const extendedPromise: ExtendablePromise<void> = Promise.resolve();
         extendedPromise.testValue = 1;
-        const wrapped: ReactWrapper = mount(
+
+        render(
           <If condition={extendedPromise}>
             <Then>
               {(data: any, history: any, promise: any) => {
                 data;
                 history; // 'skip declared but value never read' error
-                return <span>{promise.testValue}</span>;
+                return <span data-testid="thenChild">{promise.testValue}</span>;
               }}
             </Then>
           </If>
         );
-        await waitForComponentToPaint(wrapped);
-        expect(wrapped.containsMatchingElement(<span>{extendedPromise.testValue}</span>));
+
+        await waitFor(() => screen.getByTestId('thenChild'));
+
+        expect(screen.queryByTestId('thenChild')).toContainHTML(`<span data-testid="thenChild">${extendedPromise.testValue}</span>`);
       });
     });
   });
@@ -256,230 +235,182 @@ describe('<If /> component', () => {
   describe('Falsy condition', () => {
     describe('With NODE_ENV === test', () => {
       test('GIVEN <Then /> THEN renders null', () => {
-        const wrapped = shallow(
+        render(
           <If condition={false}>
             <Then>
-              <span>Then</span>
+              <span data-testid="thenChild">Then</span>
             </Then>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(false);
-        expect(wrapped.html()).toBe('');
+        expect(screen.queryByTestId('thenChild')).toBeNull();
       });
 
       test('GIVEN <Then /> & <Else /> THEN renders children of <Else />', () => {
-        const wrapped = shallow(
+        render(
           <If condition={false}>
             <Then>
-              <span>Then</span>
+              <span data-testid="thenChild">Then</span>
             </Then>
             <Else>
-              <span>Else</span>
+              <span data-testid="elseChild">Else</span>
             </Else>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(false);
-        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(true);
+        expect(screen.queryByTestId('thenChild')).toBeNull();
+        expect(screen.queryByTestId('elseChild')).toContainHTML('<span data-testid="elseChild">Else</span>');
       });
 
       test('GIVEN multiple <Else /> THEN renders only first <Else /> block', () => {
-        const wrapped = shallow(
+        render(
           <If condition={false}>
             <Else>
-              <span>Else1</span>
+              <span data-testid="elseChild1">Else1</span>
             </Else>
             <Else>
-              <span>Else2</span>
+              <span data-testid="elseChild2">Else2</span>
             </Else>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Else1</span>)).toBe(true);
-        expect(wrapped.containsMatchingElement(<span>Else2</span>)).toBe(false);
+        expect(screen.queryByTestId('elseChild1')).toContainHTML('<span data-testid="elseChild1">Else1</span>');
+        expect(screen.queryByTestId('elseChild2')).toBeNull();
       });
 
       test('GIVEN multiple <Else /> before <Then /> THEN renders <Else /> block', () => {
-        const wrapped = shallow(
+        render(
           <If condition={false}>
             <Else>
-              <span>Else</span>
+              <span data-testid="elseChild">Else</span>
             </Else>
             <Then>
-              <span>Then</span>
+              <span data-testid="thenChild">Then</span>
             </Then>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(true);
-        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(false);
-      });
-
-      test('GIVEN w/o children THEN renders null', () => {
-        const wrapped = shallow(<If condition={false} />);
-
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.html()).toBeNull();
+        expect(screen.queryByTestId('thenChild')).toBeNull();
+        expect(screen.queryByTestId('elseChild')).toContainHTML('<span data-testid="elseChild">Else</span>');
       });
     });
 
     describe('With NODE_ENV === production', () => {
       beforeEach(() => {
-        // @ts-expect-error __DEV__ is exposed by Jest
-        global.__DEV__ = false;
+        __DEV__ = false;
       });
 
       afterAll(() => {
-        // @ts-expect-error __DEV__ is exposed by Jest
-        global.__DEV__ = true;
+        __DEV__ = true;
       });
 
       test('GIVEN content w/o <Then /> nor <Else /> THEN renders empty block in production', () => {
-        const wrapped = shallow(
+        render(
           <If condition={false}>
-            <span>Not Then nor Else</span>
+            <span data-testid="child">Not Then nor Else</span>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Not Then nor Else</span>)).toBe(false);
+        expect(screen.queryByTestId('child')).toBeNull();
       });
     });
 
     describe('With child as function', () => {
       test('GIVEN <Else /> THEN renders children returned by function', () => {
-        const wrapped = mount(
+        render(
           <If condition={false}>
-            <Else>{() => <span>Else</span>}</Else>
+            <Else>{() => <span data-testid="elseChild">Else</span>}</Else>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(true);
-      });
-
-      test('GIVEN <Else /> THEN renders children returned by function', () => {
-        const wrapped = mount(
-          <If condition={() => false}>
-            <Else>{() => <span>Else</span>}</Else>
-          </If>
-        );
-
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(true);
+        expect(screen.queryByTestId('elseChild')).toContainHTML('<span data-testid="elseChild">Else</span>');
       });
 
       test('GIVEN body that should not evaluate THEN should not render', () => {
-        // @ts-expect-error called should just be declared
+        // @ts-ignore Jest thinks the boolean is never read
         let called = false;
 
-        const wrapped = mount(
+        const voidReturnCallback = (): void => {
+          called = true;
+          <div data-testid="thenChild">Then</div>;
+        };
+
+        render(
           <If condition={false}>
             <Then>
-              {() => {
-                // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                called = true;
-                <div>Bad</div>;
-              }}
+              <div data-testid="thenChild">Then</div>
             </Then>
-            <Else>
-              <div>Ok</div>
-            </Else>
+            <Else>{voidReturnCallback() as any}</Else>
           </If>
         );
 
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<div>Ok</div>)).toBe(true);
-        expect(wrapped.containsMatchingElement(<div>Bad</div>)).toBe(false);
-      });
-
-      test('GIVEN body that should not evaluate THEN should not render', () => {
-        // @ts-expect-error called should just be declared
-        let called = false;
-
-        const wrapped = mount(
-          <If condition={() => false}>
-            <Then>
-              {() => {
-                // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                called = true;
-                <div>Bad</div>;
-              }}
-            </Then>
-            <Else>
-              <div>Ok</div>
-            </Else>
-          </If>
-        );
-
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<div>Ok</div>)).toBe(true);
-        expect(wrapped.containsMatchingElement(<div>Bad</div>)).toBe(false);
+        expect(screen.queryByTestId('thenChild')).toBeNull();
+        expect(screen.queryByTestId('elseChild')).toBeNull();
       });
     });
 
     describe('With condition as a promise', () => {
       test('GIVEN rejected promise THEN renders <ELSE /> block', async () => {
-        const wrapped: ReactWrapper = mount(
+        render(
           // eslint-disable-next-line prefer-promise-reject-errors
           <If condition={Promise.reject()}>
             <Fallback>
-              <span>Fallback</span>
+              <span data-testid="fallbackChild">Fallback</span>
             </Fallback>
             <Then>
-              <span>Then</span>
+              <span data-testid="thenChild">Then</span>
             </Then>
             <Else>
-              <span>Else</span>
+              <span data-testid="elseChild">Else</span>
             </Else>
           </If>
         );
 
-        expect(wrapped.containsMatchingElement(<span>Fallback</span>)).toBe(true);
-        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(false);
-        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(false);
+        await waitFor(() => screen.getByTestId('elseChild'));
 
-        await waitForComponentToPaint(wrapped);
-
-        expect(wrapped).toMatchSnapshot();
-        expect(wrapped.containsMatchingElement(<span>Fallback</span>)).toBe(false);
-        expect(wrapped.containsMatchingElement(<span>Then</span>)).toBe(false);
-        expect(wrapped.containsMatchingElement(<span>Else</span>)).toBe(true);
+        expect(screen.queryByTestId('fallbackChild')).toBeNull();
+        expect(screen.queryByTestId('thenChild')).toBeNull();
+        expect(screen.queryByTestId('elseChild')).toContainHTML('<span data-testid="elseChild">Else</span>');
       });
 
       test('GIVEN rejected promise THEN can retrieve error inside ELSE block', async () => {
         const caughtError = 'CAUGHT_ERROR';
-        const wrapped: ReactWrapper = mount(
+
+        render(
           <If condition={Promise.reject(caughtError)}>
-            <Else>{(something: any) => <span>{something}</span>}</Else>
+            <Else>{(something: any) => <span data-testid="elseChild">{something}</span>}</Else>
           </If>
         );
-        await waitForComponentToPaint(wrapped);
-        expect(wrapped.containsMatchingElement(<span>{caughtError}</span>)).toBe(true);
+
+        await waitFor(() => screen.getByTestId('elseChild'));
+
+        expect(screen.queryByTestId('fallbackChild')).toBeNull();
+        expect(screen.queryByTestId('thenChild')).toBeNull();
+        expect(screen.queryByTestId('elseChild')).toContainHTML(`<span data-testid="elseChild">${caughtError}</span>`);
       });
 
       test('GIVEN promise with extra properties THEN should forward these properties to function param inside <Else />', async () => {
         // eslint-disable-next-line prefer-promise-reject-errors
         const extendedPromise: ExtendablePromise<void> = Promise.reject();
         extendedPromise.testValue = 'TEST_VALUE';
-        const wrapped: ReactWrapper = mount(
+
+        render(
           <If condition={extendedPromise}>
             <Else>
               {(data: any, history: any, promise: any) => {
                 data;
                 history; // 'skip declared but value never read' error
-                return <span>{promise.testValue}</span>;
+                return <span data-testid="elseChild">{promise.testValue}</span>;
               }}
             </Else>
           </If>
         );
-        await waitForComponentToPaint(wrapped);
-        expect(wrapped.containsMatchingElement(<span>{extendedPromise.testValue}</span>));
+
+        await waitFor(() => screen.getByTestId('elseChild'));
+
+        expect(screen.queryByTestId('fallbackChild')).toBeNull();
+        expect(screen.queryByTestId('thenChild')).toBeNull();
+        expect(screen.queryByTestId('elseChild')).toContainHTML(`<span data-testid="elseChild">${extendedPromise.testValue}</span>`);
       });
     });
   });
