@@ -1,7 +1,8 @@
-import React, { ReactElement } from 'react';
+import React, { type ReactElement } from 'react';
 import { Case } from './Case';
 import { Default } from './Default';
 import { getConditionResult } from './getConditionResults';
+import { isFunction } from './isThenable';
 import type { FCWithImplicitChildren } from './types';
 
 /**
@@ -10,7 +11,7 @@ import type { FCWithImplicitChildren } from './types';
  * This component can contain any number of `<Case />` and one `<Default />` blocks
  * @param __namedParameters Children to pass into the `<Switch />` component
  */
-export const Switch: FCWithImplicitChildren = ({ children }) => {
+export const Switch: FCWithImplicitChildren<'without-function-children'> = ({ children }) => {
   // -- Inspired by react-router --
 
   // We use React.Children.forEach instead of React.Children.toArray().find()
@@ -18,6 +19,11 @@ export const Switch: FCWithImplicitChildren = ({ children }) => {
   // to trigger an unmount/remount for two children <Case>s or <Default>s
   let matchingCase: ReactElement | undefined = undefined;
   let defaultCase: ReactElement | undefined = undefined;
+
+  // If the children are a function then resolve it first
+  if (isFunction(children)) {
+    children = children();
+  }
 
   React.Children.forEach(children, (child) => {
     // not a valid react child, don't add it

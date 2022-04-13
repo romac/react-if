@@ -19,7 +19,7 @@ interface Thenable {
  * @param input The function to verify
  */
 
-function isFunction(input: unknown): input is Function {
+export function isFunction(input: unknown): input is Function {
   return typeof input === 'function';
 }
 

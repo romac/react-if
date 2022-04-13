@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import { getConditionResult } from './getConditionResults';
 import { render } from './render';
-import type { ComponentWithConditionProps } from './types';
+import type { ComponentWithConditionPropsWithFunctionChildren } from './types';
 
 /** A shorthand for
  *
@@ -17,7 +17,7 @@ import type { ComponentWithConditionProps } from './types';
  *
  * @param __namedParameters The props to pass down to the `<IF />` component, see {@link ComponentWithConditionProps}
  */
-export const Unless: FC<ComponentWithConditionProps> = ({ condition, children }) => {
+export const Unless: FC<ComponentWithConditionPropsWithFunctionChildren> = ({ condition, children }) => {
   const conditionResult = Boolean(getConditionResult(condition));
 
   return !conditionResult && children ? render({ children }) : null;
