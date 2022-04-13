@@ -1,4 +1,4 @@
-import React, { Fragment, PropsWithChildren, ReactElement, useEffect, useMemo, useRef, useState } from 'react';
+import React, { Fragment, useEffect, useMemo, useRef, useState, type PropsWithChildren, type ReactElement } from 'react';
 import { Else } from './Else';
 import { Fallback } from './Fallback';
 import { useSingleton } from './hooks';

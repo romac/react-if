@@ -7,10 +7,8 @@ import type { FCWithImplicitChildren } from './types';
  */
 export const render: FCWithImplicitChildren = (props) => {
   if (typeof props.children === 'function') {
-    return <Fragment>{(props.children as CustomFunction)()}</Fragment>;
+    return <Fragment>{props.children()}</Fragment>;
   }
 
   return <Fragment>{props.children || null}</Fragment>;
 };
-
-type CustomFunction = (...args: unknown[]) => JSX.Element;
