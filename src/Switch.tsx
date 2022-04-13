@@ -1,7 +1,8 @@
-import React, { FC, ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import { Case } from './Case';
 import { Default } from './Default';
 import { getConditionResult } from './getConditionResults';
+import type { FCWithImplicitChildren } from './types';
 
 /**
  * It will render the first matching `<Case />`, or the first encountered `<Default />` (or `null`).
@@ -9,7 +10,7 @@ import { getConditionResult } from './getConditionResults';
  * This component can contain any number of `<Case />` and one `<Default />` blocks
  * @param __namedParameters Children to pass into the `<Switch />` component
  */
-export const Switch: FC = ({ children }) => {
+export const Switch: FCWithImplicitChildren = ({ children }) => {
   // -- Inspired by react-router --
 
   // We use React.Children.forEach instead of React.Children.toArray().find()
