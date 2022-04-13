@@ -60,7 +60,7 @@ export type ComponentWithConditionPropsAsyncSupport<C extends 'with-function-chi
 
 export type FCWithImplicitChildren<P = NonNullObject> = FunctionComponentWithImplicitChildren<P>;
 
-interface FunctionComponentWithImplicitChildren<P = NonNullObject> {
+export interface FunctionComponentWithImplicitChildren<P = NonNullObject> {
   (props: CustomPropsWithChildren<P>, context?: any): ReactElement<any, any> | null;
   propTypes?: WeakValidationMap<P> | undefined;
   contextTypes?: ValidationMap<any> | undefined;
@@ -69,6 +69,6 @@ interface FunctionComponentWithImplicitChildren<P = NonNullObject> {
 }
 
 // eslint-disable-next-line @typescript-eslint/ban-types
-type NonNullObject = {} & object;
+export type NonNullObject = {} & object;
 
 export type CustomPropsWithChildren<P> = P & { children?: ReactNode | undefined | ((...args: unknown[]) => JSX.Element) };
