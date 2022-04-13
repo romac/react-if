@@ -1,3 +1,7 @@
+/**
+ * @jest-environment node
+ */
+
 import { isThenable } from '../src/isThenable';
 import type { CancellablePromise, ExtendablePromise } from '../src/types';
 import { createCancellablePromise, shallowArraysEqual } from '../src/utils';
