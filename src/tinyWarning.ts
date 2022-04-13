@@ -25,3 +25,7 @@ export function tinyWarning(condition: boolean, message: string): asserts condit
     }
   }
 }
+
+declare global {
+  let __DEV__: boolean;
+}
