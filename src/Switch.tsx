@@ -1,4 +1,4 @@
-import React, { type ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import { Case } from './Case';
 import { Default } from './Default';
 import { getConditionResult } from './getConditionResults';
@@ -11,7 +11,7 @@ import type { FCWithImplicitChildren } from './types';
  * This component can contain any number of `<Case />` and one `<Default />` blocks
  * @param __namedParameters Children to pass into the `<Switch />` component
  */
-export const Switch: FCWithImplicitChildren<'without-function-children'> = ({ children }) => {
+export const Switch: FCWithImplicitChildren = ({ children }) => {
   // -- Inspired by react-router --
 
   // We use React.Children.forEach instead of React.Children.toArray().find()
