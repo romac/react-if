@@ -9,7 +9,13 @@
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/react-if.esm.js",
-  "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/react-if.esm.js",
+    "types": "./dist/index.d.ts"
+  },
+  "sideEffects": false,
   "homepage": "https://github.com/romac/react-if",
   "files": [
     "dist"
@@ -26,7 +32,8 @@
     "format": "prettier --write \"{src,tests}/**/*.{ts,tsx}\"",
     "update": "yarn upgrade-interactive",
     "docs": "typedoc",
-    "sversion": "standard-version",
+    "bump": "standard-version --no-verify",
+    "changelog": "git cliff --prepend ./CHANGELOG.md -l -c ./cliff.toml",
     "prepublishOnly": "yarn build",
     "prepare": "husky install .github/husky"
   },

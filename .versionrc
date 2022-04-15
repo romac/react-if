@@ -1,0 +1,9 @@
+{
+	"skip": {
+		"changelog": true
+	},
+	"releaseCommitMessageFormat": "chore: release react-if@{{currentTag}}",
+	"scripts": {
+		"posttag": "pwsh -NoProfile ./scripts/post-tag.ps1"
+	}
+}
