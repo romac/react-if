@@ -1,4 +1,4 @@
-import React, { Fragment, FC, ReactElement } from 'react';
+import React, { FC, Fragment, ReactElement } from 'react';
 import { Else } from './Else';
 import { Fallback } from './Fallback';
 import { getConditionResult } from './getConditionResults';
@@ -16,7 +16,7 @@ import type { ComponentWithConditionPropsAsyncSupport, ExtendablePromise } from 
  * but only the first block of the right type (either Then or Else, depending on the condition) will be rendered.
  * @param __namedParameters The props to pass down to the `<IF />` component, see {@link ComponentWithConditionProps}
  */
-export const If: FC<ComponentWithConditionPropsAsyncSupport<'without-function-children'>> = ({ condition, keepAlive = false, children }) => {
+export const If: FC<ComponentWithConditionPropsAsyncSupport> = ({ condition, keepAlive = false, children }) => {
   if (!children) {
     return null;
   }
