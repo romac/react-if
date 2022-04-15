@@ -1,4 +1,4 @@
-import React, { Fragment, type FC, type ReactElement } from 'react';
+import React, { Fragment, FC, ReactElement } from 'react';
 import { Else } from './Else';
 import { Fallback } from './Fallback';
 import { getConditionResult } from './getConditionResults';
