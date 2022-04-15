@@ -414,4 +414,18 @@ describe('<If /> component', () => {
       });
     });
   });
+
+  describe('Without Children', () => {
+    test('GIVEN truthy case THEN renders no children', () => {
+      render(<If condition={true}></If>);
+
+      // No expects required here, this is just a quick render check
+    });
+
+    test('GIVEN promisified case THEN renders no children', () => {
+      render(<If condition={Promise.resolve(true)}></If>);
+
+      // No expects required here, this is just a quick render check
+    });
+  });
 });
