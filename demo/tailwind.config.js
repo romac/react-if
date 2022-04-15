@@ -1,13 +1,12 @@
 module.exports = {
   plugins: [require('daisyui')],
-  purge: [
+  content: [
     //
     './index.html',
     './index.css',
     './index.tsx',
     './components/**/*.tsx'
   ],
-  darkMode: 'media',
   theme: {
     extend: {}
   },
