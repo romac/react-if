@@ -53,10 +53,7 @@ export interface AsyncSupportProps {
  * Extend ComponentWithConditionProps
  * to also support async
  */
-export type ComponentWithConditionPropsAsyncSupport<C extends 'with-function-children' | 'without-function-children'> =
-  C extends 'with-function-children'
-    ? ComponentWithConditionPropsWithFunctionChildren<AsyncSupportProps>
-    : ComponentWithConditionProps<AsyncSupportProps>;
+export type ComponentWithConditionPropsAsyncSupport = ComponentWithConditionProps<AsyncSupportProps>;
 
 export type FCWithImplicitChildren<P = NonNullObject> = FunctionComponentWithImplicitChildren<P>;
 
