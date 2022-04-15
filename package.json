@@ -3,7 +3,7 @@
   "workspaces": [
     "demo/"
   ],
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "🌗 Render React components conditionally",
   "author": "Romain Ruetschi <romain.ruetschi@gmail.com>",
   "license": "MIT",

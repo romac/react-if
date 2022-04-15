@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file.
 
+# [4.1.2](https://github.com/romac/react-if/compare/v4.1.1...v4.1.2) - (2022-04-15)
+
+## Bug Fixes
+
+- Export additional types for end-users ([61f9abf](https://github.com/romac/react-if/commit/61f9abfd1bd1e7f8904edfbdfadf8cd5aab30257))
+- Properly fix types for React 18 ([54fee8e](https://github.com/romac/react-if/commit/54fee8e9d935609cebec6c36107cba01a24399f6))
+- Update peer dependency to allow React 18 ([b10bd3f](https://github.com/romac/react-if/commit/b10bd3f34ead4fffe6044fc3ba7d5dc8c17a652f))
+- Fixed the code to work with React 18 ([4d504e1](https://github.com/romac/react-if/commit/4d504e15b2234a2d2f498c82c863af11105b55d3))
+
+## Refactor
+
+- Cleanup generic type ([c8b566b](https://github.com/romac/react-if/commit/c8b566b4fa504ed6236a206b0c26c09627c545fe))
+- Clean up global type declarations ([5477d9d](https://github.com/romac/react-if/commit/5477d9d2aeaf981dd784939fe6a307cd64e67d72))
+
+## Styling
+
+- Reformat renovate config file ([1c9509b](https://github.com/romac/react-if/commit/1c9509bc1a75cad8121e9e2f46c12a7bd0ec413e))
+- Add EOF line for script ([eba5e71](https://github.com/romac/react-if/commit/eba5e71834771aa138fd815d721c16e7bbc21ae3))
+
+## Testing
+
+- Add more If tests ([6a91441](https://github.com/romac/react-if/commit/6a914413f0ffc34c356968cd91282950a6ded17f))
+- Finish porting tests to testing-library ([e6c809a](https://github.com/romac/react-if/commit/e6c809a9a5a50027c35079ccac0dbb1ae0de0a18))
+- Update switch test ([f229b1b](https://github.com/romac/react-if/commit/f229b1bf89fefb4ed7fdc4dce0f7e7569892e7cf))
+- Rewrite tests to react-testing-library (part 1) ([196c536](https://github.com/romac/react-if/commit/196c53661ff56ed13d1a48131ed5671c5979cc1f))
+- Configure jest runner vscode extension ([2642c49](https://github.com/romac/react-if/commit/2642c49e72184bdde77ca4bb10f0f3a578c5469e))
+
 ### [4.1.1](https://github.com/romac/react-if/compare/v4.1.0...v4.1.1) (2021-09-26)
 
 ### Bug Fixes
