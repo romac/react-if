@@ -34,7 +34,7 @@
     "docs": "typedoc",
     "bump": "standard-version --no-verify",
     "changelog": "git cliff --prepend ./CHANGELOG.md -l -c ./cliff.toml",
-    "prepublishOnly": "yarn build",
+    "prepublish": "yarn build",
     "prepare": "husky install .github/husky"
   },
   "devDependencies": {
