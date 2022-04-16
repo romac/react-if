@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# [4.1.3](https://github.com/romac/react-if/compare/v4.1.2...v4.1.3) - (2022-04-16)
+
+## Bug Fixes
+
+- Fixed prepublish script for yarn publish ([f6c8cdd](https://github.com/romac/react-if/commit/f6c8cdd06a09b2c4f0ffcad1711acf0f2d8dc0f9))
+
 # [4.1.2](https://github.com/romac/react-if/compare/v4.1.1...v4.1.2) - (2022-04-15)
 
 ## Bug Fixes
