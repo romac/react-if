@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
-    "daisyui": "^2.13.6",
+    "daisyui": "^2.14.0",
     "parcel": "^2.4.1",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.24",
