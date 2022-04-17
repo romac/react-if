@@ -5303,9 +5303,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^2.13.6":
-  version: 2.13.6
-  resolution: "daisyui@npm:2.13.6"
+"daisyui@npm:^2.14.0":
+  version: 2.14.0
+  resolution: "daisyui@npm:2.14.0"
   dependencies:
     color: ^4.2
     css-selector-tokenizer: ^0.8.0
@@ -5314,7 +5314,7 @@ __metadata:
   peerDependencies:
     autoprefixer: ^10.0.2
     postcss: ^8.1.6
-  checksum: d2983ef77786ab8a7eaffe644d7a09a66fd7b85380ed22c7e0be67805753b64eb87be52fa1aad17c464c02e51ac01ae9cd406097f6c8c6431a0d78927832f720
+  checksum: 3e33fe2ed1dd50697c995f87babe7d68b808074536081f6c5897938c61ddf4fafea4001eb43373e1c5ce04771b93cc3793b73bf09770794f962cc98c9f162187
   languageName: node
   linkType: hard
 
@@ -8872,9 +8872,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^12.3.7":
-  version: 12.3.7
-  resolution: "lint-staged@npm:12.3.7"
+"lint-staged@npm:^12.3.8":
+  version: 12.3.8
+  resolution: "lint-staged@npm:12.3.8"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
@@ -8892,7 +8892,7 @@ __metadata:
     yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: b595097556880eb2ab7ce2cf105047f6f22525ccfd608fbdc63ab243259aa36a26949576fadff673748fb885e7cb37ad3f4471d964ad54c1205d57a58999ba24
+  checksum: af6a89ae4244e4eac7180c6e7da452f378fd156ff38eaa666ecbb78f1e2efb7f1a9fc766dcc1cdde2bd76e03da68e602056ca9d2f1c6e46cf10aa83d20bf4d49
   languageName: node
   linkType: hard
 
@@ -10759,7 +10759,7 @@ __metadata:
   resolution: "react-if-demo@workspace:demo"
   dependencies:
     autoprefixer: ^10.4.4
-    daisyui: ^2.13.6
+    daisyui: ^2.14.0
     parcel: ^2.4.1
     postcss: ^8.4.12
     tailwindcss: ^3.0.24
@@ -10794,7 +10794,7 @@ __metadata:
     eslint-plugin-react: ^7.29.4
     eslint-plugin-react-hooks: ^4.4.0
     husky: ^7.0.4
-    lint-staged: ^12.3.7
+    lint-staged: ^12.3.8
     prettier: ^2.6.2
     pretty-quick: ^3.1.3
     react: ^18.0.0
