@@ -11,8 +11,8 @@
   "module": "dist/react-if.esm.js",
   "types": "dist/index.d.ts",
   "exports": {
-    "import": "./dist/index.js",
-    "require": "./dist/react-if.esm.js",
+    "import": "./dist/react-if.esm.js",
+    "require": "./dist/index.js",
     "types": "./dist/index.d.ts"
   },
   "sideEffects": false,
