@@ -168,6 +168,13 @@
       "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
       "profile": "https://github.com/apps/dependabot",
       "contributions": ["maintenance"]
+    },
+    {
+      "login": "FC5570",
+      "name": "FC",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68158483?v=4",
+      "profile": "https://fc5570.me/",
+      "contributions": ["code"]
     }
   ],
   "contributorsPerLine": 7
