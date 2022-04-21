@@ -1713,9 +1713,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@favware/cliff-jumper@npm:^1.1.3":
-  version: 1.1.3
-  resolution: "@favware/cliff-jumper@npm:1.1.3"
+"@favware/cliff-jumper@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@favware/cliff-jumper@npm:1.2.0"
   dependencies:
     "@sapphire/result": ^1.1.1
     "@sapphire/utilities": ^3.6.2
@@ -1728,7 +1728,7 @@ __metadata:
   bin:
     cj: ./dist/cli.js
     cliff-jumper: ./dist/cli.js
-  checksum: 7f60577d2bede94472c234a74b8ada91451518224eb5e5e2b8c1c249915e8acc958942855172a5b3145a61a3aa08fcfee7808c4f69afdde0eed21c57c2bde66e
+  checksum: 5fb23cd17342eff62fca9698610f0de7364fca591bdbc7dd8f72061d70496a846168088a66d47d45c6b15835c284cad7e3cd7eab79fb7185c8a56f74ada60252
   languageName: node
   linkType: hard
 
@@ -10515,7 +10515,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.2.3
     "@commitlint/config-conventional": ^16.2.1
-    "@favware/cliff-jumper": ^1.1.3
+    "@favware/cliff-jumper": ^1.2.0
     "@sapphire/eslint-config": ^4.3.4
     "@sapphire/prettier-config": ^1.4.3
     "@sapphire/ts-config": ^3.3.4
