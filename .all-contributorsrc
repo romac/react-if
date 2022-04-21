@@ -175,6 +175,13 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/68158483?v=4",
       "profile": "https://fc5570.me/",
       "contributions": ["code"]
+    },
+    {
+      "login": "msftenhanceprovenance",
+      "name": "Microsoft Provenance Contributions",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85908596?v=4",
+      "profile": "https://github.com/microsoft/Secure-Supply-Chain/",
+      "contributions": ["doc"]
     }
   ],
   "contributorsPerLine": 7

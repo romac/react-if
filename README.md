@@ -278,6 +278,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/apps/renovate"><img src="https://avatars.githubusercontent.com/in/2740?v=4?s=100" width="100px;" alt=""/><br /><sub><b>renovate[bot]</b></sub></a><br /><a href="#maintenance-renovate[bot]" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/apps/dependabot"><img src="https://avatars.githubusercontent.com/in/29110?v=4?s=100" width="100px;" alt=""/><br /><sub><b>dependabot[bot]</b></sub></a><br /><a href="#maintenance-dependabot[bot]" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://fc5570.me/"><img src="https://avatars.githubusercontent.com/u/68158483?v=4?s=100" width="100px;" alt=""/><br /><sub><b>FC</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=FC5570" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/microsoft/Secure-Supply-Chain/"><img src="https://avatars.githubusercontent.com/u/85908596?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Microsoft Provenance Contributions</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=msftenhanceprovenance" title="Documentation">📖</a></td>
   </tr>
 </table>
 
