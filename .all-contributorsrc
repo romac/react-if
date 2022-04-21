@@ -16,7 +16,7 @@
       "contributions": ["code", "doc", "example", "ideas", "infra", "maintenance", "projectManagement", "review", "question", "test"]
     },
     {
-      "login": "Favna",
+      "login": "favna",
       "name": "Jeroen Claassens",
       "avatar_url": "https://avatars3.githubusercontent.com/u/4019718?v=4",
       "profile": "https://favware.tech/",
@@ -140,6 +140,48 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/58733465?v=4",
       "profile": "https://github.com/theo-js",
       "contributions": ["code"]
+    },
+    {
+      "login": "depfu[bot]",
+      "name": "depfu[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/715?v=4",
+      "profile": "https://github.com/apps/depfu",
+      "contributions": ["maintenance"]
+    },
+    {
+      "login": "renovate-bot",
+      "name": "WhiteSource Renovate",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25180681?v=4",
+      "profile": "https://renovate.whitesourcesoftware.com/",
+      "contributions": ["maintenance"]
+    },
+    {
+      "login": "renovate[bot]",
+      "name": "renovate[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/2740?v=4",
+      "profile": "https://github.com/apps/renovate",
+      "contributions": ["maintenance"]
+    },
+    {
+      "login": "dependabot[bot]",
+      "name": "dependabot[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "profile": "https://github.com/apps/dependabot",
+      "contributions": ["maintenance"]
+    },
+    {
+      "login": "FC5570",
+      "name": "FC",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68158483?v=4",
+      "profile": "https://fc5570.me/",
+      "contributions": ["code"]
+    },
+    {
+      "login": "msftenhanceprovenance",
+      "name": "Microsoft Provenance Contributions",
+      "avatar_url": "https://avatars.githubusercontent.com/u/85908596?v=4",
+      "profile": "https://github.com/microsoft/Secure-Supply-Chain/",
+      "contributions": ["doc"]
     }
   ],
   "contributorsPerLine": 7
