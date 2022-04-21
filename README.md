@@ -271,6 +271,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Ako520"><img src="https://avatars3.githubusercontent.com/u/22900569?v=4?s=100" width="100px;" alt=""/><br /><sub><b>王天博</b></sub></a><br /><a href="https://github.com/romac/react-if/issues?q=author%3AAko520" title="Bug reports">🐛</a> <a href="https://github.com/romac/react-if/commits?author=Ako520" title="Code">💻</a></td>
     <td align="center"><a href="https://arcath.net/"><img src="https://avatars1.githubusercontent.com/u/19609?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adam Laycock</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=Arcath" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/theo-js"><img src="https://avatars.githubusercontent.com/u/58733465?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Theo B.</b></sub></a><br /><a href="https://github.com/romac/react-if/commits?author=theo-js" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/apps/depfu"><img src="https://avatars.githubusercontent.com/in/715?v=4?s=100" width="100px;" alt=""/><br /><sub><b>depfu[bot]</b></sub></a><br /><a href="#maintenance-depfu[bot]" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 

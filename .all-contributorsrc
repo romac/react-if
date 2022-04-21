@@ -140,6 +140,13 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/58733465?v=4",
       "profile": "https://github.com/theo-js",
       "contributions": ["code"]
+    },
+    {
+      "login": "depfu[bot]",
+      "name": "depfu[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/715?v=4",
+      "profile": "https://github.com/apps/depfu",
+      "contributions": ["maintenance"]
     }
   ],
   "contributorsPerLine": 7
