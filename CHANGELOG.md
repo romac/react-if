@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# [4.1.4](https://github.com/romac/react-if/compare/v4.1.3...v4.1.4) - (2022-04-21)
+
+## Bug Fixes
+
+- Issues with esm module (#184) ([402c1a6](https://github.com/romac/react-if/commit/402c1a689e33e7ed0c954ac94f996913e4973a7b))
+
 # [4.1.3](https://github.com/romac/react-if/compare/v4.1.2...v4.1.3) - (2022-04-16)
 
 ## Bug Fixes
