@@ -147,6 +147,13 @@
       "avatar_url": "https://avatars.githubusercontent.com/in/715?v=4",
       "profile": "https://github.com/apps/depfu",
       "contributions": ["maintenance"]
+    },
+    {
+      "login": "renovate-bot",
+      "name": "WhiteSource Renovate",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25180681?v=4",
+      "profile": "https://renovate.whitesourcesoftware.com/",
+      "contributions": ["maintenance"]
     }
   ],
   "contributorsPerLine": 7
