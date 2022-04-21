@@ -161,6 +161,13 @@
       "avatar_url": "https://avatars.githubusercontent.com/in/2740?v=4",
       "profile": "https://github.com/apps/renovate",
       "contributions": ["maintenance"]
+    },
+    {
+      "login": "dependabot[bot]",
+      "name": "dependabot[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+      "profile": "https://github.com/apps/dependabot",
+      "contributions": ["maintenance"]
     }
   ],
   "contributorsPerLine": 7
