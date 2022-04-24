@@ -1696,9 +1696,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/eslintrc@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "@eslint/eslintrc@npm:1.2.1"
+"@eslint/eslintrc@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "@eslint/eslintrc@npm:1.2.2"
   dependencies:
     ajv: ^6.12.4
     debug: ^4.3.2
@@ -1709,7 +1709,7 @@ __metadata:
     js-yaml: ^4.1.0
     minimatch: ^3.0.4
     strip-json-comments: ^3.1.1
-  checksum: 1f797b9f94d71b965992cf6c44e3bcb574643014fd1e3d4862d25056bd5568f59c488461a7e9a1c1758ca7f0def5d3cb69c3d8b38581bcf4a53af74371243797
+  checksum: d891036bbffb0efec1462aa4a603ed6e349d546b1632dde7d474ddd15c2a8b6895671b25293f1d3ba10ff629c24a3649ad049373fe695a0e44b612537088563c
   languageName: node
   linkType: hard
 
@@ -3324,7 +3324,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.19.0":
+"@typescript-eslint/eslint-plugin@npm:^5.20.0":
   version: 5.20.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.20.0"
   dependencies:
@@ -3358,7 +3358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.19.0":
+"@typescript-eslint/parser@npm:^5.20.0":
   version: 5.20.0
   resolution: "@typescript-eslint/parser@npm:5.20.0"
   dependencies:
@@ -3932,12 +3932,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.4":
-  version: 10.4.4
-  resolution: "autoprefixer@npm:10.4.4"
+"autoprefixer@npm:^10.4.5":
+  version: 10.4.5
+  resolution: "autoprefixer@npm:10.4.5"
   dependencies:
     browserslist: ^4.20.2
-    caniuse-lite: ^1.0.30001317
+    caniuse-lite: ^1.0.30001332
     fraction.js: ^4.2.0
     normalize-range: ^0.1.2
     picocolors: ^1.0.0
@@ -3946,7 +3946,7 @@ __metadata:
     postcss: ^8.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: bd42e23d71af0228b6b0b27d0d0b33c95e67562e55eb4ca0e221cf795a06482c90d565d6544a5f4090d8e303b09b200845fa2bcaaa707d1e8777974250dffe1f
+  checksum: 6c638d8f515a9c37776f9d6b1263e497768d9e8d8ad3b45d901513ba0f26c74df73f4afb84efd3253ab3d1c57803b4e2d97ad9b8919ef1955e373fcf24661213
   languageName: node
   linkType: hard
 
@@ -4465,7 +4465,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001317":
+"caniuse-lite@npm:^1.0.30001317, caniuse-lite@npm:^1.0.30001332":
   version: 1.0.30001332
   resolution: "caniuse-lite@npm:1.0.30001332"
   checksum: e54182ea42ab3d2ff1440f9a6480292f7ab23c00c188df7ad65586312e4da567e8bedd5cb5fb8f0ff4193dc027a54e17e0b3c0b6db5d5a3fb61c7726ff9c45b3
@@ -5213,9 +5213,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^2.14.1":
-  version: 2.14.1
-  resolution: "daisyui@npm:2.14.1"
+"daisyui@npm:^2.14.2":
+  version: 2.14.2
+  resolution: "daisyui@npm:2.14.2"
   dependencies:
     color: ^4.2
     css-selector-tokenizer: ^0.8.0
@@ -5224,7 +5224,7 @@ __metadata:
   peerDependencies:
     autoprefixer: ^10.0.2
     postcss: ^8.1.6
-  checksum: 8e2d9b411ae86afad782c5c44704c08323c6804ddad65d4254c0f5f5bea9b2516edcf2d80a9ede69c8241ff8cf1b028c7e9a263448e924271992a3291c1f9c61
+  checksum: 6f1ec613e6bd300d282c94dee6bdd9aae4ab968488ceeeb0f5c4572cc592e3cdf8d2671b673766a4b7d810212acdffd7d377b619b0462a8134f007dc1fae4770
   languageName: node
   linkType: hard
 
@@ -6044,11 +6044,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.13.0":
-  version: 8.13.0
-  resolution: "eslint@npm:8.13.0"
+"eslint@npm:^8.14.0":
+  version: 8.14.0
+  resolution: "eslint@npm:8.14.0"
   dependencies:
-    "@eslint/eslintrc": ^1.2.1
+    "@eslint/eslintrc": ^1.2.2
     "@humanwhocodes/config-array": ^0.9.2
     ajv: ^6.10.0
     chalk: ^4.0.0
@@ -6085,7 +6085,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: bc7d2fc9a046d42cb2c8987573ecaf534c1fae14747c4695e32388e179c5f21b83eefdb3e4f35924bf76152e226d7cc9dfb21f12348baf12c803109005b17439
+  checksum: 87d2e3e5eb93216d4ab36006e7b8c0bfad02f40b0a0f193f1d42754512cd3a9d8244152f1c69df5db2e135b3c4f1c10d0ed2f0881fe8a8c01af55465968174c1
   languageName: node
   linkType: hard
 
@@ -10500,8 +10500,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "react-if-demo@workspace:demo"
   dependencies:
-    autoprefixer: ^10.4.4
-    daisyui: ^2.14.1
+    autoprefixer: ^10.4.5
+    daisyui: ^2.14.2
     parcel: ^2.5.0
     postcss: ^8.4.12
     tailwindcss: ^3.0.24
@@ -10528,7 +10528,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.20.0
     "@typescript-eslint/parser": ^5.20.0
     cz-conventional-changelog: ^3.3.0
-    eslint: ^8.13.0
+    eslint: ^8.14.0
     eslint-config-prettier: ^8.5.0
     eslint-config-react-app: ^7.0.1
     eslint-plugin-import: ^2.26.0
