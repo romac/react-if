@@ -1713,9 +1713,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@favware/cliff-jumper@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@favware/cliff-jumper@npm:1.2.0"
+"@favware/cliff-jumper@npm:^1.3.1":
+  version: 1.3.1
+  resolution: "@favware/cliff-jumper@npm:1.3.1"
   dependencies:
     "@sapphire/result": ^1.1.1
     "@sapphire/utilities": ^3.6.2
@@ -1728,7 +1728,7 @@ __metadata:
   bin:
     cj: ./dist/cli.js
     cliff-jumper: ./dist/cli.js
-  checksum: 5fb23cd17342eff62fca9698610f0de7364fca591bdbc7dd8f72061d70496a846168088a66d47d45c6b15835c284cad7e3cd7eab79fb7185c8a56f74ada60252
+  checksum: 9576d9bbbaefe2ae4a1751bde32456df6296b6698bf0d03665c6040bce0373cec274c312cdf4513c4a48f359f578aec4323e21c3d3a7242d03eff4e66d63ce81
   languageName: node
   linkType: hard
 
@@ -3221,10 +3221,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=12, @types/node@npm:^17.0.25":
+"@types/node@npm:*, @types/node@npm:>=12":
   version: 17.0.25
   resolution: "@types/node@npm:17.0.25"
   checksum: 6a820bd624e69ea772f52a6cdb326484eff5829443dc981939373929ade109f58c21698b9f0a831bd6ceea799e722a75dc49c5fa7a6bc32a81e1cbdfc6507b64
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^17.0.29":
+  version: 17.0.29
+  resolution: "@types/node@npm:17.0.29"
+  checksum: bb9d7bce9d6d3882efd9d63b773b548dce98df4bd57eff8ceaa316aa2f3346e36d3618764cc93da84bbff92005174a35eec3465cde91ee973ef1c351ffa40074
   languageName: node
   linkType: hard
 
@@ -8706,9 +8713,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^12.4.0":
-  version: 12.4.0
-  resolution: "lint-staged@npm:12.4.0"
+"lint-staged@npm:^12.4.1":
+  version: 12.4.1
+  resolution: "lint-staged@npm:12.4.1"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
@@ -8726,7 +8733,7 @@ __metadata:
     yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: e25b273a73b79f224ff1ccb22432c34a9050fe8318b9cf7e08c748e2efc80e1f48ed4f2aa61cd16a701bb7fd6323ecf0d94a497c97732db04f2b5382d6b70131
+  checksum: b57183b537064cda6caef6679918bf271903145f7c28d09567e918b8b13094048b579f8df808ea590dbd7ea2ec332327c5e372cf3d77e85b7b0254f6541ce4c3
   languageName: node
   linkType: hard
 
@@ -10515,18 +10522,18 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.2.3
     "@commitlint/config-conventional": ^16.2.1
-    "@favware/cliff-jumper": ^1.2.0
+    "@favware/cliff-jumper": ^1.3.1
     "@sapphire/eslint-config": ^4.3.4
     "@sapphire/prettier-config": ^1.4.3
     "@sapphire/ts-config": ^3.3.4
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^13.1.1
-    "@types/node": ^17.0.25
-    "@types/react": ^18.0.6
-    "@types/react-dom": ^18.0.2
+    "@types/node": ^17.0.29
+    "@types/react": ^18.0.8
+    "@types/react-dom": ^18.0.0
     "@types/testing-library__jest-dom": ^5.14.3
-    "@typescript-eslint/eslint-plugin": ^5.20.0
-    "@typescript-eslint/parser": ^5.20.0
+    "@typescript-eslint/eslint-plugin": ^5.21.0
+    "@typescript-eslint/parser": ^5.21.0
     cz-conventional-changelog: ^3.3.0
     eslint: ^8.14.0
     eslint-config-prettier: ^8.5.0
@@ -10535,13 +10542,13 @@ __metadata:
     eslint-plugin-jsx-a11y: ^6.5.1
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-react: ^7.29.4
-    eslint-plugin-react-hooks: ^4.4.0
+    eslint-plugin-react-hooks: ^4.5.0
     husky: ^7.0.4
-    lint-staged: ^12.4.0
+    lint-staged: ^12.4.1
     prettier: ^2.6.2
     pretty-quick: ^3.1.3
-    react: ^18.0.0
-    react-dom: ^18.0.0
+    react: ^18.1.0
+    react-dom: ^18.1.0
     tsdx: ^0.14.1
     typedoc: ^0.22.15
     typescript: ^4.6.3
