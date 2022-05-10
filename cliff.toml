@@ -25,7 +25,7 @@ body = """
 			**{{commit.scope}}:** \
 		  {% endif %}\
             {{ commit.message | upper_first }} ([{{ commit.id | truncate(length=7, end="") }}](https://github.com/romac/react-if/commit/{{ commit.id }}))\
-		{% if commit.breaking %}}\
+		{% if commit.breaking %}\
 			\n\n {% raw %}  {% endraw %} ### 💥 Breaking Changes:\n \
 			{% for breakingChange in commit.footers %}\
 				{% raw %}  {% endraw %} - {{ breakingChange }}\n\
