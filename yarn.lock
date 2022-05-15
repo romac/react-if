@@ -2942,18 +2942,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/eslint-config@npm:^4.3.4":
-  version: 4.3.4
-  resolution: "@sapphire/eslint-config@npm:4.3.4"
+"@sapphire/eslint-config@npm:^4.3.5":
+  version: 4.3.5
+  resolution: "@sapphire/eslint-config@npm:4.3.5"
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^5.20.0
-    "@typescript-eslint/parser": ^5.20.0
-    eslint: ^8.13.0
+    "@typescript-eslint/eslint-plugin": ^5.23.0
+    "@typescript-eslint/parser": ^5.23.0
+    eslint: ^8.15.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-prettier: ^4.0.0
     prettier: ^2.6.2
-    typescript: ^4.6.3
-  checksum: f45bbbf5900d91472ae2798e313fe5fede12da0a341fe841f49540a7926228058e3a34280005d0004073f42a6e3abaf4db3bd823c9f5375845d488e2307e26e3
+    typescript: ^4.6.4
+  checksum: ede88a3196b884b773b083d342390e0dcaeecfdcdc3192a4cb0c06406f130e0089d21f9174bfccc1c6ddb098e2b3f87d3ff75d3706ca95159b66da65711442e6
   languageName: node
   linkType: hard
 
@@ -10673,7 +10673,7 @@ __metadata:
     "@commitlint/cli": ^16.3.0
     "@commitlint/config-conventional": ^16.2.4
     "@favware/cliff-jumper": ^1.8.0
-    "@sapphire/eslint-config": ^4.3.4
+    "@sapphire/eslint-config": ^4.3.5
     "@sapphire/prettier-config": ^1.4.3
     "@sapphire/ts-config": ^3.3.4
     "@testing-library/jest-dom": ^5.16.4
