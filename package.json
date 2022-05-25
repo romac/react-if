@@ -38,8 +38,8 @@
     "prepare": "husky install .github/husky"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.3.0",
-    "@commitlint/config-conventional": "^16.2.4",
+    "@commitlint/cli": "^17.0.1",
+    "@commitlint/config-conventional": "^17.0.0",
     "@favware/cliff-jumper": "^1.8.0",
     "@sapphire/eslint-config": "^4.3.5",
     "@sapphire/prettier-config": "^1.4.3",
