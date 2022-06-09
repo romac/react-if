@@ -10,7 +10,7 @@ body = """
     {% if previous %}\
         {% if previous.version %}\
             (https://github.com/romac/react-if/compare/{{ previous.version }}...{{ version }})\
-        {% else %}
+        {% else %}\
             (https://github.com/romac/react-if/tree/{{ version }})\
         {% endif %}\
     {% endif %} \
