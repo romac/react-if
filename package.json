@@ -42,7 +42,7 @@
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "@favware/cliff-jumper": "^1.8.3",
-    "@sapphire/eslint-config": "^4.3.6",
+    "@sapphire/eslint-config": "^4.3.7",
     "@sapphire/prettier-config": "^1.4.3",
     "@sapphire/ts-config": "^3.3.4",
     "@testing-library/jest-dom": "^5.16.4",
