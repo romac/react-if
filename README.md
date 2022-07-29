@@ -18,7 +18,11 @@ Take a look at the following presentational component, which contains a commonly
 const Bar = ({ name, age, drinkingAge }) => (
   <div>
     <Header />
-    {age >= drinkingAge ? <span className="ok">Have a beer, {name}!</span> : <span className="not-ok">Sorry, {name}, you are not old enough.</span>}
+    {
+      age >= drinkingAge
+        ? <span className="ok">Have a beer, {name}!</span>
+        : <span className="not-ok">Sorry, {name}, you are not old enough.</span>
+    }
     <Footer />
   </div>
 );
