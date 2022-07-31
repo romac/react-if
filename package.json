@@ -41,7 +41,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "@favware/cliff-jumper": "^1.8.5",
+    "@favware/cliff-jumper": "^1.8.6",
     "@sapphire/eslint-config": "^4.3.7",
     "@sapphire/prettier-config": "^1.4.3",
     "@sapphire/ts-config": "^3.3.4",
@@ -51,8 +51,8 @@
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.0",
     "@types/testing-library__jest-dom": "^5.14.5",
-    "@typescript-eslint/eslint-plugin": "^5.30.7",
-    "@typescript-eslint/parser": "^5.30.7",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
@@ -70,7 +70,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "tsdx": "^0.14.1",
-    "typedoc": "^0.23.8",
+    "typedoc": "^0.23.9",
     "typescript": "^4.7.4"
   },
   "engines": {
@@ -95,8 +95,8 @@
   "resolutions": {
     "@types/react-dom": "^18.0.0",
     "@types/react": "^18.0.4",
-    "@typescript-eslint/eslint-plugin": "^5.30.7",
-    "@typescript-eslint/parser": "^5.30.7",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react-app": "^7.0.1",
