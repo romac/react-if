@@ -51,8 +51,8 @@
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.0",
     "@types/testing-library__jest-dom": "^5.14.5",
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
@@ -71,7 +71,7 @@
     "react-dom": "^18.1.0",
     "tsdx": "^0.14.1",
     "typedoc": "^0.23.14",
-    "typescript": "^4.8.2"
+    "typescript": "^4.8.3"
   },
   "engines": {
     "node": ">=12"
@@ -95,8 +95,8 @@
   "resolutions": {
     "@types/react-dom": "^18.0.0",
     "@types/react": "^18.0.4",
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
     "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react-app": "^7.0.1",
