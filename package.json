@@ -51,8 +51,8 @@
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.0",
     "@types/testing-library__jest-dom": "^5.14.5",
-    "@typescript-eslint/eslint-plugin": "^5.46.1",
-    "@typescript-eslint/parser": "^5.46.1",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",
@@ -95,8 +95,8 @@
   "resolutions": {
     "@types/react-dom": "^18.0.0",
     "@types/react": "^18.0.4",
-    "@typescript-eslint/eslint-plugin": "^5.46.1",
-    "@typescript-eslint/parser": "^5.46.1",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react-app": "^7.0.1",
@@ -111,5 +111,5 @@
     "minimist": "^1.2.7",
     "react": "^18.0.0"
   },
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.3.1"
 }
