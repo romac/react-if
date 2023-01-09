@@ -12,3 +12,4 @@ in your text editor or IDE of your choice to ensure builds from GitHub Actions d
 6. Submit a Pull Request [here]!
 
 [here]: https://github.com/romac/react-if/pulls
+[eslint]: https://eslint.org/
