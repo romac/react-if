@@ -47,12 +47,12 @@
     "@sapphire/ts-config": "^3.3.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.1.1",
-    "@types/node": "^18.15.0",
+    "@types/node": "^18.15.3",
     "@types/react": "^18.0.8",
     "@types/react-dom": "^18.0.0",
     "@types/testing-library__jest-dom": "^5.14.5",
-    "@typescript-eslint/eslint-plugin": "^5.54.1",
-    "@typescript-eslint/parser": "^5.54.1",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
@@ -70,7 +70,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "tsdx": "^0.14.1",
-    "typedoc": "^0.23.26",
+    "typedoc": "^0.23.27",
     "typescript": "^4.9.5"
   },
   "engines": {
@@ -95,8 +95,8 @@
   "resolutions": {
     "@types/react-dom": "^18.0.0",
     "@types/react": "^18.0.4",
-    "@typescript-eslint/eslint-plugin": "^5.54.1",
-    "@typescript-eslint/parser": "^5.54.1",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-config-react-app": "^7.0.1",
@@ -111,5 +111,5 @@
     "minimist": "^1.2.8",
     "react": "^18.0.0"
   },
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@3.5.0"
 }
