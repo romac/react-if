@@ -39,10 +39,10 @@
     "postpack": "pinst --enable"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.5.1",
-    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
     "@favware/cliff-jumper": "^2.0.0",
-    "@sapphire/eslint-config": "^4.3.8",
+    "@sapphire/eslint-config": "^4.4.1",
     "@sapphire/prettier-config": "^1.4.5",
     "@sapphire/ts-config": "^3.3.4",
     "@testing-library/jest-dom": "^5.16.5",
@@ -51,8 +51,8 @@
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "@types/testing-library__jest-dom": "^5.14.5",
-    "@typescript-eslint/eslint-plugin": "^5.57.1",
-    "@typescript-eslint/parser": "^5.57.1",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
@@ -70,7 +70,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tsdx": "^0.14.1",
-    "typedoc": "^0.24.1",
+    "typedoc": "^0.24.2",
     "typescript": "^4.9.5"
   },
   "engines": {
@@ -95,8 +95,8 @@
   "resolutions": {
     "@types/react-dom": "^18.0.0",
     "@types/react": "^18.0.4",
-    "@typescript-eslint/eslint-plugin": "^5.57.1",
-    "@typescript-eslint/parser": "^5.57.1",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-react-app": "^7.0.1",
