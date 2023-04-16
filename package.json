@@ -44,11 +44,11 @@
     "@favware/cliff-jumper": "^2.0.0",
     "@sapphire/eslint-config": "^4.4.1",
     "@sapphire/prettier-config": "^1.4.5",
-    "@sapphire/ts-config": "^3.3.4",
+    "@sapphire/ts-config": "^4.0.0",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/react": "^14.0.0",
     "@types/node": "^18.15.11",
-    "@types/react": "^18.0.33",
+    "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
     "@types/testing-library__jest-dom": "^5.14.5",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
@@ -71,7 +71,7 @@
     "react-dom": "^18.2.0",
     "tsdx": "^0.14.1",
     "typedoc": "^0.24.2",
-    "typescript": "^4.9.5"
+    "typescript": "^5.0.4"
   },
   "engines": {
     "node": ">=12"
@@ -93,8 +93,8 @@
     }
   },
   "resolutions": {
-    "@types/react-dom": "^18.0.0",
-    "@types/react": "^18.0.4",
+    "@types/react-dom": "^18.0.11",
+    "@types/react": "^18.0.35",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
     "cz-conventional-changelog": "^3.3.0",
@@ -103,13 +103,14 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react-hooks": "^4.4.0",
-    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react": "^7.32.2",
     "eslint": "^8.38.0",
-    "react-dom": "^18.0.0",
+    "react-dom": "^18.2.0",
     "ansi-regex": "^5.0.1",
     "minimist": "^1.2.8",
-    "react": "^18.0.0"
+    "react": "^18.2.0",
+    "@sapphire/ts-config@^4.0.0": "patch:@sapphire/ts-config@npm%3A4.0.0#./.yarn/patches/@sapphire-ts-config-npm-4.0.0-cfd20d4fc5.patch"
   },
   "packageManager": "yarn@3.5.0"
 }

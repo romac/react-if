@@ -1,0 +1,16 @@
+diff --git a/tsconfig.json b/tsconfig.json
+index 1e6ea62bb5dd607fc9b41e5c5b258830cc25aff7..f2f69034c6cdc04cb7b36e59661e2e504fd823a4 100644
+--- a/tsconfig.json
++++ b/tsconfig.json
+@@ -9,10 +9,9 @@
+ 		"esModuleInterop": true,
+ 		"experimentalDecorators": true,
+ 		"importHelpers": true,
+-		"verbatimModuleSyntax": true,
+ 		"incremental": true,
+ 		"lib": ["esnext"],
+-		"module": "Node16",
++		"module": "CommonJS",
+ 		"moduleResolution": "Node",
+ 		"newLine": "lf",
+ 		"noEmitHelpers": true,
