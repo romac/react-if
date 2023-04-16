@@ -44,7 +44,7 @@
     "@favware/cliff-jumper": "^2.0.0",
     "@sapphire/eslint-config": "^4.4.1",
     "@sapphire/prettier-config": "^1.4.5",
-    "@sapphire/ts-config": "^3.3.4",
+    "@sapphire/ts-config": "^4.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@types/node": "^18.15.11",
