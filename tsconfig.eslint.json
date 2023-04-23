@@ -4,5 +4,5 @@
     "checkJs": true,
     "allowJs": true
   },
-  "include": ["src", "test", "demo", "./.eslintrc.js", "./jest.config.js", "./tsdx.config.js"]
+  "include": ["src", "test", "demo", "./jest.config.js"]
 }

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import React from 'react';
+import React, { type ReactNode } from 'react';
 import { Case, Default, Switch } from '../src';
 
 describe('<Switch /> component', () => {
@@ -168,9 +168,8 @@ describe('<Switch /> component', () => {
 
     test('GIVEN invalid React children THEN does not render those', () => {
       render(
-        // @ts-expect-error invalid JSX
         <Switch>
-          {() => [{ key: 'one', prop: 'two' }]}
+          {(() => [{ key: 'one', prop: 'two' }]) as unknown as ReactNode}
           <Case condition={true}>
             <span data-testid="case2">Case2</span>
           </Case>
