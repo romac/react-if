@@ -7,8 +7,6 @@ import type { ComponentWithConditionPropsWithFunctionChildren } from './types';
  * inside the parent `<Switch />` it will be the only rendered.
  * @param props The props to pass down to the `<Case />` component
  */
-export const Case: FC<ComponentWithConditionPropsWithFunctionChildren> = (props) => render(props);
-
-Case.defaultProps = {
-  children: null
+export const Case: FC<ComponentWithConditionPropsWithFunctionChildren> = ({ children = null }) => {
+  return render({ children });
 };

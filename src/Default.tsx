@@ -6,8 +6,6 @@ import type { FCWithImplicitChildren } from './types';
  * the first `<Default />` will be the only one rendered.
  * @param props The props to pass down to the `<Default />` component
  */
-export const Default: FCWithImplicitChildren = (props) => render(props);
-
-Default.defaultProps = {
-  children: null
+export const Default: FCWithImplicitChildren = ({ children = null }) => {
+  return render({ children });
 };

@@ -17,12 +17,8 @@ import type { ComponentWithConditionPropsWithFunctionChildren } from './types';
  *
  * @param __namedParameters The props to pass down to the `<IF />` component, see {@link ComponentWithConditionProps}
  */
-export const When: FC<ComponentWithConditionPropsWithFunctionChildren> = ({ condition, children }) => {
+export const When: FC<ComponentWithConditionPropsWithFunctionChildren> = ({ condition, children = null }) => {
   const conditionResult = Boolean(getConditionResult(condition));
 
   return conditionResult && children ? render({ children }) : null;
-};
-
-When.defaultProps = {
-  children: null
 };
