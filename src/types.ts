@@ -1,4 +1,4 @@
-import type { PropsWithChildren, ReactElement, ReactNode, ValidationMap, WeakValidationMap } from 'react';
+import type { FunctionComponent, PropsWithChildren, ReactNode } from 'react';
 
 /**
  * Type for a value that can properly be parsed by `Boolean(...)`
@@ -57,13 +57,7 @@ export type ComponentWithConditionPropsAsyncSupport = ComponentWithConditionProp
 
 export type FCWithImplicitChildren<P = NonNullObject> = FunctionComponentWithImplicitChildren<P>;
 
-export interface FunctionComponentWithImplicitChildren<P = NonNullObject> {
-  (props: CustomPropsWithChildren<P>, context?: any): ReactElement<any, any> | null;
-  propTypes?: WeakValidationMap<P> | undefined;
-  contextTypes?: ValidationMap<any> | undefined;
-  defaultProps?: Partial<P> | undefined;
-  displayName?: string | undefined;
-}
+export type FunctionComponentWithImplicitChildren<P = NonNullObject> = FunctionComponent<CustomPropsWithChildren<P>>;
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 export type NonNullObject = {} & object;

@@ -7,7 +7,3 @@ import type { FCWithImplicitChildren } from './types';
  * @param props The props to pass down to the `<Default />` component
  */
 export const Default: FCWithImplicitChildren = (props) => render(props);
-
-Default.defaultProps = {
-  children: null
-};

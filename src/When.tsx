@@ -22,7 +22,3 @@ export const When: FC<ComponentWithConditionPropsWithFunctionChildren> = ({ cond
 
   return conditionResult && children ? render({ children }) : null;
 };
-
-When.defaultProps = {
-  children: null
-};

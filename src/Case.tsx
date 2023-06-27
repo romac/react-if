@@ -8,7 +8,3 @@ import type { ComponentWithConditionPropsWithFunctionChildren } from './types';
  * @param props The props to pass down to the `<Case />` component
  */
 export const Case: FC<ComponentWithConditionPropsWithFunctionChildren> = (props) => render(props);
-
-Case.defaultProps = {
-  children: null
-};

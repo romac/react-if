@@ -22,7 +22,3 @@ export const Unless: FC<ComponentWithConditionPropsWithFunctionChildren> = ({ co
 
   return !conditionResult && children ? render({ children }) : null;
 };
-
-Unless.defaultProps = {
-  children: null
-};
