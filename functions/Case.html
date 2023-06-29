@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>BooleanLike | react-if</title><meta name="description" content="Documentation for react-if"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>Case | react-if</title><meta name="description" content="Documentation for react-if"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,14 +13,29 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">react-if</a></li>
-<li><a href="BooleanLike.html">BooleanLike</a></li></ul>
-<h1>Type alias BooleanLike</h1></div>
-<div class="tsd-signature"><span class="tsd-kind-type-alias">Boolean<wbr/>Like</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/ExtendablePromise.html" class="tsd-signature-type tsd-kind-interface">ExtendablePromise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
-<div class="tsd-comment tsd-typography"><p>Type for a value that can properly be parsed by <code>Boolean(...)</code></p>
+<li><a href="Case.html">Case</a></li></ul>
+<h1>Function Case</h1></div>
+<section class="tsd-panel">
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="Case"><span class="tsd-kind-call-signature">Case</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">props</span>, <span class="tsd-kind-parameter">context</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">ReactNode</span><a href="#Case" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>If the <code>&lt;Case /&gt;</code> is the first one to have its condition evaluates to true
+inside the parent <code>&lt;Switch /&gt;</code> it will be the only rendered.</p>
 </div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">props</span>: <a href="../types/ComponentWithConditionPropsWithFunctionChildren.html" class="tsd-signature-type tsd-kind-type-alias">ComponentWithConditionPropsWithFunctionChildren</a></h5>
+<div class="tsd-comment tsd-typography"><p>The props to pass down to the <code>&lt;Case /&gt;</code> component</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">context</span>: <span class="tsd-signature-type">any</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">ReactNode</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/romac/react-if/blob/da6fe51/src/types.ts#L6">src/types.ts:6</a></li></ul></aside></div>
+<li>Defined in node_modules/@types/react/index.d.ts:556</li></ul></aside></li></ul></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -43,20 +58,20 @@
 <li><a href="../interfaces/CancellablePromise.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Cancellable<wbr/>Promise</span></a></li>
 <li><a href="../interfaces/ExtendablePromise.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Extendable<wbr/>Promise</span></a></li>
 <li><a href="../interfaces/FunctionComponentWithImplicitChildren.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Function<wbr/>Component<wbr/>With<wbr/>Implicit<wbr/>Children</span></a></li>
-<li><a href="BooleanLike.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>Boolean<wbr/>Like</span></a></li>
-<li><a href="ComponentWithConditionProps.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Component<wbr/>With<wbr/>Condition<wbr/>Props</span></a></li>
-<li><a href="ComponentWithConditionPropsAsyncSupport.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Component<wbr/>With<wbr/>Condition<wbr/>Props<wbr/>Async<wbr/>Support</span></a></li>
-<li><a href="ComponentWithConditionPropsWithFunctionChildren.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Component<wbr/>With<wbr/>Condition<wbr/>Props<wbr/>With<wbr/>Function<wbr/>Children</span></a></li>
-<li><a href="CustomPropsWithChildren.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Custom<wbr/>Props<wbr/>With<wbr/>Children</span></a></li>
-<li><a href="FCWithImplicitChildren.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>FCWith<wbr/>Implicit<wbr/>Children</span></a></li>
-<li><a href="NonNullObject.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Non<wbr/>Null<wbr/>Object</span></a></li>
-<li><a href="../functions/Case.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-64"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)"></path></g></svg><span>Case</span></a></li>
-<li><a href="../functions/Default.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>Default</span></a></li>
-<li><a href="../functions/Else.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>Else</span></a></li>
-<li><a href="../functions/Fallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>Fallback</span></a></li>
-<li><a href="../functions/If.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>If</span></a></li>
-<li><a href="../functions/Switch.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>Switch</span></a></li>
-<li><a href="../functions/Then.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>Then</span></a></li>
-<li><a href="../functions/Unless.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>Unless</span></a></li>
-<li><a href="../functions/When.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>When</span></a></li></ul></nav></div></div></div>
+<li><a href="../types/BooleanLike.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>Boolean<wbr/>Like</span></a></li>
+<li><a href="../types/ComponentWithConditionProps.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Component<wbr/>With<wbr/>Condition<wbr/>Props</span></a></li>
+<li><a href="../types/ComponentWithConditionPropsAsyncSupport.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Component<wbr/>With<wbr/>Condition<wbr/>Props<wbr/>Async<wbr/>Support</span></a></li>
+<li><a href="../types/ComponentWithConditionPropsWithFunctionChildren.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Component<wbr/>With<wbr/>Condition<wbr/>Props<wbr/>With<wbr/>Function<wbr/>Children</span></a></li>
+<li><a href="../types/CustomPropsWithChildren.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Custom<wbr/>Props<wbr/>With<wbr/>Children</span></a></li>
+<li><a href="../types/FCWithImplicitChildren.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>FCWith<wbr/>Implicit<wbr/>Children</span></a></li>
+<li><a href="../types/NonNullObject.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Non<wbr/>Null<wbr/>Object</span></a></li>
+<li><a href="Case.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-64"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)"></path></g></svg><span>Case</span></a></li>
+<li><a href="Default.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>Default</span></a></li>
+<li><a href="Else.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>Else</span></a></li>
+<li><a href="Fallback.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>Fallback</span></a></li>
+<li><a href="If.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>If</span></a></li>
+<li><a href="Switch.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>Switch</span></a></li>
+<li><a href="Then.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>Then</span></a></li>
+<li><a href="Unless.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>Unless</span></a></li>
+<li><a href="When.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>When</span></a></li></ul></nav></div></div></div>
 <div class="overlay"></div></body></html>
