@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file.
 
+# [4.1.5](https://github.com/romac/react-if/compare/v4.1.4...v4.1.5) - (2023-06-29)
+
+## 🏠 Refactor
+
+- Cleanup `FunctionComponentWithImplicitChildren` ([7ddde60](https://github.com/romac/react-if/commit/7ddde60ccb6beb3ed1a36ade9d04382e6fc42746))
+
+## 🐛 Bug Fixes
+
+- **components:** Remove deprecated defaultProps component option (#279) ([da6fe51](https://github.com/romac/react-if/commit/da6fe51ceadaba1b9af3fd3d2b35f4aaf278b77e))
+
+## 📝 Documentation
+
+- **readme:** Fix all contributors entries ([729090a](https://github.com/romac/react-if/commit/729090a59d0e2f17859ac57ad0e5ff2d7e87cecb))
+- Add @msftenhanceprovenance as a contributor ([198cf9c](https://github.com/romac/react-if/commit/198cf9c8166b5e0d725d5006ea12536975f91481))
+- Add @FC5570 as a contributor ([46c42de](https://github.com/romac/react-if/commit/46c42de5910cb5680cd25fa39e5e270b22922c95))
+- Add @dependabot[bot] as a contributor ([7de95e6](https://github.com/romac/react-if/commit/7de95e6faab09300e12ab90f3ed243a317a2bee0))
+- Add @renovate[bot] as a contributor ([57012dd](https://github.com/romac/react-if/commit/57012ddcafc11a361109c852852e263a62a5cf4c))
+- Add @renovate-bot as a contributor ([ca81514](https://github.com/romac/react-if/commit/ca815145faab453d1b28bdaa0792f024151a2a79))
+- Add @depfu[bot] as a contributor ([75f853a](https://github.com/romac/react-if/commit/75f853a8f619b0d723285ab43b57b6dd477ead92))
+
+## 🧪 Testing
+
+- Update `ts-jest` configuration (#278) ([b7fa614](https://github.com/romac/react-if/commit/b7fa614542de05f320f8da65e6ae75f931c011ac))
+
 # [4.1.4](https://github.com/romac/react-if/compare/v4.1.3...v4.1.4) - (2022-04-21)
 
 ## Bug Fixes
