@@ -1,0 +1,11 @@
+diff --git a/index.d.ts b/index.d.ts
+index 36906e5bf4f37c3ab21bde4ce15ffd92756de5b4..087d91862d1527589b5f8b1397597b73b5076a3c 100644
+--- a/index.d.ts
++++ b/index.d.ts
+@@ -18,5 +18,5 @@ declare global {
+ }
+ 
+ declare module "expect" {
+-    interface Matchers<R = void, T = {}> extends TestingLibraryMatchers<typeof expect.stringContaining, R> {}
++    interface Matchers<R = void | Promise<void>, T = unknown> extends TestingLibraryMatchers<typeof expect.stringContaining, R> {}
+ }

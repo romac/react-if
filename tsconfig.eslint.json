@@ -2,7 +2,9 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "checkJs": true,
-    "allowJs": true
+    "allowJs": true,
+    "noEmit": true,
+    "incremental": false
   },
   "include": ["src", "test", "demo", "./jest.config.js"]
 }

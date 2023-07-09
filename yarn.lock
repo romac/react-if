@@ -3664,12 +3664,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/testing-library__jest-dom@npm:^5.14.7, @types/testing-library__jest-dom@npm:^5.9.1":
+"@types/testing-library__jest-dom@npm:5.14.7":
   version: 5.14.7
   resolution: "@types/testing-library__jest-dom@npm:5.14.7"
   dependencies:
     "@types/jest": "*"
   checksum: 197de547ff2c7a7a649470560f323a5b3e7a7c1498baa49f063e7056f64ecdf05d1d68c82fd7e382201ba3fd83e783de48531461c50e4770ef007c1294b8cc0b
+  languageName: node
+  linkType: hard
+
+"@types/testing-library__jest-dom@patch:@types/testing-library__jest-dom@npm%3A5.14.7#./.yarn/patches/@types-testing-library__jest-dom-npm-5.14.7-9c1df8c5da.patch::locator=react-if%40workspace%3A.":
+  version: 5.14.7
+  resolution: "@types/testing-library__jest-dom@patch:@types/testing-library__jest-dom@npm%3A5.14.7#./.yarn/patches/@types-testing-library__jest-dom-npm-5.14.7-9c1df8c5da.patch::version=5.14.7&hash=b64b41&locator=react-if%40workspace%3A."
+  dependencies:
+    "@types/jest": "*"
+  checksum: 1266476c22ad354e2f748dd22bb5b242e18ab855ca4763e1401a307284e965c745f5e650352e782b42155fa4a72fc36ec5659b4226ac23a3690e0d660b1fd340
   languageName: node
   linkType: hard
 

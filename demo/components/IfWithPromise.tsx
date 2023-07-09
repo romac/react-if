@@ -56,7 +56,7 @@ const IfWithPromise: React.FC<Props> = ({ resolutionReturnValue, rejectionReturn
     (): React.ReactNode => (
       <If condition={currentPromise} keepAlive={keepAlive}>
         <Then>
-          {(data: any, history: Array<any>) => {
+          {(data: any, history: any) => {
             // FOR DEMO PURPOSE ONLY; DO NOT SET STATE INSIDE RENDER OTHERWISE
             setTimeout(() => markAsFulfilled(history));
 
@@ -69,7 +69,7 @@ const IfWithPromise: React.FC<Props> = ({ resolutionReturnValue, rejectionReturn
           }}
         </Then>
         <Else>
-          {(error: any, history: Array<any>) => {
+          {(error: any, history: any) => {
             setTimeout(() => markAsFulfilled(history));
             return (
               <p>
