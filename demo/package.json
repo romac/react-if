@@ -10,10 +10,10 @@
     "build": "parcel build index.html"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
+    "autoprefixer": "^10.4.15",
     "daisyui": "^3.5.1",
     "parcel": "^2.9.3",
-    "postcss": "^8.4.27",
+    "postcss": "^8.4.28",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6"
   }
