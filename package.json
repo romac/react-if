@@ -46,7 +46,7 @@
     "@sapphire/eslint-config": "^5.0.1",
     "@sapphire/prettier-config": "^2.0.0",
     "@sapphire/ts-config": "^4.0.1",
-    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
     "@types/node": "^18.17.6",
     "@types/react": "^18.2.20",

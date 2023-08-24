@@ -12,10 +12,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@adobe/css-tools@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "@adobe/css-tools@npm:4.0.1"
-  checksum: 80226e2229024c21da9ffa6b5cd4a34b931f071e06f45aba4777ade071d7a6c94605cf73b13718b0c4b34e8b124c65c607b82eaa53a326d3eb73d9682a04a593
+"@adobe/css-tools@npm:^4.3.0":
+  version: 4.3.1
+  resolution: "@adobe/css-tools@npm:4.3.1"
+  checksum: ad43456379ff391132aff687ece190cb23ea69395e23c9b96690eeabe2468da89a4aaf266e4f8b6eaab53db3d1064107ce0f63c3a974e864f4a04affc768da3f
   languageName: node
   linkType: hard
 
@@ -3367,20 +3367,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^5.17.0":
-  version: 5.17.0
-  resolution: "@testing-library/jest-dom@npm:5.17.0"
+"@testing-library/jest-dom@npm:^6.1.2":
+  version: 6.1.2
+  resolution: "@testing-library/jest-dom@npm:6.1.2"
   dependencies:
-    "@adobe/css-tools": ^4.0.1
+    "@adobe/css-tools": ^4.3.0
     "@babel/runtime": ^7.9.2
-    "@types/testing-library__jest-dom": ^5.9.1
     aria-query: ^5.0.0
     chalk: ^3.0.0
     css.escape: ^1.5.1
     dom-accessibility-api: ^0.5.6
     lodash: ^4.17.15
     redent: ^3.0.0
-  checksum: 9f28dbca8b50d7c306aae40c3aa8e06f0e115f740360004bd87d57f95acf7ab4b4f4122a7399a76dbf2bdaaafb15c99cc137fdcb0ae457a92e2de0f3fbf9b03b
+  peerDependencies:
+    "@jest/globals": ">= 28"
+    "@types/jest": ">= 28"
+    jest: ">= 28"
+    vitest: ">= 0.32"
+  peerDependenciesMeta:
+    "@jest/globals":
+      optional: true
+    "@types/jest":
+      optional: true
+    jest:
+      optional: true
+    vitest:
+      optional: true
+  checksum: de6b7f98d1b42887192eb70fd917b2b98d92aab22a86801718de75e0ca4964589335efeb650b0f7b9859609446b20d2bd81bfc5755f1655885d5664d1c093a70
   languageName: node
   linkType: hard
 
@@ -3678,30 +3691,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/testing-library__jest-dom@npm:5.14.7":
-  version: 5.14.7
-  resolution: "@types/testing-library__jest-dom@npm:5.14.7"
-  dependencies:
-    "@types/jest": "*"
-  checksum: 197de547ff2c7a7a649470560f323a5b3e7a7c1498baa49f063e7056f64ecdf05d1d68c82fd7e382201ba3fd83e783de48531461c50e4770ef007c1294b8cc0b
-  languageName: node
-  linkType: hard
-
 "@types/testing-library__jest-dom@npm:^5.14.9":
   version: 5.14.9
   resolution: "@types/testing-library__jest-dom@npm:5.14.9"
   dependencies:
     "@types/jest": "*"
   checksum: d364494fc2545316292e88861146146af1e3818792ca63b62a63758b2f737669b687f4aaddfcfbcb7d0e1ed7890a9bd05de23ff97f277d5e68de574497a9ee72
-  languageName: node
-  linkType: hard
-
-"@types/testing-library__jest-dom@patch:@types/testing-library__jest-dom@npm%3A5.14.7#./.yarn/patches/@types-testing-library__jest-dom-npm-5.14.7-9c1df8c5da.patch::locator=react-if%40workspace%3A.":
-  version: 5.14.7
-  resolution: "@types/testing-library__jest-dom@patch:@types/testing-library__jest-dom@npm%3A5.14.7#./.yarn/patches/@types-testing-library__jest-dom-npm-5.14.7-9c1df8c5da.patch::version=5.14.7&hash=b64b41&locator=react-if%40workspace%3A."
-  dependencies:
-    "@types/jest": "*"
-  checksum: 1266476c22ad354e2f748dd22bb5b242e18ab855ca4763e1401a307284e965c745f5e650352e782b42155fa4a72fc36ec5659b4226ac23a3690e0d660b1fd340
   languageName: node
   linkType: hard
 
@@ -10902,7 +10897,7 @@ __metadata:
     "@sapphire/eslint-config": ^5.0.1
     "@sapphire/prettier-config": ^2.0.0
     "@sapphire/ts-config": ^4.0.1
-    "@testing-library/jest-dom": ^5.17.0
+    "@testing-library/jest-dom": ^6.1.2
     "@testing-library/react": ^14.0.0
     "@types/node": ^18.17.6
     "@types/react": ^18.2.20
