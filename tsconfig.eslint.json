@@ -6,5 +6,6 @@
     "noEmit": true,
     "incremental": false
   },
-  "include": ["src", "test", "demo", "./jest.config.js"]
+  "include": ["src", "test", "demo", "./jest.config.js"],
+  "exclude": ["demo/dist"]
 }

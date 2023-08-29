@@ -1754,32 +1754,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@favware/cliff-jumper@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@favware/cliff-jumper@npm:2.1.1"
+"@favware/cliff-jumper@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "@favware/cliff-jumper@npm:2.1.2"
   dependencies:
-    "@favware/conventional-changelog-angular": ^5.0.15
     "@sapphire/result": ^2.6.4
-    "@sapphire/utilities": 3.12.0
+    "@sapphire/utilities": 3.13.0
     colorette: ^2.0.20
-    commander: ^10.0.1
-    conventional-recommended-bump: ^7.0.1
-    git-cliff: ^1.2.0
+    commander: ^11.0.0
+    compare-func: ^2.0.0
+    conventional-recommended-bump: ^8.0.0
+    git-cliff: ~1.2.0
     js-yaml: ^4.1.0
-    semver: ^7.5.1
+    semver: ^7.5.4
   bin:
     cj: ./dist/cli.js
     cliff-jumper: ./dist/cli.js
-  checksum: 60f1f38ff5d66609054aee3f5bf477fe04783468aa45ce1b1b8c46efbed286fa0110fe81eaad4babe68c5483373931866c80fdf77db81cc0cbda24c8de339e71
-  languageName: node
-  linkType: hard
-
-"@favware/conventional-changelog-angular@npm:^5.0.15":
-  version: 5.0.15
-  resolution: "@favware/conventional-changelog-angular@npm:5.0.15"
-  dependencies:
-    compare-func: ^2.0.0
-  checksum: 9ea3869f748831348b51aa6afbd4533ee3dbf94a2bd673b1cd8b7c6397a46b90b32f595b324b9074bd9608061046b456f7a97d06fba7abb8143bd8648a938870
+  checksum: 17921347e14067460b135e5ef6c8fc093d0aae878668436a8475745391c8c2c94280ead7433b10c7b8f75797e9f4d078363a0c5e5e3615ec8773cd6ab503a0c7
   languageName: node
   linkType: hard
 
@@ -3145,18 +3136,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/eslint-config@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "@sapphire/eslint-config@npm:5.0.1"
+"@sapphire/eslint-config@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "@sapphire/eslint-config@npm:5.0.2"
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^6.2.1
-    "@typescript-eslint/parser": ^6.2.1
-    eslint: ^8.46.0
+    "@typescript-eslint/eslint-plugin": ^6.5.0
+    "@typescript-eslint/parser": ^6.5.0
+    eslint: ^8.48.0
     eslint-config-prettier: ^9.0.0
     eslint-plugin-prettier: ^5.0.0
-    prettier: ^3.0.1
-    typescript: ^5.1.6
-  checksum: 84da5e247838939609ab4214a002edbc05e4e0126b8b5105d6288266e520b3a7577f3fccc771b6fb24f3a72c655fcaf32af105b9b923c6b5fb1ed243c5087dd7
+    prettier: ^3.0.2
+    typescript: ^5.2.2
+  checksum: 34b4e2fc33cea2a589752702b605fed01c430992e4a6efaa5c1e55bee3c0f56415e8fc60e13757e78eac6d68f00fc026edcfd00c6531f2d2f939c8049ecb35f7
   languageName: node
   linkType: hard
 
@@ -3176,30 +3167,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/ts-config@npm:4.0.0":
-  version: 4.0.0
-  resolution: "@sapphire/ts-config@npm:4.0.0"
+"@sapphire/ts-config@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@sapphire/ts-config@npm:5.0.0"
   dependencies:
-    tslib: ^2.5.0
-    typescript: ^5.0.3
-  checksum: 05ede6d5b34e070302e6671180bf46f20185c0ea0aceb6a3a287a00306a40923e32a104ed6795199529669d5448d3ac280cbe7524f6266efaf3938ecf5f7fb36
+    tslib: ^2.6.2
+    typescript: ^5.2.2
+  checksum: 5295e70762ec4e710c44d62c0706debb3d651d994b40c55586bfa93e7fae34c4f4f63d047b4fe3e66c4f545ad696485c904e79d2ed4e9ea45c89a0bf305ca945
   languageName: node
   linkType: hard
 
-"@sapphire/ts-config@patch:@sapphire/ts-config@npm%3A4.0.0#./.yarn/patches/@sapphire-ts-config-npm-4.0.0-cfd20d4fc5.patch::locator=react-if%40workspace%3A.":
-  version: 4.0.0
-  resolution: "@sapphire/ts-config@patch:@sapphire/ts-config@npm%3A4.0.0#./.yarn/patches/@sapphire-ts-config-npm-4.0.0-cfd20d4fc5.patch::version=4.0.0&hash=35942b&locator=react-if%40workspace%3A."
-  dependencies:
-    tslib: ^2.5.0
-    typescript: ^5.0.3
-  checksum: 60b61b1d7bb8963d8d60641734b2e973d60a069787a8c9a164f84fad33e2f29d9015083e2af414c0d62ff8612dfc0ceb18628848098ba799ca4614a685f91f74
-  languageName: node
-  linkType: hard
-
-"@sapphire/utilities@npm:3.12.0":
-  version: 3.12.0
-  resolution: "@sapphire/utilities@npm:3.12.0"
-  checksum: 002f15263f157fdbb0603c233a43a5660cd3b45a4f3fddaa9d7066d187eec23f473ee42c8d071b0e3dec4e22b08bed337fb7eb336a02b59743a78ebc8922004e
+"@sapphire/utilities@npm:3.13.0":
+  version: 3.13.0
+  resolution: "@sapphire/utilities@npm:3.13.0"
+  checksum: c2f901c104459e01a24af71871294b700ff188925cf050558880486de6564792df2b7549796dd9fd6f309c12af7d4e2b2d2f4069ec9d4c27d9c3998eca3ac9a9
   languageName: node
   linkType: hard
 
@@ -3608,10 +3589,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.17.11":
-  version: 18.17.11
-  resolution: "@types/node@npm:18.17.11"
-  checksum: c31d9f4a6f7c5c413b6548ded0fab046571832718361c5cda325960f32d6b386dd0a7fa9228911111fee54c180d09df82a622efdabdbef89fa9e1923891892bc
+"@types/node@npm:^18.17.12":
+  version: 18.17.12
+  resolution: "@types/node@npm:18.17.12"
+  checksum: 79f8bcca3067a3c529f30e172df8d14f25ab9e4cd6a05ed897a924ab1dec774e8ea172ef5c4a67ffec433d423a0c81778f17db22606d574bc83871b60aab298e
   languageName: node
   linkType: hard
 
@@ -5161,17 +5142,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:11.0.0":
+"commander@npm:11.0.0, commander@npm:^11.0.0":
   version: 11.0.0
   resolution: "commander@npm:11.0.0"
   checksum: 6621954e1e1d078b4991c1f5bbd9439ad37aa7768d6ab4842de1dbd4d222c8a27e1b8e62108b3a92988614af45031d5bb2a2aaa92951f4d0c934d1a1ac564bb4
-  languageName: node
-  linkType: hard
-
-"commander@npm:^10.0.1":
-  version: 10.0.1
-  resolution: "commander@npm:10.0.1"
-  checksum: 436901d64a818295803c1996cd856621a74f30b9f9e28a588e726b2b1670665bccd7c1a77007ebf328729f0139838a88a19265858a0fa7a8728c4656796db948
   languageName: node
   linkType: hard
 
@@ -5290,10 +5264,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-preset-loader@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "conventional-changelog-preset-loader@npm:3.0.0"
-  checksum: 199c4730c5151f243d35c24585114900c2a7091eab5832cfeb49067a18a2b77d5c9a86b779e6e18b49278a1ff83c011c1d9bb6da95bd1f78d9e36d4d379216d5
+"conventional-changelog-preset-loader@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "conventional-changelog-preset-loader@npm:4.0.0"
+  checksum: 1f8859c0b8ccac8858af2913f4dd7c9b8412af98648a0de61b4449d4a331075b892653c649aa0ed82d2d72b6731c882b5627bd423525349bdff645c04b15d5f6
   languageName: node
   linkType: hard
 
@@ -5304,13 +5278,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-commits-filter@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "conventional-commits-filter@npm:3.0.0"
-  dependencies:
-    lodash.ismatch: ^4.4.0
-    modify-values: ^1.0.1
-  checksum: 73337f42acff7189e1dfca8d13c9448ce085ac1c09976cb33617cc909949621befb1640b1c6c30a1be4953a1be0deea9e93fa0dc86725b8be8e249a64fbb4632
+"conventional-commits-filter@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "conventional-commits-filter@npm:4.0.0"
+  checksum: 46d2d90531f024d596f61d353876276e5357adb5c4684e042467bb7d159feb0a2831b74656bd3038ac9ec38d99b0b24ac39f319ad511861e1299c4cdfb5a119a
   languageName: node
   linkType: hard
 
@@ -5328,20 +5299,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-recommended-bump@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "conventional-recommended-bump@npm:7.0.1"
+"conventional-commits-parser@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "conventional-commits-parser@npm:5.0.0"
+  dependencies:
+    JSONStream: ^1.3.5
+    is-text-path: ^2.0.0
+    meow: ^12.0.1
+    split2: ^4.0.0
+  bin:
+    conventional-commits-parser: cli.mjs
+  checksum: bb92a0bfe41802330d2d14ddb0f912fd65dd355f1aa294e708f4891aac95c580919a70580b9f26563c24c3335baaed2ce003104394a8fa5ba61eeb3889e45df0
+  languageName: node
+  linkType: hard
+
+"conventional-recommended-bump@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "conventional-recommended-bump@npm:8.0.0"
   dependencies:
     concat-stream: ^2.0.0
-    conventional-changelog-preset-loader: ^3.0.0
-    conventional-commits-filter: ^3.0.0
-    conventional-commits-parser: ^4.0.0
-    git-raw-commits: ^3.0.0
-    git-semver-tags: ^5.0.0
-    meow: ^8.1.2
+    conventional-changelog-preset-loader: ^4.0.0
+    conventional-commits-filter: ^4.0.0
+    conventional-commits-parser: ^5.0.0
+    git-raw-commits: ^4.0.0
+    git-semver-tags: ^6.0.0
+    meow: ^12.0.1
   bin:
-    conventional-recommended-bump: cli.js
-  checksum: e2d1f2f40f93612a6da035d0c1a12d70208e0da509a17a9c9296a05e73a6eca5d81fe8c6a7b45e973181fa7c876c6edb9a114a2d7da4f6df00c47c7684ab62d2
+    conventional-recommended-bump: cli.mjs
+  checksum: bc53495dc6aa9f5e93755a478857550ce8710eede11bffb03371e0b7baa392b0ec6a64927efeb9b0df30e2ede3af56c929a4bfb22191c7cc14e61f5306a97c63
   languageName: node
   linkType: hard
 
@@ -5560,6 +5545,13 @@ __metadata:
   version: 7.0.0
   resolution: "dargs@npm:7.0.0"
   checksum: b8f1e3cba59c42e1f13a114ad4848c3fc1cf7470f633ee9e9f1043762429bc97d91ae31b826fb135eefde203a3fdb20deb0c0a0222ac29d937b8046085d668d1
+  languageName: node
+  linkType: hard
+
+"dargs@npm:^8.0.0":
+  version: 8.1.0
+  resolution: "dargs@npm:8.1.0"
+  checksum: 33f1b8f5f08e72c8a28355a87c0e1a9b6a0fec99252ecd9cf4735e65dd5f2e19747c860251ed5747b38e7204c7915fd7a7146aee5aaef5882c69169aae8b1d09
   languageName: node
   linkType: hard
 
@@ -7169,7 +7161,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"git-cliff@npm:^1.2.0":
+"git-cliff@npm:~1.2.0":
   version: 1.2.0
   resolution: "git-cliff@npm:1.2.0"
   dependencies:
@@ -7220,28 +7212,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"git-raw-commits@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "git-raw-commits@npm:3.0.0"
+"git-raw-commits@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "git-raw-commits@npm:4.0.0"
   dependencies:
-    dargs: ^7.0.0
-    meow: ^8.1.2
-    split2: ^3.2.2
+    dargs: ^8.0.0
+    meow: ^12.0.1
+    split2: ^4.0.0
   bin:
-    git-raw-commits: cli.js
-  checksum: 198892f307829d22fc8ec1c9b4a63876a1fde847763857bb74bd1b04c6f6bc0d7464340c25d0f34fd0fb395759363aa1f8ce324357027320d80523bf234676ab
+    git-raw-commits: cli.mjs
+  checksum: 95546f4afcb33cf00ff638f7fec55ad61d4d927447737900e1f6fcbbdbb341b3f150908424cc62acb6d9faaea6f1e8f55d0697b899f0589af9d2733afb20abfb
   languageName: node
   linkType: hard
 
-"git-semver-tags@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "git-semver-tags@npm:5.0.0"
+"git-semver-tags@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "git-semver-tags@npm:6.0.0"
   dependencies:
-    meow: ^8.1.2
-    semver: ^6.3.0
+    meow: ^12.0.1
+    semver: ^7.5.2
   bin:
-    git-semver-tags: cli.js
-  checksum: 837d47ba46711e464fbddc6850adb1d8e715e1529ef0951171cbd7fcba3e44b2cb8011f66a9c9e1b86d687178a55258b061fbedf7c23afdc3f116f26be565aa4
+    git-semver-tags: cli.mjs
+  checksum: 9e95149630c65ae6195ef40d9faeb9b4fc8b8fcf67c92fa6d31333388a0636a9fadc1a63489c1353eb52caa64b26728075cd488be81d7edd6ce19312cc51a42d
   languageName: node
   linkType: hard
 
@@ -8207,6 +8199,15 @@ __metadata:
   dependencies:
     text-extensions: ^1.0.0
   checksum: fb5d78752c22b3f73a7c9540768f765ffcfa38c9e421e2b9af869565307fa1ae5e3d3a2ba016a43549742856846566d327da406e94a5846ec838a288b1704fd2
+  languageName: node
+  linkType: hard
+
+"is-text-path@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "is-text-path@npm:2.0.0"
+  dependencies:
+    text-extensions: ^2.0.0
+  checksum: 3a8725fc7c0d4c7741a97993bc2fecc09a0963660394d3ee76145274366c98ad57c6791d20d4ef829835f573b1137265051c05ecd65fbe72f69bb9ab9e3babbd
   languageName: node
   linkType: hard
 
@@ -9312,13 +9313,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.ismatch@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "lodash.ismatch@npm:4.4.0"
-  checksum: a393917578842705c7fc1a30fb80613d1ac42d20b67eb26a2a6004d6d61ee90b419f9eb320508ddcd608e328d91eeaa2651411727eaa9a12534ed6ccb02fc705
-  languageName: node
-  linkType: hard
-
 "lodash.isplainobject@npm:^4.0.6":
   version: 4.0.6
   resolution: "lodash.isplainobject@npm:4.0.6"
@@ -9595,6 +9589,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"meow@npm:^12.0.1":
+  version: 12.1.1
+  resolution: "meow@npm:12.1.1"
+  checksum: a6f3be85fbe53430ef53ab933dd790c39216eb4dbaabdbef593aa59efb40ecaa417897000175476bc33eed09e4cbce01df7ba53ba91e9a4bd84ec07024cb8914
+  languageName: node
+  linkType: hard
+
 "meow@npm:^8.0.0, meow@npm:^8.1.2":
   version: 8.1.2
   resolution: "meow@npm:8.1.2"
@@ -9810,13 +9811,6 @@ __metadata:
   bin:
     mkdirp: bin/cmd.js
   checksum: a96865108c6c3b1b8e1d5e9f11843de1e077e57737602de1b82030815f311be11f96f09cce59bd5b903d0b29834733e5313f9301e3ed6d6f6fba2eae0df4298f
-  languageName: node
-  linkType: hard
-
-"modify-values@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "modify-values@npm:1.0.1"
-  checksum: 8296610c608bc97b03c2cf889c6cdf4517e32fa2d836440096374c2209f6b7b3e256c209493a0b32584b9cb32d528e99d0dd19dcd9a14d2d915a312d391cc7e9
   languageName: node
   linkType: hard
 
@@ -10884,17 +10878,17 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.7.1
     "@commitlint/config-conventional": ^17.7.0
-    "@favware/cliff-jumper": ^2.1.1
-    "@sapphire/eslint-config": ^5.0.1
+    "@favware/cliff-jumper": ^2.1.2
+    "@sapphire/eslint-config": ^5.0.2
     "@sapphire/prettier-config": ^2.0.0
-    "@sapphire/ts-config": ^4.0.1
+    "@sapphire/ts-config": ^5.0.0
     "@testing-library/jest-dom": ^6.1.2
     "@testing-library/react": ^14.0.0
-    "@types/node": ^18.17.11
+    "@types/node": ^18.17.12
     "@types/react": ^18.2.21
     "@types/react-dom": ^18.2.7
-    "@typescript-eslint/eslint-plugin": ^6.4.1
-    "@typescript-eslint/parser": ^6.4.1
+    "@typescript-eslint/eslint-plugin": ^6.5.0
+    "@typescript-eslint/parser": ^6.5.0
     cz-conventional-changelog: ^3.3.0
     dts-cli: ^2.0.3
     eslint: ^8.48.0
@@ -10908,7 +10902,7 @@ __metadata:
     husky: ^8.0.3
     lint-staged: ^14.0.1
     pinst: ^3.0.0
-    prettier: ^3.0.2
+    prettier: ^3.0.3
     react: ^18.2.0
     react-dom: ^18.2.0
     ts-jest: ^29.1.1
@@ -11455,7 +11449,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:7.5.4, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.3.8, semver@npm:^7.5.1, semver@npm:^7.5.2, semver@npm:^7.5.3, semver@npm:^7.5.4":
+"semver@npm:7.5.4, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.3.8, semver@npm:^7.5.2, semver@npm:^7.5.3, semver@npm:^7.5.4":
   version: 7.5.4
   resolution: "semver@npm:7.5.4"
   dependencies:
@@ -11713,6 +11707,13 @@ __metadata:
   dependencies:
     readable-stream: ^3.0.0
   checksum: 8127ddbedd0faf31f232c0e9192fede469913aa8982aa380752e0463b2e31c2359ef6962eb2d24c125bac59eeec76873678d723b1c7ff696216a1cd071e3994a
+  languageName: node
+  linkType: hard
+
+"split2@npm:^4.0.0":
+  version: 4.2.0
+  resolution: "split2@npm:4.2.0"
+  checksum: 05d54102546549fe4d2455900699056580cca006c0275c334611420f854da30ac999230857a85fdd9914dc2109ae50f80fda43d2a445f2aa86eccdc1dfce779d
   languageName: node
   linkType: hard
 
@@ -12147,6 +12148,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"text-extensions@npm:^2.0.0":
+  version: 2.4.0
+  resolution: "text-extensions@npm:2.4.0"
+  checksum: 9bdbc9959e004ccc86a6ec076d6c5bb6765978263e9d0d5febb640d7675c09919ea912f3fe9d50b68c3c7c43cc865610a7cb24954343abb31f74c205fbae4e45
+  languageName: node
+  linkType: hard
+
 "text-table@npm:^0.2.0":
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
@@ -12385,6 +12393,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:^2.6.2":
+  version: 2.6.2
+  resolution: "tslib@npm:2.6.2"
+  checksum: 329ea56123005922f39642318e3d1f0f8265d1e7fcb92c633e0809521da75eeaca28d2cf96d7248229deb40e5c19adf408259f4b9640afd20d13aecc1430f3ad
+  languageName: node
+  linkType: hard
+
 "tsutils@npm:^3.21.0":
   version: 3.21.0
   resolution: "tsutils@npm:3.21.0"
@@ -12547,7 +12562,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.6.4 || ^5.0.0, typescript@npm:^5.0.2, typescript@npm:^5.0.3, typescript@npm:^5.1.6, typescript@npm:^5.2.2":
+"typescript@npm:^4.6.4 || ^5.0.0, typescript@npm:^5.0.2, typescript@npm:^5.2.2":
   version: 5.2.2
   resolution: "typescript@npm:5.2.2"
   bin:
@@ -12557,7 +12572,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.6.4 || ^5.0.0#~builtin<compat/typescript>, typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>, typescript@patch:typescript@^5.0.3#~builtin<compat/typescript>, typescript@patch:typescript@^5.1.6#~builtin<compat/typescript>, typescript@patch:typescript@^5.2.2#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.6.4 || ^5.0.0#~builtin<compat/typescript>, typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>, typescript@patch:typescript@^5.2.2#~builtin<compat/typescript>":
   version: 5.2.2
   resolution: "typescript@patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"
   bin:

@@ -1,10 +1,10 @@
-import React, { FC, Fragment, ReactElement } from 'react';
+import React, { Fragment, type FC, type ReactElement } from 'react';
 import { Else } from './Else';
 import { Fallback } from './Fallback';
-import { getConditionResult } from './getConditionResults';
 import { IfAsync } from './IfAsync';
-import { isThenable } from './isThenable';
 import { Then } from './Then';
+import { getConditionResult } from './getConditionResults';
+import { isThenable } from './isThenable';
 import { tinyWarning } from './tinyWarning';
 import type { ComponentWithConditionPropsAsyncSupport, ExtendablePromise } from './types';
 

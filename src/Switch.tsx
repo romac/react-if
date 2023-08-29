@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { type ReactElement } from 'react';
 import { Case } from './Case';
 import { Default } from './Default';
 import { getConditionResult } from './getConditionResults';

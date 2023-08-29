@@ -5,6 +5,6 @@ export * from './Fallback';
 export * from './If';
 export * from './Switch';
 export * from './Then';
-export * from './types';
 export * from './Unless';
 export * from './When';
+export * from './types';

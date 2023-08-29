@@ -1,9 +1,9 @@
-import React, { Fragment, useEffect, useMemo, useRef, useState, PropsWithChildren, ReactElement } from 'react';
+import React, { Fragment, useEffect, useMemo, useRef, useState, type PropsWithChildren, type ReactElement } from 'react';
 import { Else } from './Else';
 import { Fallback } from './Fallback';
+import { Then } from './Then';
 import { useSingleton } from './hooks';
 import { isThenable } from './isThenable';
-import { Then } from './Then';
 import type { AsyncSupportProps, CancellablePromise, ExtendablePromise } from './types';
 import { createCancellablePromise } from './utils';
 
