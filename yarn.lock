@@ -5508,16 +5508,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^3.7.4":
-  version: 3.7.4
-  resolution: "daisyui@npm:3.7.4"
+"daisyui@npm:^3.7.5":
+  version: 3.7.5
+  resolution: "daisyui@npm:3.7.5"
   dependencies:
     colord: ^2.9
     css-selector-tokenizer: ^0.8
     postcss: ^8
     postcss-js: ^4
     tailwindcss: ^3
-  checksum: 94ace10f70db46403368ee3da83117f3a6e84c7df35d1f9ad7ea502fc1cb406293cd95baa4dc0f28a45c60d04b1e5b4131df64348d7a3ddcd8ee6f6cd77aad5d
+  checksum: 5bc5a8bcb9175d080f18162c64def552abfc6add8df5093721901a4faea6d3972311ecfa86a86239d3a209f2214b3b69ace3a1002b590704a014b4c4440a2bde
   languageName: node
   linkType: hard
 
@@ -10851,7 +10851,7 @@ __metadata:
   resolution: "react-if-demo@workspace:demo"
   dependencies:
     autoprefixer: ^10.4.15
-    daisyui: ^3.7.4
+    daisyui: ^3.7.5
     parcel: ^2.9.3
     postcss: ^8.4.29
     tailwindcss: ^3.3.3
