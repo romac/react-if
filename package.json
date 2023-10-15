@@ -35,9 +35,7 @@
     "docs": "typedoc",
     "bump": "cliff-jumper",
     "check-update": "cliff-jumper --dry-run",
-    "prepack": "yarn build && pinst --disable",
-    "postinstall": "husky install .github/husky",
-    "postpack": "pinst --enable"
+    "prepack": "yarn build"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.8.0",
@@ -63,9 +61,7 @@
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^8.0.3",
     "lint-staged": "^15.0.0",
-    "pinst": "^3.0.0",
     "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
