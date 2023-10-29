@@ -3585,14 +3585,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
-  version: 20.5.1
-  resolution: "@types/node@npm:20.5.1"
-  checksum: 3dbe611cd67afa987102c8558ee70f848949c5dcfee5f60abc073e55c0d7b048e391bf06bb1e0dc052cb7210ca97136ac496cbaf6e89123c989de6bd125fde82
+"@types/node@npm:*, @types/node@npm:^20.8.9":
+  version: 20.8.9
+  resolution: "@types/node@npm:20.8.9"
+  dependencies:
+    undici-types: ~5.26.4
+  checksum: 0c05f3502a9507ff27e91dd6fd574fa6f391b3fafedcfe8e0c8d33351fb22d02c0121f854e5b6b3ecb9a8a468407ddf6e7ac0029fb236d4c7e1361ffc758a01f
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.11.9, @types/node@npm:^18.18.7":
+"@types/node@npm:^18.11.9":
   version: 18.18.7
   resolution: "@types/node@npm:18.18.7"
   dependencies:
@@ -10897,7 +10899,7 @@ __metadata:
     "@sapphire/ts-config": ^5.0.0
     "@testing-library/jest-dom": ^6.1.4
     "@testing-library/react": ^14.0.0
-    "@types/node": ^18.18.7
+    "@types/node": ^20.8.9
     "@types/react": ^18.2.33
     "@types/react-dom": ^18.2.14
     "@typescript-eslint/eslint-plugin": ^6.9.0
