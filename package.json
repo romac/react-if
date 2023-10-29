@@ -112,5 +112,5 @@
     "@types/testing-library__jest-dom@^5.14.8": "patch:@types/testing-library__jest-dom@npm%3A5.14.7#./.yarn/patches/@types-testing-library__jest-dom-npm-5.14.7-9c1df8c5da.patch",
     "@types/testing-library__jest-dom@^5.9.1": "patch:@types/testing-library__jest-dom@npm%3A5.14.7#./.yarn/patches/@types-testing-library__jest-dom-npm-5.14.7-9c1df8c5da.patch"
   },
-  "packageManager": "yarn@3.6.4"
+  "packageManager": "yarn@4.0.1"
 }
