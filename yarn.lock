@@ -1506,13 +1506,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^18.4.0":
-  version: 18.4.0
-  resolution: "@commitlint/cli@npm:18.4.0"
+"@commitlint/cli@npm:^18.4.1":
+  version: 18.4.1
+  resolution: "@commitlint/cli@npm:18.4.1"
   dependencies:
     "@commitlint/format": "npm:^18.4.0"
     "@commitlint/lint": "npm:^18.4.0"
-    "@commitlint/load": "npm:^18.4.0"
+    "@commitlint/load": "npm:^18.4.1"
     "@commitlint/read": "npm:^18.4.0"
     "@commitlint/types": "npm:^18.4.0"
     execa: "npm:^5.0.0"
@@ -1522,7 +1522,7 @@ __metadata:
     yargs: "npm:^17.0.0"
   bin:
     commitlint: cli.js
-  checksum: e23220a58f95948e6b235ee5c7cfaffced8e92f76a242ca45cb061cf21f246adefa79de920eae647ee552877b75f2796cf3e597b571192cdad267772d8ea17e5
+  checksum: 08354788971437ef6b4693564d1a0476b0f89ce89f9d0257f7885af525904c1ba2a0dafa7321d635bc7a034ea4dbef978f5b662ef524d545ec8e8db98888b54b
   languageName: node
   linkType: hard
 
@@ -1598,9 +1598,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/load@npm:>6.1.1, @commitlint/load@npm:^18.4.0":
-  version: 18.4.0
-  resolution: "@commitlint/load@npm:18.4.0"
+"@commitlint/load@npm:>6.1.1, @commitlint/load@npm:^18.4.1":
+  version: 18.4.1
+  resolution: "@commitlint/load@npm:18.4.1"
   dependencies:
     "@commitlint/config-validator": "npm:^18.4.0"
     "@commitlint/execute-rule": "npm:^18.4.0"
@@ -1608,13 +1608,13 @@ __metadata:
     "@commitlint/types": "npm:^18.4.0"
     "@types/node": "npm:^18.11.9"
     chalk: "npm:^4.1.0"
-    cosmiconfig: "npm:^8.0.0"
+    cosmiconfig: "npm:^8.3.6"
     cosmiconfig-typescript-loader: "npm:^5.0.0"
     lodash.isplainobject: "npm:^4.0.6"
     lodash.merge: "npm:^4.6.2"
     lodash.uniq: "npm:^4.5.0"
     resolve-from: "npm:^5.0.0"
-  checksum: c84655f211aad44d52e2e9e08a6a760b47a412433b026be7751b43fbb838f98e240f670783c39058ebb9e4e854f4edb06e4c55facc1cf7bf22a049e7786211f7
+  checksum: 77cb8b02c39fd0a28214cea898811100b1b0c33047914a9294df862ad0c75965b3000ddb1806a5e89054141ce5217419b419d5d3d9bcf757e904f34b530d7474
   languageName: node
   linkType: hard
 
@@ -5368,15 +5368,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cosmiconfig@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "cosmiconfig@npm:8.0.0"
+"cosmiconfig@npm:^8.3.6":
+  version: 8.3.6
+  resolution: "cosmiconfig@npm:8.3.6"
   dependencies:
-    import-fresh: "npm:^3.2.1"
+    import-fresh: "npm:^3.3.0"
     js-yaml: "npm:^4.1.0"
-    parse-json: "npm:^5.0.0"
+    parse-json: "npm:^5.2.0"
     path-type: "npm:^4.0.0"
-  checksum: 623c09750d32328383b6d3eaafcb0b9c3d610c142479a594528d8122a97e741725534158cbc6c6c313e66bcdb82dac440f5e32446ed79bab501e55e57a7b3119
+  peerDependencies:
+    typescript: ">=4.9.5"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 91d082baca0f33b1c085bf010f9ded4af43cbedacba8821da0fb5667184d0a848addc52c31fadd080007f904a555319c238cf5f4c03e6d58ece2e4876b2e73d6
   languageName: node
   linkType: hard
 
@@ -7729,7 +7734,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"import-fresh@npm:^3.0.0, import-fresh@npm:^3.2.1":
+"import-fresh@npm:^3.0.0, import-fresh@npm:^3.2.1, import-fresh@npm:^3.3.0":
   version: 3.3.0
   resolution: "import-fresh@npm:3.3.0"
   dependencies:
@@ -10661,12 +10666,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "prettier@npm:3.0.3"
+"prettier@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "prettier@npm:3.1.0"
   bin:
     prettier: bin/prettier.cjs
-  checksum: ccf1ead9794b017be6b42d0873f459070beef2069eb393c8b4c0d11aa3430acefc54f6d5f44a5b7ce9af05ad8daf694b912f0aa2808d1c22dfa86e61e9d563f8
+  checksum: e95e8f93c6b9aea2ac1e86bebe329bee90c8c50d9a23d1f593eba8d7f39b33b3641eb28785001505b6723c47895a5322ad12a2fb855b289cb7bae450ffc34425
   languageName: node
   linkType: hard
 
@@ -10839,7 +10844,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "react-if@workspace:."
   dependencies:
-    "@commitlint/cli": "npm:^18.4.0"
+    "@commitlint/cli": "npm:^18.4.1"
     "@commitlint/config-conventional": "npm:^18.4.0"
     "@favware/cliff-jumper": "npm:^2.2.1"
     "@sapphire/eslint-config": "npm:^5.0.2"
@@ -10863,7 +10868,7 @@ __metadata:
     eslint-plugin-react: "npm:^7.33.2"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     lint-staged: "npm:^15.1.0"
-    prettier: "npm:^3.0.3"
+    prettier: "npm:^3.1.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     ts-jest: "npm:^29.1.1"

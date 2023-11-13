@@ -38,7 +38,7 @@
     "prepack": "yarn build"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.4.0",
+    "@commitlint/cli": "^18.4.1",
     "@commitlint/config-conventional": "^18.4.0",
     "@favware/cliff-jumper": "^2.2.1",
     "@sapphire/eslint-config": "^5.0.2",
@@ -62,7 +62,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "lint-staged": "^15.1.0",
-    "prettier": "^3.0.3",
+    "prettier": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ts-jest": "^29.1.1",
@@ -90,7 +90,7 @@
     }
   },
   "resolutions": {
-    "prettier": "^3.0.3",
+    "prettier": "^3.1.0",
     "@types/react-dom": "^18.2.15",
     "@types/react": "^18.2.37",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
