@@ -5135,13 +5135,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colord@npm:^2.9":
-  version: 2.9.3
-  resolution: "colord@npm:2.9.3"
-  checksum: 907a4506d7307e2f580b471b581e992181ed75ab0c6925ece9ca46d88161d2fc50ed15891cd0556d0d9321237ca75afc9d462e4c050b939ef88428517f047f30
-  languageName: node
-  linkType: hard
-
 "colorette@npm:^2.0.20":
   version: 2.0.20
   resolution: "colorette@npm:2.0.20"
@@ -5498,6 +5491,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"culori@npm:^3":
+  version: 3.2.0
+  resolution: "culori@npm:3.2.0"
+  checksum: 8ccef28ec0fe45e9e380f391fcb351515cdd41f4f251b6db55dbc90c7c4853f0f8cf0636578b9f04338a713022c4cc54cd816e711a7963765703004ee526cea6
+  languageName: node
+  linkType: hard
+
 "cz-conventional-changelog@npm:^3.3.0":
   version: 3.3.0
   resolution: "cz-conventional-changelog@npm:3.3.0"
@@ -5516,16 +5516,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^3.9.4":
-  version: 3.9.4
-  resolution: "daisyui@npm:3.9.4"
+"daisyui@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "daisyui@npm:4.4.2"
   dependencies:
-    colord: "npm:^2.9"
     css-selector-tokenizer: "npm:^0.8"
-    postcss: "npm:^8"
+    culori: "npm:^3"
+    picocolors: "npm:^1"
     postcss-js: "npm:^4"
-    tailwindcss: "npm:^3.1"
-  checksum: 1b0dffb93f3f694ac8e7ea9c7151e87bc9187a1b9d8e6731117660e9abc8bdae002c2902299061fb863966682a5b2d7cba7f23e3272ad11c1ef10901c4e839ef
+  checksum: 701fd5c2c3f88398706bfdc0671d03b728ebaae615aff0518896776488d87f36b8f8e03133b3561df5dbfdafe9a781de49fd6a1909d298fd9ea64b54eb95ea4b
   languageName: node
   linkType: hard
 
@@ -10479,7 +10478,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picocolors@npm:^1.0.0":
+"picocolors@npm:^1, picocolors@npm:^1.0.0":
   version: 1.0.0
   resolution: "picocolors@npm:1.0.0"
   checksum: a2e8092dd86c8396bdba9f2b5481032848525b3dc295ce9b57896f931e63fc16f79805144321f72976383fc249584672a75cc18d6777c6b757603f372f745981
@@ -10595,7 +10594,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8, postcss@npm:^8.4.20, postcss@npm:^8.4.23, postcss@npm:^8.4.31":
+"postcss@npm:^8.4.20, postcss@npm:^8.4.23, postcss@npm:^8.4.31":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
   dependencies:
@@ -10832,7 +10831,7 @@ __metadata:
   resolution: "react-if-demo@workspace:demo"
   dependencies:
     autoprefixer: "npm:^10.4.16"
-    daisyui: "npm:^3.9.4"
+    daisyui: "npm:^4.4.2"
     parcel: "npm:^2.10.2"
     postcss: "npm:^8.4.31"
     tailwindcss: "npm:^3.3.5"
@@ -12056,7 +12055,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.1, tailwindcss@npm:^3.3.5":
+"tailwindcss@npm:^3.3.5":
   version: 3.3.5
   resolution: "tailwindcss@npm:3.3.5"
   dependencies:
