@@ -5516,15 +5516,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^4.4.7":
-  version: 4.4.7
-  resolution: "daisyui@npm:4.4.7"
+"daisyui@npm:^4.4.8":
+  version: 4.4.8
+  resolution: "daisyui@npm:4.4.8"
   dependencies:
     css-selector-tokenizer: "npm:^0.8"
     culori: "npm:^3"
     picocolors: "npm:^1"
     postcss-js: "npm:^4"
-  checksum: 37551a0e501164573679fda55a5a4dc01cde1f890ff7e50b8435328ac2d50a581cbde094accaad8ad726218647f442e28839ca76815fa21b3cb0faef97c53a17
+  checksum: 78ed4f11666b4f260e1ff96288656706782afe5828a47e9de537e124fd88bb8babf879e6a03ae01f679977f636e85e5756a8ec23aa68fda1da224f1a0e240759
   languageName: node
   linkType: hard
 
@@ -10831,7 +10831,7 @@ __metadata:
   resolution: "react-if-demo@workspace:demo"
   dependencies:
     autoprefixer: "npm:^10.4.16"
-    daisyui: "npm:^4.4.7"
+    daisyui: "npm:^4.4.8"
     parcel: "npm:^2.10.3"
     postcss: "npm:^8.4.31"
     tailwindcss: "npm:^3.3.5"
