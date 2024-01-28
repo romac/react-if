@@ -3587,12 +3587,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.11.8":
-  version: 20.11.8
-  resolution: "@types/node@npm:20.11.8"
+"@types/node@npm:*, @types/node@npm:^20.11.9":
+  version: 20.11.9
+  resolution: "@types/node@npm:20.11.9"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 09aceafd6f2a0aa4b22081cd23e66193cf9032f627cf30b94db76a16cbce9e758fa6e9cc118c46678b9520764d1915d89be5d5df5049b2dcf1d5f79e3a350586
+  checksum: 5683ec162f7975119b9c9b026f00bfc8e4fcd02d87ba106787685765fe042b8c16b71241baec043b6ac19caa343fe4e0edcb252c74943c36b98fadd72c8924fe
   languageName: node
   linkType: hard
 
@@ -10875,7 +10875,7 @@ __metadata:
     "@sapphire/ts-config": "npm:^5.0.0"
     "@testing-library/jest-dom": "npm:^6.3.0"
     "@testing-library/react": "npm:^14.1.2"
-    "@types/node": "npm:^20.11.8"
+    "@types/node": "npm:^20.11.9"
     "@types/react": "npm:^18.2.48"
     "@types/react-dom": "npm:^18.2.18"
     "@typescript-eslint/eslint-plugin": "npm:^6.19.1"
