@@ -4,7 +4,8 @@
     "checkJs": true,
     "allowJs": true,
     "noEmit": true,
-    "incremental": false
+    "incremental": false,
+    "skipLibCheck": true
   },
   "include": ["src", "test", "demo", "./jest.config.js"],
   "exclude": ["demo/dist"]
