@@ -38,19 +38,19 @@
     "prepack": "yarn build"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.2.0",
+    "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
     "@favware/cliff-jumper": "^3.0.1",
     "@sapphire/eslint-config": "^5.0.4",
     "@sapphire/prettier-config": "^2.0.0",
     "@sapphire/ts-config": "^5.0.1",
     "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^14.2.1",
-    "@types/node": "^20.11.28",
-    "@types/react": "^18.2.66",
+    "@testing-library/react": "^14.2.2",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.69",
     "@types/react-dom": "^18.2.22",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "dts-cli": "^2.0.4",
     "eslint": "^8.57.0",
@@ -67,7 +67,7 @@
     "react-dom": "^18.2.0",
     "ts-jest": "^29.1.2",
     "typedoc": "^0.25.12",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3"
   },
   "engines": {
     "node": ">=12"
@@ -92,9 +92,9 @@
   "resolutions": {
     "prettier": "^3.2.5",
     "@types/react-dom": "^18.2.22",
-    "@types/react": "^18.2.66",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
+    "@types/react": "^18.2.69",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-react-app": "^7.0.1",
