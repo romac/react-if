@@ -1,3 +1,4 @@
 {
+  "files.eol": "\n",
   "jestrunner.jestCommand": "npm run test --"
 }
