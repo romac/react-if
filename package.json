@@ -47,7 +47,7 @@
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.0.0",
-    "@types/node": "^20.14.12",
+    "@types/node": "^20.14.14",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
@@ -62,11 +62,11 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "lint-staged": "^15.2.7",
+    "lint-staged": "^15.2.8",
     "prettier": "^3.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "ts-jest": "^29.2.3",
+    "ts-jest": "^29.2.4",
     "typedoc": "^0.26.1",
     "typescript": "^5.5.2"
   },
@@ -113,5 +113,5 @@
     "@types/testing-library__jest-dom@^5.14.8": "patch:@types/testing-library__jest-dom@npm%3A5.14.7#./.yarn/patches/@types-testing-library__jest-dom-npm-5.14.7-9c1df8c5da.patch",
     "@types/testing-library__jest-dom@^5.9.1": "patch:@types/testing-library__jest-dom@npm%3A5.14.7#./.yarn/patches/@types-testing-library__jest-dom-npm-5.14.7-9c1df8c5da.patch"
   },
-  "packageManager": "yarn@4.3.1"
+  "packageManager": "yarn@4.4.0"
 }
