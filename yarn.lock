@@ -3637,9 +3637,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^6.6.2":
-  version: 6.6.2
-  resolution: "@testing-library/jest-dom@npm:6.6.2"
+"@testing-library/jest-dom@npm:^6.6.3":
+  version: 6.6.3
+  resolution: "@testing-library/jest-dom@npm:6.6.3"
   dependencies:
     "@adobe/css-tools": "npm:^4.4.0"
     aria-query: "npm:^5.0.0"
@@ -3648,7 +3648,7 @@ __metadata:
     dom-accessibility-api: "npm:^0.6.3"
     lodash: "npm:^4.17.21"
     redent: "npm:^3.0.0"
-  checksum: 10/c5f1ac369e685ea7c17eff190f2e9996e6e54615a3048c3c00cbbbec48f94c557d348ba935a7e8170efbbb109c035785952f6e46d0c03edb18e9a8cc55f8f118
+  checksum: 10/1f3427e45870eab9dcc59d6504b780d4a595062fe1687762ae6e67d06a70bf439b40ab64cf58cbace6293a99e3764d4647fdc8300a633b721764f5ce39dade18
   languageName: node
   linkType: hard
 
@@ -3864,12 +3864,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.17.1":
-  version: 20.17.1
-  resolution: "@types/node@npm:20.17.1"
+"@types/node@npm:*, @types/node@npm:^20.17.6":
+  version: 20.17.6
+  resolution: "@types/node@npm:20.17.6"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10/d1f4cd7158df97167953031f7245af3203f52b5f4965c175253b96489c7c55e4c2d4c8a697bb34211bfb99b8824cfcf6287e16cabdac6184a99eedcb26fdd432
+  checksum: 10/714b8b54951950cee662ce80492831ebc51f914a9adf88583cea777ea4d55b88827b2505ff2f53d2bb7753691aaab1b06c027a7b5c63eb153ad4acee1239690c
   languageName: node
   linkType: hard
 
@@ -5778,15 +5778,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^4.12.13":
-  version: 4.12.13
-  resolution: "daisyui@npm:4.12.13"
+"daisyui@npm:^4.12.14":
+  version: 4.12.14
+  resolution: "daisyui@npm:4.12.14"
   dependencies:
     css-selector-tokenizer: "npm:^0.8"
     culori: "npm:^3"
     picocolors: "npm:^1"
     postcss-js: "npm:^4"
-  checksum: 10/e4f86d2f0018582b07cb649312bbfdcd48a4747e9db888f98f8f66b2c859cafb0bd4d5e8cf6cfb7f35f75d18c14a9a969751e71496400a340fa16738ca888dae
+  checksum: 10/9e37cef21ec2ee9de777335a79cd8b32e98f7a32d0f700d7767d547f3e3cacd417f1bf4c51c6b04dacc3edbeeb98ff52abe54124f6464505c62e3b533459da8c
   languageName: node
   linkType: hard
 
@@ -11150,7 +11150,7 @@ __metadata:
   resolution: "react-if-demo@workspace:demo"
   dependencies:
     autoprefixer: "npm:^10.4.20"
-    daisyui: "npm:^4.12.13"
+    daisyui: "npm:^4.12.14"
     parcel: "npm:^2.12.0"
     postcss: "npm:^8.4.47"
     tailwindcss: "npm:^3.4.14"
@@ -11169,9 +11169,9 @@ __metadata:
     "@sapphire/prettier-config": "npm:^2.0.0"
     "@sapphire/ts-config": "npm:^5.0.1"
     "@testing-library/dom": "npm:^10.4.0"
-    "@testing-library/jest-dom": "npm:^6.6.2"
+    "@testing-library/jest-dom": "npm:^6.6.3"
     "@testing-library/react": "npm:^16.0.1"
-    "@types/node": "npm:^20.17.1"
+    "@types/node": "npm:^20.17.6"
     "@types/react": "npm:^18.3.12"
     "@types/react-dom": "npm:^18.3.1"
     "@typescript-eslint/eslint-plugin": "npm:^7.13.1"
