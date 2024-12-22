@@ -38,7 +38,7 @@
     "prepack": "yarn build"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.0",
+    "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
     "@favware/cliff-jumper": "^5.0.0",
     "@sapphire/eslint-config": "^5.0.5",
@@ -48,7 +48,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
     "@types/node": "^22.10.2",
-    "@types/react": "^18.3.16",
+    "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
@@ -93,7 +93,7 @@
   "resolutions": {
     "prettier": "^3.4.2",
     "@types/react-dom": "^18.3.5",
-    "@types/react": "^18.3.16",
+    "@types/react": "^18.3.18",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
     "cz-conventional-changelog": "^3.3.0",
