@@ -13,7 +13,7 @@
     "autoprefixer": "^10.4.20",
     "daisyui": "^4.12.23",
     "parcel": "^2.13.3",
-    "postcss": "^8.5.2",
+    "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.5.2"
   }
