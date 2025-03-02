@@ -5712,16 +5712,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-selector-tokenizer@npm:^0.8":
-  version: 0.8.0
-  resolution: "css-selector-tokenizer@npm:0.8.0"
-  dependencies:
-    cssesc: "npm:^3.0.0"
-    fastparse: "npm:^1.1.2"
-  checksum: 10/1eb7ca7d2c21ede700a0fab7df4547198431c30ba62663d81a566a8abe6ab7524f627ce6c0bde63f34917e199b73be4081e449bd8faf107d155766204082aa0a
-  languageName: node
-  linkType: hard
-
 "css.escape@npm:^1.5.1":
   version: 1.5.1
   resolution: "css.escape@npm:1.5.1"
@@ -5768,13 +5758,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"culori@npm:^3":
-  version: 3.2.0
-  resolution: "culori@npm:3.2.0"
-  checksum: 10/8ccef28ec0fe45e9e380f391fcb351515cdd41f4f251b6db55dbc90c7c4853f0f8cf0636578b9f04338a713022c4cc54cd816e711a7963765703004ee526cea6
-  languageName: node
-  linkType: hard
-
 "cz-conventional-changelog@npm:^3.3.0":
   version: 3.3.0
   resolution: "cz-conventional-changelog@npm:3.3.0"
@@ -5793,15 +5776,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^4.12.24":
-  version: 4.12.24
-  resolution: "daisyui@npm:4.12.24"
-  dependencies:
-    css-selector-tokenizer: "npm:^0.8"
-    culori: "npm:^3"
-    picocolors: "npm:^1"
-    postcss-js: "npm:^4"
-  checksum: 10/a721117a9a9aa411afb3c8199d881771f5f7de3b034be9510e7d5b9df5d74ee1767592701ce96f7fd8d6481dc85e6dc30be137e71031c4e71a3492c813f0ce6e
+"daisyui@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "daisyui@npm:5.0.0"
+  checksum: 10/7b68783e9ea20b5e73d2137feb75b33c841bbe799f5e439a0fc36fd228cccc76d85d72db4b6bf09f3aba2c948274d8b8117a777ba70cc6d624cf653aeeac1a52
   languageName: node
   linkType: hard
 
@@ -7153,13 +7131,6 @@ __metadata:
   version: 2.0.6
   resolution: "fast-levenshtein@npm:2.0.6"
   checksum: 10/eb7e220ecf2bab5159d157350b81d01f75726a4382f5a9266f42b9150c4523b9795f7f5d9fbbbeaeac09a441b2369f05ee02db48ea938584205530fe5693cfe1
-  languageName: node
-  linkType: hard
-
-"fastparse@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "fastparse@npm:1.1.2"
-  checksum: 10/c4d199809dc4e8acafeb786be49481cc9144de296e2d54df4540ccfd868d0df73afc649aba70a748925eb32bbc4208b723d6288adf92382275031a8c7e10c0aa
   languageName: node
   linkType: hard
 
@@ -10924,7 +10895,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picocolors@npm:^1, picocolors@npm:^1.0.0, picocolors@npm:^1.0.1, picocolors@npm:^1.1.1":
+"picocolors@npm:^1.0.0, picocolors@npm:^1.0.1, picocolors@npm:^1.1.1":
   version: 1.1.1
   resolution: "picocolors@npm:1.1.1"
   checksum: 10/e1cf46bf84886c79055fdfa9dcb3e4711ad259949e3565154b004b260cd356c5d54b31a1437ce9782624bf766272fe6b0154f5f0c744fb7af5d454d2b60db045
@@ -10990,7 +10961,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-js@npm:^4, postcss-js@npm:^4.0.1":
+"postcss-js@npm:^4.0.1":
   version: 4.0.1
   resolution: "postcss-js@npm:4.0.1"
   dependencies:
@@ -11293,7 +11264,7 @@ __metadata:
   resolution: "react-if-demo@workspace:demo"
   dependencies:
     autoprefixer: "npm:^10.4.20"
-    daisyui: "npm:^4.12.24"
+    daisyui: "npm:^5.0.0"
     parcel: "npm:^2.13.3"
     postcss: "npm:^8.5.3"
     tailwindcss: "npm:^3.4.17"
