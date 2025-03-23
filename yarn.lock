@@ -2559,113 +2559,114 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/bundler-default@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/bundler-default@npm:2.13.3"
+"@parcel/bundler-default@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/bundler-default@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/graph": "npm:3.3.3"
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/rust": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/graph": "npm:3.4.1"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/rust": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     nullthrows: "npm:^1.1.1"
-  checksum: 10/4b4c87f3e2f96bdc80d15cfc9e5a191d08139c66e87b0f3f705708cba5ecd16ade76c5cf5469990e5ace79df8545fdc0af74e600d58dbe760928956c56d20081
+  checksum: 10/9f38196debcdbb46d269cbad5bfa3e328bcc88055bef5ab2495103fe9421c9385fe6c630fb00cfe6c398918214137d40ab09315452cd776f804a0b98a0568aa0
   languageName: node
   linkType: hard
 
-"@parcel/cache@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/cache@npm:2.13.3"
+"@parcel/cache@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/cache@npm:2.14.1"
   dependencies:
-    "@parcel/fs": "npm:2.13.3"
-    "@parcel/logger": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/fs": "npm:2.14.1"
+    "@parcel/logger": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     lmdb: "npm:2.8.5"
   peerDependencies:
-    "@parcel/core": ^2.13.3
-  checksum: 10/739c8b8f0184e784271b8c3c7eb5e2adc203a7c36ab6785cbfbbb3111aeb8e67323ea714a4cf1b14e3dc53db620b81fcfef16d346906a9e08ae986ec737f9d3b
+    "@parcel/core": ^2.14.1
+  checksum: 10/30be88a18d4564bb02fb57353d7a1e24f29e0e84fbf903c35e7428f8d9130538bf5b2b406bc0cde20574b3a80d423a81b8e5be7d3e111ccde4b27b6c40f75193
   languageName: node
   linkType: hard
 
-"@parcel/codeframe@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/codeframe@npm:2.13.3"
+"@parcel/codeframe@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/codeframe@npm:2.14.1"
   dependencies:
     chalk: "npm:^4.1.2"
-  checksum: 10/49f630944e380af5524165d28776f421625300b6fe738c4cd71d0cd8f7275af59c444f08339812ab5507a5e35ec754c0210ceb6392db240a90c59786ab408f8d
+  checksum: 10/9eb84faff2a525f702800d89fbe7333758fc12c2e57abc7aa7ad6e302d9ddf4427ea5a28aba7598f85c42992f4cda0a19de17836452b3a115fc48a4e2471fb33
   languageName: node
   linkType: hard
 
-"@parcel/compressor-raw@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/compressor-raw@npm:2.13.3"
+"@parcel/compressor-raw@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/compressor-raw@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-  checksum: 10/ec7ea23ef76132e214e8603a9da1dccf26abb9d8c5bbd1130b22817f89b93d4a184ef4e5fbe786d00dee9191d3932bc5b28b9cf9dc773f74b65cd1c18a95c7ac
+    "@parcel/plugin": "npm:2.14.1"
+  checksum: 10/124ed85c55540a85b40979cdabca1bcb8e9b8b41a04fb399e72b0d7612a27400f0a5f0d08902ffe044d6cf94ecd25b31b2734b57a01875564df62b9e73746063
   languageName: node
   linkType: hard
 
-"@parcel/config-default@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/config-default@npm:2.13.3"
+"@parcel/config-default@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/config-default@npm:2.14.1"
   dependencies:
-    "@parcel/bundler-default": "npm:2.13.3"
-    "@parcel/compressor-raw": "npm:2.13.3"
-    "@parcel/namer-default": "npm:2.13.3"
-    "@parcel/optimizer-css": "npm:2.13.3"
-    "@parcel/optimizer-htmlnano": "npm:2.13.3"
-    "@parcel/optimizer-image": "npm:2.13.3"
-    "@parcel/optimizer-svgo": "npm:2.13.3"
-    "@parcel/optimizer-swc": "npm:2.13.3"
-    "@parcel/packager-css": "npm:2.13.3"
-    "@parcel/packager-html": "npm:2.13.3"
-    "@parcel/packager-js": "npm:2.13.3"
-    "@parcel/packager-raw": "npm:2.13.3"
-    "@parcel/packager-svg": "npm:2.13.3"
-    "@parcel/packager-wasm": "npm:2.13.3"
-    "@parcel/reporter-dev-server": "npm:2.13.3"
-    "@parcel/resolver-default": "npm:2.13.3"
-    "@parcel/runtime-browser-hmr": "npm:2.13.3"
-    "@parcel/runtime-js": "npm:2.13.3"
-    "@parcel/runtime-react-refresh": "npm:2.13.3"
-    "@parcel/runtime-service-worker": "npm:2.13.3"
-    "@parcel/transformer-babel": "npm:2.13.3"
-    "@parcel/transformer-css": "npm:2.13.3"
-    "@parcel/transformer-html": "npm:2.13.3"
-    "@parcel/transformer-image": "npm:2.13.3"
-    "@parcel/transformer-js": "npm:2.13.3"
-    "@parcel/transformer-json": "npm:2.13.3"
-    "@parcel/transformer-postcss": "npm:2.13.3"
-    "@parcel/transformer-posthtml": "npm:2.13.3"
-    "@parcel/transformer-raw": "npm:2.13.3"
-    "@parcel/transformer-react-refresh-wrap": "npm:2.13.3"
-    "@parcel/transformer-svg": "npm:2.13.3"
+    "@parcel/bundler-default": "npm:2.14.1"
+    "@parcel/compressor-raw": "npm:2.14.1"
+    "@parcel/namer-default": "npm:2.14.1"
+    "@parcel/optimizer-css": "npm:2.14.1"
+    "@parcel/optimizer-htmlnano": "npm:2.14.1"
+    "@parcel/optimizer-image": "npm:2.14.1"
+    "@parcel/optimizer-svgo": "npm:2.14.1"
+    "@parcel/optimizer-swc": "npm:2.14.1"
+    "@parcel/packager-css": "npm:2.14.1"
+    "@parcel/packager-html": "npm:2.14.1"
+    "@parcel/packager-js": "npm:2.14.1"
+    "@parcel/packager-raw": "npm:2.14.1"
+    "@parcel/packager-svg": "npm:2.14.1"
+    "@parcel/packager-wasm": "npm:2.14.1"
+    "@parcel/reporter-dev-server": "npm:2.14.1"
+    "@parcel/resolver-default": "npm:2.14.1"
+    "@parcel/runtime-browser-hmr": "npm:2.14.1"
+    "@parcel/runtime-js": "npm:2.14.1"
+    "@parcel/runtime-rsc": "npm:2.14.1"
+    "@parcel/runtime-service-worker": "npm:2.14.1"
+    "@parcel/transformer-babel": "npm:2.14.1"
+    "@parcel/transformer-css": "npm:2.14.1"
+    "@parcel/transformer-html": "npm:2.14.1"
+    "@parcel/transformer-image": "npm:2.14.1"
+    "@parcel/transformer-js": "npm:2.14.1"
+    "@parcel/transformer-json": "npm:2.14.1"
+    "@parcel/transformer-node": "npm:2.14.1"
+    "@parcel/transformer-postcss": "npm:2.14.1"
+    "@parcel/transformer-posthtml": "npm:2.14.1"
+    "@parcel/transformer-raw": "npm:2.14.1"
+    "@parcel/transformer-react-refresh-wrap": "npm:2.14.1"
+    "@parcel/transformer-svg": "npm:2.14.1"
   peerDependencies:
-    "@parcel/core": ^2.13.3
-  checksum: 10/89e69bd0dbf9c37a79609c19fb3e08581edb1da4c330a3e1cf2511710081be843f6d7614b520901f3859c18b92eab0a937e6edddb31ded230d581aed4a54095e
+    "@parcel/core": ^2.14.1
+  checksum: 10/9b9708396d659fdd2c245d9d6e2c63aeaf9c3ad6867b7582e71c3f67245464f34b67c6deb35fb78eda83a13269c2122560f5977a70e5ad48ba2ba9520a743770
   languageName: node
   linkType: hard
 
-"@parcel/core@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/core@npm:2.13.3"
+"@parcel/core@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/core@npm:2.14.1"
   dependencies:
     "@mischnic/json-sourcemap": "npm:^0.1.0"
-    "@parcel/cache": "npm:2.13.3"
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/events": "npm:2.13.3"
-    "@parcel/feature-flags": "npm:2.13.3"
-    "@parcel/fs": "npm:2.13.3"
-    "@parcel/graph": "npm:3.3.3"
-    "@parcel/logger": "npm:2.13.3"
-    "@parcel/package-manager": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/profiler": "npm:2.13.3"
-    "@parcel/rust": "npm:2.13.3"
+    "@parcel/cache": "npm:2.14.1"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/events": "npm:2.14.1"
+    "@parcel/feature-flags": "npm:2.14.1"
+    "@parcel/fs": "npm:2.14.1"
+    "@parcel/graph": "npm:3.4.1"
+    "@parcel/logger": "npm:2.14.1"
+    "@parcel/package-manager": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/profiler": "npm:2.14.1"
+    "@parcel/rust": "npm:2.14.1"
     "@parcel/source-map": "npm:^2.1.1"
-    "@parcel/types": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
-    "@parcel/workers": "npm:2.13.3"
+    "@parcel/types": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
+    "@parcel/workers": "npm:2.14.1"
     base-x: "npm:^3.0.8"
     browserslist: "npm:^4.6.6"
     clone: "npm:^2.1.1"
@@ -2675,381 +2676,395 @@ __metadata:
     msgpackr: "npm:^1.9.9"
     nullthrows: "npm:^1.1.1"
     semver: "npm:^7.5.2"
-  checksum: 10/82274e0205a4e02eea4ba72ab7d8463281e8bd1fc925cc2fb45183428d99623978ec99d0ad5ce730475f63335c44360df361709f547c87a926a0d55be01e18b7
+  checksum: 10/d2b1b77c5c64e987ae109447d7c143349f32133b06d8742e3a73b7215ee231f3144c468d9c6c1887365ffe2260428c82a37d7ebb5176f96c0f5351aa5f6313aa
   languageName: node
   linkType: hard
 
-"@parcel/diagnostic@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/diagnostic@npm:2.13.3"
+"@parcel/diagnostic@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/diagnostic@npm:2.14.1"
   dependencies:
     "@mischnic/json-sourcemap": "npm:^0.1.0"
     nullthrows: "npm:^1.1.1"
-  checksum: 10/c3fdc482ebe83d3df7431a6a2aff20cc58a4282bbaa6d4bfada9425e1b1a70e8db0ff0ad7cdab03a9a28c80ecec627444ff6e6683d1ef4655744d0d20194426c
+  checksum: 10/d724c4d3c59b3a1658f6c86040c7fae7bcadf0c2e484597cad0dd98f776afcf52ebd2aa211c2af9c15ca978029b8cb3a95e6e84e34798521946b1ace951bf15a
   languageName: node
   linkType: hard
 
-"@parcel/events@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/events@npm:2.13.3"
-  checksum: 10/ef24722ae33f80fb5b0efd6515ce1555104172f301918dc0f2cf598db4f731ce5202d91a4f06c25ae220e91b0cade27c2bf142b20b1ff2e177216e13da79c9bf
+"@parcel/error-overlay@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/error-overlay@npm:2.14.1"
+  checksum: 10/f58623021a2f68d1c1d9a5032dbc5f975a3c08b5a51f359098d00e3cdd2f1a3459516c0b263d065939167a1a268d2c628be874025893c9f9a405849728fcda4b
   languageName: node
   linkType: hard
 
-"@parcel/feature-flags@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/feature-flags@npm:2.13.3"
-  checksum: 10/c7f282156a27d10e8eeaa74901860575f06edabaac255124d218fd51ac4dbb38fd3af01762f3f75af5351764807d91139c4c84fcc719569e8ea7dffbedf33992
+"@parcel/events@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/events@npm:2.14.1"
+  checksum: 10/dce1a3efcd6bfd3ef8dfb728ee3964e969162c2606ec40bff18e66ef82c54de32a1327bee0446fc36d1a418bb66e1077cf5758feab21bbf9350f60f115ab660c
   languageName: node
   linkType: hard
 
-"@parcel/fs@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/fs@npm:2.13.3"
+"@parcel/feature-flags@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/feature-flags@npm:2.14.1"
+  checksum: 10/758a2c6df3ece11017be27663bfeb6ed8dd769c3fe02279cb2edefa61a021db67ef1ec143bd23571cff3c68781b987c0500001f348c57d38fe216ad93e18be8a
+  languageName: node
+  linkType: hard
+
+"@parcel/fs@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/fs@npm:2.14.1"
   dependencies:
-    "@parcel/feature-flags": "npm:2.13.3"
-    "@parcel/rust": "npm:2.13.3"
-    "@parcel/types-internal": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/feature-flags": "npm:2.14.1"
+    "@parcel/rust": "npm:2.14.1"
+    "@parcel/types-internal": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     "@parcel/watcher": "npm:^2.0.7"
-    "@parcel/workers": "npm:2.13.3"
+    "@parcel/workers": "npm:2.14.1"
   peerDependencies:
-    "@parcel/core": ^2.13.3
-  checksum: 10/244c69d15fbb7906e885838a7619f4a1aa732f21262f73683ef50960e62615e23ebfaf7c4eb476cc4f2e66d79ec5db37641d5c56f3861f930b7e6daede1f0515
+    "@parcel/core": ^2.14.1
+  checksum: 10/0ea0ee4dd08bc5fa10e2d62023817b7917eeb501e45c467b59e802718978b8508a29f6d2299b7681ee88e38733e6a416ce6370f1da26f521dc95232a8760a2f2
   languageName: node
   linkType: hard
 
-"@parcel/graph@npm:3.3.3":
-  version: 3.3.3
-  resolution: "@parcel/graph@npm:3.3.3"
+"@parcel/graph@npm:3.4.1":
+  version: 3.4.1
+  resolution: "@parcel/graph@npm:3.4.1"
   dependencies:
-    "@parcel/feature-flags": "npm:2.13.3"
+    "@parcel/feature-flags": "npm:2.14.1"
     nullthrows: "npm:^1.1.1"
-  checksum: 10/5c9bd4394859994f46995985d0070d247438e54c77a6fb984194c9e9510030af62d10b8308606b21987636ba72f1133bc1007f929d629ead4e820a2ce4537978
+  checksum: 10/1cab019b48fe2d4d606df22f4875445eb6de1cc337592386a0dcaa00a3e015e88356a6df02a9cd5ef61444062fd9fbfc6f61f31228af454858e20ecdfb5cabfa
   languageName: node
   linkType: hard
 
-"@parcel/logger@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/logger@npm:2.13.3"
+"@parcel/logger@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/logger@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/events": "npm:2.13.3"
-  checksum: 10/51ef2a2b81744b08a0d9ea17d2728e4227a4a601bb5b49b3a37ebd21eb1835709cc2be2457064fb54035313bcfb35d025d9dec0bd9207b35df0b75a2da11d0f4
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/events": "npm:2.14.1"
+  checksum: 10/cd59580659551ed6d54d05ab1f62c98d049c1c385417d651a146a2e30ad1346ce85ef49a582511a1e885acadcacf3fb69dbd1eedbe1d52c0be240995d400192e
   languageName: node
   linkType: hard
 
-"@parcel/markdown-ansi@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/markdown-ansi@npm:2.13.3"
+"@parcel/markdown-ansi@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/markdown-ansi@npm:2.14.1"
   dependencies:
     chalk: "npm:^4.1.2"
-  checksum: 10/58229b4cccb5164f04a5caf096c27e1f198afd9f2cd338c27d7931fc45d061aac259393b300e1cb464fdd4e9f0059b443d5541724f664126f18e613814d403ec
+  checksum: 10/8cfdc14dd6760117b0b8a911b106919fdf014ece213a61b237d1a5e67304090b83c17be3fced80f9280de39158ba594c405779e6345618d11f6d9cdd4054eb5a
   languageName: node
   linkType: hard
 
-"@parcel/namer-default@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/namer-default@npm:2.13.3"
+"@parcel/namer-default@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/namer-default@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
     nullthrows: "npm:^1.1.1"
-  checksum: 10/3a9301345e6073862c9deeb032cb6c29ba01d2702ea5cb730bf6dc037f9d8b30079e8346707aadde6ae6ed4114a65781ea0a8867ac63d99358236c0c8f665978
+  checksum: 10/264aa9f1b984c7590619285184f1b1a412b68622c048d9c2dd9acedde8fe7c24fbbcfc8917c997a0314542189582549757a02a18df79a94d6fc1b7aae5432b10
   languageName: node
   linkType: hard
 
-"@parcel/node-resolver-core@npm:3.4.3":
-  version: 3.4.3
-  resolution: "@parcel/node-resolver-core@npm:3.4.3"
+"@parcel/node-resolver-core@npm:3.5.1":
+  version: 3.5.1
+  resolution: "@parcel/node-resolver-core@npm:3.5.1"
   dependencies:
     "@mischnic/json-sourcemap": "npm:^0.1.0"
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/fs": "npm:2.13.3"
-    "@parcel/rust": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/fs": "npm:2.14.1"
+    "@parcel/rust": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     nullthrows: "npm:^1.1.1"
     semver: "npm:^7.5.2"
-  checksum: 10/62c2d88d3f3efb21bfcf78c00da67d71d32034f194cdf37da07f2a58afeb09753c7dfcadcf146e2ecdca136721d5551d7bf3c3d3421d39e0c0c5ae1a73997100
+  checksum: 10/d54cc8f1bf61fc639ad05256051d5811e3eb54ef3a2e3db74631df49bac0796b5b6f4c25edf4dc87287bc3bf5b8c23d5904ecc494405ad835a967bf9aaf297d9
   languageName: node
   linkType: hard
 
-"@parcel/optimizer-css@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/optimizer-css@npm:2.13.3"
+"@parcel/optimizer-css@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/optimizer-css@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
     "@parcel/source-map": "npm:^2.1.1"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/utils": "npm:2.14.1"
     browserslist: "npm:^4.6.6"
     lightningcss: "npm:^1.22.1"
     nullthrows: "npm:^1.1.1"
-  checksum: 10/d2ec13ebae621877f6b9624e0a81570017b8a1606789fabf5163cde66f7a5bc10cd1de5d186cedf7d62ce4a1360f8974597e76c6f70da4057c859d6324eefd58
+  checksum: 10/26641e94d7006192c9523c420d986f7ef7393fe4503179c98d743e87f56b38484b7b922117a8835b5310cdf1845165c6b757a71fe447274f7f75e3003f55bf7d
   languageName: node
   linkType: hard
 
-"@parcel/optimizer-htmlnano@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/optimizer-htmlnano@npm:2.13.3"
+"@parcel/optimizer-htmlnano@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/optimizer-htmlnano@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     htmlnano: "npm:^2.0.0"
     nullthrows: "npm:^1.1.1"
     posthtml: "npm:^0.16.5"
-  checksum: 10/5cf46c7ccf0c9dec187bb8019080610cf6b50d4d09a93dabfe0f56eac6d9264b58e6a80437cc7f465ec6deba4bed3e0f2e81a7b98ce1daaa208fc0972ec7e4de
+  checksum: 10/e7255dd2b05b634dbb74bd4906e7bd86e36d4c55b783ef34a4f41ed746dbd7eee659d119de62af409f3f8fd9cd7ae26a984c11217cfa311626b1aff49774ad4e
   languageName: node
   linkType: hard
 
-"@parcel/optimizer-image@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/optimizer-image@npm:2.13.3"
+"@parcel/optimizer-image@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/optimizer-image@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/rust": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
-    "@parcel/workers": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/rust": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
+    "@parcel/workers": "npm:2.14.1"
   peerDependencies:
-    "@parcel/core": ^2.13.3
-  checksum: 10/7fdcbc833afe72fd55450df61c55844f3a3c4f99a3290923788e51a73cf8161211d83745716665344d4938a528dfb80f70b932f0b98367a1ea7f82fec5bd6d50
+    "@parcel/core": ^2.14.1
+  checksum: 10/55a356c5a435222859c64fb670f1ea80e2e772a890a8e401073718b217c989dfa522514baa865d388a88dc671090f02f64edac4fd91b98e32b81b5c11c64bfef
   languageName: node
   linkType: hard
 
-"@parcel/optimizer-svgo@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/optimizer-svgo@npm:2.13.3"
+"@parcel/optimizer-svgo@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/optimizer-svgo@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
-  checksum: 10/7dbd7e4ada835b4051ebc01fb269669bd96e6d6c6a4ef26af8c46fb2ffb64de43178b8ffdf9ad079076f9e8b41d0bec562210efe5f0ef6e19af961e43ed09c42
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
+  checksum: 10/f8c209438bfef9fa67bc1a02dfe82cf110b43e20fe8f2f7371be736768fec5edffbd9c119751fd2ff01d7dc5f6adedcd81b358630ddbf001257f85d057d64ec0
   languageName: node
   linkType: hard
 
-"@parcel/optimizer-swc@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/optimizer-swc@npm:2.13.3"
+"@parcel/optimizer-swc@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/optimizer-swc@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
     "@parcel/source-map": "npm:^2.1.1"
-    "@parcel/utils": "npm:2.13.3"
-    "@swc/core": "npm:^1.7.26"
+    "@parcel/utils": "npm:2.14.1"
+    "@swc/core": "npm:^1.11.5"
     nullthrows: "npm:^1.1.1"
-  checksum: 10/514b3f9bbf95512d07056028e595b7c29827a89c3ecb18a271bfd8d7b5b86e8ed227883fcab82a1935b5bedd4287c95fc85a3b43c242e57098498467b2c89e07
+  checksum: 10/4efd797d73d080b4a021b703cf4d56985b00c4f2dcc9f176a7cdb9a3c2097eebf3872012d4adca1761adbecbf22d7afa6c78ea968206cd4e51415d92b0e3ccce
   languageName: node
   linkType: hard
 
-"@parcel/package-manager@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/package-manager@npm:2.13.3"
+"@parcel/package-manager@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/package-manager@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/fs": "npm:2.13.3"
-    "@parcel/logger": "npm:2.13.3"
-    "@parcel/node-resolver-core": "npm:3.4.3"
-    "@parcel/types": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
-    "@parcel/workers": "npm:2.13.3"
-    "@swc/core": "npm:^1.7.26"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/fs": "npm:2.14.1"
+    "@parcel/logger": "npm:2.14.1"
+    "@parcel/node-resolver-core": "npm:3.5.1"
+    "@parcel/types": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
+    "@parcel/workers": "npm:2.14.1"
+    "@swc/core": "npm:^1.11.5"
     semver: "npm:^7.5.2"
   peerDependencies:
-    "@parcel/core": ^2.13.3
-  checksum: 10/4b557cbae3278c5fadce9a02a52279e5bd9503375babceeec7b345ad7937c16267007b057210bce76978ebc36d8859bb83bddc86055a299a50b4fe8f1a869602
+    "@parcel/core": ^2.14.1
+  checksum: 10/c3aa5f9d76368779231df5ef5e5855cd0288168d29a44570e03d8cccbce092f276c85c1551d49d5e3e44a49e544ecb851acc2cdf9d029f9b6ac9fc6b2273ae4e
   languageName: node
   linkType: hard
 
-"@parcel/packager-css@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/packager-css@npm:2.13.3"
+"@parcel/packager-css@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/packager-css@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
     "@parcel/source-map": "npm:^2.1.1"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/utils": "npm:2.14.1"
     lightningcss: "npm:^1.22.1"
     nullthrows: "npm:^1.1.1"
-  checksum: 10/b5697382d5945d13ab8f0bab2b068e3402ff996f780d1ab6f224de89576eb4b7abd5828dc70ce86e488883d9203e467a8a16d9747492743f06700b9edc309b64
+  checksum: 10/bcd3c74937394268a29af9a2e2fb82c360c23ec30b79f1ea50f5334f0ea82eeb6187cd21e0c839794d5561fa9332be4a5f63f2eb40b20d8be4569ffa66cc3670
   languageName: node
   linkType: hard
 
-"@parcel/packager-html@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/packager-html@npm:2.13.3"
+"@parcel/packager-html@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/packager-html@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/types": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/types": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     nullthrows: "npm:^1.1.1"
     posthtml: "npm:^0.16.5"
-  checksum: 10/4cb1d3d09dae7d924c1d0cb9155e75218f07637ad9f125469f28991ea32c5494fe30ab0b5db9f224fb899464967981921e93b7b7895ef07c9a3d8c2227db1cb6
+  checksum: 10/7221ed684d9d0c5c553d98850d9e1ca2a01291d814d33e1d4b3611eb75616d11085809ddb62f6c15431611aa910e98445509d6935ce877cc4e6374e17c067013
   languageName: node
   linkType: hard
 
-"@parcel/packager-js@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/packager-js@npm:2.13.3"
+"@parcel/packager-js@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/packager-js@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/rust": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/rust": "npm:2.14.1"
     "@parcel/source-map": "npm:^2.1.1"
-    "@parcel/types": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/types": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     globals: "npm:^13.2.0"
     nullthrows: "npm:^1.1.1"
-  checksum: 10/db6409cd7ef26daec07b6f9f5d181031dad12eeefa035cee61052dcbe68044a189c57d923ef44e7e2aff422e6424b784e1239bf471ba95f9156f60692783db0a
+  checksum: 10/57034473a1276a3dcb573a2d630908f9cef4402aac31e07fac34a938bab5ffe1b64e0b8a64597602c332dd3d076e2a8718bea06645b0acea7fabdf2411f37e7e
   languageName: node
   linkType: hard
 
-"@parcel/packager-raw@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/packager-raw@npm:2.13.3"
+"@parcel/packager-raw@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/packager-raw@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-  checksum: 10/efb81c8776ea35ebbb449f30e9c14b82cdab1305fe91193f11cf08095ff044ade98b964856ba24e5f26a4ebf59753a80def4a1b9f465e3ac9971a9db38480107
+    "@parcel/plugin": "npm:2.14.1"
+  checksum: 10/99c21e6f35d7e4b45c5170c23fe7e6f6d33eaf8fec944d247259b67b6ba6c90c9e10900950452e6bb177f25353b53ea71e39691b31f5ceb2d3fe30c1167342f0
   languageName: node
   linkType: hard
 
-"@parcel/packager-svg@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/packager-svg@npm:2.13.3"
+"@parcel/packager-svg@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/packager-svg@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/types": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/types": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     posthtml: "npm:^0.16.4"
-  checksum: 10/2c9bcd837ec6aebbcfe6bb0e778cafcb6561e29722dde21c9165f729c314648bc25adbf8c2ec4f47e247314a619ab73ccb1624ab729ce98a3fe2b16116a185ca
+  checksum: 10/4412e10f01e1739c81f13081c5f5f059304234d787646d5403c18a58fa583d461e145bf3755dcb135c3dbcaf66697879511ea0be14dcb2ec17520f4cd0bc14c2
   languageName: node
   linkType: hard
 
-"@parcel/packager-wasm@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/packager-wasm@npm:2.13.3"
+"@parcel/packager-wasm@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/packager-wasm@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-  checksum: 10/93e0f3c6c9d897ec7a17c6d9e7314e5c904e5df48ec5e722d3134fb7441d05f5573aaf40a929c6b8f3fca7eb746c7aef8cfbe92e8ba4a345d3ed219b8d71a1e0
+    "@parcel/plugin": "npm:2.14.1"
+  checksum: 10/3e2f2e010ef361ddd16391eebeb1ebf3ff2561239653f18d75600892b584f95da8ce8d9120f86d96d8bd88c0a451f949f077ec378c0ce69b26a5c3450e4a16d5
   languageName: node
   linkType: hard
 
-"@parcel/plugin@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/plugin@npm:2.13.3"
+"@parcel/plugin@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/plugin@npm:2.14.1"
   dependencies:
-    "@parcel/types": "npm:2.13.3"
-  checksum: 10/4b351f0d49d0facbdacb79d578e609f5690414c57543d5dd246f0993705d5380acc0ea4b05342e6dee5b055198544ac9008eb5a309c80dc9b953920910950d45
+    "@parcel/types": "npm:2.14.1"
+  checksum: 10/9de1c110551e3ac681caec2565dec11bdd350c1ed8eaa7cdc354c04118d5427860e3e79d77e3b4d9b05884d2887e6f1122953132b4d4e9fb194d40a372cfe16d
   languageName: node
   linkType: hard
 
-"@parcel/profiler@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/profiler@npm:2.13.3"
+"@parcel/profiler@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/profiler@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/events": "npm:2.13.3"
-    "@parcel/types-internal": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/events": "npm:2.14.1"
+    "@parcel/types-internal": "npm:2.14.1"
     chrome-trace-event: "npm:^1.0.2"
-  checksum: 10/aa58ac30ad7a8fd7c9336642b4e016aa9c229f0607b2b70fb5d1a9fbbf44fb6990729f0095cd55b798df264a0f61d6eceb8d41621b90fd685abf9fecd412045f
+  checksum: 10/d50512e81b96e4d98f931986dbaef0dcf19b27725b3e34f6b26fffa774bbc49cd9d7c39cb96d880c3cc31fd577a0d8416a11e04bfcaa27a3f49af45b6ecad870
   languageName: node
   linkType: hard
 
-"@parcel/reporter-cli@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/reporter-cli@npm:2.13.3"
+"@parcel/reporter-cli@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/reporter-cli@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/types": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/types": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     chalk: "npm:^4.1.2"
     term-size: "npm:^2.2.1"
-  checksum: 10/cc927080ed667da484dcf569b58cef495d62b2afdf2407201a1eba9f48a7fd4e2647d7633255442b5c1df4bb4c039a5e7e6b38a3d8010cd868e97517c161a418
+  checksum: 10/4064a117df011c8eca2028317390c695f3ed68d8f95e57a71cd1a98e0f9b7546c4879518600de9c21886862669c1b7019ac6e148953db362a6caa25cba48c7ef
   languageName: node
   linkType: hard
 
-"@parcel/reporter-dev-server@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/reporter-dev-server@npm:2.13.3"
+"@parcel/reporter-dev-server@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/reporter-dev-server@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
-  checksum: 10/5cd292be5faef61893b3ecb776cada040594b14dc3ab134fb5a7b116799264a3fa3e9039dff0e8ed9242093fa17dd884d0824856d6debc9da313fb4b00b05a2d
+    "@parcel/codeframe": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/source-map": "npm:^2.1.1"
+    "@parcel/utils": "npm:2.14.1"
+  checksum: 10/aacf206833011a77c8286f5465e59abec185bee8fb1555be1a39f3f09ec4c99a25acd15382d5c60df8dd4958628669211ff5e97e0ffb41b106c089a792463e12
   languageName: node
   linkType: hard
 
-"@parcel/reporter-tracer@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/reporter-tracer@npm:2.13.3"
+"@parcel/reporter-tracer@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/reporter-tracer@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     chrome-trace-event: "npm:^1.0.3"
     nullthrows: "npm:^1.1.1"
-  checksum: 10/20e0200edcd0b8b30c89053f4863b598b4cb603308a58754e02281950ff1c945607936baf42d352da39db126fca857117aeadfcc3eb6f8002bb775804671b88c
+  checksum: 10/118b4c441b589fb4d50739823238b33eb54e5542bb119b20f1800939e0f6fc609f2413ad32cd038b41e0a007158723c584999fea32faa630e0f35bb1fc29e42c
   languageName: node
   linkType: hard
 
-"@parcel/resolver-default@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/resolver-default@npm:2.13.3"
+"@parcel/resolver-default@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/resolver-default@npm:2.14.1"
   dependencies:
-    "@parcel/node-resolver-core": "npm:3.4.3"
-    "@parcel/plugin": "npm:2.13.3"
-  checksum: 10/3842fedb3363f23cc571f1fb5040ec7f6dc026e31a330b35e78abc9e0b616337a1b54d1e18b53f6220332df7e7587304de09b363704ece3390c1642921872f61
+    "@parcel/node-resolver-core": "npm:3.5.1"
+    "@parcel/plugin": "npm:2.14.1"
+  checksum: 10/35602a5ed70244d47fc1c97da72f60c4d1c751c3a481daf80988227901a3abd2b96c343a06998c06d392e0925be63ac525f488a38dd672ca073b7f3d7b068b27
   languageName: node
   linkType: hard
 
-"@parcel/runtime-browser-hmr@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/runtime-browser-hmr@npm:2.13.3"
+"@parcel/runtime-browser-hmr@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/runtime-browser-hmr@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
-  checksum: 10/e264b94a93a949a05c8ec8970923a4314ca0e1ae7e0132aaca3f50644af4d9ca4119ae14ceed53d7dd0bdafa60b7608c7256e90c34bdf9737e71166c0bbfc47e
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
+  checksum: 10/0b8614f180fb5870cc631b16350f84a83eb5c06b743597d6e8c1eb8839d29f216aa3070cb4cddb241be3e7a9fd087c413f15c6f075451e10a3451035304700eb
   languageName: node
   linkType: hard
 
-"@parcel/runtime-js@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/runtime-js@npm:2.13.3"
+"@parcel/runtime-js@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/runtime-js@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     nullthrows: "npm:^1.1.1"
-  checksum: 10/1c9fec79592203d46926239b30b82afff68479c083b7ebc06d9ba542ae67d488f5050b9b770a96f46043460748af0fcaecdf57d603e258749af05983960df09b
+  checksum: 10/64beebd8e14fb294d5ea1b8f23d7384a92e26b2a63d27ec6c1e8c016aea1a67bb46eb45a53e09ffa98f26e1170da668cd0312e3a887e850754faa818c585eb40
   languageName: node
   linkType: hard
 
-"@parcel/runtime-react-refresh@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/runtime-react-refresh@npm:2.13.3"
+"@parcel/runtime-rsc@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/runtime-rsc@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
-    react-error-overlay: "npm:6.0.9"
-    react-refresh: "npm:>=0.9 <=0.14"
-  checksum: 10/82c9a710ff4d4d321aec7d00673c74f1b54338a93dfdc73133f31caba7d5b0334a8c7aad346aa12904acfb0f497098129c2fba4e615da685c4310b42645d4ff6
-  languageName: node
-  linkType: hard
-
-"@parcel/runtime-service-worker@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/runtime-service-worker@npm:2.13.3"
-  dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/rust": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     nullthrows: "npm:^1.1.1"
-  checksum: 10/fbc0b4ee09a1ca01836f83eb9bb81e7a7882bd1df83dbc0fe492555025e8b2198a4be8e945443fc20836cf01a576a330a34b3f9ed2ec5d2f9b0db3d0aee16742
+  checksum: 10/773f0a4ba65e376c09c9c03206b44cbbb1a855ddfd5de57fdb83e86d5dbc68321b9fb8c0b3075dc7e4a9b5849b1f1a85c1a4818f449817e12bc87e3b0038e45f
   languageName: node
   linkType: hard
 
-"@parcel/rust@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/rust@npm:2.13.3"
-  checksum: 10/8ee270a529396f571b6ec6797062e969f1ecc898d9a395998618af9d15e19ef4ee3e2910666fe7c20954fa46ba2352753b083c6611b06c4081705b8c2091140d
+"@parcel/runtime-service-worker@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/runtime-service-worker@npm:2.14.1"
+  dependencies:
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
+    nullthrows: "npm:^1.1.1"
+  checksum: 10/7e15e61bbfb8eb3f56cb994641b3a3e8837f21dca80edeb64e2cbbf5732b4030a7f39a77f3ce48d30e03ca2360c35a0cc81442caf228dcf2bafe80e109266d97
+  languageName: node
+  linkType: hard
+
+"@parcel/rust@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/rust@npm:2.14.1"
+  peerDependencies:
+    napi-wasm: ^1.1.2
+  peerDependenciesMeta:
+    napi-wasm:
+      optional: true
+  checksum: 10/c01e55360d3816916d23dd6c2e77ae512ccb09ed8bbcbbc41524d690dd1c0d9f972fc7c22d8b43639eb2f1a0c08faa568b488295d043ca2a9d5f872df3815ddd
   languageName: node
   linkType: hard
 
@@ -3062,201 +3077,211 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/transformer-babel@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/transformer-babel@npm:2.13.3"
+"@parcel/transformer-babel@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/transformer-babel@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
     "@parcel/source-map": "npm:^2.1.1"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/utils": "npm:2.14.1"
     browserslist: "npm:^4.6.6"
     json5: "npm:^2.2.0"
     nullthrows: "npm:^1.1.1"
     semver: "npm:^7.5.2"
-  checksum: 10/9394ff8568df81643520bd02c88b39ed9ef4bf2d97cb45e03d47c08dcf6603c1b618c903b73be710ac912b1304df4be48a7fa13048407793cd2df59634f75a6e
+  checksum: 10/5e194ed5d9b4f361f1eaa1c766b23860136691db65e6376b9d33b836a84cfed588f36a8c8ea44f29972a29b0e1813504d430d4b29c93a11cad88baac8e6e9ff9
   languageName: node
   linkType: hard
 
-"@parcel/transformer-css@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/transformer-css@npm:2.13.3"
+"@parcel/transformer-css@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/transformer-css@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
     "@parcel/source-map": "npm:^2.1.1"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/utils": "npm:2.14.1"
     browserslist: "npm:^4.6.6"
     lightningcss: "npm:^1.22.1"
     nullthrows: "npm:^1.1.1"
-  checksum: 10/0f92bb7367332049220b572149efd2d002d2e90e43e8a73d96f3e91cb9edff1b725075eecf6332f13f5fee3ba88ada42fb27a2b732e7fa3b9cd20429b8b348e2
+  checksum: 10/7cb7693a536ee13499ab67930e1002c919979250d1ea113a861cafac1523a606b3284cfdd0b876c9bf380dfe599f4692ffa8233484ffd292c8dff31cef906be2
   languageName: node
   linkType: hard
 
-"@parcel/transformer-html@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/transformer-html@npm:2.13.3"
+"@parcel/transformer-html@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/transformer-html@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/rust": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/rust": "npm:2.14.1"
     nullthrows: "npm:^1.1.1"
     posthtml: "npm:^0.16.5"
     posthtml-parser: "npm:^0.12.1"
     posthtml-render: "npm:^3.0.0"
     semver: "npm:^7.5.2"
     srcset: "npm:4"
-  checksum: 10/c2026d538194c1acff1e097126030790c4d0ad3e30a0c22c156db0bd47f069341075738fc646d6f63fa52fc50cf9da1c3f3e5e4714dad7e9a6f5318e928d25d8
+  checksum: 10/43a078d0dd3fad1f1d504c02b516bd793f0d3d1fcd3b2995cf02a573a42f38113a254273a4874d4547f9b072b151a6c5694822c10dc6ec1e75c6eab63edb7ca1
   languageName: node
   linkType: hard
 
-"@parcel/transformer-image@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/transformer-image@npm:2.13.3"
+"@parcel/transformer-image@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/transformer-image@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
-    "@parcel/workers": "npm:2.13.3"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
+    "@parcel/workers": "npm:2.14.1"
     nullthrows: "npm:^1.1.1"
   peerDependencies:
-    "@parcel/core": ^2.13.3
-  checksum: 10/9120310914e76e17297b8022f2dc64a3d7075859ad83e73b3aa749fbc93c46fec487ca8d7f211cc6e2a17d48e4eee37a79cbe747871d3f184bd0a39350d5940c
+    "@parcel/core": ^2.14.1
+  checksum: 10/cea96b92d2454f691d21430e2aadde9214c19be2cf933609b59e69ab1ac35bedce39310328f841b4d9eb2ab7970083a74950906e45574a94e169b1651c87866c
   languageName: node
   linkType: hard
 
-"@parcel/transformer-js@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/transformer-js@npm:2.13.3"
+"@parcel/transformer-js@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/transformer-js@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/rust": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/rust": "npm:2.14.1"
     "@parcel/source-map": "npm:^2.1.1"
-    "@parcel/utils": "npm:2.13.3"
-    "@parcel/workers": "npm:2.13.3"
+    "@parcel/utils": "npm:2.14.1"
+    "@parcel/workers": "npm:2.14.1"
     "@swc/helpers": "npm:^0.5.0"
     browserslist: "npm:^4.6.6"
     nullthrows: "npm:^1.1.1"
     regenerator-runtime: "npm:^0.14.1"
     semver: "npm:^7.5.2"
   peerDependencies:
-    "@parcel/core": ^2.13.3
-  checksum: 10/e575f3442e9fc48be84214e17e24cd5ea46ffeb775338dc8c71ee991fed9b9e07b8d2d35cbceed4595dd3fa58b40c5d4753e149f28a654a8b206943e2d573bd6
+    "@parcel/core": ^2.14.1
+  checksum: 10/e7d0ec1170ecd578f9d55ad29a2196b7416ecbb17f8109fcacf0f17b124d23529df813ebf3dadc486a86e59d0456237056dd3a1d0c130f28f47f8c602e3450d1
   languageName: node
   linkType: hard
 
-"@parcel/transformer-json@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/transformer-json@npm:2.13.3"
+"@parcel/transformer-json@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/transformer-json@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
+    "@parcel/plugin": "npm:2.14.1"
     json5: "npm:^2.2.0"
-  checksum: 10/edcfa0fc4c706df08625b920ba98565c73d6958591762bbbff688e289d4cdab2a3d6b4926e307713acacc1880e0a9109fdcef45ec8e595b7ca79584ca9dbbe9d
+  checksum: 10/d587971365a68ca818fa6f85fe7d24e0c69c9a3cc52a932969991ddc942a0098418581b98a0754dfe72b1e5a459bda4d1b852a906e695faec17092df58254b36
   languageName: node
   linkType: hard
 
-"@parcel/transformer-postcss@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/transformer-postcss@npm:2.13.3"
+"@parcel/transformer-node@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/transformer-node@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/rust": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/plugin": "npm:2.14.1"
+  checksum: 10/5cca2a45b61b25da77878bf334ffaadd983edf073a92e53b36385f1d021743dc606fe0be714ba531f26a9c7c920b80fb043442923fc1e3c4797a3a80e475f0b4
+  languageName: node
+  linkType: hard
+
+"@parcel/transformer-postcss@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/transformer-postcss@npm:2.14.1"
+  dependencies:
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/rust": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     clone: "npm:^2.1.1"
     nullthrows: "npm:^1.1.1"
     postcss-value-parser: "npm:^4.2.0"
     semver: "npm:^7.5.2"
-  checksum: 10/33b80aae909c93e8dd58d02f7ec9110b9d0d89385260f8a016e1cf2a1af8eb6e4f4ead5646a64c6a22b22738f1b3e0be36d008fa4939d137870de57ec5d0c734
+  checksum: 10/2d6102b8c24c23bd874dc9de9c6714882d349b2f9057c6ba866b1fa0d3a0f47c49767632053e3f1ab9a942f3544b8ca3f476ff948e9c8f4f1e03302d60c26cac
   languageName: node
   linkType: hard
 
-"@parcel/transformer-posthtml@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/transformer-posthtml@npm:2.13.3"
+"@parcel/transformer-posthtml@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/transformer-posthtml@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     nullthrows: "npm:^1.1.1"
     posthtml: "npm:^0.16.5"
     posthtml-parser: "npm:^0.12.1"
     posthtml-render: "npm:^3.0.0"
     semver: "npm:^7.5.2"
-  checksum: 10/5db15794fedfc57a216d538b409db598ab8b594ccd9f877c52a3ef52c8ec563cef1f86b22b5009b69c614b6f307b9170c6dd8d2f75ff6bee8f28af85548ebf9a
+  checksum: 10/49544dbf7ae628b620ab83df4109f3bcbe2623b8d26dec22729f455625c372691b83b6fc5ce541d951198822690144944181fd779f95e95d95677ec7865068f2
   languageName: node
   linkType: hard
 
-"@parcel/transformer-raw@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/transformer-raw@npm:2.13.3"
+"@parcel/transformer-raw@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/transformer-raw@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-  checksum: 10/74e19bbf8559a255dd4a7265e86dc66f7e7f472dca5cc622dc6de233b19ad5527915030a267bf28f369710ae5183505c4e1916cb78aff542ffde21306def4a63
+    "@parcel/plugin": "npm:2.14.1"
+  checksum: 10/c273d164a91148b21260afd1a8dd82282702d9cef1b7d6b8033855d18aca6327ecaf76dc65387b1860a6d687807c88f56dc49f2e792dbd497cda3e9f02b0f081
   languageName: node
   linkType: hard
 
-"@parcel/transformer-react-refresh-wrap@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/transformer-react-refresh-wrap@npm:2.13.3"
+"@parcel/transformer-react-refresh-wrap@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/transformer-react-refresh-wrap@npm:2.14.1"
   dependencies:
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
-    react-refresh: "npm:>=0.9 <=0.14"
-  checksum: 10/c833c16f70be628e049f3ba79e45a2c1a9b118b3934982cab8fb1f8ac8c7acefded8f488ed3e371bfda6648132bacc9e1cc0ac5aae1385ec8b50d0347e965aae
+    "@parcel/error-overlay": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
+    react-refresh: "npm:>=0.9 <=0.16"
+  checksum: 10/40b2ae58c3bca6cf54e37647b55d6acea38a7f08370a527af1a73f7401c36d566d3d6395730148a78554d7e068b2be2e65c1666c75dd903aecc5c06fe0341231
   languageName: node
   linkType: hard
 
-"@parcel/transformer-svg@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/transformer-svg@npm:2.13.3"
+"@parcel/transformer-svg@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/transformer-svg@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/plugin": "npm:2.13.3"
-    "@parcel/rust": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/plugin": "npm:2.14.1"
+    "@parcel/rust": "npm:2.14.1"
     nullthrows: "npm:^1.1.1"
     posthtml: "npm:^0.16.5"
     posthtml-parser: "npm:^0.12.1"
     posthtml-render: "npm:^3.0.0"
     semver: "npm:^7.5.2"
-  checksum: 10/d368f72b90050a5d900304dc24437814c60fa6dd7e09525b2bba1c662731520a75a7dbeed0446c39b6bfd1f680541aa4b917a30c4d51d109736acbcdc6ce7b5e
+  checksum: 10/e508bfd491d5399289e9e69dd2b898512c992c9d4676cf5f452298a2eaac23d6bce026e4f591818ae9f52c975e95e1bd00ca2041933b111fc36a4b354030b99b
   languageName: node
   linkType: hard
 
-"@parcel/types-internal@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/types-internal@npm:2.13.3"
+"@parcel/types-internal@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/types-internal@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/feature-flags": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/feature-flags": "npm:2.14.1"
     "@parcel/source-map": "npm:^2.1.1"
     utility-types: "npm:^3.10.0"
-  checksum: 10/7cb41bff52ca7fdacdb500e2afc8d03a2470322340f2dabd0dd4840efd42af0696bb3f059617a7d80ab8e8cc9cfca0967a651e80425c3c92497ff032d9aa4a04
+  checksum: 10/ac4aa9e11b1017656975cea39c8e9fb0e1181d8fe48f50d84bae4b73fb7e01a24ef9e563983b8a9e9aa251863f3aca5cbc19eb01f3e45bbfd8fa3b26978d94c8
   languageName: node
   linkType: hard
 
-"@parcel/types@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/types@npm:2.13.3"
+"@parcel/types@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/types@npm:2.14.1"
   dependencies:
-    "@parcel/types-internal": "npm:2.13.3"
-    "@parcel/workers": "npm:2.13.3"
-  checksum: 10/cebb925dde62df235c726ca9d2845389902bd95981f91f5c6e5dab38058779407b088de4ad1595f4d8c1dbb5894a5b134513cc8d5e7bad3c381f238a0eb190ad
+    "@parcel/types-internal": "npm:2.14.1"
+    "@parcel/workers": "npm:2.14.1"
+  checksum: 10/f897f419e0399049cc7324fb475a56f194c9a7437204d7f0a24524125714304f9281ced9c67f0a664ea7221929805265e33ba142167923b5f7e5bce7d536d0f9
   languageName: node
   linkType: hard
 
-"@parcel/utils@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/utils@npm:2.13.3"
+"@parcel/utils@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/utils@npm:2.14.1"
   dependencies:
-    "@parcel/codeframe": "npm:2.13.3"
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/logger": "npm:2.13.3"
-    "@parcel/markdown-ansi": "npm:2.13.3"
-    "@parcel/rust": "npm:2.13.3"
+    "@parcel/codeframe": "npm:2.14.1"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/logger": "npm:2.14.1"
+    "@parcel/markdown-ansi": "npm:2.14.1"
+    "@parcel/rust": "npm:2.14.1"
     "@parcel/source-map": "npm:^2.1.1"
     chalk: "npm:^4.1.2"
     nullthrows: "npm:^1.1.1"
-  checksum: 10/b8df73ba2a7ba0af71642af53574dbee2e079450ab22d447814d06550ef28573bec94b684d49900a39d16ad71baa5380cf91d3aed0b1876aade3f46ba647e462
+  checksum: 10/36098d916b5db3efc5023de9c259e7bf1a04663e206b8adb1239ea0db449c5d9bbc1ac3162ee217a8473231bbcbae0193d994b8287db1e540bbb92a467c0997f
   languageName: node
   linkType: hard
 
@@ -3271,19 +3296,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/workers@npm:2.13.3":
-  version: 2.13.3
-  resolution: "@parcel/workers@npm:2.13.3"
+"@parcel/workers@npm:2.14.1":
+  version: 2.14.1
+  resolution: "@parcel/workers@npm:2.14.1"
   dependencies:
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/logger": "npm:2.13.3"
-    "@parcel/profiler": "npm:2.13.3"
-    "@parcel/types-internal": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/logger": "npm:2.14.1"
+    "@parcel/profiler": "npm:2.14.1"
+    "@parcel/types-internal": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     nullthrows: "npm:^1.1.1"
   peerDependencies:
-    "@parcel/core": ^2.13.3
-  checksum: 10/99d6b623353f3e95027850b615ce61455c7ebf1fda3f2b586228eb1a672239c780d8d7bc21971f1fe8a3406eaf8bc3b718080366191a6fc46ad02f4cf8bd589e
+    "@parcel/core": ^2.14.1
+  checksum: 10/fd328f6d5dd8ed240d881299a71db8ad4bef26a112baf3536e6b2e377ddad0caef1adb100d15164f8b9875c515cbb258f26aa4e997c5483d0badfe33b2997ced
   languageName: node
   linkType: hard
 
@@ -3537,92 +3562,92 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-arm64@npm:1.9.2":
-  version: 1.9.2
-  resolution: "@swc/core-darwin-arm64@npm:1.9.2"
+"@swc/core-darwin-arm64@npm:1.11.11":
+  version: 1.11.11
+  resolution: "@swc/core-darwin-arm64@npm:1.11.11"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-x64@npm:1.9.2":
-  version: 1.9.2
-  resolution: "@swc/core-darwin-x64@npm:1.9.2"
+"@swc/core-darwin-x64@npm:1.11.11":
+  version: 1.11.11
+  resolution: "@swc/core-darwin-x64@npm:1.11.11"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm-gnueabihf@npm:1.9.2":
-  version: 1.9.2
-  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.9.2"
+"@swc/core-linux-arm-gnueabihf@npm:1.11.11":
+  version: 1.11.11
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.11.11"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-gnu@npm:1.9.2":
-  version: 1.9.2
-  resolution: "@swc/core-linux-arm64-gnu@npm:1.9.2"
+"@swc/core-linux-arm64-gnu@npm:1.11.11":
+  version: 1.11.11
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.11.11"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-musl@npm:1.9.2":
-  version: 1.9.2
-  resolution: "@swc/core-linux-arm64-musl@npm:1.9.2"
+"@swc/core-linux-arm64-musl@npm:1.11.11":
+  version: 1.11.11
+  resolution: "@swc/core-linux-arm64-musl@npm:1.11.11"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-gnu@npm:1.9.2":
-  version: 1.9.2
-  resolution: "@swc/core-linux-x64-gnu@npm:1.9.2"
+"@swc/core-linux-x64-gnu@npm:1.11.11":
+  version: 1.11.11
+  resolution: "@swc/core-linux-x64-gnu@npm:1.11.11"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-musl@npm:1.9.2":
-  version: 1.9.2
-  resolution: "@swc/core-linux-x64-musl@npm:1.9.2"
+"@swc/core-linux-x64-musl@npm:1.11.11":
+  version: 1.11.11
+  resolution: "@swc/core-linux-x64-musl@npm:1.11.11"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-win32-arm64-msvc@npm:1.9.2":
-  version: 1.9.2
-  resolution: "@swc/core-win32-arm64-msvc@npm:1.9.2"
+"@swc/core-win32-arm64-msvc@npm:1.11.11":
+  version: 1.11.11
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.11.11"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-ia32-msvc@npm:1.9.2":
-  version: 1.9.2
-  resolution: "@swc/core-win32-ia32-msvc@npm:1.9.2"
+"@swc/core-win32-ia32-msvc@npm:1.11.11":
+  version: 1.11.11
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.11.11"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@swc/core-win32-x64-msvc@npm:1.9.2":
-  version: 1.9.2
-  resolution: "@swc/core-win32-x64-msvc@npm:1.9.2"
+"@swc/core-win32-x64-msvc@npm:1.11.11":
+  version: 1.11.11
+  resolution: "@swc/core-win32-x64-msvc@npm:1.11.11"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.7.26":
-  version: 1.9.2
-  resolution: "@swc/core@npm:1.9.2"
+"@swc/core@npm:^1.11.5":
+  version: 1.11.11
+  resolution: "@swc/core@npm:1.11.11"
   dependencies:
-    "@swc/core-darwin-arm64": "npm:1.9.2"
-    "@swc/core-darwin-x64": "npm:1.9.2"
-    "@swc/core-linux-arm-gnueabihf": "npm:1.9.2"
-    "@swc/core-linux-arm64-gnu": "npm:1.9.2"
-    "@swc/core-linux-arm64-musl": "npm:1.9.2"
-    "@swc/core-linux-x64-gnu": "npm:1.9.2"
-    "@swc/core-linux-x64-musl": "npm:1.9.2"
-    "@swc/core-win32-arm64-msvc": "npm:1.9.2"
-    "@swc/core-win32-ia32-msvc": "npm:1.9.2"
-    "@swc/core-win32-x64-msvc": "npm:1.9.2"
+    "@swc/core-darwin-arm64": "npm:1.11.11"
+    "@swc/core-darwin-x64": "npm:1.11.11"
+    "@swc/core-linux-arm-gnueabihf": "npm:1.11.11"
+    "@swc/core-linux-arm64-gnu": "npm:1.11.11"
+    "@swc/core-linux-arm64-musl": "npm:1.11.11"
+    "@swc/core-linux-x64-gnu": "npm:1.11.11"
+    "@swc/core-linux-x64-musl": "npm:1.11.11"
+    "@swc/core-win32-arm64-msvc": "npm:1.11.11"
+    "@swc/core-win32-ia32-msvc": "npm:1.11.11"
+    "@swc/core-win32-x64-msvc": "npm:1.11.11"
     "@swc/counter": "npm:^0.1.3"
-    "@swc/types": "npm:^0.1.15"
+    "@swc/types": "npm:^0.1.19"
   peerDependencies:
     "@swc/helpers": "*"
   dependenciesMeta:
@@ -3649,7 +3674,7 @@ __metadata:
   peerDependenciesMeta:
     "@swc/helpers":
       optional: true
-  checksum: 10/6793f2014a016f90b1c41a695f6d3a14d574e129e78f651fe3d6dbacbc6d0836ab7a7eb445d873a302b060b25ae34c4e09d0f94574a71da47c6424c5fa58aa10
+  checksum: 10/35c005637c8f3dac8c9718852057f81d39541b848d36a9b46b9aa5300b5d11e3e7911704da2eb025d36b0e334caf646af37ff98a3dee8d4f0fcc5f21e60f551a
   languageName: node
   linkType: hard
 
@@ -3669,12 +3694,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/types@npm:^0.1.15":
-  version: 0.1.15
-  resolution: "@swc/types@npm:0.1.15"
+"@swc/types@npm:^0.1.19":
+  version: 0.1.19
+  resolution: "@swc/types@npm:0.1.19"
   dependencies:
     "@swc/counter": "npm:^0.1.3"
-  checksum: 10/d8bf063aeebac51290d1edf0cec52e2e5b5afced0dc6933510a86947e10f0f77976bc14c3efb5e8f265a9cbdeb0929e00e44b2f82c6d0f273997c5029417b769
+  checksum: 10/693147cc9b23147164ddff9cb89477c369fbeb103319584779352a9ff1c72e0a70b97a89dfd97629040db8956d668d7b7a8fed328ffea46a3e8c18577e396994
   languageName: node
   linkType: hard
 
@@ -3914,12 +3939,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.13.10":
-  version: 22.13.10
-  resolution: "@types/node@npm:22.13.10"
+"@types/node@npm:*, @types/node@npm:^22.13.11":
+  version: 22.13.11
+  resolution: "@types/node@npm:22.13.11"
   dependencies:
     undici-types: "npm:~6.20.0"
-  checksum: 10/57dc6a5e0110ca9edea8d7047082e649fa7fa813f79e4a901653b9174141c622f4336435648baced5b38d9f39843f404fa2d8d7a10981610da26066bc8caab48
+  checksum: 10/5e556eda347f3395669bd6fa7a10c77722f06befe0a6b51b97ed7a4bd0f92b24aa867ee611b547614f17dfc5a0bb7946a75263bd1f302bcac3039729d22acab5
   languageName: node
   linkType: hard
 
@@ -3953,13 +3978,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.3.18":
-  version: 18.3.18
-  resolution: "@types/react@npm:18.3.18"
+"@types/react@npm:^18.3.19":
+  version: 18.3.19
+  resolution: "@types/react@npm:18.3.19"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10/7fdd8b853e0d291d4138133f93f8d5c333da918e5804afcea61a923aab4bdfc9bb15eb21a5640959b452972b8715ddf10ffb12b3bd071898b9e37738636463f2
+  checksum: 10/4b40a4adf7a59390541dc24059c09d95a777e8e8025fab13d660e1929a88e78efadde8ec94ebd357c5cc80b25590645e81c5b621661700f40496e7833b3d2983
   languageName: node
   linkType: hard
 
@@ -10786,28 +10811,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parcel@npm:^2.13.3":
-  version: 2.13.3
-  resolution: "parcel@npm:2.13.3"
+"parcel@npm:^2.14.1":
+  version: 2.14.1
+  resolution: "parcel@npm:2.14.1"
   dependencies:
-    "@parcel/config-default": "npm:2.13.3"
-    "@parcel/core": "npm:2.13.3"
-    "@parcel/diagnostic": "npm:2.13.3"
-    "@parcel/events": "npm:2.13.3"
-    "@parcel/feature-flags": "npm:2.13.3"
-    "@parcel/fs": "npm:2.13.3"
-    "@parcel/logger": "npm:2.13.3"
-    "@parcel/package-manager": "npm:2.13.3"
-    "@parcel/reporter-cli": "npm:2.13.3"
-    "@parcel/reporter-dev-server": "npm:2.13.3"
-    "@parcel/reporter-tracer": "npm:2.13.3"
-    "@parcel/utils": "npm:2.13.3"
+    "@parcel/config-default": "npm:2.14.1"
+    "@parcel/core": "npm:2.14.1"
+    "@parcel/diagnostic": "npm:2.14.1"
+    "@parcel/events": "npm:2.14.1"
+    "@parcel/feature-flags": "npm:2.14.1"
+    "@parcel/fs": "npm:2.14.1"
+    "@parcel/logger": "npm:2.14.1"
+    "@parcel/package-manager": "npm:2.14.1"
+    "@parcel/reporter-cli": "npm:2.14.1"
+    "@parcel/reporter-dev-server": "npm:2.14.1"
+    "@parcel/reporter-tracer": "npm:2.14.1"
+    "@parcel/utils": "npm:2.14.1"
     chalk: "npm:^4.1.2"
     commander: "npm:^12.1.0"
     get-port: "npm:^4.2.0"
   bin:
     parcel: lib/bin.js
-  checksum: 10/902937cc604b8dfc48490b3478aaaf5b03d8c1970ce5ca25f1a833a5d9d4a36314612bdd7efab0a27bdd63124f8176b5a2961395954a51fb7b93289554f1933d
+  checksum: 10/8a8b68b8a3fe47c7cf3ea30983138918d8a3b7c0b7ffe94e8fdb8fc40044f65be7a225508613b070c440a7cbe409c7b2c455b98857bf95f4d8df09a1939c74fe
   languageName: node
   linkType: hard
 
@@ -11281,20 +11306,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-error-overlay@npm:6.0.9":
-  version: 6.0.9
-  resolution: "react-error-overlay@npm:6.0.9"
-  checksum: 10/754c4699340e18064cc3299423dbb58560d3d3e127a5da9858d95c4656561402eb674904619d5407ee2c01743b17260b87f15f89d7816f2c74ba08d6a71b80f9
-  languageName: node
-  linkType: hard
-
 "react-if-demo@workspace:demo":
   version: 0.0.0-use.local
   resolution: "react-if-demo@workspace:demo"
   dependencies:
     autoprefixer: "npm:^10.4.21"
     daisyui: "npm:^4.12.24"
-    parcel: "npm:^2.13.3"
+    parcel: "npm:^2.14.1"
     postcss: "npm:^8.5.3"
     tailwindcss: "npm:^3.4.17"
     typescript: "npm:^5.5.2"
@@ -11314,8 +11332,8 @@ __metadata:
     "@testing-library/dom": "npm:^10.4.0"
     "@testing-library/jest-dom": "npm:^6.6.3"
     "@testing-library/react": "npm:^16.2.0"
-    "@types/node": "npm:^22.13.10"
-    "@types/react": "npm:^18.3.18"
+    "@types/node": "npm:^22.13.11"
+    "@types/react": "npm:^18.3.19"
     "@types/react-dom": "npm:^18.3.5"
     "@typescript-eslint/eslint-plugin": "npm:^7.13.1"
     "@typescript-eslint/parser": "npm:^7.13.1"
@@ -11362,10 +11380,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-refresh@npm:>=0.9 <=0.14":
-  version: 0.14.2
-  resolution: "react-refresh@npm:0.14.2"
-  checksum: 10/512abf97271ab8623486061be04b608c39d932e3709f9af1720b41573415fa4993d0009fa5138b6705b60a98f4102f744d4e26c952b14f41a0e455521c6be4cc
+"react-refresh@npm:>=0.9 <=0.16":
+  version: 0.16.0
+  resolution: "react-refresh@npm:0.16.0"
+  checksum: 10/725019d21cede4cea57c20b85fa3a7fe5b0969c99d62ac37dc7b2d3505ea9a33f14f003034ed214d41bacf74c48ab174464c236e5815dff31e23f519c21d8752
   languageName: node
   linkType: hard
 
