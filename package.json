@@ -47,8 +47,8 @@
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
-    "@types/node": "^22.13.11",
-    "@types/react": "^18.3.19",
+    "@types/node": "^22.13.14",
+    "@types/react": "^18.3.20",
     "@types/react-dom": "^18.3.5",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
@@ -59,14 +59,14 @@
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-prettier": "^5.2.5",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.2.0",
     "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "ts-jest": "^29.2.6",
+    "ts-jest": "^29.3.0",
     "typedoc": "^0.26.1",
     "typescript": "^5.5.2"
   },
@@ -93,7 +93,7 @@
   "resolutions": {
     "prettier": "^3.5.3",
     "@types/react-dom": "^18.3.5",
-    "@types/react": "^18.3.19",
+    "@types/react": "^18.3.20",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
     "cz-conventional-changelog": "^3.3.0",
@@ -101,7 +101,7 @@
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-prettier": "^5.2.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint": "^8.57.1",
@@ -113,5 +113,5 @@
     "@types/testing-library__jest-dom@^5.14.8": "patch:@types/testing-library__jest-dom@npm%3A5.14.7#./.yarn/patches/@types-testing-library__jest-dom-npm-5.14.7-9c1df8c5da.patch",
     "@types/testing-library__jest-dom@^5.9.1": "patch:@types/testing-library__jest-dom@npm%3A5.14.7#./.yarn/patches/@types-testing-library__jest-dom-npm-5.14.7-9c1df8c5da.patch"
   },
-  "packageManager": "yarn@4.7.0"
+  "packageManager": "yarn@4.8.0"
 }
