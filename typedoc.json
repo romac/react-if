@@ -5,7 +5,7 @@
   "hideGenerator": true,
   "lightHighlightTheme": "github-light",
   "darkHighlightTheme": "github-dark",
-  "markedOptions": {
+  "markdownItOptions": {
     "gfm": true,
     "mangle": false,
     "smartypants": true
@@ -13,5 +13,6 @@
   "name": "react-if",
   "out": "./docs/",
   "readme": "./README.md",
-  "tsconfig": "./src/tsconfig.json"
+  "tsconfig": "./tsconfig.typedoc.json",
+  "plugin": ["typedoc-plugin-markdown"]
 }

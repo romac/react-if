@@ -7,7 +7,7 @@
  * Full license: https://github.com/sapphiredev/utilities/blob/main/LICENSE.md
  */
 
-/* eslint-disable @typescript-eslint/ban-types */
+/* eslint-disable @typescript-eslint/no-unsafe-function-type */
 
 interface Thenable {
   then: Function;

@@ -1,4 +1,5 @@
-import React, { Fragment, useEffect, useMemo, useRef, useState, type PropsWithChildren, type ReactElement } from 'react';
+import * as React from 'react';
+import { Fragment, useEffect, useMemo, useRef, useState, type PropsWithChildren, type ReactElement } from 'react';
 import { Else } from './Else';
 import { Fallback } from './Fallback';
 import { Then } from './Then';
@@ -69,12 +70,13 @@ export function IfAsync<T = any>({ promise, keepAlive = false, children }: Props
 
     // Inject caught error
     let elseElement = hasElse;
-    if (typeof hasElse.props.children === 'function') {
+    const hasElseProps = hasElse.props as { children: any };
+    if (typeof hasElseProps.children === 'function') {
       elseElement = {
         ...hasElse,
         props: {
-          ...hasElse.props,
-          children: () => hasElse.props.children(returnValue, history.current, cancellablePromise.promise)
+          ...hasElseProps,
+          children: () => hasElseProps.children(returnValue, history.current, cancellablePromise.promise)
         }
       };
     }
@@ -87,13 +89,13 @@ export function IfAsync<T = any>({ promise, keepAlive = false, children }: Props
 
   // Inject promise return value
   let thenElement = hasThen;
-
-  if (typeof hasThen.props.children === 'function') {
+  const hasThenProps = hasThen.props as { children: any };
+  if (typeof hasThenProps.children === 'function') {
     thenElement = {
       ...hasThen,
       props: {
-        ...hasThen.props,
-        children: () => hasThen.props.children(returnValue, history.current, cancellablePromise.promise)
+        ...hasThenProps,
+        children: () => hasThenProps.children(returnValue, history.current, cancellablePromise.promise)
       }
     };
   }

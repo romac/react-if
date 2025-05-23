@@ -216,9 +216,7 @@ describe('<If /> component', () => {
         render(
           <If condition={extendedPromise}>
             <Then>
-              {(data: any, history: any, promise: any) => {
-                data;
-                history; // 'skip declared but value never read' error
+              {(_data: any, _history: any, promise: any) => {
                 return <span data-testid="thenChild">{promise.testValue}</span>;
               }}
             </Then>
@@ -397,9 +395,7 @@ describe('<If /> component', () => {
         render(
           <If condition={extendedPromise}>
             <Else>
-              {(data: any, history: any, promise: any) => {
-                data;
-                history; // 'skip declared but value never read' error
+              {(_data: any, _history: any, promise: any) => {
                 return <span data-testid="elseChild">{promise.testValue}</span>;
               }}
             </Else>
