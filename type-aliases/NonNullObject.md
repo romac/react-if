@@ -8,4 +8,4 @@
 
 > **NonNullObject** = `object` & `object`
 
-Defined in: [src/types.ts:62](https://github.com/romac/react-if/blob/d89bda068d002b9b0761f1d92c5053e5fad86738/src/types.ts#L62)
+Defined in: [src/types.ts:62](https://github.com/romac/react-if/blob/71170442c8c788e995485f0d3ed5b6b6ba023db2/src/types.ts#L62)
