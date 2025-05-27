@@ -15,6 +15,7 @@
     }
   },
   "rules": {
+    "@typescript-eslint/no-throw-literal": "off",
     "no-extra-label": "warn",
     "no-iterator": "warn",
     "no-label-var": "warn",

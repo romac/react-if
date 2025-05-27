@@ -34,9 +34,13 @@ export const createCancellablePromise = <T>(promise: ExtendablePromise<T>): Canc
   const wrappedPromise: ExtendablePromise<T> = new Promise(async (res, rej) => {
     try {
       const d = await promise;
-      return !isCancelled.value && res(d);
+      if (!isCancelled.value) {
+        res(d);
+      }
     } catch (error) {
-      !isCancelled.value && rej(error);
+      if (!isCancelled.value) {
+        rej(error);
+      }
     }
   });
 

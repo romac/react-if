@@ -1,4 +1,5 @@
-import React, { type ReactElement } from 'react';
+import * as React from 'react';
+import { type ReactElement } from 'react';
 import { Case } from './Case';
 import { Default } from './Default';
 import { getConditionResult } from './getConditionResults';
@@ -33,9 +34,8 @@ export const Switch: FCWithImplicitChildren = ({ children }) => {
     }
 
     if (!matchingCase && child.type === Case) {
-      const { condition } = child.props;
-
-      const conditionResult = getConditionResult(condition);
+      const childProps = child.props as any;
+      const conditionResult = getConditionResult(childProps.condition);
 
       if (conditionResult) {
         matchingCase = child;

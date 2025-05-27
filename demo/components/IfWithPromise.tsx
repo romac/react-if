@@ -24,7 +24,11 @@ const IfWithPromise: React.FC<Props> = ({ resolutionReturnValue, rejectionReturn
   const createPromise = (shouldResolve: boolean) => {
     const newPromise: ExtendedPromise = new Promise((resolve, reject) => {
       setTimeout(() => {
-        shouldResolve ? resolve(resolutionReturnValue) : reject(rejectionReturnValue);
+        if (shouldResolve) {
+          resolve(resolutionReturnValue);
+        } else {
+          reject(rejectionReturnValue);
+        }
       }, delay * 1000);
     });
     newPromise._id = currentPromiseId.current;

@@ -1,9 +1,11 @@
+import './index.css';
+
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+
 import IfThen from './components/IfThen';
 import IfThenElse from './components/IfThenElse';
 import IfWithPromise from './components/IfWithPromise';
-import './index.css';
 
 const App = () => {
   return (
@@ -38,4 +40,10 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const rootElement = document.getElementById('root');
+if (rootElement) {
+  const root = createRoot(rootElement);
+  root.render(<App />);
+} else {
+  console.error('Element with id "root" not found.');
+}
