@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# [4.1.6](https://github.com/romac/react-if/compare/v4.1.5...v4.1.6) - (2025-05-27)
+
+## 🐛 Bug Fixes
+
+- Update project to React19, Tailwind 4x and DasisyUI 5.x (#426) ([d89bda0](https://github.com/romac/react-if/commit/d89bda068d002b9b0761f1d92c5053e5fad86738))
+
 # [4.1.5](https://github.com/romac/react-if/compare/v4.1.4...v4.1.5) - (2023-06-29)
 
 ## 🏠 Refactor
