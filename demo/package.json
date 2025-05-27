@@ -12,7 +12,7 @@
   "devDependencies": {
     "@parcel/transformer-postcss": "^2.15.2",
     "@tailwindcss/postcss": "^4.1.7",
-    "daisyui": "^5.0.37",
+    "daisyui": "^5.0.38",
     "parcel": "^2.15.2",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.7",
