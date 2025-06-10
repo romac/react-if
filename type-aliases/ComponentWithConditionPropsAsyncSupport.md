@@ -8,7 +8,7 @@
 
 > **ComponentWithConditionPropsAsyncSupport** = [`ComponentWithConditionProps`](ComponentWithConditionProps.md)\<[`AsyncSupportProps`](../interfaces/AsyncSupportProps.md)\>
 
-Defined in: [src/types.ts:56](https://github.com/romac/react-if/blob/06905daeb516e18ad5c4a2722e17279616240863/src/types.ts#L56)
+Defined in: [src/types.ts:56](https://github.com/romac/react-if/blob/a9e20a62047714170b87fd7c41326dfc5c79f302/src/types.ts#L56)
 
 Extend ComponentWithConditionProps
 to also support async

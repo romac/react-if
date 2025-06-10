@@ -8,7 +8,7 @@
 
 > `const` **Else**: [`FCWithImplicitChildren`](../type-aliases/FCWithImplicitChildren.md)
 
-Defined in: [src/Else.tsx:9](https://github.com/romac/react-if/blob/06905daeb516e18ad5c4a2722e17279616240863/src/Else.tsx#L9)
+Defined in: [src/Else.tsx:9](https://github.com/romac/react-if/blob/a9e20a62047714170b87fd7c41326dfc5c79f302/src/Else.tsx#L9)
 
 Must only contain a single child, which it renders as-is.
 Should not be used outside of an `<If />` block.
