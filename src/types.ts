@@ -59,6 +59,7 @@ export type FCWithImplicitChildren<P = NonNullObject> = FunctionComponentWithImp
 
 export type FunctionComponentWithImplicitChildren<P = NonNullObject> = FunctionComponent<CustomPropsWithChildren<P>>;
 
+// eslint-disable-next-line @typescript-eslint/ban-types
 export type NonNullObject = {} & object;
 
 export type CustomPropsWithChildren<P> = P & { children?: ReactNode | undefined | ((...args: unknown[]) => JSX.Element) };
