@@ -8,7 +8,7 @@
 
 > `const` **Then**: [`FCWithImplicitChildren`](../type-aliases/FCWithImplicitChildren.md)
 
-Defined in: [src/Then.tsx:9](https://github.com/romac/react-if/blob/a9e20a62047714170b87fd7c41326dfc5c79f302/src/Then.tsx#L9)
+Defined in: [src/Then.tsx:9](https://github.com/romac/react-if/blob/fe39a5a04590bfcea942bd643f45d49c6c55c46a/src/Then.tsx#L9)
 
 Must contain only a single child, which it renders as-is.
 Should not be used outside of an `<If />` block.
