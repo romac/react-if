@@ -10,11 +10,11 @@
     "build": "parcel build index.html"
   },
   "devDependencies": {
-    "@parcel/transformer-postcss": "^2.15.2",
+    "@parcel/transformer-postcss": "^2.15.4",
     "@tailwindcss/postcss": "^4.1.10",
     "daisyui": "^5.0.43",
-    "parcel": "^2.15.2",
-    "postcss": "^8.5.5",
+    "parcel": "^2.15.4",
+    "postcss": "^8.5.6",
     "tailwindcss": "^4.1.10",
     "typescript": "^5.8.3"
   }
