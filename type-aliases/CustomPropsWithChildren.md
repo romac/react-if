@@ -8,7 +8,7 @@
 
 > **CustomPropsWithChildren**\<`P`\> = `P` & `object`
 
-Defined in: [src/types.ts:65](https://github.com/romac/react-if/blob/fe39a5a04590bfcea942bd643f45d49c6c55c46a/src/types.ts#L65)
+Defined in: [src/types.ts:65](https://github.com/romac/react-if/blob/b45464e838dd2d0c922fcd39ecbf43f12df5e169/src/types.ts#L65)
 
 ## Type declaration
 
