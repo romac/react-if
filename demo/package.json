@@ -11,11 +11,11 @@
   },
   "devDependencies": {
     "@parcel/transformer-postcss": "^2.15.4",
-    "@tailwindcss/postcss": "^4.1.10",
+    "@tailwindcss/postcss": "^4.1.11",
     "daisyui": "^5.0.43",
     "parcel": "^2.15.4",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.10",
+    "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
   }
 }
