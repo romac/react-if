@@ -8,7 +8,7 @@
 
 > `const` **Switch**: [`FCWithImplicitChildren`](../type-aliases/FCWithImplicitChildren.md)
 
-Defined in: [src/Switch.tsx:15](https://github.com/romac/react-if/blob/b45464e838dd2d0c922fcd39ecbf43f12df5e169/src/Switch.tsx#L15)
+Defined in: [src/Switch.tsx:15](https://github.com/romac/react-if/blob/b159d77ea0ec0513ecc49810dbe73b4fe02663b8/src/Switch.tsx#L15)
 
 It will render the first matching `<Case />`, or the first encountered `<Default />` (or `null`).
 

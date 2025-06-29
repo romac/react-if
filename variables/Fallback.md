@@ -8,7 +8,7 @@
 
 > `const` **Fallback**: [`FCWithImplicitChildren`](../type-aliases/FCWithImplicitChildren.md)
 
-Defined in: [src/Fallback.tsx:9](https://github.com/romac/react-if/blob/b45464e838dd2d0c922fcd39ecbf43f12df5e169/src/Fallback.tsx#L9)
+Defined in: [src/Fallback.tsx:9](https://github.com/romac/react-if/blob/b159d77ea0ec0513ecc49810dbe73b4fe02663b8/src/Fallback.tsx#L9)
 
 Must contain only a single child, which it renders as-is.
 Should not be used outside of an `<If />` block whose condition prop is a promise.
