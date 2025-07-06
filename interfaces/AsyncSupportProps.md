@@ -6,7 +6,7 @@
 
 # Interface: AsyncSupportProps
 
-Defined in: [src/types.ts:43](https://github.com/romac/react-if/blob/b159d77ea0ec0513ecc49810dbe73b4fe02663b8/src/types.ts#L43)
+Defined in: [src/types.ts:43](https://github.com/romac/react-if/blob/5c6e978cf1563aa4f329bf34d7943cbce72b88db/src/types.ts#L43)
 
 Async related props
 
@@ -16,7 +16,7 @@ Async related props
 
 > `optional` **keepAlive**: `boolean`
 
-Defined in: [src/types.ts:49](https://github.com/romac/react-if/blob/b159d77ea0ec0513ecc49810dbe73b4fe02663b8/src/types.ts#L49)
+Defined in: [src/types.ts:49](https://github.com/romac/react-if/blob/5c6e978cf1563aa4f329bf34d7943cbce72b88db/src/types.ts#L49)
 
 - False (default): promises are cancelled before each unmount
 - True: promises can be fulfilled even after a
