@@ -8,7 +8,7 @@
 
 > `const` **Unless**: `FC`\<[`ComponentWithConditionPropsWithFunctionChildren`](../type-aliases/ComponentWithConditionPropsWithFunctionChildren.md)\>
 
-Defined in: [src/Unless.tsx:20](https://github.com/romac/react-if/blob/5c6e978cf1563aa4f329bf34d7943cbce72b88db/src/Unless.tsx#L20)
+Defined in: [src/Unless.tsx:20](https://github.com/romac/react-if/blob/0638f38c0a8162c71148782cc92938aca5f5e428/src/Unless.tsx#L20)
 
 A shorthand for
 

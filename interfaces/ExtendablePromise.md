@@ -6,7 +6,7 @@
 
 # Interface: ExtendablePromise\<T\>
 
-Defined in: [src/types.ts:11](https://github.com/romac/react-if/blob/5c6e978cf1563aa4f329bf34d7943cbce72b88db/src/types.ts#L11)
+Defined in: [src/types.ts:11](https://github.com/romac/react-if/blob/0638f38c0a8162c71148782cc92938aca5f5e428/src/types.ts#L11)
 
 A Promise that can have additional properties
 

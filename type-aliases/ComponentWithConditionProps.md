@@ -8,7 +8,7 @@
 
 > **ComponentWithConditionProps**\<`P`\> = `P` & `PropsWithChildren`\<\{ `condition`: () => [`BooleanLike`](BooleanLike.md) \| [`BooleanLike`](BooleanLike.md); \}\>
 
-Defined in: [src/types.ts:38](https://github.com/romac/react-if/blob/5c6e978cf1563aa4f329bf34d7943cbce72b88db/src/types.ts#L38)
+Defined in: [src/types.ts:38](https://github.com/romac/react-if/blob/0638f38c0a8162c71148782cc92938aca5f5e428/src/types.ts#L38)
 
 Props for a React component that have both children
 as well as a `condition` prop that is supported by this library
