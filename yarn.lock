@@ -4065,12 +4065,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.16.0":
-  version: 22.16.0
-  resolution: "@types/node@npm:22.16.0"
+"@types/node@npm:*, @types/node@npm:^22.16.3":
+  version: 22.16.3
+  resolution: "@types/node@npm:22.16.3"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10/26ebbbd24749caa4a692664290c53cdca63ec717ca250cd2babf3d3da796e9d3d0b6b9814d160693261b5e881796bf0f3c1887fef355b19e9a78fe27cd5e2ce2
+  checksum: 10/b71fe7abf242091e2f303b400b27f677c311b03a3125bf5532e06aff8a4cd41944bcc6f70a0666834e4352228607e676bc8082fa38d3739d3e1460a20d5c51d2
   languageName: node
   linkType: hard
 
@@ -5679,10 +5679,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^5.0.43":
-  version: 5.0.43
-  resolution: "daisyui@npm:5.0.43"
-  checksum: 10/a73bc1994a7cb6e35571148f0134991da18c092bca448dee9d77fa1c7761e9a1647773363efe6050f70aae1f9ccebc57b9115c938c241534d1c640730e6d3973
+"daisyui@npm:^5.0.46":
+  version: 5.0.46
+  resolution: "daisyui@npm:5.0.46"
+  checksum: 10/193bf9ca083370488422f8ba77430da54debefe92f588217d7cd387d27cbd82691efbec264b0d57b4e774ca29d93ea6f3e94691e4091a7587fa42d2c00320f8b
   languageName: node
   linkType: hard
 
@@ -10795,7 +10795,7 @@ __metadata:
   dependencies:
     "@parcel/transformer-postcss": "npm:^2.15.4"
     "@tailwindcss/postcss": "npm:^4.1.11"
-    daisyui: "npm:^5.0.43"
+    daisyui: "npm:^5.0.46"
     parcel: "npm:^2.15.4"
     postcss: "npm:^8.5.6"
     tailwindcss: "npm:^4.1.11"
@@ -10817,7 +10817,7 @@ __metadata:
     "@testing-library/jest-dom": "npm:^6.6.3"
     "@testing-library/react": "npm:^16.3.0"
     "@types/entities": "npm:^2.0.2"
-    "@types/node": "npm:^22.16.0"
+    "@types/node": "npm:^22.16.3"
     "@types/react": "npm:^19.1.8"
     "@types/react-dom": "npm:^19.1.6"
     "@typescript-eslint/eslint-plugin": "npm:^7.18.0"
