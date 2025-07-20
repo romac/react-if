@@ -6,7 +6,7 @@
 
 # Interface: CancellablePromise
 
-Defined in: [src/types.ts:18](https://github.com/romac/react-if/blob/0638f38c0a8162c71148782cc92938aca5f5e428/src/types.ts#L18)
+Defined in: [src/types.ts:18](https://github.com/romac/react-if/blob/d4e642781214f59311f1912d5fec32e1e3837d6a/src/types.ts#L18)
 
 Type for a promise that is cancellable
 
@@ -16,7 +16,7 @@ Type for a promise that is cancellable
 
 > **cancel**: () => `void`
 
-Defined in: [src/types.ts:20](https://github.com/romac/react-if/blob/0638f38c0a8162c71148782cc92938aca5f5e428/src/types.ts#L20)
+Defined in: [src/types.ts:20](https://github.com/romac/react-if/blob/d4e642781214f59311f1912d5fec32e1e3837d6a/src/types.ts#L20)
 
 #### Returns
 
@@ -28,4 +28,4 @@ Defined in: [src/types.ts:20](https://github.com/romac/react-if/blob/0638f38c0a8
 
 > **promise**: [`ExtendablePromise`](ExtendablePromise.md)\<`any`\>
 
-Defined in: [src/types.ts:19](https://github.com/romac/react-if/blob/0638f38c0a8162c71148782cc92938aca5f5e428/src/types.ts#L19)
+Defined in: [src/types.ts:19](https://github.com/romac/react-if/blob/d4e642781214f59311f1912d5fec32e1e3837d6a/src/types.ts#L19)

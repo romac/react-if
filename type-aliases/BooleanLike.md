@@ -8,6 +8,6 @@
 
 > **BooleanLike** = `boolean` \| `string` \| `number` \| `null` \| `undefined` \| [`ExtendablePromise`](../interfaces/ExtendablePromise.md)\<`any`\>
 
-Defined in: [src/types.ts:6](https://github.com/romac/react-if/blob/0638f38c0a8162c71148782cc92938aca5f5e428/src/types.ts#L6)
+Defined in: [src/types.ts:6](https://github.com/romac/react-if/blob/d4e642781214f59311f1912d5fec32e1e3837d6a/src/types.ts#L6)
 
 Type for a value that can properly be parsed by `Boolean(...)`
