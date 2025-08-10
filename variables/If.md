@@ -8,7 +8,7 @@
 
 > `const` **If**: `FC`\<[`ComponentWithConditionPropsAsyncSupport`](../type-aliases/ComponentWithConditionPropsAsyncSupport.md)\>
 
-Defined in: [src/If.tsx:19](https://github.com/romac/react-if/blob/77aa30e81276a3bc257a3caa57ced5d3268f76e6/src/If.tsx#L19)
+Defined in: [src/If.tsx:19](https://github.com/romac/react-if/blob/3a6b061d125c0920cfe7845f736efeef382a128c/src/If.tsx#L19)
 
 If condition evaluates to true, renders the `<Then />` block will be rendered,
 otherwise renders the `<Else />` block. Either block may be omitted.
