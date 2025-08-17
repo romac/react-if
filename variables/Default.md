@@ -8,7 +8,7 @@
 
 > `const` **Default**: [`FCWithImplicitChildren`](../type-aliases/FCWithImplicitChildren.md)
 
-Defined in: [src/Default.tsx:9](https://github.com/romac/react-if/blob/b27a034a649d8fa183e24e0dd9e2fd757ce75c1f/src/Default.tsx#L9)
+Defined in: [src/Default.tsx:9](https://github.com/romac/react-if/blob/87e99abf972946d48fe86104b6f957c6d270c935/src/Default.tsx#L9)
 
 If no `<Case />` have its condition evaluates to true inside the parent `<Switch />`,
 the first `<Default />` will be the only one rendered.
