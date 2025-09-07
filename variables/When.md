@@ -8,7 +8,7 @@
 
 > `const` **When**: `FC`\<[`ComponentWithConditionPropsWithFunctionChildren`](../type-aliases/ComponentWithConditionPropsWithFunctionChildren.md)\>
 
-Defined in: [src/When.tsx:20](https://github.com/romac/react-if/blob/7939a8e6f1b1b20a40a2d6c0a920e63e1b5f48e7/src/When.tsx#L20)
+Defined in: [src/When.tsx:20](https://github.com/romac/react-if/blob/7f5a5de70be325b3a7ba3ced7028e8435d9fc3e9/src/When.tsx#L20)
 
 A shorthand for
 
