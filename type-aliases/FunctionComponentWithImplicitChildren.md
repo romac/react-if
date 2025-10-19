@@ -8,7 +8,7 @@
 
 > **FunctionComponentWithImplicitChildren**\<`P`\> = `FunctionComponent`\<[`CustomPropsWithChildren`](CustomPropsWithChildren.md)\<`P`\>\>
 
-Defined in: [src/types.ts:60](https://github.com/romac/react-if/blob/6273bb560fa9e24b4cbe2b667525cf32a6c958e1/src/types.ts#L60)
+Defined in: [src/types.ts:60](https://github.com/romac/react-if/blob/1c4104027e4ac21b8809c71ecc3a2c3af48279c8/src/types.ts#L60)
 
 ## Type Parameters
 
