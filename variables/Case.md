@@ -8,7 +8,7 @@
 
 > `const` **Case**: `FC`\<[`ComponentWithConditionPropsWithFunctionChildren`](../type-aliases/ComponentWithConditionPropsWithFunctionChildren.md)\>
 
-Defined in: [src/Case.tsx:10](https://github.com/romac/react-if/blob/fc0f52436cdbe880e17604405c05a8f2b33b04b4/src/Case.tsx#L10)
+Defined in: [src/Case.tsx:10](https://github.com/romac/react-if/blob/065f9eae55cc7dbab81ad869a88a35370737dcb4/src/Case.tsx#L10)
 
 If the `<Case />` is the first one to have its condition evaluates to true
 inside the parent `<Switch />` it will be the only rendered.
